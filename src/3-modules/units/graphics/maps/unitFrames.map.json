@@ -1,0 +1,10 @@
+{
+  "width": "74px",
+  "height": "100px",
+  "default": "0px 0px",
+  "undead": "-75px 0px",
+  "demon": "-150px 0px",
+  "drow": "-225px 0px",
+  "human": "-300px 0px",
+  "elf": "-375px 0px"
+}
