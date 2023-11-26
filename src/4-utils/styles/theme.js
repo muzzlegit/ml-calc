@@ -14,7 +14,7 @@ export const theme = {
     shantell: '"Shantell Sans", cursive',
   },
   shadows: {
-    card: " 0px 0px 3px rgba(0,0,0, 1s), 0px 0px 6px rgba(255,255,255, 01)",
+    card: " 0px 0px 3px rgba(0,0,0, 0.4), 0px 0px 6px rgba(255,255,255, 1)",
     inner: "inner 0px 0px 3px rgba(255,255,255, 0.3)",
   },
 };

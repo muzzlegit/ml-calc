@@ -1,11 +1,14 @@
-import { useCallback, useEffect } from "react";
+import { useEffect } from "react";
 import usePlayerContext from "utils/context/usePlayerContext.hook";
+import { unitsNames } from "utils/types/types";
 import useUnitsStore from "../store/unitsStore";
 import { getUnitData } from "../utils/units.helpers";
 
 const useUnit = (unitName) => {
   const player = usePlayerContext();
-  const setUnit = useUnitsStore((state) => state.methods.setUnit);
+  const { setUnit, setUnitAmount, setUnitLevel } = useUnitsStore(
+    (state) => state.methods
+  );
   const unit = useUnitsStore((state) => state[player][unitName]);
   const race = useUnitsStore((state) => state[player].race);
   const attackIndex = useUnitsStore((state) => state[player].attackIndex);
@@ -14,14 +17,14 @@ const useUnit = (unitName) => {
 
   const handleUnitAmount = (amount) => {
     if (isNaN(Number(amount))) return;
-    setUnit(player, unitName, { ...unit, amount: Number(amount) });
+    setUnitAmount(player, unitName, Number(amount));
   };
 
-  const handleUnitLevel = useCallback(() => {
+  const handleUnitLevel = () => {
     const formattedLevel =
       (race === "monsters" && level === 3) || level === 4 ? 1 : level + 1;
-    setUnit(player, unitName, { ...unit, level: formattedLevel });
-  }, [level, player, race, setUnit, unit, unitName]);
+    setUnitLevel(player, unitName, formattedLevel);
+  };
 
   useEffect(() => {
     const formattedLevel = race === "monsters" && level === 4 ? 3 : level;
@@ -38,7 +41,16 @@ const useUnit = (unitName) => {
     );
   }, [attackIndex, level, player, race, setUnit, unitName]);
 
-  return { unit, race, handleUnitLevel, handleUnitAmount };
+  return {
+    unit,
+    race,
+    handleUnitLevel,
+    handleUnitAmount,
+  };
 };
 
 export default useUnit;
+
+useUnit.propTypes = {
+  unitName: unitsNames,
+};

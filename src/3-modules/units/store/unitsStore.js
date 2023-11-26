@@ -33,6 +33,17 @@ const useUnitsStore = create(
             state[player][unitName] = { ...state[player][unitName], ...unit };
           });
         },
+        setUnitAmount: (player, unit, amount) => {
+          set((state) => {
+            state[player][unit] = { ...state[player][unit], amount };
+          });
+        },
+        setUnitLevel: (player, unit, level) => {
+          set((state) => {
+            state[player][unit] = { ...state[player][unit], level };
+          });
+        },
+
         setRace: (player, race) => {
           set((state) => {
             state[player].race = race;

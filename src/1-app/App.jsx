@@ -1,14 +1,18 @@
 import { ThemeProvider } from "@emotion/react";
 import { theme } from "utils/styles/theme";
 import { Player } from "widgets";
-import { Main } from "./App.styled";
+import { Battleplace } from "widgets/";
+import { Container, Main } from "./App.styled";
 
 function App() {
   return (
     <Main>
       <ThemeProvider theme={theme}>
-        <Player playerName="mainAttacker" />
-        <Player playerName="mainDefender" />
+        <Container>
+          <Player playerName="mainAttacker" />
+          <Battleplace />
+          <Player playerName="mainDefender" />
+        </Container>
       </ThemeProvider>
     </Main>
   );

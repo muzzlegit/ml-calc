@@ -57,12 +57,13 @@ export const LIMITS = {
   persecutionLimit: -0.9,
 };
 
-export const RACE_NAMES = [
-  "Нежить",
-  "Демоны",
-  "Рыцари",
-  "Темные Эльфы",
-  "Светлые Эльфы",
-];
+export const RACE = {
+  undead: "Нежить",
+  demon: "Демоны",
+  human: "Рыцари",
+  drow: "Темные Эльфы",
+  elf: "Светлые Эльфы",
+  monsters: "Монстры",
+};
 
-export const ATTACK_INDEX = ["min", "max"];
+export const ATTACK_INDEX = { min: "min", max: "max" };

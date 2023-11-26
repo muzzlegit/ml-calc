@@ -8,3 +8,8 @@ export const Main = styled.main({
   flexDirection: "column",
   alignItems: "center",
 });
+
+export const Container = styled.div({
+  padding: "8px",
+  outline: "1px solid white",
+});

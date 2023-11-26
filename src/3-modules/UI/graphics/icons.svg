@@ -7,6 +7,8 @@
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.88" d="M16 6.667v18.666M6.667 16h18.666"></path>
 </symbol>
 
+<symbol viewBox="0 0 16 16" id="icon-checker"><path  d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path></symbol>
+
 <symbol id="icon-menu" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M4 16h24M4 8h24M4 24h24"></path>
 </symbol>

@@ -8,3 +8,14 @@ export const players = PropTypes.oneOf([
   "firstDefenderAlly",
   "secondDefenderAlly",
 ]);
+
+export const unitsNames = PropTypes.oneOf([
+  "porter",
+  "swordsman",
+  "cavalier",
+  "flying",
+  "archer",
+  "healer",
+  "mercenary",
+  "mage",
+]);

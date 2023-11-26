@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div({
-  position: "relative",
   width: "fit-content",
   display: "flex",
   alignItems: "center",
@@ -20,9 +19,9 @@ export const List = styled.ul(
     flexDirection: "column",
     alignItems: "start",
     gap: "4px",
-    width: "100px",
+    width: "fit-content",
     border: "1px solid",
-    borderRadius: "8px",
+    borderRadius: "4px",
   },
   (props) => ({
     backgroundColor: props.theme.colors.secondary,
@@ -33,9 +32,10 @@ export const List = styled.ul(
 export const Item = styled.li(
   {
     width: "100%",
-    fontSize: "12px",
+    fontSize: "14px",
     cursor: "pointer",
     textAlign: "center",
+    whiteSpace: "nowrap",
   },
   (props) => ({
     ":hover,:focus": {
@@ -47,6 +47,7 @@ export const Item = styled.li(
 
 export const Wrap = styled.div(
   {
+    position: "relative",
     width: "fit-content",
     padding: "4px 12px",
     display: "flex",
@@ -54,9 +55,10 @@ export const Wrap = styled.div(
     gap: "4px",
     fontSize: "14px",
     fontWeight: 500,
-    borderRadius: "8px",
+    borderRadius: "4px",
     cursor: "pointer",
     fill: "none",
+    whiteSpace: "nowrap",
   },
   (props) => ({
     backgroundColor: props.theme.colors.secondary,
@@ -69,6 +71,7 @@ export const Title = styled.div(
   {
     fontSize: "16px",
     fontWeight: 600,
+    whiteSpace: "nowrap",
   },
   (props) => ({
     color: props.theme.colors.text,

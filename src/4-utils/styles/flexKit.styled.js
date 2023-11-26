@@ -39,7 +39,7 @@ export const FlexBetween = styled.div(
   {
     display: "flex",
     alignItems: "center",
-    alignContent: "space-between",
+    justifyContent: "space-between",
   },
   (props) => ({
     gap: props.gap,

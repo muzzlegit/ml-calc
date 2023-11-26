@@ -36,15 +36,3 @@ export const Level = styled.div(
     color: props.theme.colors.textAcent,
   })
 );
-
-export const Property = styled.div(
-  {
-    display: "flex",
-    alignItems: "center",
-    gap: "8px",
-    fontSize: "12px",
-  },
-  (props) => ({
-    color: props.theme.colors.text,
-  })
-);

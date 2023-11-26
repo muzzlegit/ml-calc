@@ -161,6 +161,8 @@ export function getRaceName(race) {
       return "Рыцари";
     case "elf":
       return "Светлые Эльфы";
+    case "monsters":
+      return "Монстры";
     case "Нежить":
       return "undead";
     case "Демоны":
@@ -171,6 +173,8 @@ export function getRaceName(race) {
       return "human";
     case "Светлые Эльфы":
       return "elf";
+    case "Монстры":
+      return "monsters";
     default:
       return "Расса не выбрана";
   }
