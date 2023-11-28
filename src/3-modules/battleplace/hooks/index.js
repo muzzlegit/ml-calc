@@ -3,6 +3,7 @@ import useBattlefield from "./useBattlefield";
 import useBattleplace from "./useBattleplace";
 import useBattleplacePictures from "./useBattleplacePictures";
 import useBuilds from "./useBuilds";
+import useDefenseBuildingsList from "./useDefenseBuildsList";
 import useDefenseBuildsSelector from "./useDefenseBuildsSelector";
 import useGarrisonUnit from "./useGarrisonUnit";
 
@@ -14,4 +15,5 @@ export {
   useGarrisonUnit,
   useDefenseBuildsSelector,
   useBuilds,
+  useDefenseBuildingsList,
 };

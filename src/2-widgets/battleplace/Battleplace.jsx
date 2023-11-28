@@ -2,9 +2,6 @@ import {
   BattlefieldsSelector,
   BattleplacePicture,
   BattleplaceSelector,
-  DefenseBuildsSelector,
-  Garrison,
-  GarrisonAttackIndexSelector,
 } from "modules/battleplace";
 import { FlexBetween, FlexCenter, FlexCol } from "utils/styles/flexKit.styled";
 import { Container, Wrap } from "./Battleplace.styled";
@@ -20,16 +17,17 @@ const Battleplace = () => {
           <BattleplacePicture />
           <FlexCol gap="8px">
             <Wrap>
-              <DefenseBuildsSelector />
+              {/* <DefenseBuildsSelector /> */}
+              {/* <DefenseBuildingsList /> */}
             </Wrap>
             <FlexCenter gap="8px">
               <BattlefieldsSelector />
               <BattleplaceSelector />
-              <GarrisonAttackIndexSelector />
+              {/* <GarrisonAttackIndexSelector /> */}
             </FlexCenter>
           </FlexCol>
         </FlexBetween>
-        <Garrison />
+        {/* <Garrison /> */}
       </FlexCol>
     </Container>
   );

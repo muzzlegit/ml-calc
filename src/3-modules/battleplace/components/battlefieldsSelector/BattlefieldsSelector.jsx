@@ -1,15 +1,14 @@
-import { useBattlefield } from "modules/battleplace/hooks";
-import { BATTLEFIELDS } from "modules/battleplace/utils/battleplace.constants";
 import { Selector } from "modules/UI";
+import useBattlefieldsSelector from "./useBattlefieldsSelector.hook";
 
 const BattlefieldsSelector = () => {
-  const { battlefield, handleBattlefield } = useBattlefield();
-  console.log("field");
+  const { field, options, handleBattlefield } = useBattlefieldsSelector();
+
   return (
     <Selector
       title="Поле битвы:"
-      value={BATTLEFIELDS[battlefield]}
-      options={BATTLEFIELDS}
+      value={field}
+      options={options}
       handleSelector={handleBattlefield}
     />
   );

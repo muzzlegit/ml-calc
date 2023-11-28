@@ -13,7 +13,6 @@ const UnitCard = ({ unitName = "porter" }) => {
   const { unit, race, handleUnitLevel, handleUnitAmount } = useUnit(unitName);
   const { name, level, amount } = unit;
 
-  console.log("unitCard", unitName);
   return (
     <Container isActive={amount > 0}>
       <ImageWrap onClick={handleUnitLevel}>

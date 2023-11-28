@@ -6,6 +6,7 @@ import GarrisonUnitCard from "../garrisonUnitCard/garrisonUnitCard";
 const Garrison = () => {
   const battleplace = useBattleplaceStore((state) => state.battleplace);
   const isActive = battleplace === "castle";
+
   return (
     <FlexCenter
       gap="6px"

@@ -1,4 +1,6 @@
-import { useBattleplacePictures } from "modules/battleplace/hooks";
+import { ImageBox } from "modules/UI";
+import useBattleplacePicture from "./useBattleplacePicture.hook";
+//--styles
 import {
   Container,
   FieldPicture,
@@ -6,22 +8,18 @@ import {
 } from "./BattleplacePicture.styled";
 
 const BattleplacePicture = () => {
-  const { field, place, isPlace } = useBattleplacePictures();
+  const { isPlace, graphics } = useBattleplacePicture();
+  const { fieldImg, placeImg } = graphics;
 
-  console.log("picture");
   return (
     <Container>
-      <FieldPicture
-        width={field.width}
-        height={field.height}
-        background={field.image}
-      />
+      <FieldPicture>
+        <ImageBox picture={fieldImg} />
+      </FieldPicture>
       {isPlace ? (
-        <PlacePicture
-          width={place.width}
-          height={place.height}
-          background={place.image}
-        />
+        <PlacePicture>
+          <ImageBox picture={placeImg} />
+        </PlacePicture>
       ) : null}
     </Container>
   );

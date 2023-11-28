@@ -7,13 +7,13 @@ const useBattleplaceStore = create(
   devtools(
     immer((set) => ({
       battleplace: "town",
-      battlefield: "deadLand",
+      battlefield: "hollyLand",
       garrison: getInitialUnitsData("monsters", 3),
       attackIndex: "max",
-      race: "monsters",
+      // race: "human",
       towers: [],
       fortifications: [],
-      gate: [],
+      gate: null,
       methods: {
         setBattlefield: (field) => {
           set((state) => {
@@ -46,7 +46,17 @@ const useBattleplaceStore = create(
               state.towers = [];
               return;
             }
-            state.towers = state.towers.filter((tower) => tower.id === id);
+            state.towers = state.towers.filter((tower) => tower.id !== id);
+          });
+        },
+        setGate: (gate) => {
+          set((state) => {
+            state.gate = gate;
+          });
+        },
+        deleteGate: () => {
+          set((state) => {
+            state.gate = null;
           });
         },
       },

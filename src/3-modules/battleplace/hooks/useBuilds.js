@@ -1,22 +1,73 @@
+import { nanoid } from "nanoid";
+import { useEffect } from "react";
 import useBattleplaceStore from "../store/battleplaceStore";
+import { getBuildData } from "../utils/battleplace.helpers";
 
 const useBuilds = () => {
-  const { addTower, deleteTower } = useBattleplaceStore(
+  const { addTower, deleteTower, setGate, deleteGate } = useBattleplaceStore(
     (state) => state.methods
   );
+  const attackIndex = useBattleplaceStore((state) => state.attackIndex);
+  const battleplace = useBattleplaceStore((state) => state.battleplace);
+  const towers = useBattleplaceStore((state) => state.towers);
+  const fortifications = useBattleplaceStore((state) => state.fortifications);
+  const gate = useBattleplaceStore((state) => state.gate);
 
-  const handleAddTower = (tower) => {
-    addTower(tower);
+  const handleAddBuild = (build, buildLevel, isCastle) => {
+    const buildData = getBuildData(build, buildLevel, isCastle);
+
+    if (build === "tower") {
+      const { level, attackMax, attackMin, damageRate } = buildData;
+      const normalizedTower = {
+        id: nanoid(),
+        type: "tower",
+        level,
+        attack: attackIndex === "max" ? attackMax : attackMin,
+        damageRate,
+      };
+      addTower(normalizedTower);
+    }
+    if (build === "magicTower")
+      addTower({ id: nanoid(), type: "magicTower", ...buildData });
+
+    if (build === "gate") {
+      setGate({ id: nanoid(), type: "gate", ...buildData });
+    }
   };
-  const handleDeleteTower = (id) => {
-    deleteTower(id);
+  const handleDeleteBuild = (build, id) => {
+    if (build === "tower" || build === "magicTower") deleteTower(id);
+    if (build === "gate") deleteGate();
   };
 
-  const handleDeleteAllTowers = () => {
+  const handleDeleteAllBuilds = () => {
     deleteTower(undefined, true);
+    deleteGate();
   };
 
-  return { handleAddTower, handleDeleteTower, handleDeleteAllTowers };
+  useEffect(() => {
+    if (battleplace !== "castle" && gate) handleDeleteBuild("gate");
+  }, [battleplace, gate, handleDeleteBuild]);
+
+  useEffect(() => {
+    towers.forEach((tower) => {
+      const buildData = getBuildData(tower.type, tower.level, isCastle);
+      if (tower.type === "tower") {
+        const { level, attackMax, attackMin, damageRate } = buildData;
+        const normalizedTower = {
+          id: nanoid(),
+          type: "tower",
+          level,
+          attack: attackIndex === "max" ? attackMax : attackMin,
+          damageRate,
+        };
+        addTower(normalizedTower);
+      }
+      if (build === "magicTower")
+        addTower({ id: nanoid(), type: "magicTower", ...buildData });
+    });
+  }, [battleplace, towers]);
+
+  return { handleAddBuild, handleDeleteBuild, handleDeleteAllBuilds };
 };
 
 export default useBuilds;

@@ -1,13 +1,14 @@
+import useBattleplaceStore from "modules/battleplace/store/battleplaceStore";
+import { BATTLEFIELDS } from "modules/battleplace/utils/battleplace.constants";
 import { useCallback } from "react";
-import useBattleplaceStore from "../store/battleplaceStore";
-import { BATTLEFIELDS } from "../utils/battleplace.constants";
 
-const useBattlefield = () => {
+const useBattlefieldsSelector = () => {
   const battlefield = useBattleplaceStore((state) => state.battlefield);
   const setBattlefield = useBattleplaceStore(
     (state) => state.methods.setBattlefield
   );
-  const value = BATTLEFIELDS[battlefield];
+
+  const field = BATTLEFIELDS[battlefield];
   const options = BATTLEFIELDS;
 
   const handleBattlefield = useCallback(
@@ -17,7 +18,7 @@ const useBattlefield = () => {
     [setBattlefield]
   );
 
-  return { battlefield, handleBattlefield, value, options };
+  return { battlefield, field, options, handleBattlefield };
 };
 
-export default useBattlefield;
+export default useBattlefieldsSelector;

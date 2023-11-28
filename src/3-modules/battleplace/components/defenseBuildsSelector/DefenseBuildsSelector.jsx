@@ -1,25 +1,32 @@
-import { useBuilds, useDefenseBuildsSelector } from "modules/battleplace/hooks";
+import {
+  useBattleplacePictures,
+  useBuilds,
+  useDefenseBuildsSelector,
+} from "modules/battleplace/hooks";
 import { ImageBox } from "modules/UI";
 import { FlexCenter } from "utils/styles/flexKit.styled";
 import { Build, Input, Level } from "./DefenseBuildsSelector.styled";
 
 const DefenseBuildsSelector = () => {
   const {
-    towerImg,
-    fortificationImg,
-    magicTowerImg,
-    gateImg,
-    perfectIcon,
     isCastle,
     isTowersLimit,
     activeLevel,
-    handleOnLevelClick,
     activeBuild,
+    handleOnLevelClick,
     handleOnBuildClick,
   } = useDefenseBuildsSelector();
-  const { handleAddTower, handleDeleteTower, handleDeleteAllTowers } =
-    useBuilds();
-  console.log(activeLevel);
+
+  const {
+    towerIcon,
+    fortificationIcon,
+    magicTowerIcon,
+    gateIcon,
+    perfectIcon,
+  } = useBattleplacePictures();
+
+  const { handleAddBuild, handleDeleteAllBuilds } = useBuilds();
+
   return (
     <div>
       <FlexCenter gap="8px">
@@ -31,11 +38,7 @@ const DefenseBuildsSelector = () => {
             handleOnBuildClick("tower");
           }}
         >
-          <ImageBox
-            width={towerImg.width}
-            height={towerImg.height}
-            image={towerImg.image}
-          />
+          <ImageBox picture={towerIcon} />
         </Build>
         <Build
           id="magicTower"
@@ -45,11 +48,7 @@ const DefenseBuildsSelector = () => {
             handleOnBuildClick("magicTower");
           }}
         >
-          <ImageBox
-            width={magicTowerImg.width}
-            height={magicTowerImg.height}
-            image={magicTowerImg.image}
-          />
+          <ImageBox picture={magicTowerIcon} />
         </Build>
         <Build
           id="fortification"
@@ -59,11 +58,7 @@ const DefenseBuildsSelector = () => {
             handleOnBuildClick("fortification");
           }}
         >
-          <ImageBox
-            width={fortificationImg.width}
-            height={fortificationImg.height}
-            image={fortificationImg.image}
-          />
+          <ImageBox picture={fortificationIcon} />
           <Input autoFocus isActive={activeBuild === "fortification"} />
         </Build>
         {isCastle ? (
@@ -75,11 +70,7 @@ const DefenseBuildsSelector = () => {
               handleOnBuildClick("gate");
             }}
           >
-            <ImageBox
-              width={gateImg.width}
-              height={gateImg.height}
-              image={gateImg.image}
-            />
+            <ImageBox picture={gateIcon} />
           </Build>
         ) : null}
       </FlexCenter>
@@ -97,9 +88,7 @@ const DefenseBuildsSelector = () => {
               >
                 {level === 8 ? (
                   <ImageBox
-                    width={perfectIcon.width}
-                    height={perfectIcon.height}
-                    image={perfectIcon.image}
+                    picture={perfectIcon}
                     addStyles={{
                       filter: activeLevel === 8 ? "none" : "grayscale(80%)",
                     }}
@@ -114,12 +103,11 @@ const DefenseBuildsSelector = () => {
       </FlexCenter>
       <button
         disabled={isTowersLimit}
-        onClick={() => handleAddTower({ id: activeLevel })}
+        onClick={() => handleAddBuild(activeBuild, activeLevel, isCastle)}
       >
         add
       </button>
-      <button onClick={() => handleDeleteTower(activeLevel)}>delete</button>
-      <button onClick={handleDeleteAllTowers}>deleteAll</button>
+      <button onClick={handleDeleteAllBuilds}>deleteAll</button>
     </div>
   );
 };

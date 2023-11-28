@@ -4,7 +4,6 @@ import { Selector } from "modules/UI";
 
 const GarrisonAttackIndexSelector = () => {
   const { attackIndex, handleAttackIndex } = useAttackIndex();
-  console.log("first");
 
   return (
     <Selector

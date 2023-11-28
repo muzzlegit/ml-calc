@@ -1,17 +1,17 @@
-import { useBattleplace } from "modules/battleplace/hooks";
-import { BATTLEPLACES } from "modules/battleplace/utils/battleplace.constants";
 import { Selector } from "modules/UI";
 import { Container } from "./BattleplaceSelector.styled";
+import useBattleplaceSelector from "./useBattleplaceSelector.hook";
 
 const BattleplaceSelector = () => {
-  const { battleplace, isActive, handleBattleplace } = useBattleplace();
-  console.log("place");
+  const { place, options, isActive, handleBattleplace } =
+    useBattleplaceSelector();
+
   return (
     <Container isActive={isActive}>
       <Selector
         title="Место битвы:"
-        value={BATTLEPLACES[battleplace]}
-        options={BATTLEPLACES}
+        value={place}
+        options={options}
         handleSelector={handleBattleplace}
         isActive={isActive}
       />

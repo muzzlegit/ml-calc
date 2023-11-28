@@ -16,9 +16,12 @@ export const Wrap = styled.div(
   {
     padding: "27px 8px 8px 8px",
     width: "100%",
-    borderRadius: "8px",
-
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: "16px",
     boxSizing: "border-box",
+    borderRadius: "8px",
   },
   (props) => ({
     backgroundColor: props.theme.colors.secondary,

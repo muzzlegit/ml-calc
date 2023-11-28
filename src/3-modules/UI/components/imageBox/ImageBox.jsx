@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
 import { Container } from "./ImageBox.styled";
 
-const ImageBox = ({ width, height, image, addStyles }) => {
+const ImageBox = ({ picture, addStyles }) => {
+  const { image, width, height } = picture;
   return (
     <Container
       width={width}
@@ -15,7 +16,9 @@ const ImageBox = ({ width, height, image, addStyles }) => {
 export default ImageBox;
 
 ImageBox.propTypes = {
-  width: PropTypes.string.isRequired,
-  height: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  picture: PropTypes.shape({
+    width: PropTypes.string.isRequired,
+    height: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+  }).isRequired,
 };
