@@ -3,8 +3,6 @@ import styled from "@emotion/styled";
 export const BuildImgBox = styled.div(
   {
     position: "relative",
-    width: "34px",
-    height: "41px",
     borderRadius: "4px",
     backgroundColor: "grey",
     "&:hover": {
@@ -23,7 +21,7 @@ export const LevelLabel = styled.div(
     top: "0",
     right: "0",
     transform: "translate(0, -50%)",
-    zIndex: 13,
+    zIndex: 5,
     width: "13px",
     height: "13px",
     display: "flex",
@@ -32,11 +30,10 @@ export const LevelLabel = styled.div(
     borderRadius: "50%",
     fontSize: "10px",
     color: "white",
-    backgroundColor: "#212425",
   },
   (props) => ({
+    backgroundColor: props.border === 8 ? "none" : "#212425",
     border: props.border === 8 ? null : "1px solid #FFFFFF",
-    background: props.background,
   })
 );
 export const Quantity = styled.span(

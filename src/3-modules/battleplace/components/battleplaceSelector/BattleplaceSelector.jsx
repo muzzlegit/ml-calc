@@ -5,7 +5,7 @@ import useBattleplaceSelector from "./useBattleplaceSelector.hook";
 const BattleplaceSelector = () => {
   const { place, options, isActive, handleBattleplace } =
     useBattleplaceSelector();
-
+  console.log("selector");
   return (
     <Container isActive={isActive}>
       <Selector

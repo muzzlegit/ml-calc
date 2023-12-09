@@ -1,11 +1,9 @@
-import useBattleplaceStore from "modules/battleplace/store/battleplaceStore";
-import { UNITS } from "modules/units/utils/units.constants";
 import { FlexCenter } from "utils/styles/flexKit.styled";
-import GarrisonUnitCard from "../garrisonUnitCard/garrisonUnitCard";
+import GarrisonUnitCard from "./particles/garrisonUnitCard/garrisonUnitCard";
+import useGarrison from "./useGarrison.hook";
 
 const Garrison = () => {
-  const battleplace = useBattleplaceStore((state) => state.battleplace);
-  const isActive = battleplace === "castle";
+  const { unitsList, isActive } = useGarrison();
 
   return (
     <FlexCenter
@@ -16,7 +14,7 @@ const Garrison = () => {
         opacity: isActive ? 1 : 0.3,
       }}
     >
-      {UNITS.map((unitName) => {
+      {unitsList.map((unitName) => {
         return (
           <div key={unitName}>
             <GarrisonUnitCard unitName={unitName} />

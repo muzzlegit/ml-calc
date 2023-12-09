@@ -3,7 +3,7 @@
     "level1": {
       "level": 1,
       "attackMax": 700,
-      "attackMin": 700,
+      "attackMin": 600,
       "damageRate": 1
     },
     "level2": {
@@ -93,56 +93,48 @@
   },
   "fortification": {
     "level1": {
-      "quantity": 1,
       "level": 1,
       "attack": 30,
       "defense": 2,
       "damageRate": 1
     },
     "level2": {
-      "quantity": 1,
       "level": 2,
       "attack": 60,
       "defense": 3,
       "damageRate": 1
     },
     "level3": {
-      "quantity": 1,
       "level": 3,
       "attack": 90,
       "defense": 4,
       "damageRate": 1
     },
     "level4": {
-      "quantity": 1,
       "level": 4,
       "attack": 120,
       "defense": 5,
       "damageRate": 1
     },
     "level5": {
-      "quantity": 1,
       "level": 5,
       "attack": 150,
       "defense": 6,
       "damageRate": 1
     },
     "level6": {
-      "quantity": 1,
       "level": 6,
       "attack": 180,
       "defense": 7,
       "damageRate": 1
     },
     "level7": {
-      "quantity": 1,
       "level": 7,
       "attack": 210,
       "defense": 8,
       "damageRate": 1
     },
     "level8": {
-      "quantity": 1,
       "level": 8,
       "attack": 300,
       "defense": 10,
@@ -232,49 +224,42 @@
   },
   "monsters_fortification": {
     "level1": {
-      "quantity": 1,
       "level": 1,
       "attack": 300,
       "defense": 3,
       "damageRate": 1
     },
     "level2": {
-      "quantity": 1,
       "level": 2,
       "attack": 900,
       "defense": 4,
       "damageRate": 1
     },
     "level3": {
-      "quantity": 1,
       "level": 3,
       "attack": 1200,
       "defense": 5,
       "damageRate": 1
     },
     "level4": {
-      "quantity": 1,
       "level": 4,
       "attack": 1500,
       "defense": 6,
       "damageRate": 1
     },
     "level5": {
-      "quantity": 1,
       "level": 5,
       "attack": 1800,
       "defense": 7,
       "damageRate": 1
     },
     "level6": {
-      "quantity": 1,
       "level": 6,
       "attack": 2400,
       "defense": 11,
       "damageRate": 1
     },
     "level7": {
-      "quantity": 1,
       "level": 7,
       "attack": 3000,
       "defense": 15,

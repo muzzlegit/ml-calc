@@ -43,7 +43,19 @@ const useUnitsStore = create(
             state[player][unit] = { ...state[player][unit], level };
           });
         },
-
+        increaseUnitProperty: (player, unit, property, value) => {
+          console.log(player, unit, property, value);
+          set((state) => {
+            state[player][unit][property] =
+              state[player][unit][property] + value;
+          });
+        },
+        decreaseUnitProperty: (player, unit, property, value) => {
+          set((state) => {
+            state[player][unit][property] =
+              state[player][unit][property] - value;
+          });
+        },
         setRace: (player, race) => {
           set((state) => {
             state[player].race = race;

@@ -1,41 +1,37 @@
-import {
-  useBattleplacePictures,
-  useBuilds,
-  useDefenseBuildsSelector,
-} from "modules/battleplace/hooks";
 import { ImageBox } from "modules/UI";
 import { FlexCenter } from "utils/styles/flexKit.styled";
-import { Build, Input, Level } from "./DefenseBuildsSelector.styled";
+import { Build, Button, Input, Level } from "./BuildingsSelector.styled";
+import useBuildingsSelector from "./useBuildingsSelector.hook";
 
-const DefenseBuildsSelector = () => {
+const BuildingsSelector = () => {
   const {
+    activeLevel,
+    activeBuilding,
+    fortificationQuantity,
     isCastle,
     isTowersLimit,
-    activeLevel,
-    activeBuild,
+    graphics: {
+      towerIcon,
+      magicTowerIcon,
+      fortificationIcon,
+      gateIcon,
+      largePerfectIcon,
+    },
     handleOnLevelClick,
-    handleOnBuildClick,
-  } = useDefenseBuildsSelector();
-
-  const {
-    towerIcon,
-    fortificationIcon,
-    magicTowerIcon,
-    gateIcon,
-    perfectIcon,
-  } = useBattleplacePictures();
-
-  const { handleAddBuild, handleDeleteAllBuilds } = useBuilds();
-
+    handleOnBuildingClick,
+    handleFortificationQuantity,
+    handleAddBuilding,
+    handleDeleteAllBuildings,
+  } = useBuildingsSelector();
   return (
     <div>
       <FlexCenter gap="8px">
         <Build
           id="tower"
           title={`Башня ${activeLevel} уровня`}
-          isActive={activeBuild === "tower"}
+          isActive={activeBuilding === "tower"}
           onClick={() => {
-            handleOnBuildClick("tower");
+            handleOnBuildingClick("tower");
           }}
         >
           <ImageBox picture={towerIcon} />
@@ -43,9 +39,9 @@ const DefenseBuildsSelector = () => {
         <Build
           id="magicTower"
           title={`Магическая башня ${activeLevel} уровня`}
-          isActive={activeBuild === "magicTower"}
+          isActive={activeBuilding === "magicTower"}
           onClick={() => {
-            handleOnBuildClick("magicTower");
+            handleOnBuildingClick("magicTower");
           }}
         >
           <ImageBox picture={magicTowerIcon} />
@@ -53,28 +49,34 @@ const DefenseBuildsSelector = () => {
         <Build
           id="fortification"
           title={`Укрепления ${activeLevel} уровня`}
-          isActive={activeBuild === "fortification"}
+          isActive={activeBuilding === "fortification"}
           onClick={() => {
-            handleOnBuildClick("fortification");
+            handleOnBuildingClick("fortification");
           }}
         >
           <ImageBox picture={fortificationIcon} />
-          <Input autoFocus isActive={activeBuild === "fortification"} />
+          <Input
+            isActive={activeBuilding === "fortification"}
+            value={fortificationQuantity}
+            onChange={(e) => {
+              handleFortificationQuantity(e.currentTarget.value);
+            }}
+          />
         </Build>
         {isCastle ? (
           <Build
             id="gate"
             title={`Ворота ${activeLevel} уровня`}
-            isActive={activeBuild === "gate"}
+            isActive={activeBuilding === "gate"}
             onClick={() => {
-              handleOnBuildClick("gate");
+              handleOnBuildingClick("gate");
             }}
           >
             <ImageBox picture={gateIcon} />
           </Build>
         ) : null}
       </FlexCenter>
-      <FlexCenter gap="8px">
+      <FlexCenter gap="8px" additionStyles={{ marginTop: "4px" }}>
         {Array.from({ length: isCastle ? 7 : 8 }, (_, i) => i + 1).map(
           (level) => {
             return (
@@ -88,7 +90,7 @@ const DefenseBuildsSelector = () => {
               >
                 {level === 8 ? (
                   <ImageBox
-                    picture={perfectIcon}
+                    picture={largePerfectIcon}
                     addStyles={{
                       filter: activeLevel === 8 ? "none" : "grayscale(80%)",
                     }}
@@ -101,15 +103,22 @@ const DefenseBuildsSelector = () => {
           }
         )}
       </FlexCenter>
-      <button
-        disabled={isTowersLimit}
-        onClick={() => handleAddBuild(activeBuild, activeLevel, isCastle)}
-      >
-        add
-      </button>
-      <button onClick={handleDeleteAllBuilds}>deleteAll</button>
+      <FlexCenter gap="8px" additionStyles={{ marginTop: "4px" }}>
+        <Button
+          disabled={isTowersLimit}
+          variant="add"
+          onClick={() =>
+            handleAddBuilding(activeBuilding, activeLevel, isCastle)
+          }
+        >
+          Добавить
+        </Button>
+        <Button variant="delete" onClick={handleDeleteAllBuildings}>
+          Удалить все
+        </Button>
+      </FlexCenter>
     </div>
   );
 };
 
-export default DefenseBuildsSelector;
+export default BuildingsSelector;

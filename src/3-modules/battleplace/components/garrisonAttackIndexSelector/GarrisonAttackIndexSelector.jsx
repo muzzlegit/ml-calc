@@ -1,15 +1,15 @@
-import { useAttackIndex } from "modules/battleplace/hooks";
-import { ATTACK_INDEX } from "modules/battleplace/utils/battleplace.constants";
 import { Selector } from "modules/UI";
+import useGarrisonAttackIndexSelector from "./useGarrisonAttackIndexSelector.hook";
 
 const GarrisonAttackIndexSelector = () => {
-  const { attackIndex, handleAttackIndex } = useAttackIndex();
+  const { index, options, handleAttackIndex } =
+    useGarrisonAttackIndexSelector();
 
   return (
     <Selector
       title="Атака гарнизона:"
-      value={ATTACK_INDEX[attackIndex]}
-      options={ATTACK_INDEX}
+      value={index}
+      options={options}
       handleSelector={handleAttackIndex}
     />
   );

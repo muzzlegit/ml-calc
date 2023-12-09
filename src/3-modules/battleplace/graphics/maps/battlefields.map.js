@@ -48,7 +48,9 @@ const battlefieldsPositios = {
     monsters: { coordinate: "-525px -419px", width: "34px", height: "41px" },
   },
   gate: {
-    monsters: { coordinate: "-525px -461px", width: "34px", height: "41px" },
+    coordinate: "-525px -461px",
+    width: "34px",
+    height: "41px",
   },
   towerIcon: { coordinate: "-516px -1px", width: "29px", height: "39px" },
   magicTowerIcon: { coordinate: "-490px -1px", width: "24px", height: "39px" },

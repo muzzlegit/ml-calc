@@ -5,9 +5,7 @@ import { useCallback } from "react";
 const useBattleplaceSelector = () => {
   const battlefield = useBattleplaceStore((state) => state.battlefield);
   const battleplace = useBattleplaceStore((state) => state.battleplace);
-  const setBattleplace = useBattleplaceStore(
-    (state) => state.methods.setBattleplace
-  );
+  const { setBattleplace } = useBattleplaceStore((state) => state.methods);
 
   const place = BATTLEPLACES[battleplace];
   const options = BATTLEPLACES;
@@ -17,8 +15,8 @@ const useBattleplaceSelector = () => {
   if (battlefield === "mine") setBattleplace("town");
 
   const handleBattleplace = useCallback(
-    (place) => {
-      setBattleplace(place);
+    (selectedPlace) => {
+      setBattleplace(selectedPlace);
     },
     [setBattleplace]
   );

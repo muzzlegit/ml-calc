@@ -17,3 +17,11 @@ export const BATTLEPLACES = {
 };
 
 export const ATTACK_INDEX = { min: "min", max: "max" };
+
+export const UNIT_BONUS_TERRAINS = [
+  "mountain",
+  "desert",
+  "forest",
+  "steppe",
+  "mine",
+];

@@ -67,3 +67,26 @@ export const RACE = {
 };
 
 export const ATTACK_INDEX = { min: "min", max: "max" };
+
+export const UNITS_LANDS = {
+  swordsman: {
+    homeLand: "desert",
+    alienLand: "mountain",
+  },
+  cavalier: {
+    homeLand: "steppe",
+    alienLand: "forest",
+  },
+  flying: {
+    homeLand: "mountain",
+    alienLand: "desert",
+  },
+  archer: {
+    homeLand: "forest",
+    alienLand: "steppe",
+  },
+  mercenary: {
+    homeLand: null,
+    alienLand: "mine",
+  },
+};

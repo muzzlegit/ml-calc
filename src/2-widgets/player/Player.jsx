@@ -2,7 +2,8 @@ import { ApostateChecker } from "modules/players";
 import { AttackIndexSelector, RaceSelector, Squad } from "modules/units";
 import PlayerContext from "utils/context/PlayerContext";
 import { FlexCenter } from "utils/styles/flexKit.styled";
-import { players } from "utils/types/types";
+import { playerTypes } from "utils/types/types";
+import WatchDog from "utils/watchDog/WatchDog";
 import { Container } from "./Player.styled";
 
 const Player = ({ playerName }) => {
@@ -17,6 +18,7 @@ const Player = ({ playerName }) => {
             <ApostateChecker />
           </FlexCenter>
           <Squad />
+          <WatchDog />
         </Container>
       </PlayerContext.Provider>
     </>
@@ -26,5 +28,5 @@ const Player = ({ playerName }) => {
 export default Player;
 
 Player.propTypes = {
-  playerName: players,
+  playerName: playerTypes,
 };

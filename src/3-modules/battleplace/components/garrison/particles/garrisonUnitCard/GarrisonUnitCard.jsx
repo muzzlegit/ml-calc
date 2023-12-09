@@ -1,4 +1,3 @@
-import { useGarrisonUnit } from "modules/battleplace/hooks";
 import {
   UnitAmountField,
   UnitIcon,
@@ -6,6 +5,8 @@ import {
   UnitProperties,
 } from "modules/units";
 import { useState } from "react";
+import useGarrisonUnitCard from "./useGarrisonUnitCard.hook";
+//--styles
 import {
   ClickWrap,
   Container,
@@ -16,7 +17,7 @@ import {
 const GarrisonUnitCard = ({ unitName = "porter" }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const { unit, race, isActive, handleGarrisonUnitAmount } =
-    useGarrisonUnit(unitName);
+    useGarrisonUnitCard(unitName);
   const { level, name, amount } = unit;
   return (
     <Container isActive={isActive}>

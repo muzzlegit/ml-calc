@@ -14,12 +14,11 @@ export const Container = styled.div(
 
 export const Wrap = styled.div(
   {
-    padding: "27px 8px 8px 8px",
+    padding: "10px 4px 8px 4px",
     width: "100%",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    gap: "16px",
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr 2fr",
+    gap: "8px",
     boxSizing: "border-box",
     borderRadius: "8px",
   },
