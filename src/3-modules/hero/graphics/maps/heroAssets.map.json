@@ -1,0 +1,152 @@
+{
+  "attacker": { "coordinate": "-84px -1px", "width": "82px", "height": "99px" },
+  "attackerAlly": {
+    "coordinate": "-1px -1px",
+    "width": "82px",
+    "height": "99px"
+  },
+  "defender": {
+    "coordinate": "-84px -101px",
+    "width": "82px",
+    "height": "99px"
+  },
+  "defenderAlly": {
+    "coordinate": "-1px -101px",
+    "width": "82px",
+    "height": "99px"
+  },
+  "monster": { "coordinate": "-1px -201px", "width": "82px", "height": "99px" },
+  "monsterAlly": { "coordinate": "-1px -201px", "width": "82px", "height": "" },
+  "heroFrame": {
+    "coordinate": "-1px -301px",
+    "width": "96px",
+    "height": "117px"
+  },
+  "artefactFrame": { "coordinate": "-98px -301px", "width": "", "height": "" },
+  "heroSkillFrame": {
+    "coordinate": "-167px -301px",
+    "width": "",
+    "height": ""
+  },
+  "skills": {
+    "Подавление здоровья войск": {
+      "coordinate": "-333px -313px",
+      "width": "",
+      "height": ""
+    },
+    "Подавление защиты": {
+      "coordinate": "-333px -261px",
+      "width": "",
+      "height": ""
+    },
+    "Защита от укреплений": {
+      "coordinate": "-333px -105px",
+      "width": "",
+      "height": ""
+    },
+    "Защита": { "coordinate": "-333px -157px", "width": "", "height": "" },
+    "Охрана союзника": {
+      "coordinate": "-333px -209px",
+      "width": "",
+      "height": ""
+    },
+    "Снижение опыта противнику": {
+      "coordinate": "-447px -105px",
+      "width": "",
+      "height": ""
+    },
+    "Сила войск": { "coordinate": "-333px -1px", "width": "", "height": "" },
+    "Сила союзнику": {
+      "coordinate": "-333px -53px",
+      "width": "",
+      "height": ""
+    },
+    "Ярость магов": {
+      "coordinate": "-333px  -365px",
+      "width": "",
+      "height": ""
+    },
+    "Выносливость армии": {
+      "coordinate": "-390px -1px",
+      "width": "",
+      "height": ""
+    },
+    "Выносливость союзников": {
+      "coordinate": "-390px -53px",
+      "width": "",
+      "height": ""
+    },
+    "Улучшение целителей": {
+      "coordinate": "-390px -105px",
+      "width": "",
+      "height": ""
+    },
+    "Защита магов": {
+      "coordinate": "-447px -157px",
+      "width": "",
+      "height": ""
+    },
+    "Слабость магов противника": {
+      "coordinate": "-390px -261px",
+      "width": "",
+      "height": ""
+    },
+    "Подавление целителей": {
+      "coordinate": "-390px -209px",
+      "width": "",
+      "height": ""
+    },
+    "Подавление магических башен": {
+      "coordinate": "-390px -157px",
+      "width": "",
+      "height": ""
+    },
+    "Мастер башен": {
+      "coordinate": "-390px -365px",
+      "width": "",
+      "height": ""
+    },
+    "Переносное укрепление": {
+      "coordinate": "-390px -313px",
+      "width": "",
+      "height": ""
+    },
+    "Тактика укреплений": {
+      "coordinate": "-447px -1px",
+      "width": "",
+      "height": ""
+    },
+    "Мастерство обороны": {
+      "coordinate": "-447px -53px",
+      "width": "",
+      "height": ""
+    }
+  },
+  "backgrounds": {
+    "undead": {
+      "coordinate": "-167px -1px",
+      "width": "82px",
+      "height": "99px"
+    },
+    "demon": {
+      "coordinate": "-167px -101px",
+      "width": "82px",
+      "height": "99px"
+    },
+    "drow": {
+      "coordinate": "-167px -201px",
+      "width": "82px",
+      "height": "99px"
+    },
+    "human": { "coordinate": "-250px -1px", "width": "82px", "height": "99px" },
+    "elf": { "coordinate": "-250px -101px", "width": "82px", "height": "99px" },
+    "monsters": {
+      "coordinate": "-250px -201px",
+      "width": "82px",
+      "height": "99px"
+    }
+  },
+  "addIcon": { "coordinate": "-250px -339px", "width": "", "height": "" },
+  "deleteIcon": { "coordinate": "-250px -301px", "width": "", "height": "" },
+  "chengeIcon": { "coordinate": "-250px -320px", "width": "", "height": "" }
+}

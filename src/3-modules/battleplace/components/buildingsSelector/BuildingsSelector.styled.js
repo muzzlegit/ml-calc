@@ -56,10 +56,10 @@ export const Button = styled.button(
     border: "none",
     borderRadius: "4px",
     transition:
-      "background-color 400ms ease-in-out, opacity  500ms ease-in-out",
+      "background-color 300ms ease-in-out, opacity  350ms ease-in-out",
   },
   (props) => ({
-    ":focus, :hover": {
+    ":hover": {
       cursor: "pointer",
       backgroundColor:
         props.variant === "add"

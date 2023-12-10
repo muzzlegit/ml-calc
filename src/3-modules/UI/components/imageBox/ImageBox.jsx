@@ -9,7 +9,7 @@ const ImageBox = ({ picture, addStyles }) => {
       height={height}
       background={image}
       addStyles={addStyles}
-    />
+    ></Container>
   );
 };
 
