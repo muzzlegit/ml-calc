@@ -13,6 +13,7 @@ const BattleplaceSelector = () => {
         value={place}
         options={options}
         handleSelector={handleBattleplace}
+        width="140px"
         isActive={isActive}
       />
     </Container>

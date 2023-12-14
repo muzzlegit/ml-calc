@@ -57,26 +57,74 @@ export function getAllyes(player) {
   }
 }
 
-export function getBuffPlayers(target, player) {
+export const getBuffPlayers = (player, target) => {
   switch (target) {
     case "player":
       return [player];
+    case "ally":
+      switch (player) {
+        case "mainAttacker":
+          return ["attackerAlly", "attackerSecondAlly"];
+        case "attackerAlly":
+          return ["mainAttacker", "attackerSecondAlly"];
+        case "attackerSecondAlly":
+          return ["attackerAlly", "mainAttacker"];
+        case "mainDefender":
+          return ["firstDefenderAlly", "secondDefenderAlly"];
+        case "firstDefenderAlly":
+          return ["mainDefender", "secondDefenderAlly"];
+        case "secondDefenderAlly":
+          return ["firstDefenderAlly", "mainDefender"];
+        default:
+          return [];
+      }
+    case "player_ally":
+      switch (player) {
+        case "mainAttacker":
+          return ["mainAttacker", "attackerAlly", "attackerSecondAlly"];
+        case "attackerAlly":
+          return ["attackerAlly", "mainAttacker", "attackerSecondAlly"];
+        case "attackerSecondAlly":
+          return ["attackerSecondAlly", "attackerAlly", "mainAttacker"];
+        case "mainDefender":
+          return ["mainDefender", "firstDefenderAlly", "secondDefenderAlly"];
+        case "firstDefenderAlly":
+          return ["firstDefenderAlly", "mainDefender", "secondDefenderAlly"];
+        case "secondDefenderAlly":
+          return ["secondDefenderAlly", "firstDefenderAlly", "mainDefender"];
+        default:
+          return [];
+      }
+    case "enemy":
+      switch (player) {
+        case "mainAttacker":
+          return ["mainDefender", "firstDefenderAlly", "secondDefenderAlly"];
+        case "attackerAlly":
+          return ["mainDefender", "firstDefenderAlly", "secondDefenderAlly"];
+        case "attackerSecondAlly":
+          return ["mainDefender", "firstDefenderAlly", "secondDefenderAlly"];
+        case "mainDefender":
+          return ["mainAttacker", "attackerAlly", "attackerSecondAlly"];
+        case "firstDefenderAlly":
+          return ["secondDefenderAlly", "firstDefenderAlly", "mainDefender"];
+        case "secondDefenderAlly":
+          return ["secondDefenderAlly", "firstDefenderAlly", "mainDefender"];
+        default:
+          return [];
+      }
     case "all":
       return [
         "mainAttacker",
+        "mainDefender",
         "attackerAlly",
         "attackerSecondAlly",
-        "mainDefender",
         "firstDefenderAlly",
         "secondDefenderAlly",
-        "garrison",
       ];
-    case "ally":
-      return getAllyes(player);
     default:
-      break;
+      return [];
   }
-}
+};
 
 export const isAttacker = (player) => {
   return (

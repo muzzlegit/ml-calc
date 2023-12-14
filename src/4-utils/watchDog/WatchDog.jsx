@@ -7,7 +7,7 @@ import {
 } from "modules/battleplace/utils/buffs";
 import { usePlayerStore } from "modules/players";
 import useUnitsStore from "modules/units/store/unitsStore";
-import { UNITS, UNITS_LANDS } from "modules/units/utils/units.constants";
+import { UNITS_LANDS } from "modules/units/utils/units.constants";
 import { useEffect } from "react";
 import usePlayerContext from "utils/context/usePlayerContext.hook";
 import {
@@ -40,23 +40,6 @@ const WatchDog = () => {
   const { increaseUnitProperty, decreaseUnitProperty } = useUnitsStore(
     (state) => state.methods
   );
-
-  const handleFortificationDefense = (key, quantity, defense) => {
-    switch (key) {
-      case "add":
-        UNITS.forEach((unit) =>
-          increaseUnitProperty(player, unit, "defense", quantity * defense)
-        );
-        break;
-      case "delete":
-        UNITS.forEach((unit) =>
-          decreaseUnitProperty(player, unit, "defense", quantity * defense)
-        );
-        break;
-      default:
-        break;
-    }
-  };
 
   //--- homeland effect
   useEffect(() => {

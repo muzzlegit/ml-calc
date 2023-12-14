@@ -20,7 +20,35 @@ const useUnitsStore = create(
         fraction: getUnitsFraction(mainAttackerRace),
         attackIndex: "max",
       },
+      attackerAlly: {
+        ...getInitialUnitsData(mainAttackerRace, 4),
+        race: mainAttackerRace,
+        homeLand: getUnitsHomeland(mainAttackerRace),
+        fraction: getUnitsFraction(mainAttackerRace),
+        attackIndex: "max",
+      },
+      attackerSecondAlly: {
+        ...getInitialUnitsData(mainAttackerRace, 4),
+        race: mainAttackerRace,
+        homeLand: getUnitsHomeland(mainAttackerRace),
+        fraction: getUnitsFraction(mainAttackerRace),
+        attackIndex: "max",
+      },
       mainDefender: {
+        ...getInitialUnitsData(mainDefenderRace, 4),
+        race: mainDefenderRace,
+        homeLand: getUnitsHomeland(mainDefenderRace),
+        fraction: getUnitsFraction(mainDefenderRace),
+        attackIndex: "max",
+      },
+      firstDefenderAlly: {
+        ...getInitialUnitsData(mainDefenderRace, 4),
+        race: mainDefenderRace,
+        homeLand: getUnitsHomeland(mainDefenderRace),
+        fraction: getUnitsFraction(mainDefenderRace),
+        attackIndex: "max",
+      },
+      secondDefenderAlly: {
         ...getInitialUnitsData(mainDefenderRace, 4),
         race: mainDefenderRace,
         homeLand: getUnitsHomeland(mainDefenderRace),
@@ -44,7 +72,6 @@ const useUnitsStore = create(
           });
         },
         increaseUnitProperty: (player, unit, property, value) => {
-          console.log(player, unit, property, value);
           set((state) => {
             state[player][unit][property] =
               state[player][unit][property] + value;

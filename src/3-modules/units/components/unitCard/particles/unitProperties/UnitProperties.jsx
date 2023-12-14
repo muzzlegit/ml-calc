@@ -156,7 +156,7 @@ const UnitProperties = ({ unit }) => {
               title="Эффекты воскрешения"
               color={resurrectionRate > 0 ? "green" : "red"}
             >
-              {resurrectionRate > 0 ? "+" : null + resurrectionRate * 100}%
+              {(resurrectionRate > 0 ? "+" : null) + resurrectionRate * 100}%
             </PropertyRate>
           ) : null}
         </Flex>

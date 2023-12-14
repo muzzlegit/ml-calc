@@ -4,7 +4,7 @@ import { immer } from "zustand/middleware/immer";
 
 const useHeroStore = create(
   devtools(
-    immer((set) => ({
+    immer((set, get) => ({
       mainAttacker: {
         hero: null,
       },
@@ -24,9 +24,12 @@ const useHeroStore = create(
         hero: null,
       },
       methods: {
-        setApostate: (player, apostate) => {
+        getHero: (player) => {
+          return get()[player].hero;
+        },
+        setHero: (player, hero) => {
           set((state) => {
-            state[player].apostate = apostate;
+            state[player].hero = hero;
           });
         },
       },

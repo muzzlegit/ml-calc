@@ -100,6 +100,8 @@ export const buffTypes = PropTypes.shape({
     "resurrectionRate",
     "suppression",
     "towersSuppressionRate",
+    "experience",
+    "fortification",
   ]).isRequired,
   valueIndex: PropTypes.oneOf([0, 1, 2, 3, 4]).isRequired,
   value: PropTypes.arrayOf(PropTypes.number.isRequired).isRequired,

@@ -1,0 +1,678 @@
+[
+  {
+    "id": "3WwE5CRM",
+    "class": "Стратег",
+    "title": "Воитель",
+    "skills": [
+      {
+        "id": "u1xhtVYFVdVxUkNp",
+        "owner": "3WwE5CRM",
+        "ownerDescription": null,
+        "type": "skill",
+        "player": null,
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "title": "Сила войск",
+        "property": "attackRate",
+        "level": 1,
+        "valueIndex": 0,
+        "value": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "description": [
+          "Атака всех войск +5%",
+          "Атака всех войск +10%",
+          "Атака всех войск +15%",
+          "Атака всех войск +20%",
+          "Атака всех войск +25%"
+        ],
+        "battle": true
+      },
+      {
+        "id": "BANSgul2GCfh4IDc",
+        "owner": "3WwE5CRM",
+        "ownerDescription": "Воитель",
+        "type": "skill",
+        "player": null,
+        "target": "ally",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "title": "Сила союзнику",
+        "property": "attackRate",
+        "level": 1,
+        "valueIndex": 0,
+        "value": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "description": [
+          "Атака всех войск +5% Действует на союзника",
+          "Атака всех войск +10% Действует на союзника",
+          "Атака всех войск +15% Действует на союзника",
+          "Атака всех войск +20% Действует на союзника",
+          "Атака всех войск +25% Действует на союзника"
+        ],
+        "battle": true
+      },
+      {
+        "id": "jrgRJLL-JBTKrIvC",
+        "owner": "3WwE5CRM",
+        "ownerDescription": "Воитель",
+        "type": "skill",
+        "player": null,
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "player",
+        "units": null,
+        "title": "Индульгенция отступнику",
+        "property": "experience",
+        "level": 1,
+        "valueIndex": 0,
+        "value": [-0.2, -0.4, -0.6, -0.8, -1],
+        "description": [
+          "Отрицательный фракционный рейтинг за атаку своей фракции -20%",
+          "Отрицательный фракционный рейтинг за атаку своей фракции -40%",
+          "Отрицательный фракционный рейтинг за атаку своей фракции -60%",
+          "Отрицательный фракционный рейтинг за атаку своей фракции -80%",
+          "Отрицательный фракционный рейтинг за атаку своей фракции -100%"
+        ],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "qjpbsreQ",
+    "class": "Стратег",
+    "title": "Миротворец",
+    "skills": [
+      {
+        "id": "YSnLLIKahT7dZY40",
+        "owner": "qjpbsreQ",
+        "ownerDescription": "Миротворец",
+        "type": "skill",
+        "player": null,
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "player",
+        "units": null,
+        "title": "Снижение опыта противнику",
+        "property": "experience",
+        "level": 1,
+        "valueIndex": 0,
+        "value": [-0.2, -0.4, -0.6, -0.8, -1],
+        "description": [
+          "Получаемый героем опыт в бою -20%",
+          "Получаемый героем опыт в бою -40%",
+          "Получаемый героем опыт в бою -60%",
+          "Получаемый героем опыт в бою -80%",
+          "Получаемый героем опыт в бою -100%"
+        ],
+        "battle": true
+      },
+      {
+        "id": "uBnq2kz4mX2fdL5e",
+        "owner": "qjpbsreQ",
+        "ownerDescription": "Миротворец",
+        "type": "skill",
+        "player": null,
+        "target": "enemy",
+        "appliedOn": "monsters",
+        "targetType": "player",
+        "units": null,
+        "title": "Уничтожитель монстров",
+        "property": "experience",
+        "level": 1,
+        "valueIndex": 0,
+        "value": [1, 2, 3, 4, 5],
+        "description": [
+          "Получаемый героем опыт в бою В бою против расы Монстры +100%",
+          "Получаемый героем опыт в бою В бою против расы Монстры +200%",
+          "Получаемый героем опыт в бою В бою против расы Монстры +300%",
+          "Получаемый героем опыт в бою В бою против расы Монстры +400%",
+          "Получаемый героем опыт в бою В бою против расы Монстры +500%"
+        ],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "gVhi63YY",
+    "class": "Стратег",
+    "title": "Паладин",
+    "skills": [
+      {
+        "id": "chFdZhf4WEKAVxLiIe-5dA",
+        "owner": "gVhi63YY",
+        "ownerDescription": "Паладин",
+        "type": "skill",
+        "player": null,
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "fortification",
+        "units": null,
+        "title": "Защита от укреплений",
+        "property": "damageRate",
+        "level": 1,
+        "valueIndex": 0,
+        "value": [-0.2, -0.4, -0.6, -0.8, -100],
+        "description": [
+          "Эффективность уничтожения войск на укреплениях -20%",
+          "Эффективность уничтожения войск на укреплениях -40%",
+          "Эффективность уничтожения войск на укреплениях -60%",
+          "Эффективность уничтожения войск на укреплениях -80%",
+          "Эффективность уничтожения войск на укреплениях -100%"
+        ],
+        "battle": true
+      },
+      {
+        "id": "kodUadYWjnQRd0Yn",
+        "owner": "gVhi63YY",
+        "ownerDescription": "Паладин",
+        "type": "skill",
+        "player": null,
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "title": "Защита",
+        "property": "defense",
+        "level": 1,
+        "valueIndex": 0,
+        "value": [5, 10, 15, 20, 25],
+        "description": [
+          "Защита всех войск +5",
+          "Защита всех войск +10",
+          "Защита всех войск +15",
+          "Защита всех войск +20",
+          "Защита всех войск +25"
+        ],
+        "battle": true
+      },
+      {
+        "id": "5kIVjg_u2kO6Vs3JjItTTQ",
+        "owner": "gVhi63YY",
+        "ownerDescription": "Паладин",
+        "type": "skill",
+        "player": null,
+        "target": "ally",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "title": "Охрана союзника",
+        "property": "defense",
+        "level": 1,
+        "valueIndex": 0,
+        "value": [5, 10, 15, 20, 25],
+        "description": [
+          "Защита всех войск +5 Действует на союзника",
+          "Защита всех войск +10 Действует на союзника",
+          "Защита всех войск +15 Действует на союзника",
+          "Защита всех войск +20 Действует на союзника",
+          "Защита всех войск +25 Действует на союзника"
+        ],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "N_idwc4qhElPJdTp",
+    "class": "Полководец",
+    "title": "Гладиатор",
+    "skills": [
+      {
+        "id": "AEVLawIdZlnmP_TY",
+        "owner": "N_idwc4qhElPJdTp",
+        "ownerDescription": "Гладиатор",
+        "type": "skill",
+        "player": null,
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "title": "Подавление здоровья войск",
+        "property": "healthRate",
+        "level": 1,
+        "valueIndex": 0,
+        "value": [-0.05, -0.1, -0.15, -0.2, -0.25],
+        "description": [
+          "Здоровье всех войск -5%",
+          "Здоровье всех войск -10%",
+          "Здоровье всех войск -15%",
+          "Здоровье всех войск -20%",
+          "Здоровье всех войск -25%"
+        ],
+        "battle": true
+      },
+      {
+        "id": "TMKdbRhOaXuQPr-v",
+        "owner": "N_idwc4qhElPJdTp",
+        "ownerDescription": "Гладиатор",
+        "type": "skill",
+        "player": null,
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "title": "Подавление защиты",
+        "property": "defense",
+        "level": 1,
+        "valueIndex": 0,
+        "value": [-5, -10, -15, -20, -25],
+        "description": [
+          "Защита всех войск -5",
+          "Защита всех войск -10",
+          "Защита всех войск -15",
+          "Защита всех войск -20",
+          "Защита всех войск -25"
+        ],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "g6CVGXRfWUq0MOab",
+    "class": "Волшебник",
+    "title": "Некромант",
+    "skills": [
+      {
+        "id": "el0QrkHbVfKxFqnW",
+        "owner": "g6CVGXRfWUq0MOab",
+        "ownerDescription": "Некромант",
+        "type": "skill",
+        "player": null,
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["mage"],
+        "title": "Ярость магов",
+        "property": "attackRate",
+        "level": 1,
+        "valueIndex": 0,
+        "value": [0.5, 1, 1.5, 2, 2.5],
+        "description": [
+          "Атака Магов +50%",
+          "Атака Магов +100%",
+          "Атака Магов +150%",
+          "Атака Магов +200%",
+          "Атака Магов +250%"
+        ],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "0wuTpxDii-ier3Eu",
+    "class": "Волшебник",
+    "title": "Целитель",
+    "skills": [
+      {
+        "id": "AhoZX7kWsilsI_Go",
+        "owner": "0wuTpxDii-ier3Eu",
+        "ownerDescription": "Целитель",
+        "type": "skill",
+        "player": null,
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mage"
+        ],
+        "title": "Выносливость армии",
+        "property": "healthRate",
+        "level": 1,
+        "valueIndex": 0,
+        "value": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "description": [
+          "Здоровье войск (кроме Наемников) +5%",
+          "Здоровье войск (кроме Наемников) +10%",
+          "Здоровье войск (кроме Наемников) +15%",
+          "Здоровье войск (кроме Наемников) +20%",
+          "Здоровье войск (кроме Наемников) +25%"
+        ],
+        "battle": true
+      },
+      {
+        "id": "ywmbd9fQs864wuCN",
+        "owner": "0wuTpxDii-ier3Eu",
+        "ownerDescription": "Целитель",
+        "type": "skill",
+        "player": null,
+        "target": "ally",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mage"
+        ],
+        "title": "Выносливость союзников",
+        "property": "healthRate",
+        "level": 1,
+        "valueIndex": 0,
+        "value": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "description": [
+          "Здоровье войск (кроме Наемников) союзников +5%",
+          "Здоровье войск (кроме Наемников) союзников +10%",
+          "Здоровье войск (кроме Наемников) союзников +15%",
+          "Здоровье войск (кроме Наемников) союзников +20%",
+          "Здоровье войск (кроме Наемников) союзников +25%"
+        ],
+        "battle": true
+      },
+      {
+        "id": "DuWAwO8-tKwVKFD7",
+        "owner": "0wuTpxDii-ier3Eu",
+        "ownerDescription": "Целитель",
+        "source": "0wuTpxDii-ier3Eu",
+        "type": "skill",
+        "player": null,
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["healer"],
+        "title": "Улучшение целителей",
+        "property": "resurrectionRate",
+        "level": 1,
+        "valueIndex": 0,
+        "value": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "description": [
+          "Улучшение целителей +3%",
+          "Улучшение целителей +6%",
+          "Улучшение целителей +9%",
+          "Улучшение целителей +12%",
+          "Улучшение целителей +15%"
+        ],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "4R75wDcIDijAQJu_",
+    "class": "Волшебник",
+    "title": "Иллюзионист",
+    "skills": [
+      {
+        "id": "7e_-EcL67HNnVO-Y",
+        "owner": "4R75wDcIDijAQJu_",
+        "ownerDescription": "Иллюзионист",
+        "type": "skill",
+        "player": null,
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["mage"],
+        "title": "Защита магов",
+        "property": "defense",
+        "level": 1,
+        "valueIndex": 0,
+        "value": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "description": [
+          "Защита Магов +10%",
+          "Защита Магов +20%",
+          "Защита Магов +30%",
+          "Защита Магов +40%",
+          "Защита Магов +50%"
+        ],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "QNB5wh7Wl707U3d9",
+    "class": "Волшебник",
+    "title": "Рассеиватель",
+    "skills": [
+      {
+        "id": "EX3uW_GF18YOHyHU",
+        "owner": "QNB5wh7Wl707U3d9",
+        "ownerDescription": "Рассеиватель",
+        "type": "skill",
+        "player": null,
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["mage"],
+        "title": "Слабость магов противника",
+        "property": "attackRate",
+        "level": 1,
+        "valueIndex": 0,
+        "value": [-0.2, -0.4, -0.6, -0.8, -1],
+        "description": [
+          "Атака Магов -20%",
+          "Атака Магов -40%",
+          "Атака Магов -60%",
+          "Атака Магов -80%",
+          "Атака Магов -100%"
+        ],
+        "battle": true
+      },
+      {
+        "id": "cS68L1v7zwS2T4Pj",
+        "owner": "QNB5wh7Wl707U3d9",
+        "ownerDescription": "Рассеиватель",
+        "type": "skill",
+        "player": null,
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["healer"],
+        "title": "Подавление целителей",
+        "property": "resurrectionRate",
+        "level": 1,
+        "valueIndex": 0,
+        "value": [-0.1, -0.2, -0.3, -0.4, -0.5],
+        "description": [
+          "Целители воскрешают -10%",
+          "Целители воскрешают -20%",
+          "Целители воскрешают -30%",
+          "Целители воскрешают -40%",
+          "Целители воскрешают -50%"
+        ],
+        "battle": true
+      },
+      {
+        "id": "nEsLM0m8lUNTJ6KA",
+        "owner": "QNB5wh7Wl707U3d9",
+        "ownerDescription": "Рассеиватель",
+        "type": "skill",
+        "player": null,
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "magicTower",
+        "units": null,
+        "title": "Подавление магических башен",
+        "property": "damageRate",
+        "level": 1,
+        "valueIndex": 0,
+        "value": [-0.03, -0.06, -0.09, -0.12, -0.15],
+        "description": [
+          "Атака магических башен -3%",
+          "Атака магических башен -6%",
+          "Атака магических башен -9%",
+          "Атака магических башен -12%",
+          "Атака магических башен -15%"
+        ],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "arr9NLO8dT84PvSM",
+    "class": "Градоначальник",
+    "title": "Защитник",
+    "skills": [
+      {
+        "id": "J2Pu5cCwzF7BNvnr",
+        "owner": "arr9NLO8dT84PvSM",
+        "ownerDescription": "Защитник",
+        "type": "skill",
+        "player": null,
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "fortification",
+        "units": null,
+        "title": "Тактика укреплений",
+        "property": "damageRate",
+        "level": 1,
+        "valueIndex": 0,
+        "value": [1, 2, 3, 4, 5],
+        "description": [
+          "Эффективность уничтожения войск на укреплениях +100%",
+          "Эффективность уничтожения войск на укреплениях +200%",
+          "Эффективность уничтожения войск на укреплениях +300%",
+          "Эффективность уничтожения войск на укреплениях +400%",
+          "Эффективность уничтожения войск на укреплениях +500%"
+        ],
+        "battle": true
+      },
+      {
+        "id": "0raYaW03NmO7DepL",
+        "owner": "arr9NLO8dT84PvSM",
+        "ownerDescription": "Защитник",
+        "type": "skill",
+        "player": null,
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "title": "Мастерство обороны",
+        "property": "defenseLevel",
+        "level": 1,
+        "valueIndex": 0,
+        "value": [0.5, 0.1, 0.15, 0.2, 0.25],
+        "description": [
+          "Предел максимально защиты +5%",
+          "Предел максимально защиты +10%",
+          "Предел максимально защиты +15%",
+          "Предел максимально защиты +20%",
+          "Предел максимально защиты +25%"
+        ],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "7_avcr-HBIjFF6aC",
+    "class": "Градоначальник",
+    "title": "Строитель",
+    "skills": [
+      {
+        "id": "-RH300r-LlfdJMkO",
+        "owner": "7_avcr-HBIjFF6aC",
+        "ownerDescription": "Строитель",
+        "type": "skill",
+        "player": null,
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "tower",
+        "units": null,
+        "title": "Мастер башен",
+        "property": "damageRate",
+        "level": 1,
+        "valueIndex": 0,
+        "value": [0.5, 1, 1.5, 2, 2.5],
+        "description": [
+          "Атака башен +50%",
+          "Атака башен +100%",
+          "Атака башен +150%",
+          "Атака башен +200%",
+          "Атака башен +250%"
+        ],
+        "battle": true
+      },
+      {
+        "id": "LJPZ-tMxMjPuYiFF",
+        "owner": "7_avcr-HBIjFF6aC",
+        "ownerDescription": "Строитель",
+        "type": "skill",
+        "player": null,
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "player",
+        "units": null,
+        "title": "Переносное укрепление",
+        "property": "fortification",
+        "level": 1,
+        "valueIndex": 0,
+        "value": [500, 1000, 1500, 2000, 2500],
+        "description": [
+          "Уничтожает до боя 500 вражеских войск в раунде укреплений",
+          "Уничтожает до боя 1000 вражеских войск в раунде укреплений",
+          "Уничтожает до боя 1500 вражеских войск в раунде укреплений",
+          "Уничтожает до боя 2000 вражеских войск в раунде укреплений",
+          "Уничтожает до боя 2500 вражеских войск в раунде укреплений"
+        ],
+        "battle": true
+      }
+    ]
+  }
+]

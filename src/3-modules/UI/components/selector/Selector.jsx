@@ -4,10 +4,12 @@ import SvgIcon from "../svgIcon/SvgIcon";
 import { Container, Item, List, Title, Wrap } from "./Selector.styled";
 
 const Selector = ({
+  id,
   title,
   value,
   options,
   handleSelector,
+  width,
   isActive = true,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,20 +18,21 @@ const Selector = ({
       onClick={() => {
         setIsOpen((prev) => !prev);
       }}
+      gap={title}
     >
       <Title>{title}</Title>
-      <Wrap>
+      <Wrap width={width}>
         <span>{value}</span>
         <SvgIcon svgName="icon-arrow-down" size="14px" />
         {isOpen && isActive ? (
-          <List>
+          <List width={width}>
             {Object.keys(options).map((option) => {
               return (
                 <Item
                   key={option}
-                  id={option}
+                  id={id}
                   onClick={() => {
-                    handleSelector(option);
+                    handleSelector(option, id);
                   }}
                   isActive={option === value}
                 >
@@ -51,5 +54,6 @@ Selector.propTypes = {
   value: PropTypes.string.isRequired,
   options: PropTypes.objectOf(PropTypes.string),
   handleSelector: PropTypes.func,
+  width: PropTypes.string,
   isActive: PropTypes.bool,
 };

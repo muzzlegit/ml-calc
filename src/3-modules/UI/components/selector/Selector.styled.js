@@ -1,11 +1,15 @@
 import styled from "@emotion/styled";
 
-export const Container = styled.div({
-  width: "fit-content",
-  display: "flex",
-  alignItems: "center",
-  gap: "10px",
-});
+export const Container = styled.div(
+  {
+    width: "fit-content",
+    display: "flex",
+    alignItems: "center",
+  },
+  (props) => ({
+    gap: props.gap && "10px",
+  })
+);
 
 export const List = styled.ul(
   {
@@ -19,11 +23,11 @@ export const List = styled.ul(
     flexDirection: "column",
     alignItems: "start",
     gap: "4px",
-    width: "fit-content",
     border: "1px solid",
     borderRadius: "4px",
   },
   (props) => ({
+    minWidth: props.width,
     backgroundColor: props.theme.colors.secondary,
     borderColor: props.theme.colors.secondary,
   })
@@ -48,10 +52,10 @@ export const Item = styled.li(
 export const Wrap = styled.div(
   {
     position: "relative",
-    width: "fit-content",
     padding: "4px 12px",
     display: "flex",
     alignItems: "center",
+    justifyContent: "center",
     gap: "4px",
     fontSize: "14px",
     fontWeight: 500,
@@ -61,6 +65,7 @@ export const Wrap = styled.div(
     whiteSpace: "nowrap",
   },
   (props) => ({
+    minWidth: props.width,
     backgroundColor: props.theme.colors.secondary,
     color: props.theme.colors.text,
     stroke: props.theme.colors.orange,
