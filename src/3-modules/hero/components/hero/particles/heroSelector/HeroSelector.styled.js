@@ -1,6 +1,9 @@
 import styled from "@emotion/styled";
 
-export const Container = styled.div({});
+export const Container = styled.div({
+  width: "fit-content",
+  padding: "4px 0",
+});
 
 export const Title = styled.h3(
   {
@@ -15,10 +18,12 @@ export const Title = styled.h3(
 
 export const SelectorWrap = styled.div(
   {
-    padding: "4px",
+    marginBottom: "4px",
+    opacity: 0,
+    transition: "opacity 500ms ease-in-out",
   },
   (props) => ({
-    opacity: props.isActive ? 1 : 0.5,
+    opacity: props.isActive && 1,
     stroke: props.theme.colors.red,
   })
 );

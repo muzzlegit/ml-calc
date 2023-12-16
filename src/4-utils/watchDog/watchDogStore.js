@@ -35,7 +35,6 @@ const useWatchDogStore = create(
               ...state[player].battlefieldBuffs,
               buff,
             ];
-            // return true;
           });
         },
         removeBattlefieldBuff: (player, buffId) => {
@@ -47,6 +46,15 @@ const useWatchDogStore = create(
                 ({ id }) => id !== buffId
               ),
             ];
+          });
+        },
+        replaceBattlefieldBuff: (player, values) => {
+          set((state) => {
+            state[player].battlefieldBuffs = state[player].battlefieldBuffs.map(
+              (buff) => {
+                return values.id === buff.id ? { ...buff, ...values } : buff;
+              }
+            );
           });
         },
       },

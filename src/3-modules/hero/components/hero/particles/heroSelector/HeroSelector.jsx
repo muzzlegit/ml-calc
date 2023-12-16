@@ -32,7 +32,7 @@ const HeroSelector = () => {
             value={heroClass ?? "Класс"}
             options={classesList}
             handleSelector={handleHeroClass}
-            width="140px"
+            width="150px"
           />
           <IconWrap onClick={handleDeleteHeroClass}>
             <SvgIcon svgName="icon-x-close" size="20px" />
@@ -48,8 +48,7 @@ const HeroSelector = () => {
             value={firstHeroBranch ?? "Специальность"}
             options={heroBranchesList}
             handleSelector={handleHeroBranches}
-            width="140px"
-            isActive={heroClass ? true : false}
+            width="150px"
           />
           <IconWrap
             onClick={() => {
@@ -61,7 +60,7 @@ const HeroSelector = () => {
         </FlexCenter>
       </SelectorWrap>
 
-      <SelectorWrap isActive={isBranches || secondHeroBranch}>
+      <SelectorWrap isActive={firstHeroBranch || thirdHeroBranch}>
         <Title>--- Вторая ветка ---</Title>
         <FlexCenter gap="4px">
           <Selector
@@ -69,8 +68,7 @@ const HeroSelector = () => {
             value={secondHeroBranch ?? "Специальность"}
             options={heroBranchesList}
             handleSelector={handleHeroBranches}
-            width="140px"
-            isActive={isBranches || secondHeroBranch ? true : false}
+            width="150px"
           />
           <IconWrap
             onClick={() => {
@@ -82,7 +80,7 @@ const HeroSelector = () => {
         </FlexCenter>
       </SelectorWrap>
 
-      <SelectorWrap isActive={isBranches || thirdHeroBranch}>
+      <SelectorWrap isActive={secondHeroBranch || thirdHeroBranch}>
         <Title>--- Третья ветка ---</Title>
         <FlexCenter gap="4px">
           <Selector
@@ -90,8 +88,7 @@ const HeroSelector = () => {
             value={thirdHeroBranch ?? "Специальность"}
             options={heroBranchesList}
             handleSelector={handleHeroBranches}
-            width="140px"
-            isActive={isBranches || thirdHeroBranch ? true : false}
+            width="150px"
           />
           <IconWrap
             onClick={() => {

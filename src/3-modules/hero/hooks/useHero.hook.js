@@ -22,11 +22,27 @@ const useHero = () => {
 
   const assignHeroBranch = (branchName, heroBranch, heroClass) => {
     const currentHero = getHero(player);
-    const skills = getHeroBranch(heroClass, heroBranch, currentHero.id);
+    const skills = getHeroBranch(player, heroClass, heroBranch, currentHero.id);
     setHero(player, { ...currentHero, [branchName]: skills });
   };
 
-  return { assignHero, assignHeroBranch, deleteHero, deleteHeroBranch };
+  const replaceHeroSkill = (branchName, newSkillValues) => {
+    const currentHero = getHero(player);
+    const updatedBranch = currentHero[branchName].map((skill) => {
+      return skill.id === newSkillValues.id
+        ? { ...skill, ...newSkillValues }
+        : skill;
+    });
+    setHero(player, { ...currentHero, [branchName]: updatedBranch });
+  };
+
+  return {
+    assignHero,
+    assignHeroBranch,
+    deleteHero,
+    deleteHeroBranch,
+    replaceHeroSkill,
+  };
 };
 
 export default useHero;

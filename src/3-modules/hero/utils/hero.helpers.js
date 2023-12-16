@@ -12,6 +12,15 @@ export const getHeroPicture = (name, race) => {
   return { image, width, height };
 };
 
+export const getHeroSkillPicture = (name) => {
+  if (!canvasMap?.skills[name]) return "dfdf";
+  const image = `url(${canvas}) ${canvasMap.skills?.[name].coordinate}`;
+  const width = canvasMap.skills?.[name].width;
+  const height = canvasMap.skills?.[name].height;
+
+  return { image, width, height };
+};
+
 export const getHeroImageName = (player) => {
   switch (player) {
     case "mainAttacker":
@@ -55,12 +64,13 @@ export const getBranchesList = (heroClass) => {
   return list;
 };
 
-export const getHeroBranch = (heroClass, heroBranch, id) => {
+export const getHeroBranch = (player, heroClass, heroBranch, id) => {
   const hero = heroes.find(
     (hero) => heroClass === hero.class && heroBranch === hero.title
   );
   const branchSkill = hero.skills.map((skill) => ({
     ...skill,
+    player,
     owner: id,
     ownerDescription: hero.title,
   }));

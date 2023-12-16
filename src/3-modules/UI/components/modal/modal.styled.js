@@ -8,7 +8,6 @@ export const Backdrop = styled.div({
   width: "100%",
   height: "100%",
   padding: "8px",
-  boxSizing: "border-box",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
