@@ -1,14 +1,11 @@
+import usePlayerStore from "modules/players/store/playerStore";
 import usePlayerContext from "utils/context/usePlayerContext.hook";
-import { useShallow } from "zustand/react/shallow";
-import useUnitsStore from "../store/unitsStore";
 
 function useAttackIndex() {
   const player = usePlayerContext();
-  const attackIndex = useUnitsStore(
-    useShallow((state) => state[player].attackIndex)
-  );
-  const setAttackIndex = useUnitsStore(
-    useShallow((state) => state.methods.setAttackIndex)
+  const attackIndex = usePlayerStore((state) => state[player].attackIndex);
+  const setAttackIndex = usePlayerStore(
+    (state) => state.methods.setAttackIndex
   );
 
   const handleAttackIndex = (index) => {

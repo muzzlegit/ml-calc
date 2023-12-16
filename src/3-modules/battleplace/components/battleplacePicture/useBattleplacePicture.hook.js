@@ -1,11 +1,11 @@
 import useBattleplaceStore from "modules/battleplace/store/battleplaceStore";
 import { getBattleplacePicture } from "modules/battleplace/utils/battleplace.helpers";
-import useUnitsStore from "modules/units/store/unitsStore";
+import { usePlayerStore } from "modules/players";
 
 const useBattleplacePicture = () => {
   const battlefield = useBattleplaceStore((state) => state.battlefield);
   const battleplace = useBattleplaceStore((state) => state.battleplace);
-  const race = useUnitsStore((state) => state.mainDefender.race);
+  const race = usePlayerStore((state) => state.mainDefender.race);
 
   const isPlace = battlefield !== "mine";
 

@@ -1,5 +1,6 @@
 import useBattleplaceStore from "modules/battleplace/store/battleplaceStore";
 import { getBattleplacePicture } from "modules/battleplace/utils/battleplace.helpers";
+import { usePlayerStore } from "modules/players";
 import useUnitsStore from "modules/units/store/unitsStore";
 import { UNITS } from "modules/units/utils/units.constants";
 
@@ -8,7 +9,7 @@ const useBuildingsList = () => {
   const towers = useBattleplaceStore((state) => state.towers);
   const fortifications = useBattleplaceStore((state) => state.fortifications);
   const gate = useBattleplaceStore((state) => state.gate);
-  const race = useUnitsStore((state) => state.mainDefender.race);
+  const race = usePlayerStore((state) => state.mainDefender.race);
   const { decreaseUnitProperty } = useUnitsStore((state) => state.methods);
   const {
     deleteTower,

@@ -1,3 +1,5 @@
+import useBattleplaceStore from "./store/battleplaceStore";
+
 export {
   BattlefieldsSelector,
   BattleplacePicture,
@@ -7,3 +9,4 @@ export {
   Garrison,
   GarrisonAttackIndexSelector,
 } from "./components";
+export { useBattleplaceStore };

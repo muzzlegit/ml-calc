@@ -15,7 +15,7 @@ const useHeroStore = create(
         hero: null,
       },
       mainDefender: {
-        hero: true,
+        hero: null,
       },
       firstDefenderAlly: {
         hero: null,

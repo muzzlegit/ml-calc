@@ -114,41 +114,6 @@ export function getUnitFrame(level, race) {
   return { image, imageWidth, imageHeight };
 }
 
-// -------------------- RACE DATA-------------------------
-export function getUnitsHomeland(playerRace) {
-  switch (playerRace) {
-    case "undead":
-      return "cursedForest";
-    case "demon":
-      return "deadLand";
-    case "drow":
-      return "cursedForest";
-    case "human":
-      return "hollyLand";
-    case "elf":
-      return "magicForest";
-    default:
-      return "none";
-  }
-}
-
-export function getUnitsFraction(playerRace) {
-  switch (playerRace) {
-    case "undead":
-      return "dark";
-    case "demon":
-      return "dark";
-    case "drow":
-      return "dark";
-    case "human":
-      return "light";
-    case "elf":
-      return "light";
-    default:
-      return "none";
-  }
-}
-
 export function getRaceName(race) {
   switch (race) {
     case "undead":

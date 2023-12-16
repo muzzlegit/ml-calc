@@ -16,7 +16,6 @@ const HeroSelector = () => {
     secondHeroBranch,
     thirdHeroBranch,
     heroBranchesList,
-    isBranches,
     handleHeroClass,
     handleHeroBranches,
     handleDeleteBranch,

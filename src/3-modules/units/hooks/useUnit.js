@@ -1,3 +1,4 @@
+import { usePlayerStore } from "modules/players";
 import { useEffect } from "react";
 import usePlayerContext from "utils/context/usePlayerContext.hook";
 import { unitsNames } from "utils/types/types";
@@ -10,8 +11,8 @@ const useUnit = (unitName) => {
     (state) => state.methods
   );
   const unit = useUnitsStore((state) => state[player][unitName]);
-  const race = useUnitsStore((state) => state[player].race);
-  const attackIndex = useUnitsStore((state) => state[player].attackIndex);
+  const race = usePlayerStore((state) => state[player].race);
+  const attackIndex = usePlayerStore((state) => state[player].attackIndex);
 
   const { level } = unit;
 

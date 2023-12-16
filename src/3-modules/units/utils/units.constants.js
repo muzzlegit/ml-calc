@@ -57,17 +57,6 @@ export const LIMITS = {
   persecutionLimit: -0.9,
 };
 
-export const RACE = {
-  undead: "Нежить",
-  demon: "Демоны",
-  human: "Рыцари",
-  drow: "Темные Эльфы",
-  elf: "Светлые Эльфы",
-  monsters: "Монстры",
-};
-
-export const ATTACK_INDEX = { min: "min", max: "max" };
-
 export const UNITS_LANDS = {
   swordsman: {
     homeLand: "desert",

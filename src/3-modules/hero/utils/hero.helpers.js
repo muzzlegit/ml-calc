@@ -21,20 +21,20 @@ export const getHeroSkillPicture = (name) => {
   return { image, width, height };
 };
 
-export const getHeroImageName = (player) => {
+export const getHeroImageName = (player, isMonsters) => {
   switch (player) {
     case "mainAttacker":
-      return "attacker";
+      return isMonsters ? "monster" : "attacker";
     case "attackerAlly":
-      return "attackerAlly";
+      return isMonsters ? "monsterAlly" : "attackerAlly";
     case "attackerSecondAlly":
-      return "attackerAlly";
+      return isMonsters ? "monsterAlly" : "attackerAlly";
     case "mainDefender":
-      return "defender";
+      return isMonsters ? "monster" : "defender";
     case "firstDefenderAlly":
-      return "defenderAlly";
+      return isMonsters ? "monsterAlly" : "defenderAlly";
     case "secondDefenderAlly":
-      return "defenderAlly";
+      return isMonsters ? "monsterAlly" : "defenderAlly";
     default:
       break;
   }

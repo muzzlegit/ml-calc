@@ -1,11 +1,7 @@
 import { create } from "zustand";
 import { devtools } from "zustand/middleware";
 import { immer } from "zustand/middleware/immer";
-import {
-  getInitialUnitsData,
-  getUnitsFraction,
-  getUnitsHomeland,
-} from "../utils/units.helpers";
+import { getInitialUnitsData } from "../utils/units.helpers";
 
 const mainAttackerRace = "demon";
 const mainDefenderRace = "human";
@@ -15,45 +11,21 @@ const useUnitsStore = create(
     immer((set) => ({
       mainAttacker: {
         ...getInitialUnitsData(mainAttackerRace, 4),
-        race: mainAttackerRace,
-        homeLand: getUnitsHomeland(mainAttackerRace),
-        fraction: getUnitsFraction(mainAttackerRace),
-        attackIndex: "max",
       },
       attackerAlly: {
         ...getInitialUnitsData(mainAttackerRace, 4),
-        race: mainAttackerRace,
-        homeLand: getUnitsHomeland(mainAttackerRace),
-        fraction: getUnitsFraction(mainAttackerRace),
-        attackIndex: "max",
       },
       attackerSecondAlly: {
         ...getInitialUnitsData(mainAttackerRace, 4),
-        race: mainAttackerRace,
-        homeLand: getUnitsHomeland(mainAttackerRace),
-        fraction: getUnitsFraction(mainAttackerRace),
-        attackIndex: "max",
       },
       mainDefender: {
         ...getInitialUnitsData(mainDefenderRace, 4),
-        race: mainDefenderRace,
-        homeLand: getUnitsHomeland(mainDefenderRace),
-        fraction: getUnitsFraction(mainDefenderRace),
-        attackIndex: "max",
       },
       firstDefenderAlly: {
         ...getInitialUnitsData(mainDefenderRace, 4),
-        race: mainDefenderRace,
-        homeLand: getUnitsHomeland(mainDefenderRace),
-        fraction: getUnitsFraction(mainDefenderRace),
-        attackIndex: "max",
       },
       secondDefenderAlly: {
         ...getInitialUnitsData(mainDefenderRace, 4),
-        race: mainDefenderRace,
-        homeLand: getUnitsHomeland(mainDefenderRace),
-        fraction: getUnitsFraction(mainDefenderRace),
-        attackIndex: "max",
       },
       methods: {
         setUnit: (player, unitName, unit) => {
@@ -81,18 +53,6 @@ const useUnitsStore = create(
           set((state) => {
             state[player][unit][property] =
               state[player][unit][property] - value;
-          });
-        },
-        setRace: (player, race) => {
-          set((state) => {
-            state[player].race = race;
-            state[player].fraction = getUnitsFraction(race);
-            state[player].homeLand = getUnitsHomeland(race);
-          });
-        },
-        setAttackIndex: (player, index) => {
-          set((state) => {
-            state[player].attackIndex = index;
           });
         },
       },

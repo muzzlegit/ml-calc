@@ -32,7 +32,6 @@ const useHeroSelector = () => {
   const { buffsProvider } = useBuffsProvider();
 
   const classesList = getHeroesClasses();
-  const isBranches = Object.keys(heroBranchesList)?.length;
 
   const handleHeroClass = (newHeroClass) => {
     ///---buffs
@@ -133,7 +132,6 @@ const useHeroSelector = () => {
     handleDeleteHeroClass,
     classesList,
     heroBranchesList,
-    isBranches,
   };
 };
 

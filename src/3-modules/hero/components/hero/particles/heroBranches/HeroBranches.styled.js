@@ -8,6 +8,7 @@ export const Container = styled.div({
 });
 
 export const BranchBox = styled.div({
+  marginTop: "4px",
   minWidth: "82px",
   display: "flex",
   flexDirection: "column",

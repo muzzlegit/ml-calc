@@ -16,13 +16,16 @@
     "height": "99px"
   },
   "monster": { "coordinate": "-1px -201px", "width": "82px", "height": "99px" },
-  "monsterAlly": { "coordinate": "-1px -201px", "width": "82px", "height": "" },
+  "monsterAlly": {
+    "coordinate": "-84px -201px",
+    "width": "82px",
+    "height": "99px"
+  },
   "heroFrame": {
     "coordinate": "-1px -301px",
     "width": "96px",
     "height": "117px"
   },
-  "artefactFrame": { "coordinate": "-98px -301px", "width": "", "height": "" },
   "heroSkillFrame": {
     "coordinate": "-167px -301px",
     "width": "82px",
@@ -163,8 +166,5 @@
       "width": "82px",
       "height": "99px"
     }
-  },
-  "addIcon": { "coordinate": "-250px -339px", "width": "", "height": "" },
-  "deleteIcon": { "coordinate": "-250px -301px", "width": "", "height": "" },
-  "chengeIcon": { "coordinate": "-250px -320px", "width": "", "height": "" }
+  }
 }

@@ -1,14 +1,13 @@
-import useBattleplaceStore from "modules/battleplace/store/battleplaceStore";
+import { useBattleplaceStore } from "modules/battleplace";
+import usePlayerStore from "modules/players/store/playerStore";
+import { RACE } from "modules/players/utils/player.constants";
 import { useEffect, useState } from "react";
 import usePlayerContext from "utils/context/usePlayerContext.hook";
-import { useShallow } from "zustand/react/shallow";
-import useUnitsStore from "../store/unitsStore";
-import { RACE } from "../utils/units.constants";
 
 const useRace = () => {
   const player = usePlayerContext();
-  const setRace = useUnitsStore(useShallow((state) => state.methods.setRace));
-  const activeRace = useUnitsStore(useShallow((state) => state[player].race));
+  const setRace = usePlayerStore((state) => state.methods.setRace);
+  const activeRace = usePlayerStore((state) => state[player].race);
   const battleplace = useBattleplaceStore((state) => state.battleplace);
   const [options, setOptions] = useState(RACE);
   const race = RACE[activeRace];

@@ -1,6 +1,6 @@
+import { ATTACK_INDEX } from "modules/players/utils/player.constants";
 import { Selector } from "modules/UI";
-import { useAttackIndex } from "modules/units/hooks";
-import { ATTACK_INDEX } from "modules/units/utils/units.constants";
+import useAttackIndex from "./useAttackIndex.hook";
 
 const AttackIndexSelector = () => {
   const { attackIndex, handleAttackIndex } = useAttackIndex();

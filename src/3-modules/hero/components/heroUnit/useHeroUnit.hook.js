@@ -3,21 +3,24 @@ import {
   getHeroImageName,
   getHeroPicture,
 } from "modules/hero/utils/hero.helpers";
-import useUnitsStore from "modules/units/store/unitsStore";
+import { usePlayerStore } from "modules/players";
 import usePlayerContext from "utils/context/usePlayerContext.hook";
 
 const useHeroUnit = () => {
   const player = usePlayerContext();
-  const race = useUnitsStore((state) => state[player].race);
+  const race = usePlayerStore((state) => state[player].race);
   const hero = useHeroStore((state) => state[player].hero);
+
   const isHero = hero;
+  const isMonsters = race === "monsters";
 
   const graphics = {
     frame: getHeroPicture("heroFrame"),
     hero: isHero
-      ? getHeroPicture(getHeroImageName(player))
+      ? getHeroPicture(getHeroImageName(player, isMonsters))
       : getHeroPicture("backgrounds", race),
   };
+
   return { isHero, graphics };
 };
 

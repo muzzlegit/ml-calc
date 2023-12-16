@@ -1,7 +1,11 @@
 import { HeroUnit } from "modules/hero";
-import { ApostateChecker } from "modules/players";
+import {
+  ApostateChecker,
+  AttackIndexSelector,
+  RaceSelector,
+} from "modules/players";
 import { Modal, useModal } from "modules/UI";
-import { AttackIndexSelector, RaceSelector, Squad } from "modules/units";
+import { Squad } from "modules/units";
 import PlayerContext from "utils/context/PlayerContext";
 import { FlexCenter, FlexStart } from "utils/styles/flexKit.styled";
 import { playerTypes } from "utils/types/types";
