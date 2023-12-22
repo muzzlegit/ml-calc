@@ -12,6 +12,7 @@ import { playerTypes } from "utils/types/types";
 import WatchDog from "utils/watchDog/WatchDog";
 import { Workbench } from "..";
 import { Container } from "./Player.styled";
+
 const Player = ({ playerName }) => {
   const { isModal, toggleModal, onBackdropClick } = useModal();
   console.log("player");

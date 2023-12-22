@@ -1,0 +1,2418 @@
+[
+  {
+    "id": "id2Yj4L8vkeIhzfZnhZloA",
+    "level": 5,
+    "setTitle": "Головорез",
+    "buffs": [
+      {
+        "id": "z4Zy3iE9Zk2EKJs9AhzwSg",
+        "owner": "id2Yj4L8vkeIhzfZnhZloA",
+        "ownerDescription": "Головорез",
+        "type": "artefactKit",
+        "player": null,
+        "target": "enemy",
+        "appliedOn": "all",
+        "tergetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "title": "Комплект Головорез",
+        "property": "healthRate",
+        "valueIndex": 0,
+        "value": [-0.5],
+        "description": ["Здоровье всех войск -50% Действует на противника"],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "IOTd100__UStXBNzxPQkRQ",
+    "level": 5,
+    "ancient": false,
+    "perfect": false,
+    "title": "Накидка жертвоприношения",
+    "place": "back",
+    "set": "Головорез",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": false
+  },
+  {
+    "id": "3h0Uua6r40OX7Ei3mZP1Tw",
+    "level": 5,
+    "ancient": false,
+    "perfect": false,
+    "title": "Кольцо банды головорезов",
+    "place": "ring",
+    "set": "Головорез",
+    "buffs": {
+      "common": [],
+      "perfect": [
+        {
+          "id": "EgtOtghzEUKYG4SVf7iVGQ",
+          "owner": "3h0Uua6r40OX7Ei3mZP1Tw",
+          "ownerDescription": "Кольцо банды головорезов",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "tergetType": "magicTower",
+          "units": null,
+          "title": "Кольцо банды головорезов",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [0.25],
+          "description": ["Атака магических башен +25%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "VMQGwOIDZkO8qvLrF6w0dA",
+    "level": 5,
+    "ancient": false,
+    "perfect": false,
+    "title": "Шлем дезинформации",
+    "place": "head",
+    "set": "Головорез",
+    "buffs": {
+      "common": [],
+      "perfect": [
+        {
+          "id": "2JqfTeBwF0uOjViz5UE2fg",
+          "owner": "VMQGwOIDZkO8qvLrF6w0dA",
+          "ownerDescription": "Шлем дезинформации",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "tergetType": "tower",
+          "units": null,
+          "title": "Шлем дезинформации",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [2],
+          "description": ["Атака башен +200%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "LIHhBbSkt02Nml67psTORg",
+    "level": 5,
+    "ancient": false,
+    "perfect": false,
+    "title": "Лампа великого шпионажа",
+    "place": "bag",
+    "set": "Головорез",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": false
+  },
+  {
+    "id": "zL2CInuh4EaNKUD_BLM7CQ",
+    "level": 5,
+    "ancient": false,
+    "perfect": false,
+    "title": "Топор Головореза",
+    "place": "rightHand",
+    "set": "Головорез",
+    "buffs": {
+      "common": [
+        {
+          "id": "5bIteEpwOUC4uFF_cVdL9g",
+          "owner": "zL2CInuh4EaNKUD_BLM7CQ",
+          "ownerDescription": "Топор Головореза",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "tergetType": "unit",
+          "units": ["swordsman", "cavalier", "flying", "archer"],
+          "title": "Топор Головореза",
+          "property": "persecutionRate",
+          "valueIndex": 0,
+          "value": [0.5, 0.6],
+          "description": [
+            "Атака всех преследователей +50%",
+            "Атака всех преследователей +60%"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "id": "LN3KG4xiRUK8NDy0p4PTYg",
+          "owner": "zL2CInuh4EaNKUD_BLM7CQ",
+          "ownerDescription": "Топор Головореза",
+          "type": "artefact",
+          "player": null,
+          "target": "enemy",
+          "appliedOn": "all",
+          "tergetType": "unit",
+          "units": ["mercenary"],
+          "title": "Топор Головореза",
+          "property": "attackRate",
+          "valueIndex": 0,
+          "value": [-0.15],
+          "description": ["Атака наемников -15%"],
+          "battle": true
+        },
+        {
+          "id": "6w9ghJ3LUk2wO0y0O392Iw",
+          "owner": "zL2CInuh4EaNKUD_BLM7CQ",
+          "ownerDescription": "Топор Головореза",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "tergetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Топор Головореза",
+          "property": "defenseLevel",
+          "valueIndex": 0,
+          "value": [5],
+          "description": ["Предел максимальной защиты +5"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "4g9QyfyOd0qzZalvydefIg",
+    "level": 5,
+    "ancient": false,
+    "perfect": false,
+    "title": "Наручни испепеления",
+    "place": "bracers",
+    "set": "Головорез",
+    "buffs": {
+      "common": [
+        {
+          "id": "M9KvwVW7n0GMHhwFWbDq8g",
+          "owner": "4g9QyfyOd0qzZalvydefIg",
+          "ownerDescription": "Наручни испепеления",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "fraction",
+          "tergetType": "unit",
+          "units": [
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Наручни испепеления",
+          "property": "attackRate",
+          "valueIndex": 0,
+          "value": [0.55, 0.66],
+          "description": [
+            "Атака всех войск +55% В бою против вражеской фракции",
+            "Атака всех войск +66% В бою против вражеской фракции"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "id": "JvO2lVn5A0mFhkUHTG1x6w",
+          "owner": "4g9QyfyOd0qzZalvydefIg",
+          "ownerDescription": "Наручни испепеления",
+          "type": "artefact",
+          "player": null,
+          "target": "enemy",
+          "appliedOn": "all",
+          "tergetType": "magicTower",
+          "units": null,
+          "title": "Наручни испепеления",
+          "property": "damageRate",
+          "value": [-0.15],
+          "description": ["Атака магических башен -15%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "ryUZ_I7QkUu_QmEi1jURPw",
+    "level": 5,
+    "ancient": false,
+    "perfect": false,
+    "title": "Кольчуга Головореза",
+    "place": "armor",
+    "set": "Головорез",
+    "buffs": {
+      "common": [
+        {
+          "id": "FP5Q69jSOkOdOhM9wmjpMA",
+          "owner": "ryUZ_I7QkUu_QmEi1jURPw",
+          "ownerDescription": "Кольчуга Головореза",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "tergetType": "unit",
+          "units": ["swordsman", "cavalier", "flying", "archer"],
+          "title": "Кольчуга Головореза",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [0.55, 0.66],
+          "description": [
+            "Здоровье воинов, всадников, летунов, стрелков своих +55%",
+            "Здоровье воинов, всадников, летунов, стрелков своих +66%"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "id": "KrTSAzmbTUKJQ-KGY24DxA",
+          "owner": "ryUZ_I7QkUu_QmEi1jURPw",
+          "ownerDescription": "Кольчуга Головореза",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "tergetType": "fortification",
+          "units": null,
+          "title": "Кольчуга Головореза",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [3],
+          "description": [
+            "Эффективность уничтожения войск на укреплениях +300%"
+          ],
+          "battle": true
+        },
+        {
+          "id": "5JBIaBoaY0-SxLgIyFAnsw",
+          "owner": "ryUZ_I7QkUu_QmEi1jURPw",
+          "ownerDescription": "Кольчуга Головореза",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "tergetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Кольчуга Головореза",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [0.15],
+          "description": ["Здоровье всех войск +15%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "xeVGcIdJx02id-x_RPC4TQ",
+    "level": 5,
+    "ancient": false,
+    "perfect": false,
+    "title": "Пояс Головореза",
+    "place": "belt",
+    "set": "Головорез",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": false
+  },
+  {
+    "id": "J9ajWi8mvEKXvdbo2ikJ3g",
+    "level": 5,
+    "ancient": false,
+    "perfect": false,
+    "title": "Сапоги экспансии",
+    "place": "boots",
+    "set": "Головорез",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": false
+  },
+  {
+    "id": "5kHSQcCkuUiGIjd9vfdDkA",
+    "level": 5,
+    "ancient": false,
+    "perfect": false,
+    "title": "Магический скорпион",
+    "place": "neck",
+    "set": "Головорез",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": false
+  },
+  {
+    "id": "nPW39zTntkCdLJDOVy8pvQ",
+    "level": 5,
+    "ancient": false,
+    "perfect": false,
+    "title": "Щит Головореза",
+    "place": "leftHand",
+    "set": "Головорез",
+    "buffs": {
+      "common": [
+        {
+          "id": "eoX-C3nfdkWJjmySKrl-7A",
+          "owner": "nPW39zTntkCdLJDOVy8pvQ",
+          "ownerDescription": "Щит Головореза",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "tergetType": "unit",
+          "units": ["swordsman", "cavalier", "flying", "archer"],
+          "title": "Щит Головореза",
+          "property": "defense",
+          "valueIndex": 0,
+          "value": [50, 60],
+          "description": [
+            "Защита Воинов +50 Всадников +50 Летающих +50 Стрелков +50",
+            "Защита Воинов +60 Всадников +60 Летающих +60 Стрелков +60"
+          ],
+          "battle": true
+        },
+        {
+          "id": "AiRBkWXE-UKOifG2X6ny-Q",
+          "owner": "nPW39zTntkCdLJDOVy8pvQ",
+          "ownerDescription": "Щит Головореза",
+          "type": "artefact",
+          "player": null,
+          "target": "enemy",
+          "appliedOn": "all",
+          "tergetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Щит Головореза",
+          "property": "defense",
+          "valueIndex": 0,
+          "value": [-50, -60],
+          "description": [
+            "Защита всех войск -50 Действует на противника",
+            "Защита всех войск -60 Действует на противника"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "id": "QF3L7fdT6k6opPEBiZdOng",
+          "owner": "nPW39zTntkCdLJDOVy8pvQ",
+          "ownerDescription": "Щит Головореза",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "tergetType": "unit",
+          "units": [
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Щит Головореза",
+          "property": "attackRate",
+          "valueIndex": 0,
+          "value": [0.15],
+          "description": ["Атака всех войск +15%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "W9-Z5-J2yEGWZuZCjWzcRQ",
+    "level": 5,
+    "ancient": false,
+    "perfect": false,
+    "title": "Кольчужные штаны Головореза",
+    "place": "pants",
+    "set": "Головорез",
+    "buffs": {
+      "common": [
+        {
+          "id": "FiIZVuzuCkGLP26H3GneZg",
+          "owner": "W9-Z5-J2yEGWZuZCjWzcRQ",
+          "ownerDescription": "Кольчужные штаны Головореза",
+          "type": "artefact",
+          "player": null,
+          "target": "enemy",
+          "appliedOn": "fraction",
+          "tergetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Кольчужные штаны Головореза",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [-0.45, -0.54],
+          "description": [
+            "Здоровье всех войск -45% Действует на противника В бою против вражеской фракции",
+            "Здоровье всех войск -54% Действует на противника В бою против вражеской фракции"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "id": "2jM_jxo9AkSGbMWb2NwuxA",
+          "owner": "W9-Z5-J2yEGWZuZCjWzcRQ",
+          "ownerDescription": "Кольчужные штаны Головореза",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "tergetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Кольчужные штаны Головореза",
+          "property": "defense",
+          "valueIndex": 0,
+          "value": [15],
+          "description": ["Защита всех войск +15"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+
+  {
+    "id": "d8rbrygAe0yzuvy6ESrQsQ",
+    "level": 5,
+    "ancient": false,
+    "perfect": false,
+    "title": "Броня Властелина мира",
+    "place": "armor",
+    "set": "Властелин мира",
+    "buffs": {
+      "common": [
+        {
+          "id": "bTB3NXvWaU6paYCPZnVW2A",
+          "owner": "d8rbrygAe0yzuvy6ESrQsQ",
+          "ownerDescription": "Броня Властелина мира",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "tergetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Броня Властелина мира",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [0.5, 0.6],
+          "description": [
+            "Здоровье всех войск +50%",
+            "Здоровье всех войск +60%"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "id": "5mBqsS0jikG71AzlMIpOrQ",
+          "owner": "d8rbrygAe0yzuvy6ESrQsQ",
+          "ownerDescription": "Броня Властелина мира",
+          "title": "Броня Властелина мира",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "tergetType": "fortification",
+          "units": null,
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [3],
+          "description": [
+            "Эффективность уничтожения войск на укреплениях +300%"
+          ],
+          "battle": true
+        },
+        {
+          "id": "JThLsYhnoEG1U738HCfMEw",
+          "owner": "d8rbrygAe0yzuvy6ESrQsQ",
+          "ownerDescription": "Броня Властелина мира",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "tergetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Броня Властелина мира",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [0.15],
+          "description": ["Здоровье всех войск +15%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+
+  {
+    "id": "JS3VM7quVEiXK_BiUpXfkQ",
+    "level": 5,
+    "ancient": "none",
+    "perfect": false,
+    "title": "Броня королевской стойкости",
+    "place": "armor",
+    "set": "Королевский",
+    "buffs": {
+      "common": [
+        {
+          "id": "Nsrw06axckiWNtlzCgSC8g",
+          "owner": "JS3VM7quVEiXK_BiUpXfkQ",
+          "ownerDescription": "Броня королевской стойкости",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "tergetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Броня королевской стойкости",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [0.5],
+          "description": ["Здоровье всех войск +50%"],
+          "battle": true
+        },
+        {
+          "id": "rmUvCNlzEkCHO7yeNJn_Nw",
+          "owner": "JS3VM7quVEiXK_BiUpXfkQ",
+          "ownerDescription": "Броня королевской стойкости",
+          "type": "artefact",
+          "player": null,
+          "target": "enemy",
+          "appliedOn": "all",
+          "tergetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Броня королевской стойкости",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [-0.5],
+          "description": ["Здоровье всех войск -50%"],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "id": "tMzAbyORPkmfJFkxpVSjcA",
+          "owner": "JS3VM7quVEiXK_BiUpXfkQ",
+          "ownerDescription": "Броня королевской стойкости",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "tergetType": "fortification",
+          "units": null,
+          "title": "Броня королевской стойкости",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [3],
+          "description": [
+            "Эффективность уничтожения войск на укреплениях +300%"
+          ],
+          "battle": true
+        },
+        {
+          "id": "aO7pPhpwAEe3-tMO06xvGA",
+          "owner": "JS3VM7quVEiXK_BiUpXfkQ",
+          "ownerDescription": "Броня королевской стойкости",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "tergetType": "units",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Броня королевской стойкости",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [0.15],
+          "description": ["Здоровье всех войск +15%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+
+  {
+    "id": "waSToI7kiUOiX525pSCTZw",
+    "level": 5,
+    "ancient": false,
+    "perfect": false,
+    "title": "Кольчуга магического здоровья",
+    "place": "armor",
+    "set": "Архимаг",
+    "buffs": {
+      "common": [
+        {
+          "id": "EpsIsHB1K06QLWlBlpuYQw",
+          "owner": "waSToI7kiUOiX525pSCTZw",
+          "ownerDescription": "Кольчуга магического здоровья",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "tergetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Кольчуга магического здоровья",
+          "property": "defenseLevel",
+          "valueIndex": 0,
+          "value": [20, 24],
+          "description": [
+            "Предел максимальной защиты +20",
+            "Предел максимальной защиты +24"
+          ],
+          "battle": 0
+        },
+        {
+          "id": "H1bBLP5S60-Y4Yjw183NDQ",
+          "owner": "waSToI7kiUOiX525pSCTZw",
+          "ownerDescription": "Кольчуга магического здоровья",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "tergetType": "units",
+          "units": ["mage"],
+          "title": "Кольчуга магического здоровья",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [0.55, 0.66],
+          "description": ["Здоровье Магов +55%", "Здоровье Магов +66%"],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "id": "QsHrMqAAI0KODkwpf_-QTg",
+          "owner": "waSToI7kiUOiX525pSCTZw",
+          "ownerDescription": "Кольчуга магического здоровья",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "tergetType": "fortification",
+          "units": null,
+          "title": "Кольчуга магического здоровья",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [3],
+          "description": [
+            "Эффективность уничтожения войск на укреплениях +300%"
+          ],
+          "battle": true
+        },
+        {
+          "id": "HVygN2nODUSN8-HFvUfFXw",
+          "owner": "waSToI7kiUOiX525pSCTZw",
+          "ownerDescription": "Кольчуга магического здоровья",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "tergetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Кольчуга магического здоровья",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [0.15],
+          "description": ["Здоровье всех войск +15%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+
+  {
+    "id": "AYixcYZzdU2XTiqfEdELcg",
+    "level": 5,
+    "ancient": false,
+    "perfect": false,
+    "title": "Кольчуга Бога",
+    "place": "armor",
+    "set": "Доспехи Бога",
+    "buffs": {
+      "common": [
+        {
+          "id": "tAXfS1evgkqRBpwcWkzB-g",
+          "owner": "AYixcYZzdU2XTiqfEdELcg",
+          "ownerDescription": "Кольчуга Бога",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "tergetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Кольчуга Бога",
+          "property": "defenseLevel",
+          "valueIndex": 0,
+          "value": [20, 24],
+          "description": [
+            "Предел максимальной защиты +20",
+            "Предел максимальной защиты +24"
+          ],
+          "battle": true
+        },
+        {
+          "id": "Rn352DmExUiPUoEiVdyp6w",
+          "owner": "AYixcYZzdU2XTiqfEdELcg",
+          "ownerDescription": "Кольчуга Бога",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "tergetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Кольчуга Бога",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [0.25, 0.3],
+          "description": [
+            "Здоровье всех войск +25%",
+            "Здоровье всех войск +30%"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "id": "lXrUAtv6-U-RrdKpUqIPxA",
+          "owner": "AYixcYZzdU2XTiqfEdELcg",
+          "ownerDescription": "Кольчуга Бога",
+          "title": "Кольчуга Бога",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "tergetType": "fortification",
+          "units": null,
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [3],
+          "description": [
+            "Эффективность уничтожения войск на укреплениях +300%"
+          ],
+          "battle": true
+        },
+        {
+          "id": "Msc1ELqXLkmo44QEtWgFpw",
+          "owner": "AYixcYZzdU2XTiqfEdELcg",
+          "ownerDescription": "Кольчуга Бога",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "tergetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Кольчуга Бога",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [0.15],
+          "description": ["Здоровье всех войск +15%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+
+  {
+    "id": "jk9c7fx1c0mqIWBERQ4Erg",
+    "level": 4,
+    "ancient": false,
+    "perfect": false,
+    "title": "Броня стрелков",
+    "place": "armor",
+    "set": "Мастер-исследователь",
+    "buffs": {
+      "common": [
+        {
+          "id": "pzBJVmwVb0eH-1Z5-Qdbew",
+          "owner": "jk9c7fx1c0mqIWBERQ4Erg",
+          "ownerDescription": "Броня стрелков",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "tergetType": "unit",
+          "units": ["archer"],
+          "title": "Броня стрелков",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [0.45, 0.54],
+          "description": ["Здоровье Стрелков +45%", "Здоровье Стрелков +54%"],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "id": "KWVazODtPECzuThy-0RKnw",
+          "owner": "jk9c7fx1c0mqIWBERQ4Erg",
+          "ownerDescription": "Броня стрелков",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "tergetType": "fortification",
+          "units": null,
+          "title": "Броня стрелков",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [2],
+          "description": [
+            "Эффективность уничтожения войск на укреплениях +200%"
+          ],
+          "battle": true
+        },
+        {
+          "id": "g82edQ3OR0q4ZvWwypfRvA",
+          "owner": "jk9c7fx1c0mqIWBERQ4Erg",
+          "ownerDescription": "Броня стрелков",
+          "title": "Броня стрелков",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "tergetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [0.12],
+          "description": ["Здоровье всех войск +12%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+
+  {
+    "id": "a397eBeH3kW7bmvzxmgYUg",
+    "level": 1,
+    "setTitle": "Кочевник",
+    "buffs": [
+      {
+        "id": "qaEDCPhfI0SSaW5qq14ceA",
+        "owner": "a397eBeH3kW7bmvzxmgYUg",
+        "ownerDescription": "Кочевник",
+        "type": "artefactKit",
+        "player": null,
+        "target": "player",
+        "appliedOn": "all",
+        "tergetType": "unit",
+        "units": [
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "title": "Комплект Кочевник",
+        "property": "attackRate",
+        "valueIndex": 0,
+        "value": [0.15],
+        "description": ["Атака всех войск +15%"],
+        "battle": true
+      },
+      {
+        "id": "XYotIssbXTCKm7HY",
+        "owner": "QUiz8lJpVr4Y9kcM",
+        "ownerDescription": "Кочевник",
+        "type": "artefactKit",
+        "player": null,
+        "target": "player",
+        "appliedOn": "all",
+        "tergetType": "player",
+        "units": null,
+        "title": "Комплект Кочевник",
+        "property": "experience",
+        "valueIndex": 0,
+        "value": [1],
+        "description": ["Получаемый героем опыт в бою +100%"],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "T5rk1ItYJUirO0-UuEaWIg",
+    "level": 5,
+    "ancient": false,
+    "perfect": false,
+    "title": "Плащ бескрайних степей",
+    "place": "back",
+    "set": "Кочевник",
+    "buffs": {
+      "common": [
+        {
+          "id": "79OFt9jXQ0CtgdVUxZSM2Q",
+          "owner": "T5rk1ItYJUirO0-UuEaWIg",
+          "ownerDescription": "Плащ бескрайних степей",
+          "type": "artefact",
+          "player": null,
+          "target": "enemy",
+          "appliedOn": "steppe",
+          "targetType": "unit",
+          "units": [
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Плащ бескрайних степей",
+          "property": "attackRate",
+          "valueIndex": 0,
+          "value": [-0.1, -0.12],
+          "description": [
+            "Атака всех войск -10% на земле Степь Действует на противника",
+            "Атака всех войск -12% на земле Степь Действует на противника"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "Tf5RGP1kw0CV0eXWmXFzsQ",
+    "level": 1,
+    "ancient": false,
+    "perfect": false,
+    "title": "Кожаный доспех Кочевника",
+    "place": "armor",
+    "set": "Кочевник",
+    "buffs": {
+      "common": [
+        {
+          "id": "eItm1U-aTUqUwBcNYFAKpA",
+          "owner": "Tf5RGP1kw0CV0eXWmXFzsQ",
+          "ownerDescription": "Кожаный доспех Кочевника",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "steppe",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Кожаный доспех Кочевника",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [0.15, 0.18],
+          "description": [
+            "Здоровье всех войск +15% на земле Степь",
+            "Здоровье всех войск +18% на земле Степь"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "id": "hdFeeZR28EamzL_4oxJB2w",
+          "owner": "Tf5RGP1kw0CV0eXWmXFzsQ",
+          "ownerDescription": "Кожаный доспех Кочевника",
+          "title": "Кожаный доспех Кочевника",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "fortification",
+          "units": null,
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [0.5],
+          "description": [
+            "Эффективность уничтожения войск на укреплениях +50%"
+          ],
+          "battle": true
+        },
+        {
+          "id": "dl7mzw0AU0ukTblXHzQBRg",
+          "owner": "Tf5RGP1kw0CV0eXWmXFzsQ",
+          "ownerDescription": "Кожаный доспех Кочевника",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Кожаный доспех Кочевника",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [0.03],
+          "description": ["Здоровье всех войск +3%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "RNrjqfgvI0GX905AScmLSg",
+    "level": 1,
+    "ancient": false,
+    "perfect": false,
+    "title": "Кольцо кочевника",
+    "place": "ring",
+    "set": "Кочевник",
+    "buffs": {
+      "common": [],
+      "perfect": [
+        {
+          "id": "qgnogeQxlUm8XVN2q7FF6g",
+          "owner": "RNrjqfgvI0GX905AScmLSg",
+          "ownerDescription": "Кольцо кочевника",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "magicTower",
+          "units": null,
+          "title": "Кольцо кочевника",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [0.05],
+          "description": ["Атака магических башен +5%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "MuI06gaIc0uZkYc-0j35AA",
+    "level": 1,
+    "ancient": false,
+    "perfect": false,
+    "title": "Шапка кочевника",
+    "place": "head",
+    "set": "Кочевник",
+    "buffs": {
+      "common": [
+        {
+          "id": "HwPUnQ95XUerVh-X-UusCw",
+          "owner": "MuI06gaIc0uZkYc-0j35AA",
+          "ownerDescription": "Шапка кочевника",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "steppe",
+          "targetType": "unit",
+          "unit": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Шапка кочевника",
+          "property": "defenseLevel",
+          "valueIndex": 0,
+          "value": [10, 12],
+          "description": [
+            "Предел максимальной защиты +10 на земле Степь",
+            "Предел максимальной защиты +12 на земле Степь"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "id": "M4p3PlbK40-vo2ZZKCwr_A",
+          "owner": "MuI06gaIc0uZkYc-0j35AA",
+          "ownerDescription": "Шапка кочевника",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "tower",
+          "units": null,
+          "title": "Шапка кочевника",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [0.25],
+          "description": ["Атака башен +25%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "5v1M6_0lQEqm2HLWc6JzsQ",
+    "level": 1,
+    "ancient": false,
+    "perfect": false,
+    "title": "Узел кочевника",
+    "place": "bag",
+    "set": "Кочевник",
+    "buffs": {
+      "common": [
+        {
+          "id": "S9wyKGdF2k-smlfNLqtcjA",
+          "owner": "5v1M6_0lQEqm2HLWc6JzsQ",
+          "ownerDescription": "Узел кочевника",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": ["porter"],
+          "title": "Узел кочевника",
+          "property": "capacityRate",
+          "valueIndex": 0,
+          "value": [1, 1.2],
+          "description": [
+            "Носильщики вмещают +100% ресурсов",
+            "Носильщики вмещают +120% ресурсов"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "hFIzwk2Aykmv9QrMXGPXAQ",
+    "level": 1,
+    "ancient": false,
+    "perfect": false,
+    "title": "Дубина кочевника",
+    "place": "rightHand",
+    "set": "Кочевник",
+    "buffs": {
+      "common": [
+        {
+          "id": "Wo3tJS8IY0arrTtaw94-Sw",
+          "owner": "hFIzwk2Aykmv9QrMXGPXAQ",
+          "ownerDescription": "Дубина кочевника",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "steppe",
+          "targetType": "unit",
+          "units": [
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Дубина кочевника",
+          "property": "attackRate",
+          "valueIndex": 0,
+          "value": [0.15, 0.18],
+          "description": [
+            "Атака всех войск +15% на земле Степь",
+            "Атака всех войск +18% на земле Степь"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "id": "mU0HWIJ7dEKv5Bd57TzFTg",
+          "owner": "hFIzwk2Aykmv9QrMXGPXAQ",
+          "ownerDescription": "Дубина кочевника",
+          "type": "artefact",
+          "player": null,
+          "target": "enemy",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": ["mercenary"],
+          "title": "Дубина кочевника",
+          "property": "attackRate",
+          "valueIndex": 0,
+          "value": [-0.03],
+          "description": ["Атака наемников -3%"],
+          "battle": true
+        },
+        {
+          "id": "_infgthEeU6lrDBZPV0v8w",
+          "owner": "hFIzwk2Aykmv9QrMXGPXAQ",
+          "ownerDescription": "Дубина кочевника",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "unitі": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Дубина кочевника",
+          "property": "defenseLevel",
+          "valueIndex": 0,
+          "value": [1],
+          "description": ["Предел максимальной защиты +1"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "6fZFEUUKRkCQ7ZhHhBN1vg",
+    "level": 1,
+    "ancient": false,
+    "perfect": false,
+    "title": "Сапоги кочевника",
+    "place": "boots",
+    "set": "Кочевник",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": false
+  },
+  {
+    "id": "MXij22tc-mWCm4mg",
+    "level": 1,
+    "ancient": false,
+    "perfect": false,
+    "title": "Талисман кочевника",
+    "place": "neck",
+    "set": "Кочевник",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": false
+  },
+  {
+    "id": "dH-DpRBQQkejkzu-NpSJKw",
+    "level": 1,
+    "ancient": false,
+    "perfect": false,
+    "title": "Легкий щит кочевника",
+    "place": "leftHand",
+    "set": "Кочевник",
+    "buffs": {
+      "common": [
+        {
+          "id": "IB3IA7-JfUWIf3s2IwbUow",
+          "owner": "dH-DpRBQQkejkzu-NpSJKw",
+          "ownerDescription": "Легкий щит кочевника",
+          "type": "artefact",
+          "player": null,
+          "target": "player_ally",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Легкий щит кочевника",
+          "property": "defense",
+          "valueIndex": 0,
+          "value": [5, 6],
+          "description": ["Защита всех войск +5", "Защита всех войск +6"],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "id": "OuF2FjN3HEutV1O66IHnGw",
+          "owner": "dH-DpRBQQkejkzu-NpSJKw",
+          "ownerDescription": "Легкий щит кочевника",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Легкий щит кочевника",
+          "property": "attackRate",
+          "valueIndex": 0,
+          "value": [0.03],
+          "description": ["Атака всех войск +3%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "h3vZ4i5wIUWPP_1b-4U4Ow",
+    "level": 1,
+    "ancient": false,
+    "perfect": false,
+    "title": "Штаны степных кочевников",
+    "place": "pants",
+    "set": "Кочевник",
+    "buffs": {
+      "common": [
+        {
+          "id": "3JxUUTYQr0WSt-Z_3oMiQg",
+          "owner": "h3vZ4i5wIUWPP_1b-4U4Ow",
+          "ownerDescription": "Штаны степных кочевников",
+          "type": "artefact",
+          "player": null,
+          "target": "player_ally",
+          "appliedOn": "steppe",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Штаны степных кочевников",
+          "property": "defenseLevel",
+          "valueIndex": 0,
+          "value": [5, 6],
+          "description": [
+            "Предел максимальной защиты +5 на земле степь",
+            "Предел максимальной защиты +6 на земле степь"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "id": "c-y66tmtx0SNCy71R_WP3g",
+          "owner": "h3vZ4i5wIUWPP_1b-4U4Ow",
+          "ownerDescription": "Штаны степных кочевников",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "unit": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Штаны степных кочевников",
+          "property": "defense",
+          "valueIndex": 0,
+          "value": [3],
+          "description": ["Защита всех войск +3"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "NwueTYRM-E24b-3YxYyG3Q",
+    "level": 1,
+    "ancient": false,
+    "perfect": false,
+    "title": "Пояс кочевника",
+    "place": "belt",
+    "set": "Кочевник",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": false
+  },
+  {
+    "id": "ITtUyV1lwUCHMfr3_XWuTg",
+    "level": 1,
+    "ancient": false,
+    "perfect": false,
+    "title": "Наручни степного кочевника",
+    "place": "bracers",
+    "set": "Кочевник",
+    "buffs": {
+      "common": [
+        {
+          "id": "wA0D5YJW40qyiZFOrcvaLw",
+          "owner": "ITtUyV1lwUCHMfr3_XWuTg",
+          "ownerDescription": "Наручни степного кочевника",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "steppe",
+          "targetType": "unit",
+          "units": ["swordsman", "cavalier", "flying", "archer"],
+          "title": "Наручни степного кочевника",
+          "property": "persecutionRate",
+          "valueIndex": 0,
+          "value": [0.15, 0.18],
+          "description": [
+            "Атака всех преследователей +15% на земле Степь",
+            "Атака всех преследователей +18% на земле Степь"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "id": "fH8U0ORl20OHcPLEA3TVAw",
+          "owner": "ITtUyV1lwUCHMfr3_XWuTg",
+          "ownerDescription": "Наручни степного кочевника",
+          "type": "artefact",
+          "player": null,
+          "target": "enemy",
+          "appliedOn": "all",
+          "targetType": "magicTower",
+          "units": null,
+          "title": "Наручни степного кочевника",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [-0.03],
+          "description": ["Атака магических башен -3%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+
+  {
+    "id": "YWQVtzntxSLVsIV1",
+    "level": 1,
+    "setTitle": "Горец",
+    "buffs": [
+      {
+        "id": "pwmMJ46ZergZzpLv",
+        "owner": "YWQVtzntxSLVsIV1",
+        "ownerDescription": "Горец",
+        "type": "artefactKit",
+        "player": null,
+        "target": "player",
+        "appliedOn": "all",
+        "tergetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "title": "Комплект Горец",
+        "property": "defense",
+        "valueIndex": 0,
+        "value": [15],
+        "description": ["Защита всех войск +15"],
+        "battle": true
+      },
+      {
+        "id": "XYotIssbXTCKm7HY",
+        "owner": "YWQVtzntxSLVsIV1",
+        "ownerDescription": "Горец",
+        "type": "artefactKit",
+        "player": null,
+        "target": "player",
+        "appliedOn": "all",
+        "tergetType": "player",
+        "units": null,
+        "title": "Комплект Горец",
+        "property": "experience",
+        "valueIndex": 0,
+        "value": [1],
+        "description": ["Получаемый героем опыт в бою +100%"],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "UPPz75MdRRiWuhd4",
+    "level": 5,
+    "ancient": false,
+    "perfect": false,
+    "title": "Плащ непроходимых гор",
+    "place": "back",
+    "set": "Горец",
+    "buffs": {
+      "common": [
+        {
+          "id": "S0N2MGTbhlyUv3Ln",
+          "owner": "UPPz75MdRRiWuhd4",
+          "ownerDescription": "Плащ непроходимых гор",
+          "type": "artefact",
+          "player": null,
+          "target": "enemy",
+          "appliedOn": "mountain",
+          "targetType": "unit",
+          "units": [
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Плащ непроходимых гор",
+          "property": "attackRate",
+          "valueIndex": 0,
+          "value": [-0.1, -0.12],
+          "description": [
+            "Атака всех войск -10% на земле Горы Действует на противника",
+            "Атака всех войск -12% на земле Горы Действует на противника"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "xHfo6Ztb-ZoElUsK",
+    "level": 1,
+    "ancient": false,
+    "perfect": false,
+    "title": "Рубаха горца",
+    "place": "armor",
+    "set": "Горец",
+    "buffs": {
+      "common": [
+        {
+          "id": "ldB3Z8pNn5rp1YhP",
+          "owner": "xHfo6Ztb-ZoElUsK",
+          "ownerDescription": "Рубаха горца",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "mountain",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Рубаха горца",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [0.15, 0.18],
+          "description": [
+            "Здоровье всех войск +15% на земле Горы",
+            "Здоровье всех войск +18% на земле Горы"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "id": "OuU_cdb8sVU0qmhg",
+          "owner": "xHfo6Ztb-ZoElUsK",
+          "ownerDescription": "Рубаха горца",
+          "title": "Рубаха горца",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "fortification",
+          "units": null,
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [0.5],
+          "description": [
+            "Эффективность уничтожения войск на укреплениях +50%"
+          ],
+          "battle": true
+        },
+        {
+          "id": "9Rk9k0C4fqhl4DQJ",
+          "owner": "xHfo6Ztb-ZoElUsK",
+          "ownerDescription": "Рубаха горца",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Рубаха горца",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [0.03],
+          "description": ["Здоровье всех войск +3%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "m7Nmz1eFFeLIuhQ9",
+    "level": 1,
+    "ancient": false,
+    "perfect": false,
+    "title": "Печатка горца",
+    "place": "ring",
+    "set": "Горец",
+    "buffs": {
+      "common": [
+        {
+          "id": "fKe5Idv1HpUIGjiK",
+          "owner": "m7Nmz1eFFeLIuhQ9",
+          "ownerDescription": "Печатка горца",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": ["swordsman", "cavalier", "flying", "archer"],
+          "title": "Печатка горца",
+          "property": "persecutionRate",
+          "valueIndex": 0,
+          "value": [0.15, 0.18],
+          "description": [
+            "Атака всех преследователей +15% на земле Горы",
+            "Атака всех преследователей +18% на земле Горы"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "id": "3Our-BZTahHb2j1v",
+          "owner": "m7Nmz1eFFeLIuhQ9",
+          "ownerDescription": "Печатка горца",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "magicTower",
+          "units": null,
+          "title": "Печатка горца",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [0.05],
+          "description": ["Атака магических башен +5%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "RYTNLWS_cnR2E01J",
+    "level": 1,
+    "ancient": false,
+    "perfect": false,
+    "title": "Шлем горца",
+    "place": "head",
+    "set": "Горец",
+    "buffs": {
+      "common": [
+        {
+          "id": "SYA5Zj8un_fCWkh-",
+          "owner": "RYTNLWS_cnR2E01J",
+          "ownerDescription": "Шлем горца",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "mountain",
+          "targetType": "unit",
+          "unit": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Шлем горца",
+          "property": "defenseLevel",
+          "valueIndex": 0,
+          "value": [10, 12],
+          "description": [
+            "Предел максимальной защиты +10 на земле Горы",
+            "Предел максимальной защиты +12 на земле Горы"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "id": "5poazcEP73TVMU2-",
+          "owner": "RYTNLWS_cnR2E01J",
+          "ownerDescription": "Шлем горца",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "tower",
+          "units": null,
+          "title": "Шлем горца",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [0.25],
+          "description": ["Атака башен +25%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "0UCM7GCSqT2b-751",
+    "level": 1,
+    "ancient": false,
+    "perfect": false,
+    "title": "Опыт гор",
+    "place": "bag",
+    "set": "Горец",
+    "buffs": {
+      "common": [
+        {
+          "id": "U9_SSOC5Pt5JT1C9",
+          "owner": "0UCM7GCSqT2b-751",
+          "ownerDescription": "Опыт гор",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "player",
+          "units": null,
+          "title": "Опыт гор",
+          "property": "experience",
+          "valueIndex": 0,
+          "value": [0.5, 0.6],
+          "description": [
+            "Получаемый героем опыт в бою +50%",
+            "Получаемый героем опыт в бою +60%"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "YZIhBoDAvTpIT003",
+    "level": 1,
+    "ancient": false,
+    "perfect": false,
+    "title": "Клинок ярости горца",
+    "place": "rightHand",
+    "set": "Горец",
+    "buffs": {
+      "common": [
+        {
+          "id": "0oDS5h9EL2Uw1X6I",
+          "owner": "YZIhBoDAvTpIT003",
+          "ownerDescription": "Клинок ярости горца",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "mountain",
+          "targetType": "unit",
+          "units": [
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Клинок ярости горца",
+          "property": "attackRate",
+          "valueIndex": 0,
+          "value": [0.15, 0.18],
+          "description": [
+            "Атака всех войск +15% на земле Горы",
+            "Атака всех войск +18% на земле Горы"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "id": "ju0KUGB_9TfOvtmc",
+          "owner": "YZIhBoDAvTpIT003",
+          "ownerDescription": "Клинок ярости горца",
+          "type": "artefact",
+          "player": null,
+          "target": "enemy",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": ["mercenary"],
+          "title": "Клинок ярости горца",
+          "property": "attackRate",
+          "valueIndex": 0,
+          "value": [-0.03],
+          "description": ["Атака наемников -3%"],
+          "battle": true
+        },
+        {
+          "id": "EpE_bYIoR-0rrKgt",
+          "owner": "YZIhBoDAvTpIT003",
+          "ownerDescription": "Клинок ярости горца",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Клинок ярости горца",
+          "property": "defenseLevel",
+          "valueIndex": 0,
+          "value": [1],
+          "description": ["Предел максимальной защиты +1"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "ZSmjZoq6hkdFvdaF",
+    "level": 1,
+    "ancient": false,
+    "perfect": false,
+    "title": "Горная обувь",
+    "place": "boots",
+    "set": "Горец",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": false
+  },
+  {
+    "id": "7EKumCE4-BuNQ5Q7",
+    "level": 1,
+    "ancient": false,
+    "perfect": false,
+    "title": "Талисман горца",
+    "place": "neck",
+    "set": "Горец",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": false
+  },
+  {
+    "id": "TR3rCe9nFoWznhPU",
+    "level": 1,
+    "ancient": false,
+    "perfect": false,
+    "title": "Горный щит",
+    "place": "leftHand",
+    "set": "Горец",
+    "buffs": {
+      "common": [
+        {
+          "id": "p8mD7v6G-pRuHjb8",
+          "owner": "TR3rCe9nFoWznhPU",
+          "ownerDescription": "Горный щит",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "mountain",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Горный щит",
+          "property": "defense",
+          "valueIndex": 0,
+          "value": [15, 18],
+          "description": [
+            "Защита всех войск +15 на земле горы",
+            "Защита всех войск +18 на земле горы"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "id": "IKDtUUY1IEWBYq9Y",
+          "owner": "TR3rCe9nFoWznhPU",
+          "ownerDescription": "Горный щит",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Горный щит",
+          "property": "attackRate",
+          "valueIndex": 0,
+          "value": [0.03],
+          "description": ["Атака всех войск +3%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "PHM9oKZpXjduNIKk",
+    "level": 1,
+    "ancient": false,
+    "perfect": false,
+    "title": "Штаны стойкости летающих",
+    "place": "pants",
+    "set": "Горец",
+    "buffs": {
+      "common": [
+        {
+          "id": "SKmqWWXLdpo3qDTY",
+          "owner": "PHM9oKZpXjduNIKk",
+          "ownerDescription": "Штаны стойкости летающих",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "mountain",
+          "targetType": "unit",
+          "units": ["flying"],
+          "title": "Штаны стойкости летающих",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [0, 15, 0, 18],
+          "description": ["Здоровье Летающих +15%", "Здоровье Летающих +18%"],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "id": "tMEtPEvaf1EojOsm",
+          "owner": "PHM9oKZpXjduNIKk",
+          "ownerDescription": "Штаны стойкости летающих",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "unit": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Штаны стойкости летающих",
+          "property": "defense",
+          "valueIndex": 0,
+          "value": [3],
+          "description": ["Защита всех войск +3"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "BkwKZ08d-FJFtBiw",
+    "level": 1,
+    "ancient": false,
+    "perfect": false,
+    "title": "Пояс горца",
+    "place": "belt",
+    "set": "Горец",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": false
+  },
+  {
+    "id": "vpZAzgK-oW1WiEkz",
+    "level": 1,
+    "ancient": false,
+    "perfect": false,
+    "title": "Наручни воздушных тварей",
+    "place": "bracers",
+    "set": "Горец",
+    "buffs": {
+      "common": [
+        {
+          "id": "G2n265vTHIUS2Ib3",
+          "owner": "vpZAzgK-oW1WiEkz",
+          "ownerDescription": "Наручни воздушных тварей",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "mountain",
+          "targetType": "unit",
+          "units": ["flying"],
+          "title": "Наручни воздушных тварей",
+          "property": "attackRate",
+          "valueIndex": 0,
+          "value": [0.15, 0.18],
+          "description": ["Атака Летающих +15%", "Атака Летающих +18%"],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "id": "d1jA08bd5UpGB6nU",
+          "owner": "vpZAzgK-oW1WiEkz",
+          "ownerDescription": "Наручни воздушных тварей",
+          "type": "artefact",
+          "player": null,
+          "target": "enemy",
+          "appliedOn": "all",
+          "targetType": "magicTower",
+          "units": null,
+          "title": "Наручни воздушных тварей",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [-0.03],
+          "description": ["Атака магических башен -3%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  }
+]

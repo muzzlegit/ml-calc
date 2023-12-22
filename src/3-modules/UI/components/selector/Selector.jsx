@@ -20,7 +20,7 @@ const Selector = ({
       }}
       gap={title}
     >
-      <Title>{title}</Title>
+      {title ? <Title>{title}</Title> : null}
       <Wrap width={width}>
         <span>{value}</span>
         <SvgIcon svgName="icon-arrow-down" size="14px" />

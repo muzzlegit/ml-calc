@@ -1,0 +1,20 @@
+{
+  "artCell": { "coordinate": "-1px -1px", "width": "68px", "height": "75px" },
+  "runeIcon": { "coordinate": "-69px -1px", "width": "16px", "height": "22px" },
+  "perfectIcon": {
+    "coordinate": "-69px -47px",
+    "width": "21px",
+    "height": "23px"
+  },
+  "ancientIcon": {
+    "coordinate": "-69px -25px",
+    "width": "21px",
+    "height": "21px"
+  },
+  "sharpeningIcon": {
+    "coordinate": "-91px -47px",
+    "width": "21px",
+    "height": "26px"
+  },
+  "deleteIcon": { "coordinate": "-91px -25px", "width": "", "height": "" }
+}

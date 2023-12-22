@@ -1,0 +1,207 @@
+{
+  "Накидка жертвоприношения": {
+    "coordinate": "-187px -311px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо банды головорезов": {
+    "coordinate": "-187px -373px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем дезинформации": {
+    "coordinate": "-187px -63px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Лампа великого шпионажа": {
+    "coordinate": "-187px -125px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Топор Головореза": {
+    "coordinate": "-187px -497px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручни испепеления": {
+    "coordinate": "-187px -187px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольчуга Головореза": {
+    "coordinate": "-187px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс Головореза": {
+    "coordinate": "-187px -435px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сапоги экспансии": {
+    "coordinate": "-187px -683px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Магический скорпион": {
+    "coordinate": "-187px -1px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Щит Головореза": {
+    "coordinate": "-187px -621px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольчужные штаны Головореза": {
+    "coordinate": "-187px -559px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Броня Властелина мира": {
+    "coordinate": "-1px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Броня королевской стойкости": {
+    "coordinate": "-249px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольчуга магического здоровья": {
+    "coordinate": "-125px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольчуга Бога": {
+    "coordinate": "-63px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Броня стрелков": {
+    "coordinate": "-931px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Плащ бескрайних степей": {
+    "coordinate": "-993px -1055px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кожаный доспех Кочевника": {
+    "coordinate": "-993px -993px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо кочевника": {
+    "coordinate": "-993px -1117px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шапка кочевника": {
+    "coordinate": "-993px -807px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Узел кочевника": {
+    "coordinate": "-993px -869px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Дубина кочевника": {
+    "coordinate": "-993px -1241px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сапоги кочевника": {
+    "coordinate": "-993px -1427px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Талисман кочевника": {
+    "coordinate": "-993px -745px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Легкий щит кочевника": {
+    "coordinate": "-993px -1365px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Штаны степных кочевников": {
+    "coordinate": "-993px -1303px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс кочевника": {
+    "coordinate": "-993px -1177px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручни степного кочевника": {
+    "coordinate": "-993px -931px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Плащ непроходимых гор": {
+    "coordinate": "-931px -1055px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Рубаха горца": {
+    "coordinate": "-931px -993px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Печатка горца": {
+    "coordinate": "-931px -1117px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем горца": {
+    "coordinate": "-931px -807px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Опыт гор": {
+    "coordinate": "-931px -869px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Клинок ярости горца": {
+    "coordinate": "-931px -1241px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Горная обувь": {
+    "coordinate": "-931px -1427px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Талисман горца": {
+    "coordinate": "-931px -745px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Горный щит": {
+    "coordinate": "-931px -1365px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Штаны стойкости летающих": {
+    "coordinate": "-931px -1303px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс горца": {
+    "coordinate": "-931px -1179px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручни воздушных тварей": {
+    "coordinate": "-931px -931px",
+    "width": "61px",
+    "height": "61px"
+  }
+}
