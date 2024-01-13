@@ -1,8 +1,8 @@
-import PropTypes from "prop-types";
-import { attackIndexTypes, buildingTypes } from "utils/types/types";
 import buildingsData from "../data/towers.json";
 import canvas from "../graphics/images/battlefields.webp";
+import standardsCanvas from "../graphics/images/standards.png";
 import canvasMap from "../graphics/maps/battlefields.map.js";
+import standardsCanvasMap from "../graphics/maps/standards.map.json";
 
 export function getBattleplacePicture(name, race) {
   const image = `url(${canvas}) ${
@@ -24,7 +24,9 @@ export function getBuildingData(
   isMonsters
 ) {
   const data =
-    buildingsData[isMonsters ? `monsters_${type}` : type][`level${level}`];
+    buildingsData[isMonsters ? `monsters_${type}` : type][
+      `level${isMonsters && level === 8 ? 7 : level}`
+    ];
   const { attackMin, attackMax, ...rest } = data;
   switch (type) {
     case "tower":
@@ -50,11 +52,26 @@ export function getBuildingData(
       return null;
   }
 }
-getBuildingData.propTypes = {
-  type: buildingTypes.isRequired,
-  id: PropTypes.string.isRequired,
-  level: PropTypes.number.isRequired,
-  attackIndex: attackIndexTypes,
-  quantity: PropTypes.number.isRequired,
-  isMonsters: PropTypes.bool.isRequired,
+
+export const getSpeciaalizationDescription = (buffs, index) => {
+  return buffs
+    .map(({ description }) => {
+      return `${description[index]}`;
+    })
+    .toString()
+    .replaceAll(",", "\n");
+};
+
+export function getStandardsPicture(name) {
+  const image = `url(${standardsCanvas}) ${standardsCanvasMap[name].coordinate}`;
+  const width = standardsCanvasMap[name].width;
+  const height = standardsCanvasMap[name].height;
+
+  return { image, width, height };
+}
+
+export const getStandartDescription = (standard) => {
+  return (
+    standard.buffs[0].description[0] + ` ${standard.buffs[0].value[0] * 100}%`
+  );
 };

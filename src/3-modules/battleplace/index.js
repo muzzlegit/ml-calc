@@ -8,5 +8,7 @@ export {
   BuildingsSelector,
   Garrison,
   GarrisonAttackIndexSelector,
+  Specialization,
+  StandardsList,
 } from "./components";
 export { useBattleplaceStore };

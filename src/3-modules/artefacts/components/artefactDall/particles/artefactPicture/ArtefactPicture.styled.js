@@ -21,6 +21,7 @@ export const Picture = styled.div(
   },
   (props) => ({
     filter: !props.isActive && "grayscale(80%) brightness(80%)",
+    opacity: props.twoHanded && 0.4,
     background: props.background.image,
     width: props.background.width,
     height: props.background.height,

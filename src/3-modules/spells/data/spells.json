@@ -1,0 +1,4049 @@
+[
+  {
+    "id": "Fn_1ZeTrQp70merO",
+    "title": "Сила войск",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "attackRate",
+        "description": [
+          "Атака всех войск +5%",
+          "Атака всех войск +10%",
+          "Атака всех войск +15%",
+          "Атака всех войск +20%",
+          "Атака всех войск +25%"
+        ],
+        "value": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "XH8DUg710ClS2PUu",
+    "title": "Сила союзнику",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "ally",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "attackRate",
+        "description": [
+          "Атака всех войск +5% Действует на союзника",
+          "Атака всех войск +10% Действует на союзника",
+          "Атака всех войск +15% Действует на союзника",
+          "Атака всех войск +20% Действует на союзника",
+          "Атака всех войск +25% Действует на союзника"
+        ],
+        "value": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "4YyqrlpjC-ZxHk-_",
+    "title": "Защита",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "defense",
+        "description": [
+          "Защита всех войск +5",
+          "Защита всех войск +10",
+          "Защита всех войск +15",
+          "Защита всех войск +20",
+          "Защита всех войск +25"
+        ],
+        "value": [5, 10, 15, 20, 25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "KZphKqbvcbK1fVRQ",
+    "title": "Защита союзнику",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "ally",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "defense",
+        "description": [
+          "Защита всех войск +5 Действует на союзника",
+          "Защита всех войск +10 Действует на союзника",
+          "Защита всех войск +15 Действует на союзника",
+          "Защита всех войск +20 Действует на союзника",
+          "Защита всех войск +25 Действует на союзника"
+        ],
+        "value": [5, 10, 15, 20, 25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "SMU8xBcr80MGrck2",
+    "title": "Ярость гор",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "mountain",
+        "targetType": "unit",
+        "units": [
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "attackRate",
+        "description": [
+          "Атака всех войск +5% на земле Горы",
+          "Атака всех войск +10% на земле Горы",
+          "Атака всех войск +15% на земле Горы",
+          "Атака всех войск +20% на земле Горы",
+          "Атака всех войск +25% на земле Горы"
+        ],
+        "value": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "_ecXQK5-iH8G9wNe",
+    "title": "Ярость леса",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "forest",
+        "targetType": "unit",
+        "units": [
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "attackRate",
+        "description": [
+          "Атака всех войск +5% на земле Леса",
+          "Атака всех войск +10% на земле Леса",
+          "Атака всех войск +15% на земле Леса",
+          "Атака всех войск +20% на земле Леса",
+          "Атака всех войск +25% на земле Леса"
+        ],
+        "value": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "bdjnPjz7F8fR_2yG",
+    "title": "Ярость пустыни",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "desert",
+        "targetType": "unit",
+        "units": [
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "attackRate",
+        "description": [
+          "Атака всех войск +5% на земле Пустыня",
+          "Атака всех войск +10% на земле Пустыня",
+          "Атака всех войск +15% на земле Пустыня",
+          "Атака всех войск +20% на земле Пустыня",
+          "Атака всех войск +25% на земле Пустыня"
+        ],
+        "value": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "a3yIDXWIrc3dHo3R",
+    "title": "Ярость степи",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "steppe",
+        "targetType": "unit",
+        "units": [
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "attackRate",
+        "description": [
+          "Атака всех войск +5% на земле Степь",
+          "Атака всех войск +10% на земле Степь",
+          "Атака всех войск +15% на земле Степь",
+          "Атака всех войск +20% на земле Степь",
+          "Атака всех войск +25% на земле Степь"
+        ],
+        "value": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "JJYxpOUWqBKy8EwB",
+    "title": "Горный камуфляж",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "mountain",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "defense",
+        "description": [
+          "Защита всех войск +5 на земле Горы",
+          "Защита всех войск +10 на земле Горы",
+          "Защита всех войск +15 на земле Горы",
+          "Защита всех войск +20 на земле Горы",
+          "Защита всех войск +25 на земле Горы"
+        ],
+        "value": [5, 10, 15, 20, 25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "3UX-IelS9nTOEump",
+    "title": "Лесной камуфляж",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "forest",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "defense",
+        "description": [
+          "Защита всех войск +5 на земле Леса",
+          "Защита всех войск +10 на земле Леса",
+          "Защита всех войск +15 на земле Леса",
+          "Защита всех войск +20 на земле Леса",
+          "Защита всех войск +25 на земле Леса"
+        ],
+        "value": [5, 10, 15, 20, 25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "qqxm1tOnvvQq28UB",
+    "title": "Пустынный камуфляж",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "desert",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "defense",
+        "description": [
+          "Защита всех войск +5 на земле Пустыня",
+          "Защита всех войск +10 на земле Пустыня",
+          "Защита всех войск +15 на земле Пустыня",
+          "Защита всех войск +20 на земле Пустыня",
+          "Защита всех войск +25 на земле Пустыня"
+        ],
+        "value": [5, 10, 15, 20, 25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "G6d7jU7cAZAegeV0",
+    "title": "Степной камуфляж",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "steppe",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "defense",
+        "description": [
+          "Защита всех войск +5 на земле Степь",
+          "Защита всех войск +10 на земле Степь",
+          "Защита всех войск +15 на земле Степь",
+          "Защита всех войск +20 на земле Степь",
+          "Защита всех войск +25 на земле Степь"
+        ],
+        "value": [5, 10, 15, 20, 25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "BcwRtJ9b-GfQl7h1",
+    "title": "Дух преследования земли демонов",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "player": null,
+        "target": "player",
+        "appliedOn": "deadLand",
+        "targetType": "unit",
+        "units": ["swordsman", "cavalier", "flying", "archer"],
+        "property": "persecutionRate",
+        "description": [
+          "Атака всех преследователей +20% на земле Мертвая земля",
+          "Атака всех преследователей +40% на земле Мертвая земля",
+          "Атака всех преследователей +60% на земле Мертвая земля",
+          "Атака всех преследователей +80% на земле Мертвая земля",
+          "Атака всех преследователей +100% на земле Мертвая земля"
+        ],
+        "value": [0.2, 0.4, 0.6, 0.8, 1],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "btbb2MoqFU88Zkvq",
+    "title": "Дух преследования земли темных эльфов",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "cursedForest",
+        "targetType": "unit",
+        "units": ["swordsman", "cavalier", "flying", "archer"],
+        "property": "persecutionRate",
+        "description": [
+          "Атака всех преследователей +20% на земле Проклятые леса",
+          "Атака всех преследователей +40% на земле Проклятые леса",
+          "Атака всех преследователей +60% на земле Проклятые леса",
+          "Атака всех преследователей +80% на земле Проклятые леса",
+          "Атака всех преследователей +100% на земле Проклятые леса"
+        ],
+        "value": [0.2, 0.4, 0.6, 0.8, 1],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "dXM-ZIzj_oiG_PoF",
+    "title": "Дух преследования земли эльфов",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "magicForest",
+        "targetType": "unit",
+        "units": ["swordsman", "cavalier", "flying", "archer"],
+        "property": "persecutionRate",
+        "description": [
+          "Атака всех преследователей +20% на земле Волшебные леса",
+          "Атака всех преследователей +40% на земле Волшебные леса",
+          "Атака всех преследователей +60% на земле Волшебные леса",
+          "Атака всех преследователей +80% на земле Волшебные леса",
+          "Атака всех преследователей +100% на земле Волшебные леса"
+        ],
+        "value": [0.2, 0.4, 0.6, 0.8, 1],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "JBhT-ic-OXdH7HfA",
+    "title": "Дух преследования земли рыцарей",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "hollyLand",
+        "targetType": "unit",
+        "units": ["swordsman", "cavalier", "flying", "archer"],
+        "property": "persecutionRate",
+        "description": [
+          "Атака всех преследователей +20% на земле Священная земля",
+          "Атака всех преследователей +40% на земле Священная земля",
+          "Атака всех преследователей +60% на земле Священная земля",
+          "Атака всех преследователей +80% на земле Священная земля",
+          "Атака всех преследователей +100% на земле Священная земля"
+        ],
+        "value": [0.2, 0.4, 0.6, 0.8, 1],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "NhHhetwTQyUm87n5",
+    "title": "Дух защиты земли демонов",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "deadLand",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "defense",
+        "description": [
+          "Защита всех войск +5 на земле Мертвая земля",
+          "Защита всех войск +10 на земле Мертвая земля",
+          "Защита всех войск +15 на земле Мертвая земля",
+          "Защита всех войск +20 на земле Мертвая земля",
+          "Защита всех войск +25 на земле Мертвая земля"
+        ],
+        "value": [5, 10, 15, 20, 25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "IGxETsbp8DfmujYb",
+    "title": "Дух защиты земли темных эльфов",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "cursedForest",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "defense",
+        "description": [
+          "Защита всех войск +5 на земле Проклятые леса",
+          "Защита всех войск +10 на земле Проклятые леса",
+          "Защита всех войск +15 на земле Проклятые леса",
+          "Защита всех войск +20 на земле Проклятые леса",
+          "Защита всех войск +25 на земле Проклятые леса"
+        ],
+        "value": [5, 10, 15, 20, 25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "tM3-GsROEjE5MV2_",
+    "title": "Дух защиты земли эльфов",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "magicForest",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "defense",
+        "description": [
+          "Защита всех войск +5 на земле Волшебные леса",
+          "Защита всех войск +10 на земле Волшебные леса",
+          "Защита всех войск +15 на земле Волшебные леса",
+          "Защита всех войск +20 на земле Волшебные леса",
+          "Защита всех войск +25 на земле Волшебные леса"
+        ],
+        "value": [5, 10, 15, 20, 25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "Y_w3Bfj3OCdZ9yP2",
+    "title": "Дух защиты земли рыцарей",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "hollyLand",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "defense",
+        "description": [
+          "Защита всех войск +5 на земле Священная земля",
+          "Защита всех войск +10 на земле Священная земля",
+          "Защита всех войск +15 на земле Священная земля",
+          "Защита всех войск +20 на земле Священная земля",
+          "Защита всех войск +25 на земле Священная земля"
+        ],
+        "value": [5, 10, 15, 20, 25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "lO7iljY7P6Pheopw",
+    "title": "Ярость Магов",
+    "singleLevel": false,
+    "type": "spell",
+    "sortIndex": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["mage"],
+        "property": "attackRate",
+        "description": [
+          "Атака магов +50%",
+          "Атака магов +100%",
+          "Атака магов +150%",
+          "Атака магов +200%",
+          "Атака магов +250%"
+        ],
+        "value": [0.5, 1, 1.5, 2, 2.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "aMSYTrCJJd4gnYZp",
+    "title": "Ярость всех Воинов",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "all",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["swordsman"],
+        "property": "attackRate",
+        "description": [
+          "Атака Воинов +10% Действует на себя, союзника, противника",
+          "Атака Воинов +15% Действует на себя, союзника, противника",
+          "Атака Воинов +20% Действует на себя, союзника, противника",
+          "Атака Воинов +25% Действует на себя, союзника, противника",
+          "Атака Воинов +30% Действует на себя, союзника, противника"
+        ],
+        "value": [0.1, 0.15, 0.2, 0.25, 0.3],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "1xmCUmyufZaNQRHB",
+    "title": "Ярость всех Всадников",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "all",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["cavalier"],
+        "property": "attackRate",
+        "description": [
+          "Атака Всадников +10% Действует на себя, союзника, противника",
+          "Атака Всадников +15% Действует на себя, союзника, противника",
+          "Атака Всадников +20% Действует на себя, союзника, противника",
+          "Атака Всадников +25% Действует на себя, союзника, противника",
+          "Атака Всадников +30% Действует на себя, союзника, противника"
+        ],
+        "value": [0.1, 0.15, 0.2, 0.25, 0.3],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "RjctrQo-TWu1oyGS",
+    "title": "Ярость всех Летающих",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "all",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["flying"],
+        "property": "attackRate",
+        "description": [
+          "Атака Летающих +10% Действует на себя, союзника, противника",
+          "Атака Летающих +15% Действует на себя, союзника, противника",
+          "Атака Летающих +20% Действует на себя, союзника, противника",
+          "Атака Летающих +25% Действует на себя, союзника, противника",
+          "Атака Летающих +30% Действует на себя, союзника, противника"
+        ],
+        "value": [0.1, 0.15, 0.2, 0.25, 0.3],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "TesbL-PAmtZc6P7G",
+    "title": "Ярость всех Стрелков",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "all",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["archer"],
+        "property": "attackRate",
+        "description": [
+          "Атака Стрелков +10% Действует на себя, союзника, противника",
+          "Атака Стрелков +15% Действует на себя, союзника, противника",
+          "Атака Стрелков +20% Действует на себя, союзника, противника",
+          "Атака Стрелков +25% Действует на себя, союзника, противника",
+          "Атака Стрелков +30% Действует на себя, союзника, противника"
+        ],
+        "value": [0.1, 0.15, 0.2, 0.25, 0.3],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "AAtVEqBaZMsVslmo",
+    "title": "Воины-преследователи",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["swordsman"],
+        "property": "persecutionRate",
+        "description": [
+          "Атака преследователей +10% для Воинов",
+          "Атака преследователей +20% для Воинов",
+          "Атака преследователей +30% для Воинов",
+          "Атака преследователей +40% для Воинов",
+          "Атака преследователей +50% для Воинов"
+        ],
+        "value": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "8xyKQE9KieUJQAID",
+    "title": "Всадники-преследователи",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["cavalier"],
+        "property": "persecutionRate",
+        "description": [
+          "Атака преследователей +5% для Всадников",
+          "Атака преследователей +10% для Всадников",
+          "Атака преследователей +15% для Всадников",
+          "Атака преследователей +20% для Всадников",
+          "Атака преследователей +25% для Всадников"
+        ],
+        "value": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "_UVTzgPepDELoNkB",
+    "title": "Летающие-преследователи",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["flying"],
+        "property": "persecutionRate",
+        "description": [
+          "Атака преследователей +5% для Летающих",
+          "Атака преследователей +10% для Летающих",
+          "Атака преследователей +15% для Летающих",
+          "Атака преследователей +20% для Летающих",
+          "Атака преследователей +25% для Летающих"
+        ],
+        "value": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "2-ebU_LbdklcHl4g",
+    "title": "Стрелки-преследователи",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["archer"],
+        "property": "persecutionRate",
+        "description": [
+          "Атака преследователей +5% для Стрелков",
+          "Атака преследователей +10% для Стрелков",
+          "Атака преследователей +15% для Стрелков",
+          "Атака преследователей +20% для Стрелков",
+          "Атака преследователей +25% для Стрелков"
+        ],
+        "value": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "-V0V476QqKm0DeHP",
+    "title": "Выносливость армии",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mage"
+        ],
+        "property": "healthRate",
+        "description": [
+          "Здоровье всех войск (кроме наемников) +5%",
+          "Здоровье всех войск (кроме наемников) +10%",
+          "Здоровье всех войск (кроме наемников) +15%",
+          "Здоровье всех войск (кроме наемников) +20%",
+          "Здоровье всех войск (кроме наемников) +25%"
+        ],
+        "value": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "battle": true
+      }
+    ]
+  },
+
+  {
+    "id": "go33zX6FQbytnoP0",
+    "title": "Устойчивость Носильщиков",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["porter"],
+        "property": "healthRate",
+        "description": [
+          "Здоровье Носильщиков +20%",
+          "Здоровье Носильщиков +40%",
+          "Здоровье Носильщиков +60%",
+          "Здоровье Носильщиков +80%",
+          "Здоровье Носильщиков +100%"
+        ],
+        "value": [0.2, 0.4, 0.6, 0.8, 1],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "JzYkuMthUFii_m8s",
+    "title": "Устойчивость Воинов",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["swordsman"],
+        "property": "healthRate",
+        "description": [
+          "Здоровье Воинов +20%",
+          "Здоровье Воинов +40%",
+          "Здоровье Воинов +60%",
+          "Здоровье Воинов +80%",
+          "Здоровье Воинов +100%"
+        ],
+        "value": [0.2, 0.4, 0.6, 0.8, 1],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "n1Jgbm5Ku1Scnb2a",
+    "title": "Устойчивость Всадников",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["cavalier"],
+        "property": "healthRate",
+        "description": [
+          "Здоровье Всадников +20%",
+          "Здоровье Всадников +40%",
+          "Здоровье Всадников +60%",
+          "Здоровье Всадников +80%",
+          "Здоровье Всадников +100%"
+        ],
+        "value": [0.2, 0.4, 0.6, 0.8, 1],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "aImxo8F1PhKHK6oL",
+    "title": "Устойчивость Летающих",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["flying"],
+        "property": "healthRate",
+        "description": [
+          "Здоровье Летающих +20%",
+          "Здоровье Летающих +40%",
+          "Здоровье Летающих +60%",
+          "Здоровье Летающих +80%",
+          "Здоровье Летающих +100%"
+        ],
+        "value": [0.2, 0.4, 0.6, 0.8, 1],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "GFYBLHe8GGbfZdsB",
+    "title": "Устойчивость Стрелков",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["archer"],
+        "property": "healthRate",
+        "description": [
+          "Здоровье Стрелков +20%",
+          "Здоровье Стрелков +40%",
+          "Здоровье Стрелков +60%",
+          "Здоровье Стрелков +80%",
+          "Здоровье Стрелков +100%"
+        ],
+        "value": [0.2, 0.4, 0.6, 0.8, 1],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "do5BFIzOUtNsAa7z",
+    "title": "Устойчивость Целителей",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["healer"],
+        "property": "healthRate",
+        "description": [
+          "Здоровье Целителей +20%",
+          "Здоровье Целителей +40%",
+          "Здоровье Целителей +60%",
+          "Здоровье Целителей +80%",
+          "Здоровье Целителей +100%"
+        ],
+        "value": [0.2, 0.4, 0.6, 0.8, 1],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "pibcJZ69JVOBnboa",
+    "title": "Устойчивость Магов",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["mage"],
+        "property": "healthRate",
+        "description": [
+          "Здоровье Магов +20%",
+          "Здоровье Магов +40%",
+          "Здоровье Магов +60%",
+          "Здоровье Магов +80%",
+          "Здоровье Магов +100%"
+        ],
+        "value": [0.2, 0.4, 0.6, 0.8, 1],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "aNk_xSDVRymuNujj",
+    "title": "Выносливость Магов",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["mage"],
+        "property": "healthRate",
+        "description": [
+          "Здоровье Магов +20%",
+          "Здоровье Магов +40%",
+          "Здоровье Магов +60%",
+          "Здоровье Магов +80%",
+          "Здоровье Магов +100%"
+        ],
+        "value": [0.2, 0.4, 0.6, 0.8, 1],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "t5iKI1Ct5IjYBfSQ",
+    "title": "Выносливость союзников",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "ally",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mage"
+        ],
+        "property": "healthRate",
+        "description": [
+          "Здоровье всех войск (кроме наемников) +5%",
+          "Здоровье всех войск (кроме наемников) +10%",
+          "Здоровье всех войск (кроме наемников) +15%",
+          "Здоровье всех войск (кроме наемников) +20%",
+          "Здоровье всех войск (кроме наемников) +25%"
+        ],
+        "value": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "battle": true
+      }
+    ]
+  },
+
+  {
+    "id": "pqGqG7HC5D1NdR6-",
+    "title": "Ярость Воинов демонов",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "deadLand_demon",
+        "targetType": "unit",
+        "units": ["swordsman"],
+        "property": "attackRate",
+        "description": [
+          "Атака Воинов +10% на земле Мертвая земля (если своя расса Демоны)",
+          "Атака Воинов +20% на земле Мертвая земля (если своя расса Демоны)",
+          "Атака Воинов +30% на земле Мертвая земля (если своя расса Демоны)",
+          "Атака Воинов +40% на земле Мертвая земля (если своя расса Демоны)",
+          "Атака Воинов +50% на земле Мертвая земля (если своя расса Демоны)"
+        ],
+        "value": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "5UpX20dOCgphw65n",
+    "title": "Ярость Воинов темных эльфов",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "cursedForest_drow",
+        "targetType": "unit",
+        "units": ["swordsman"],
+        "property": "attackRate",
+        "description": [
+          "Атака Воинов +10% на земле Проклятые леса (если своя расса Темные эльфы)",
+          "Атака Воинов +20% на земле Проклятые леса (если своя расса Темные эльфы)",
+          "Атака Воинов +30% на земле Проклятые леса (если своя расса Темные эльфы)",
+          "Атака Воинов +40% на земле Проклятые леса (если своя расса Темные эльфы)",
+          "Атака Воинов +50% на земле Проклятые леса (если своя расса Темные эльфы)"
+        ],
+        "value": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "eBDFm8RlpbJvurRk",
+    "title": "Ярость Воинов нежити",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "cursedForest_undead",
+        "targetType": "unit",
+        "units": ["swordsman"],
+        "property": "attackRate",
+        "description": [
+          "Атака Воинов +10% на земле Проклятые леса (если своя расса Нежить)",
+          "Атака Воинов +20% на земле Проклятые леса (если своя расса Нежить)",
+          "Атака Воинов +30% на земле Проклятые леса (если своя расса Нежить)",
+          "Атака Воинов +40% на земле Проклятые леса (если своя расса Нежить)",
+          "Атака Воинов +50% на земле Проклятые леса (если своя расса Нежить)"
+        ],
+        "value": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "6WVf5mNOr_QOODWa",
+    "title": "Ярость Воинов эльфов",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "magicForest_elf",
+        "targetType": "unit",
+        "units": ["swordsman"],
+        "property": "attackRate",
+        "description": [
+          "Атака Воинов +10% на земле Волшебные леса (если своя расса Эльфы)",
+          "Атака Воинов +20% на земле Волшебные леса (если своя расса Эльфы)",
+          "Атака Воинов +30% на земле Волшебные леса (если своя расса Эльфы)",
+          "Атака Воинов +40% на земле Волшебные леса (если своя расса Эльфы)",
+          "Атака Воинов +50% на земле Волшебные леса (если своя расса Эльфы)"
+        ],
+        "value": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "nYsjcR-3CLZqdqkZ",
+    "title": "Ярость Воинов рыцарей",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "hollyLand_human",
+        "targetType": "unit",
+        "units": ["swordsman"],
+        "property": "attackRate",
+        "description": [
+          "Атака Воинов +10% на земле Священная земля (если своя расса Рыцари)",
+          "Атака Воинов +20% на земле Священная земля (если своя расса Рыцари)",
+          "Атака Воинов +30% на земле Священная земля (если своя расса Рыцари)",
+          "Атака Воинов +40% на земле Священная земля (если своя расса Рыцари)",
+          "Атака Воинов +50% на земле Священная земля (если своя расса Рыцари)"
+        ],
+        "value": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "xWgPEwufxALWpLsE",
+    "title": "Ярость Всадников демонов",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "deadLand_demon",
+        "targetType": "unit",
+        "units": ["cavalier"],
+        "property": "attackRate",
+        "description": [
+          "Атака Всадников +10% на земле Мертвая земля (если своя расса Демоны)",
+          "Атака Всадников +20% на земле Мертвая земля (если своя расса Демоны)",
+          "Атака Всадников +30% на земле Мертвая земля (если своя расса Демоны)",
+          "Атака Всадников +40% на земле Мертвая земля (если своя расса Демоны)",
+          "Атака Всадников +50% на земле Мертвая земля (если своя расса Демоны)"
+        ],
+        "value": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "AYVlkRjWT2iQZjTn",
+    "title": "Ярость Всадников темных эльфов",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "cursedForest_drow",
+        "targetType": "unit",
+        "units": ["cavalier"],
+        "property": "attackRate",
+        "description": [
+          "Атака Всадников +10% на земле Проклятые леса (если своя расса Темные эльфы)",
+          "Атака Всадников +20% на земле Проклятые леса (если своя расса Темные эльфы)",
+          "Атака Всадников +30% на земле Проклятые леса (если своя расса Темные эльфы)",
+          "Атака Всадников +40% на земле Проклятые леса (если своя расса Темные эльфы)",
+          "Атака Всадников +50% на земле Проклятые леса (если своя расса Темные эльфы)"
+        ],
+        "value": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "K3vZmIOYPBQkndDK",
+    "title": "Ярость Всадников нежити",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "cursedForest_undead",
+        "targetType": "unit",
+        "units": ["cavalier"],
+        "property": "attackRate",
+        "description": [
+          "Атака Всадников +10% на земле Проклятые леса (если своя расса Нежить)",
+          "Атака Всадников +20% на земле Проклятые леса (если своя расса Нежить)",
+          "Атака Всадников +30% на земле Проклятые леса (если своя расса Нежить)",
+          "Атака Всадников +40% на земле Проклятые леса (если своя расса Нежить)",
+          "Атака Всадников +50% на земле Проклятые леса (если своя расса Нежить)"
+        ],
+        "value": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "OSUCVkHA0OShgODf",
+    "title": "Ярость Всадников эльфов",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "magicForest_elf",
+        "targetType": "unit",
+        "units": ["cavalier"],
+        "property": "attackRate",
+        "description": [
+          "Атака Всадников +10% на земле Волшебные леса (если своя расса Эльфы)",
+          "Атака Всадников +20% на земле Волшебные леса (если своя расса Эльфы)",
+          "Атака Всадников +30% на земле Волшебные леса (если своя расса Эльфы)",
+          "Атака Всадников +40% на земле Волшебные леса (если своя расса Эльфы)",
+          "Атака Всадников +50% на земле Волшебные леса (если своя расса Эльфы)"
+        ],
+        "value": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "7mLx4UKBYYWGlO4d",
+    "title": "Ярость Всадников рыцарей",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "hollyLand_human",
+        "targetType": "unit",
+        "units": ["cavalier"],
+        "property": "attackRate",
+        "description": [
+          "Атака Всадников +10% на земле Священная земля (если своя расса Рыцари)",
+          "Атака Всадников +20% на земле Священная земля (если своя расса Рыцари)",
+          "Атака Всадников +30% на земле Священная земля (если своя расса Рыцари)",
+          "Атака Всадников +40% на земле Священная земля (если своя расса Рыцари)",
+          "Атака Всадников +50% на земле Священная земля (если своя расса Рыцари)"
+        ],
+        "value": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "Wxb5DlW_iL8vB6qi",
+    "title": "Ярость Летающих демонов",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "deadLand_demon",
+        "targetType": "unit",
+        "units": ["flying"],
+        "property": "attackRate",
+        "description": [
+          "Атака Летающих +10% на земле Мертвая земля (если своя расса Демоны)",
+          "Атака Летающих +20% на земле Мертвая земля (если своя расса Демоны)",
+          "Атака Летающих +30% на земле Мертвая земля (если своя расса Демоны)",
+          "Атака Летающих +40% на земле Мертвая земля (если своя расса Демоны)",
+          "Атака Летающих +50% на земле Мертвая земля (если своя расса Демоны)"
+        ],
+        "value": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "UEZU9dH2SXMFpRsP",
+    "title": "Ярость Летающих темных эльфов",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "cursedForest_drow",
+        "targetType": "unit",
+        "units": ["flying"],
+        "property": "attackRate",
+        "description": [
+          "Атака Летающих +10% на земле Проклятые леса (если своя расса Темные эльфы)",
+          "Атака Летающих +20% на земле Проклятые леса (если своя расса Темные эльфы)",
+          "Атака Летающих +30% на земле Проклятые леса (если своя расса Темные эльфы)",
+          "Атака Летающих +40% на земле Проклятые леса (если своя расса Темные эльфы)",
+          "Атака Летающих +50% на земле Проклятые леса (если своя расса Темные эльфы)"
+        ],
+        "value": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "Kwg3CWECfc3SY55V",
+    "title": "Ярость Летающих нежити",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "cursedForest_undead",
+        "targetType": "unit",
+        "units": ["flying"],
+        "property": "attackRate",
+        "description": [
+          "Атака Летающих +10% на земле Проклятые леса (если своя расса Нежить)",
+          "Атака Летающих +20% на земле Проклятые леса (если своя расса Нежить)",
+          "Атака Летающих +30% на земле Проклятые леса (если своя расса Нежить)",
+          "Атака Летающих +40% на земле Проклятые леса (если своя расса Нежить)",
+          "Атака Летающих +50% на земле Проклятые леса (если своя расса Нежить)"
+        ],
+        "value": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "NRBNN7_KKutdYtor",
+    "title": "Ярость Летающих эльфов",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "magicForest_elf",
+        "targetType": "unit",
+        "units": ["flying"],
+        "property": "attackRate",
+        "description": [
+          "Атака Летающих +10% на земле Волшебные леса (если своя расса Эльфы)",
+          "Атака Летающих +20% на земле Волшебные леса (если своя расса Эльфы)",
+          "Атака Летающих +30% на земле Волшебные леса (если своя расса Эльфы)",
+          "Атака Летающих +40% на земле Волшебные леса (если своя расса Эльфы)",
+          "Атака Летающих +50% на земле Волшебные леса (если своя расса Эльфы)"
+        ],
+        "value": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "xLfiSoaE5PgQFvmm",
+    "title": "Ярость Летающих рыцарей",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "hollyLand_human",
+        "targetType": "unit",
+        "units": ["flying"],
+        "property": "attackRate",
+        "description": [
+          "Атака Летающих +10% на земле Священная земля (если своя расса Рыцари)",
+          "Атака Летающих +20% на земле Священная земля (если своя расса Рыцари)",
+          "Атака Летающих +30% на земле Священная земля (если своя расса Рыцари)",
+          "Атака Летающих +40% на земле Священная земля (если своя расса Рыцари)",
+          "Атака Летающих +50% на земле Священная земля (если своя расса Рыцари)"
+        ],
+        "value": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "VaiPuZwq0-IFb_HS",
+    "title": "Ярость Стрелков демонов",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "deadLand_demon",
+        "targetType": "unit",
+        "units": ["archer"],
+        "property": "attackRate",
+        "description": [
+          "Атака Стрелков +10% на земле Мертвая земля (если своя расса Демоны)",
+          "Атака Стрелков +20% на земле Мертвая земля (если своя расса Демоны)",
+          "Атака Стрелков +30% на земле Мертвая земля (если своя расса Демоны)",
+          "Атака Стрелков +40% на земле Мертвая земля (если своя расса Демоны)",
+          "Атака Стрелков +50% на земле Мертвая земля (если своя расса Демоны)"
+        ],
+        "value": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "1JDAsHORPCrYIdjo",
+    "title": "Ярость Стрелков темных эльфов",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "cursedForest_drow",
+        "targetType": "unit",
+        "units": ["archer"],
+        "property": "attackRate",
+        "description": [
+          "Атака Стрелков +10% на земле Проклятые леса (если своя расса Темные эльфы)",
+          "Атака Стрелков +20% на земле Проклятые леса (если своя расса Темные эльфы)",
+          "Атака Стрелков +30% на земле Проклятые леса (если своя расса Темные эльфы)",
+          "Атака Стрелков +40% на земле Проклятые леса (если своя расса Темные эльфы)",
+          "Атака Стрелков +50% на земле Проклятые леса (если своя расса Темные эльфы)"
+        ],
+        "value": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "tzmsR0Wisk9YX5gY",
+    "title": "Ярость Стрелков нежити",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "cursedForest_undead",
+        "targetType": "unit",
+        "units": ["archer"],
+        "property": "attackRate",
+        "description": [
+          "Атака Стрелков +10% на земле Проклятые леса (если своя расса Нежить)",
+          "Атака Стрелков +20% на земле Проклятые леса (если своя расса Нежить)",
+          "Атака Стрелков +30% на земле Проклятые леса (если своя расса Нежить)",
+          "Атака Стрелков +40% на земле Проклятые леса (если своя расса Нежить)",
+          "Атака Стрелков +50% на земле Проклятые леса (если своя расса Нежить)"
+        ],
+        "value": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "zAg_E-yTAgru7tUQ",
+    "title": "Ярость Стрелков эльфов",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "magicForest_elf",
+        "targetType": "unit",
+        "units": ["archer"],
+        "property": "attackRate",
+        "description": [
+          "Атака Стрелков +10% на земле Волшебные леса (если своя расса Эльфы)",
+          "Атака Стрелков +20% на земле Волшебные леса (если своя расса Эльфы)",
+          "Атака Стрелков +30% на земле Волшебные леса (если своя расса Эльфы)",
+          "Атака Стрелков +40% на земле Волшебные леса (если своя расса Эльфы)",
+          "Атака Стрелков +50% на земле Волшебные леса (если своя расса Эльфы)"
+        ],
+        "value": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "V8epMmm85zX5BtBD",
+    "title": "Ярость Стрелков рыцарей",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "hollyLand_human",
+        "targetType": "unit",
+        "units": ["archer"],
+        "property": "attackRate",
+        "description": [
+          "Атака Стрелков +10% на земле Священная земля (если своя расса Рыцари)",
+          "Атака Стрелков +20% на земле Священная земля (если своя расса Рыцари)",
+          "Атака Стрелков +30% на земле Священная земля (если своя расса Рыцари)",
+          "Атака Стрелков +40% на земле Священная земля (если своя расса Рыцари)",
+          "Атака Стрелков +50% на земле Священная земля (если своя расса Рыцари)"
+        ],
+        "value": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "Z_WA_O_py4XyBnov",
+    "title": "Бесстрашие",
+    "sortIndex": "spell",
+    "singleLevel": true,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": null,
+        "property": "fearlessness",
+        "description": [
+          "Войска не отступают в бою, игнорируя настройки отступления при потерях и действия ужаса"
+        ],
+        "value": [false, true],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "FznrQlMFwQtbeZRr",
+    "title": "Подавление целителей",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["healer"],
+        "property": "resurrectionRate",
+        "description": [
+          "Целители воскрешают -10%",
+          "Целители воскрешают -20%",
+          "Целители воскрешают -30%",
+          "Целители воскрешают -40%",
+          "Целители воскрешают -50%"
+        ],
+        "value": [-0.1, -0.2, -0.3, -0.4, -0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "slTYIT6Nj8VWdWCg",
+    "title": "Улучшение целителей",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["healer"],
+        "property": "resurrectionRate",
+        "description": [
+          "Целители воскрешают +3%",
+          "Целители воскрешают +6%",
+          "Целители воскрешают +9%",
+          "Целители воскрешают +12%",
+          "Целители воскрешают +15%"
+        ],
+        "value": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "CA3eXW0xHErq7UvH",
+    "title": "Улучшение целителей союзника",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "ally",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["healer"],
+        "property": "resurrectionRate",
+        "description": [
+          "Целители воскрешают +10%",
+          "Целители воскрешают +20%",
+          "Целители воскрешают +30%",
+          "Целители воскрешают +40%",
+          "Целители воскрешают +50%"
+        ],
+        "value": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "UKwptIe2AMnZwVsI",
+    "title": "Улучшение магов",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["mage"],
+        "property": "towersSuppressionRate",
+        "description": [
+          "Поглощение магами повреждений от башен и магических башен +20%",
+          "Поглощение магами повреждений от башен и магических башен +40%",
+          "Поглощение магами повреждений от башен и магических башен +60%",
+          "Поглощение магами повреждений от башен и магических башен +80%",
+          "Поглощение магами повреждений от башен и магических башен +100%"
+        ],
+        "value": [0.2, 0.4, 0.6, 0.8, 1],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "ZVgpUs_88b20e5lI",
+    "title": "Защита магов",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["mage"],
+        "property": "defense",
+        "description": [
+          "Защита Магов +10",
+          "Защита Магов +20",
+          "Защита Магов +30",
+          "Защита Магов +40",
+          "Защита Магов +50"
+        ],
+        "value": [10, 20, 30, 40, 50],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "RaHnGco4R0a4Y3xf",
+    "title": "Подавление магов",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["mage"],
+        "property": "towersSuppressionRate",
+        "description": [
+          "Поглощение магами повреждений от башен и магических башен -20%",
+          "Поглощение магами повреждений от башен и магических башен -40%",
+          "Поглощение магами повреждений от башен и магических башен -60%",
+          "Поглощение магами повреждений от башен и магических башен -80%",
+          "Поглощение магами повреждений от башен и магических башен -100%"
+        ],
+        "value": [-0.2, -0.4, -0.6, -0.8, -1],
+        "battle": true
+      }
+    ]
+  },
+
+  {
+    "id": "HPrURcn4yWQJUvR",
+    "title": "Слабость магов противника",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["mage"],
+        "property": "attackRate",
+        "description": [
+          "Атака Магов -20%",
+          "Атака Магов -40%",
+          "Атака Магов -60%",
+          "Атака Магов -80%",
+          "Атака Магов -100%"
+        ],
+        "value": [-0.2, -0.4, -0.6, -0.8, -1],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "M0euGMeb2JBVU4tq",
+    "title": "Улучшение магических башен",
+    "sortIndex": "town",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "magicTower",
+        "units": null,
+        "property": "damageRate",
+        "description": [
+          "Атака магических башен +10%",
+          "Атака магических башен +20%",
+          "Атака магических башен +30%",
+          "Атака магических башен +40%",
+          "Атака магических башен +50%"
+        ],
+        "value": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "k8JDZEaZ7stIwi3y",
+    "title": "Улучшение обычных башен",
+    "sortIndex": "town",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "tower",
+        "units": null,
+        "property": "damageRate",
+        "description": [
+          "Атака башен +10%",
+          "Атака башен +20%",
+          "Атака башен +30%",
+          "Атака башен +40%",
+          "Атака башен +50%"
+        ],
+        "value": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "9cMhz_TvVjueXGt5",
+    "title": "Модернизация укреплений",
+    "sortIndex": "town",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "fortification",
+        "units": null,
+        "property": "damageRate",
+        "description": [
+          "Эффективность уничтожения войск на укреплениях +100%",
+          "Эффективность уничтожения войск на укреплениях +150%",
+          "Эффективность уничтожения войск на укреплениях +200%",
+          "Эффективность уничтожения войск на укреплениях +250%",
+          "Эффективность уничтожения войск на укреплениях +300%"
+        ],
+        "value": [1, 1.5, 2, 2.5, 3],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "jxBii9OjoaCnVJYg",
+    "title": "Проклятие магических башен",
+    "sortIndex": "town",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "magicTower",
+        "units": null,
+        "property": "damageRate",
+        "description": [
+          "Атака магических башен -5%",
+          "Атака магических башен -10%",
+          "Атака магических башен -15%",
+          "Атака магических башен -20%",
+          "Атака магических башен -25%"
+        ],
+        "value": [-0.05, -0.1, -0.15, -0.2, -0.25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "uAh6FfcJjXe5_ut9",
+    "title": "Проклятие башен",
+    "sortIndex": "town",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "tower",
+        "units": null,
+        "property": "damageRate",
+        "description": [
+          "Атака башен -10%",
+          "Атака башен -15%",
+          "Атака башен -20%",
+          "Атака башен -25%",
+          "Атака башен -30%"
+        ],
+        "value": [-0.1, -0.15, -0.2, -0.25, -0.3],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "e7DOs7Os3izOBwsg",
+    "title": "Проклятие укреплений",
+    "sortIndex": "town",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "fortification",
+        "units": null,
+        "property": "damageRate",
+        "description": [
+          "Эффективность уничтожения войск на укреплениях -100%",
+          "Эффективность уничтожения войск на укреплениях -150%",
+          "Эффективность уничтожения войск на укреплениях -200%",
+          "Эффективность уничтожения войск на укреплениях -250%",
+          "Эффективность уничтожения войск на укреплениях -300%"
+        ],
+        "value": [-1, -1.5, -2, -2.5, -3],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "fmhEVJIwGNknhbM7",
+    "title": "Защита от укреплений",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "fortification",
+        "units": null,
+        "property": "damageRate",
+        "description": [
+          "Эффективность уничтожения войск на укреплениях -20%",
+          "Эффективность уничтожения войск на укреплениях -40%",
+          "Эффективность уничтожения войск на укреплениях -60%",
+          "Эффективность уничтожения войск на укреплениях -80%",
+          "Эффективность уничтожения войск на укреплениях -100%"
+        ],
+        "value": [-0.2, -0.4, -0.6, -0.8, -1],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "MksC21GkXLCsw8aa",
+    "title": "Мастер башен",
+    "sortIndex": "town",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "tower",
+        "units": null,
+        "property": "damageRate",
+        "description": [
+          "Атака башен +50%",
+          "Атака башен +100%",
+          "Атака башен +150%",
+          "Атака башен +200%",
+          "Атака башен +250%"
+        ],
+        "value": [0.5, 1, 1.5, 2.0, 2.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "XVPFRL5axHSSUPPF",
+    "title": "Подавитель башен",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "tower",
+        "units": null,
+        "property": "damageRate",
+        "description": [
+          "Атака башен -10%",
+          "Атака башен -15%",
+          "Атака башен -20%",
+          "Атака башен -25%",
+          "Атака башен -30%"
+        ],
+        "value": [-0.1, -0.15, -0.2, -0.25, -0.3],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "cgOC550EP3dT6b5v",
+    "title": "Подавитель магических башен",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "magicTower",
+        "units": null,
+        "property": "damageRate",
+        "description": [
+          "Атака магических башен -3%",
+          "Атака магических башен -6%",
+          "Атака магических башен -9%",
+          "Атака магических башен -12%",
+          "Атака магических башен -15%"
+        ],
+        "value": [-0.03, -0.06, -0.09, -0.12, -0.15],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "9ETxJ48zJ7kP9pEc",
+    "title": "Тактика укреплений",
+    "sortIndex": "town",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "fortification",
+        "units": null,
+        "property": "damageRate",
+        "description": [
+          "Эффективность уничтожения войск на укреплениях +100%",
+          "Эффективность уничтожения войск на укреплениях +200%",
+          "Эффективность уничтожения войск на укреплениях +300%",
+          "Эффективность уничтожения войск на укреплениях +400%",
+          "Эффективность уничтожения войск на укреплениях +500%"
+        ],
+        "value": [1, 2, 3, 4, 5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "vb_-qmhRPC4ZioUD",
+    "title": "Знание слабых мест монстров",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "monsters",
+        "targetType": "unit",
+        "units": [
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "attackRate",
+        "description": [
+          "Атака всех войск +10% В бою против рассы Монстры",
+          "Атака всех войск +20% В бою против рассы Монстры",
+          "Атака всех войск +30% В бою против рассы Монстры",
+          "Атака всех войск +40% В бою против рассы Монстры",
+          "Атака всех войск +50% В бою против рассы Монстры"
+        ],
+        "value": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "RGFryoI9nggw48PO",
+    "title": "Знание повадок монстров",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "monsters",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "defense",
+        "description": [
+          "Защита всех войск +5 В бою против рассы Монстры",
+          "Защита всех войск +10 В бою против рассы Монстры",
+          "Защита всех войск +15 В бою против рассы Монстры",
+          "Защита всех войск +20 В бою против рассы Монстры",
+          "Защита всех войск +25 В бою против рассы Монстры"
+        ],
+        "value": [5, 10, 15, 20, 25],
+        "battle": true
+      }
+    ]
+  },
+
+  {
+    "id": "kkabOx5EZtaDjOJL",
+    "title": "Проклятие слабости",
+    "sortIndex": "town",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "attackRate",
+        "description": [
+          "Атака всех войск -5%",
+          "Атака всех войск -10%",
+          "Атака всех войск -15%",
+          "Атака всех войск -20%",
+          "Атака всех войск -25%"
+        ],
+        "value": [-0.05, -0.1, -0.15, -0.2, -0.25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "xgg-UJpZL99jPAvA",
+    "title": "Проклятие уязвимости",
+    "sortIndex": "town",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "defense",
+        "description": [
+          "Защита всех войск -10",
+          "Защита всех войск -20",
+          "Защита всех войск -30",
+          "Защита всех войск -40",
+          "Защита всех войск -50"
+        ],
+        "value": [-10, -20, -30, -40, -50],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "Z3S4poWWkNSRR__R",
+    "title": "Проклятие максимальной защиты",
+    "sortIndex": "town",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "defenseLevel",
+        "description": [
+          "Предел максимальной защиты -5",
+          "Предел максимальной защиты -10",
+          "Предел максимальной защиты -15",
+          "Предел максимальной защиты -20",
+          "Предел максимальной защиты -25"
+        ],
+        "value": [-5, -10, -15, -20, -25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "C24bpN9E8NlRu5B2",
+    "title": "Уязвимость атакующих",
+    "sortIndex": "town",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "defense",
+        "description": [
+          "Защита всех войск -5",
+          "Защита всех войск -10",
+          "Защита всех войск -15",
+          "Защита всех войск -20",
+          "Защита всех войск -25"
+        ],
+        "value": [-5, -10, -15, -20, -25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "IJRLbEe5s4l6qK0V",
+    "title": "Охрана союзника",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "ally",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "defense",
+        "description": [
+          "Защита всех войск 5",
+          "Защита всех войск 10",
+          "Защита всех войск 15",
+          "Защита всех войск 20",
+          "Защита всех войск 25"
+        ],
+        "value": [-5, -10, -15, -20, -25],
+        "battle": true
+      }
+    ]
+  },
+
+  {
+    "id": "cGG8mRPudMMBF7yT",
+    "title": "Уничтожитель демонов",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "demon",
+        "targetType": "player",
+        "units": null,
+        "property": "experience",
+        "description": [
+          "Получаемый героем опыта в бою +20% против рассы Демоны",
+          "Получаемый героем опыта в бою +40% против рассы Демоны",
+          "Получаемый героем опыта в бою +60% против рассы Демоны",
+          "Получаемый героем опыта в бою +80% против рассы Демоны",
+          "Получаемый героем опыта в бою +100% против рассы Демоны"
+        ],
+        "value": [0.2, 0.4, 0.6, 0.8, 1],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "plzIgYEZNCHcpyz7",
+    "title": "Уничтожитель темных эльфов",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "drow",
+        "targetType": "player",
+        "units": null,
+        "property": "experience",
+        "description": [
+          "Получаемый героем опыта в бою +20% против рассы Темные эльфы",
+          "Получаемый героем опыта в бою +40% против рассы Темные эльфы",
+          "Получаемый героем опыта в бою +60% против рассы Темные эльфы",
+          "Получаемый героем опыта в бою +80% против рассы Темные эльфы",
+          "Получаемый героем опыта в бою +100% против рассы Темные эльфы"
+        ],
+        "value": [0.2, 0.4, 0.6, 0.8, 1],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "rvZB3L-ck6tmMfCh",
+    "title": "Уничтожитель нежити",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "undead",
+        "targetType": "player",
+        "units": null,
+        "property": "experience",
+        "description": [
+          "Получаемый героем опыта в бою +20% против рассы Нежить",
+          "Получаемый героем опыта в бою +40% против рассы Нежить",
+          "Получаемый героем опыта в бою +60% против рассы Нежить",
+          "Получаемый героем опыта в бою +80% против рассы Нежить",
+          "Получаемый героем опыта в бою +100% против рассы Нежить"
+        ],
+        "value": [0.2, 0.4, 0.6, 0.8, 1],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "kn5EPLXnNHYwW9yc",
+    "title": "Уничтожитель эльфов",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "elf",
+        "targetType": "player",
+        "units": null,
+        "property": "experience",
+        "description": [
+          "Получаемый героем опыта в бою +20% против рассы Эльфы",
+          "Получаемый героем опыта в бою +40% против рассы Эльфы",
+          "Получаемый героем опыта в бою +60% против рассы Эльфы",
+          "Получаемый героем опыта в бою +80% против рассы Эльфы",
+          "Получаемый героем опыта в бою +100% против рассы Эльфы"
+        ],
+        "value": [0.2, 0.4, 0.6, 0.8, 1],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "HIC0X0NhEgPwoOGq",
+    "title": "Уничтожитель рыцарей",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "human",
+        "targetType": "player",
+        "units": null,
+        "property": "experience",
+        "description": [
+          "Получаемый героем опыта в бою +20% против рассы Рыцари",
+          "Получаемый героем опыта в бою +40% против рассы Рыцари",
+          "Получаемый героем опыта в бою +60% против рассы Рыцари",
+          "Получаемый героем опыта в бою +80% против рассы Рыцари",
+          "Получаемый героем опыта в бою +100% против рассы Рыцари"
+        ],
+        "value": [0.2, 0.4, 0.6, 0.8, 1],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "rE6EPQreM3VcYWhO",
+    "title": "Уничтожитель монстров",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "monsters",
+        "targetType": "player",
+        "units": null,
+        "property": "experience",
+        "description": [
+          "Получаемый героем опыта в бою +100% против рассы Монстры",
+          "Получаемый героем опыта в бою +200% против рассы Монстры",
+          "Получаемый героем опыта в бою +300% против рассы Монстры",
+          "Получаемый героем опыта в бою +400% против рассы Монстры",
+          "Получаемый героем опыта в бою +500% против рассы Монстры"
+        ],
+        "value": [1, 2, 3, 4, 5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "I-A2pm3h6ERpolX3",
+    "title": "Просветление",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "player",
+        "units": null,
+        "property": "experience",
+        "description": [
+          "Получаемый героем опыта в бою +20%",
+          "Получаемый героем опыта в бою +40%",
+          "Получаемый героем опыта в бою +60%",
+          "Получаемый героем опыта в бою +80%",
+          "Получаемый героем опыта в бою +100%"
+        ],
+        "value": [0.2, 0.4, 0.6, 0.8, 1],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "B2ZsCc4PkW1evS0r",
+    "title": "Просветление союзника",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "player",
+        "units": null,
+        "property": "experience",
+        "description": [
+          "Получаемый героем опыта в бою +30%",
+          "Получаемый героем опыта в бою +60%",
+          "Получаемый героем опыта в бою +90%",
+          "Получаемый героем опыта в бою +120%",
+          "Получаемый героем опыта в бою +150%"
+        ],
+        "value": [0.3, 0.6, 0.8, 1.2, 1.5],
+        "battle": true
+      },
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "player",
+        "units": null,
+        "property": "experience",
+        "description": [
+          "Получаемый героем опыта в бою +30%",
+          "Получаемый героем опыта в бою +60%",
+          "Получаемый героем опыта в бою +90%",
+          "Получаемый героем опыта в бою +120%",
+          "Получаемый героем опыта в бою +150%"
+        ],
+        "value": [0.3, 0.6, 0.8, 1.2, 1.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "0OcSONWG8-9HaK-r",
+    "title": "Снижение опыта противнику",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "player",
+        "units": null,
+        "property": "experience",
+        "description": [
+          "Получаемый героем опыта в бою -20%",
+          "Получаемый героем опыта в бою -40%",
+          "Получаемый героем опыта в бою -60%",
+          "Получаемый героем опыта в бою -80%",
+          "Получаемый героем опыта в бою -100%"
+        ],
+        "value": [-0.2, -0.4, -0.6, -0.8, -1],
+        "battle": true
+      }
+    ]
+  },
+
+  {
+    "id": "W9Mb64ETk-Vn70T-",
+    "title": "Мастерство обороны",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "defenseLevel",
+        "description": [
+          "Предел максимальной защиты +5",
+          "Предел максимальной защиты +10",
+          "Предел максимальной защиты +15",
+          "Предел максимальной защиты +20",
+          "Предел максимальной защиты +25"
+        ],
+        "value": [5, 10, 15, 20, 25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "0yi0nDGTZmilydwt",
+    "title": "Осадная башня",
+    "sortIndex": "spell",
+    "singleLevel": true,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "player",
+        "units": null,
+        "property": "attackBoost",
+        "description": ["Усиление атаки армии 10%"],
+        "value": [0.1],
+        "battle": true
+      },
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "defense",
+        "description": ["Защита всех войск +10"],
+        "value": [10],
+        "battle": true
+      },
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "magicTower",
+        "units": null,
+        "property": "damageRate",
+        "description": ["Атака магических башен -50%"],
+        "value": [0.5],
+        "battle": true
+      },
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "tower",
+        "units": null,
+        "property": "damageRate",
+        "description": ["Атака башен -50%"],
+        "value": [0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "DOCvaGZqDHtrNG8g",
+    "title": "Ловушка",
+    "sortIndex": "town",
+    "singleLevel": true,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "fearlessness",
+        "description": [
+          "Войска не отступают в бою игнорируя настройки отступления при потерях и действия ужаса"
+        ],
+        "value": [false, true],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "Sz2QHd9_bA80MxYd",
+    "title": "Переносное укрепление",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "player",
+        "units": null,
+        "property": "unitsDamage",
+        "description": [
+          "Уничтожает до боя 500 вражеских войск в раунде укреплений",
+          "Уничтожает до боя 1000 вражеских войск в раунде укреплений",
+          "Уничтожает до боя 1500 вражеских войск в раунде укреплений",
+          "Уничтожает до боя 2000 вражеских войск в раунде укреплений",
+          "Уничтожает до боя 2500 вражеских войск в раунде укреплений"
+        ],
+        "value": [500, 1000, 1500, 2000, 2500],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "mZGlkxh9JxedXHUK",
+    "title": "Троянский конь",
+    "sortIndex": "spell",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "player",
+        "units": null,
+        "property": "unitsDamage",
+        "description": [
+          "Уничтожает до боя 1000 вражеских войск в раунде укреплений",
+          "Уничтожает до боя 2000 вражеских войск в раунде укреплений",
+          "Уничтожает до боя 3000 вражеских войск в раунде укреплений",
+          "Уничтожает до боя 4000 вражеских войск в раунде укреплений",
+          "Уничтожает до боя 5000 вражеских войск в раунде укреплений"
+        ],
+        "value": [1000, 2000, 3000, 4000, 5000],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "X6nJ8BQxoJ0z1Sat",
+    "title": "Требушет",
+    "sortIndex": "spell",
+    "singleLevel": true,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "player",
+        "units": null,
+        "property": "unitsDamage",
+        "description": [
+          "Уничтожает до боя 8000 вражеских войск в раунде укреплений"
+        ],
+        "value": [8000],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "gUdKnsYsK7dFRWTZ",
+    "title": "Эйнарм для героя",
+    "sortIndex": "spell",
+    "singleLevel": true,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "player",
+        "units": null,
+        "property": "roundDamage",
+        "description": ["Атака в каждом раунде 50000"],
+        "value": [50000],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "VcfJU25lxr7S-zmA",
+    "title": "Армагеддон",
+    "sortIndex": "spell",
+    "singleLevel": true,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "all",
+        "appliedOn": "all",
+        "targetType": "player",
+        "units": null,
+        "property": "roundDamage",
+        "description": ["Атака в каждом раунде 200000"],
+        "value": [200000],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "nJ5jHXsADJ63LjbJ",
+    "title": "Вирус",
+    "sortIndex": "spell",
+    "singleLevel": true,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "attackRate",
+        "description": ["Атака всех войск -50%"],
+        "value": [-0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "gafMD7cMU21FYYPF",
+    "title": "Землетрясение",
+    "sortIndex": "spell",
+    "singleLevel": true,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "all",
+        "appliedOn": "all",
+        "targetType": "player",
+        "units": null,
+        "property": "unitsDamage",
+        "description": [
+          "Уничтожает до боя по 10000 войск каждого участника боя в раунде укреплений"
+        ],
+        "value": [10000],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "dDgk20fYbbuENK_u",
+    "title": "Кольцо демонов",
+    "sortIndex": "town",
+    "singleLevel": true,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "attackRate",
+        "description": ["Атака всех войск -10%"],
+        "value": [-0.1],
+        "battle": true
+      },
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "defense",
+        "description": ["Защита всех войск -5"],
+        "value": [-5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "rh23kDpxBUyOs8Wn",
+    "title": "Оборонительный Бриколь",
+    "sortIndex": "town",
+    "singleLevel": true,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "player",
+        "units": null,
+        "property": "roundDamage",
+        "description": ["Атака в каждом раунде 100000"],
+        "value": [100000],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "PJ9uMBuUrsb0BwBr",
+    "title": "Смоляные чаны владения",
+    "sortIndex": "town",
+    "singleLevel": true,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "player",
+        "units": null,
+        "property": "roundDamage",
+        "description": ["Атака в каждом раунде 50000"],
+        "value": [50000],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "9oFRlcjs-_TG-m4k",
+    "title": "Спрингалд",
+    "sortIndex": "spell",
+    "singleLevel": true,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "player",
+        "units": null,
+        "property": "unitsDamage",
+        "description": [
+          "Уничтожает до боя 4000 вражеских войск в раунде укреплений"
+        ],
+        "value": [4000],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "YBaJ12ByEpIuoNWp",
+    "title": "Великая корона",
+    "sortIndex": "town",
+    "singleLevel": true,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "attackRate",
+        "description": ["Атака всех войск +10%"],
+        "value": [0.1],
+        "battle": true
+      },
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "defense",
+        "description": ["Защита всех войск +5"],
+        "value": [5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "8HLal7i7BAZDO2n7",
+    "title": "Адаптация к местности",
+    "sortIndex": "spell",
+    "singleLevel": true,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "Адаптация к местности",
+        "targetType": "unit",
+        "units": ["swordsman", "cavalier", "flying", "archer"],
+        "property": "attackRate",
+        "description": [
+          "Атака Воинов +50% на земле Горы,Атака Всадников +50% на земле Леса,Атака Летающих +50% на земля Пустыня,Атака Лучников +50% на земле Степь,Атака Наемников +50% на земле Подземелье"
+        ],
+        "value": [0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "DFLUM7xCsB14EvKY",
+    "title": "Подавление монстров",
+    "sortIndex": "spell_hero",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "enemy",
+        "appliedOn": "monsters",
+        "targetType": "unit",
+        "units": [
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "attackRate",
+        "description": [
+          "Атака всех войск -10% В бою против рассы Монстры",
+          "Атака всех войск -20% В бою против рассы Монстры",
+          "Атака всех войск -30% В бою против рассы Монстры",
+          "Атака всех войск -40% В бою против рассы Монстры",
+          "Атака всех войск -50% В бою против рассы Монстры"
+        ],
+        "value": [-0.1, -0.2, -0.3, -0.4, -0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "GYOatkvaG3hm6jWJ",
+    "title": "Слабость всех магов",
+    "sortIndex": "spell_hero",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "all",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["mage"],
+        "property": "attackRate",
+        "description": [
+          "Атака Магов -20%",
+          "Атака Магов -40%",
+          "Атака Магов -80%",
+          "Атака Магов -160%",
+          "Атака Магов -320%"
+        ],
+        "value": [-0.2, -0.4, -0.8, -1.6, -3.2],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "HVBGO7xHglMd8zJL",
+    "title": "Слабость противника",
+    "sortIndex": "spell_hero",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "attackRate",
+        "description": [
+          "Атака всех войск -5%",
+          "Атака всех войск -10%",
+          "Атака всех войск -15%",
+          "Атака всех войск -20%",
+          "Атака всех войск -25%"
+        ],
+        "value": [-0.05, -0.1, -0.15, -0.2, -0.25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "uOnSNfi7HjyhjWP7",
+    "title": "Слабость преследователей",
+    "sortIndex": "spell_hero",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "all",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["swordsman", "cavalier", "flying", "archer"],
+        "property": "persecutionRate",
+        "description": [
+          "Атака всех преследователей -15%",
+          "Атака всех преследователей -30%",
+          "Атака всех преследователей -45%",
+          "Атака всех преследователей -60%",
+          "Атака всех преследователей -75%"
+        ],
+        "value": [-0.15, -0.3, -0.45, -0.6, -0.75],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "E_nQyayxpEx5Vb8a",
+    "title": "Всеобщая слабость",
+    "sortIndex": "town",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "all",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "attackRate",
+        "description": [
+          "Атака всех войск -10%",
+          "Атака всех войск -20%",
+          "Атака всех войск -30%",
+          "Атака всех войск -40%",
+          "Атака всех войск -50%"
+        ],
+        "value": [-0.1, -0.2, -0.3, -0.4, -0.5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "uybHOwtm1ua97AQz",
+    "title": "Добивание раненых",
+    "sortIndex": "spell_hero",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "player",
+        "units": null,
+        "property": "resurrection",
+        "description": [
+          "5% убитых войск не может быть воскрешено целителями",
+          "10% убитых войск не может быть воскрешено целителями",
+          "15% убитых войск не может быть воскрешено целителями",
+          "20% убитых войск не может быть воскрешено целителями",
+          "25% убитых войск не может быть воскрешено целителями"
+        ],
+        "value": [-0.05, -0.1, -0.15, -0.2, -0.25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "36_FjZsHWKVxd17D",
+    "title": "Выносливость Носильщиков",
+    "sortIndex": "spell_hero",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["porter"],
+        "property": "healthRate",
+        "description": [
+          "Здоровье Носильщиков +5%",
+          "Здоровье Носильщиков +10%",
+          "Здоровье Носильщиков +15%",
+          "Здоровье Носильщиков +20%",
+          "Здоровье Носильщиков +25%"
+        ],
+        "value": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "qTcTNa6sOOmdvsBm",
+    "title": "Всеобщее преследование",
+    "sortIndex": "spell_hero",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "all",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["swordsman", "cavalier", "flying", "archer"],
+        "property": "persecutionRate",
+        "description": [
+          "Атака всех преследователей +10%",
+          "Атака всех преследователей +15%",
+          "Атака всех преследователей +20%",
+          "Атака всех преследователей +25%",
+          "Атака всех преследователей +30%"
+        ],
+        "value": [0.1, 0.15, 0.2, 0.25, 0.3],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "3zI99VqQmU5dXQVL",
+    "title": "Катапульта",
+    "sortIndex": "spell_hero",
+    "singleLevel": true,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "player",
+        "units": null,
+        "property": "towersLevelReduce",
+        "description": ["Понижение уровня башен перед каждым раундом"],
+        "value": [false, true],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "Bpx2_CZ8sWOotSW6",
+    "title": "Воодушевление магов",
+    "sortIndex": "spell_hero",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["mage"],
+        "property": "roundAttackRate",
+        "description": [
+          "Увеличение атаки Магов на +20% после каждого раунда",
+          "Увеличение атаки Магов на +40% после каждого раунда",
+          "Увеличение атаки Магов на +60% после каждого раунда",
+          "Увеличение атаки Магов на +80% после каждого раунда",
+          "Увеличение атаки Магов на +100% после каждого раунда"
+        ],
+        "value": [0.2, 0.4, 0.6, 0.8, 1],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "bTQu1pHgw6RHK99o",
+    "title": "Устойчивость союзников",
+    "sortIndex": "spell_hero",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "ally",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mage"
+        ],
+        "property": "healthRate",
+        "description": [
+          "Здоровье всех войск (кроме наемников) +5%",
+          "Здоровье всех войск (кроме наемников) +10%",
+          "Здоровье всех войск (кроме наемников) +15%",
+          "Здоровье всех войск (кроме наемников) +20%",
+          "Здоровье всех войск (кроме наемников) +25%"
+        ],
+        "value": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "g4wTKKlQhbWVBWLX",
+    "title": "Ужас",
+    "sortIndex": "hero",
+    "singleLevel": false,
+    "type": "spell_hero",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "amountRate",
+        "description": [
+          "10% войск не участвуют в бою",
+          "15% войск не участвуют в бою",
+          "20% войск не участвуют в бою",
+          "25% войск не участвуют в бою",
+          "30% войск не участвуют в бою"
+        ],
+        "value": [-0.1, -0.15, -0.2, -0.25, -0, 3],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "_cOyK0bfL-zW_tAw",
+    "title": "Маги-защитники",
+    "sortIndex": "spell_hero",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["mage"],
+        "property": "suppression",
+        "description": [
+          "Каждый маг в боя подавляет +10 урона",
+          "Каждый маг в боя подавляет +15 урона",
+          "Каждый маг в боя подавляет +20 урона",
+          "Каждый маг в боя подавляет +25 урона",
+          "Каждый маг в боя подавляет +30 урона"
+        ],
+        "value": [10, 15, 20, 25, 30],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "Id-NEeGaTRA-XAkd",
+    "title": "Баллиста героя",
+    "sortIndex": "spell_hero",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "player",
+        "units": null,
+        "property": "unitsDamage",
+        "description": [
+          "Атака в каждом раунде 5000",
+          "Атака в каждом раунде 10000",
+          "Атака в каждом раунде 15000",
+          "Атака в каждом раунде 20000",
+          "Атака в каждом раунде 25000"
+        ],
+        "value": [5000, 10000, 15000, 20000, 25000],
+        "battle": true
+      },
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "player",
+        "units": null,
+        "property": "attackBoost",
+        "description": [
+          "Усиление атаки армии 2%",
+          "Усиление атаки армии 4%",
+          "Усиление атаки армии 6%",
+          "Усиление атаки армии 8%",
+          "Усиление атаки армии 10%"
+        ],
+        "value": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "A-SUh4GZK-fr9V0R",
+    "title": "Преследование ассасина",
+    "sortIndex": "hero",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "Преследование ассасина",
+        "targetType": "unit",
+        "units": ["swordsman", "cavalier", "flying", "archer"],
+        "property": "persecutionRate",
+        "description": [
+          "Атака всех преследователей 1% за каждый уровень артефакта с базовым эффектом на увеличение атаки преследователей",
+          "Атака всех преследователей 2% за каждый уровень артефакта с базовым эффектом на увеличение атаки преследователей",
+          "Атака всех преследователей 3% за каждый уровень артефакта с базовым эффектом на увеличение атаки преследователей",
+          "Атака всех преследователей 4% за каждый уровень артефакта с базовым эффектом на увеличение атаки преследователей",
+          "Атака всех преследователей 5% за каждый уровень артефакта с базовым эффектом на увеличение атаки преследователей"
+        ],
+        "value": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "9H1eRXGgUDV4ktbI",
+    "title": "Каменная броня",
+    "sortIndex": "hero",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "Каменная броня",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "defense",
+        "description": [
+          "Защита всех войск +1 за каждый уровень артефакта с базовым эффектом на увеличение защиты",
+          "Защита всех войск +2 за каждый уровень артефакта с базовым эффектом на увеличение защиты",
+          "Защита всех войск +3 за каждый уровень артефакта с базовым эффектом на увеличение защиты",
+          "Защита всех войск +4 за каждый уровень артефакта с базовым эффектом на увеличение защиты",
+          "Защита всех войск +5 за каждый уровень артефакта с базовым эффектом на увеличение защиты"
+        ],
+        "value": [1, 2, 3, 4, 5],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "avsvMUEjFBly7-Ni",
+    "title": "Здоровье мамонта",
+    "sortIndex": "hero",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "Здоровье мамонта",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "healthRate",
+        "description": [
+          "Здоровье всех войск 1% за каждый уровень артефакта с базовым эффектом на увеличение здоровья",
+          "Здоровье всех войск 2% за каждый уровень артефакта с базовым эффектом на увеличение здоровья",
+          "Здоровье всех войск 3% за каждый уровень артефакта с базовым эффектом на увеличение здоровья",
+          "Здоровье всех войск 4% за каждый уровень артефакта с базовым эффектом на увеличение здоровья",
+          "Здоровье всех войск 5% за каждый уровень артефакта с базовым эффектом на увеличение здоровья"
+        ],
+        "value": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "AVkHSyOdqPJOJHGy",
+    "title": "Острый меч",
+    "sortIndex": "hero",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "Острый меч",
+        "targetType": "unit",
+        "units": [
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "attackRate",
+        "description": [
+          "Атака всех войск 1% за каждый уровень артефакта с базовым эффектом на увеличение атаки",
+          "Атака всех войск 2% за каждый уровень артефакта с базовым эффектом на увеличение атаки",
+          "Атака всех войск 3% за каждый уровень артефакта с базовым эффектом на увеличение атаки",
+          "Атака всех войск 4% за каждый уровень артефакта с базовым эффектом на увеличение атаки",
+          "Атака всех войск 5% за каждый уровень артефакта с базовым эффектом на увеличение атаки"
+        ],
+        "value": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "Bp6rTiOFDww9K-KB",
+    "title": "Защита от монстров",
+    "sortIndex": "hero",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "monsters",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "defense",
+        "description": [
+          "Защита всех войск +5 В бою против рассы Монстры",
+          "Защита всех войск +10 В бою против рассы Монстры",
+          "Защита всех войск +15 В бою против рассы Монстры",
+          "Защита всех войск +20 В бою против рассы Монстры",
+          "Защита всех войск +25 В бою против рассы Монстры"
+        ],
+        "value": [5, 10, 15, 20, 25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "y22GEPwkfQ2yK5ci",
+    "title": "Подавление максимальной защиты",
+    "sortIndex": "hero",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "defenseLevel",
+        "description": [
+          "Предел максимальной защиты -4 Действует на противника",
+          "Предел максимальной защиты -8 Действует на противника",
+          "Предел максимальной защиты -12 Действует на противника",
+          "Предел максимальной защиты -16 Действует на противника",
+          "Предел максимальной защиты -20 Действует на противника"
+        ],
+        "value": [-4, -8, -12, -16, -20],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "7rR2UqqlvJ2McOWZ",
+    "title": "Требушет",
+    "sortIndex": "hero",
+    "singleLevel": false,
+    "type": "spell",
+    "player": null,
+    "level": 0,
+    "valueIndex": 0,
+    "buffs": [
+      {
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "player",
+        "units": null,
+        "property": "unitsDamage",
+        "description": [
+          "Уничтожает до боя 2000 вражеских войск в раунде укреплений",
+          "Уничтожает до боя 3500 вражеских войск в раунде укреплений",
+          "Уничтожает до боя 5000 вражеских войск в раунде укреплений",
+          "Уничтожает до боя 6500 вражеских войск в раунде укреплений",
+          "Уничтожает до боя 8000 вражеских войск в раунде укреплений"
+        ],
+        "value": [2000, 3500, 5000, 6500, 8000],
+        "battle": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,72 @@
+{
+  "Заточка Сила войск": {
+    "coordinate": "-1px -1px",
+    "width": "36px",
+    "height": "31px"
+  },
+  "Заточка Защита": {
+    "coordinate": "-1px -65px",
+    "width": "36px",
+    "height": "31px"
+  },
+  "Заточка Устойчивость войск": {
+    "coordinate": "-1px -129px",
+    "width": "36px",
+    "height": "31px"
+  },
+  "Заточка Слабость противника": {
+    "coordinate": "-38px -1px",
+    "width": "36px",
+    "height": "31px"
+  },
+  "Заточка Подавление защиты": {
+    "coordinate": "-38px -33px",
+    "width": "36px",
+    "height": "31px"
+  },
+  "Заточка Подавление здоровья": {
+    "coordinate": "-38px -65px",
+    "width": "36px",
+    "height": "31px"
+  },
+  "Заточка Ужас": {
+    "coordinate": "-1px -193px",
+    "width": "36px",
+    "height": "31px"
+  },
+  "Заточка Опыт героев": {
+    "coordinate": "-38px -193px",
+    "width": "36px",
+    "height": "31px"
+  },
+  "Заточка Предел максимальной защиты": {
+    "coordinate": "-38px -129px",
+    "width": "36px",
+    "height": "31px"
+  },
+  "Заточка Предел максимальной защиты союзников": {
+    "coordinate": "-38px -161px",
+    "width": "36px",
+    "height": "31px"
+  },
+  "Заточка Сила войск союзников": {
+    "coordinate": "-1px -33px",
+    "width": "36px",
+    "height": "31px"
+  },
+  "Заточка Защита союзников": {
+    "coordinate": "-1px -97px",
+    "width": "36px",
+    "height": "31px"
+  },
+  "Заточка Устойчивость войск союзников": {
+    "coordinate": "-1px -161px",
+    "width": "36px",
+    "height": "31px"
+  },
+  "Заточка Подавление максимальной защиты": {
+    "coordinate": "-38px -97px",
+    "width": "36px",
+    "height": "31px"
+  }
+}

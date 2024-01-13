@@ -8,7 +8,7 @@ import { theme } from "utils/styles/theme";
 
 const colors = {
   acent: theme.colors.orange,
-  text: theme.colors.secondary,
+  text: theme.colors.textAcent,
 };
 
 const ArtefactsList = () => {

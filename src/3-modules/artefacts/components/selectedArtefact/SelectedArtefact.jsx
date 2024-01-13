@@ -16,14 +16,13 @@ const SelectedArtefact = () => {
     isPerfect,
     isRunes,
     isSharpening,
-    isBtnActive,
     graphics: { ancientIcon, perfectIcon, artefact, runeIcon, sharpeningIcon },
     handleSelectedArtefactProperty,
     handleAssignSelectedArtefact,
   } = useSelectedArtefact();
   return (
     <Container>
-      <ArtefactWrap isActive={isArtefact && !isBtnActive}>
+      <ArtefactWrap isActive={isArtefact}>
         {isArtefact ? (
           <ArtefactBg isAncient={isAncient}>
             <Picture background={artefact} />
@@ -77,8 +76,6 @@ const SelectedArtefact = () => {
         ) : null}
       </ArtefactWrap>
       <Button
-        disabled={isBtnActive}
-        isActive={!isBtnActive}
         handleClick={() => {
           handleAssignSelectedArtefact();
         }}

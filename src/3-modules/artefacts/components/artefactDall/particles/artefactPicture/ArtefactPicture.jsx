@@ -13,6 +13,7 @@ const ArtefactPicture = ({ place }) => {
     isRunes,
     isActive,
     isSharpening,
+    isTwoHanded,
     graphics: { runeIcon, perfectIcon, ancientIcon, sharpeningIcon, artefact },
     handleArtefactDelete,
     handleArtefactChange,
@@ -23,43 +24,48 @@ const ArtefactPicture = ({ place }) => {
     <>
       {isArtefact ? (
         <>
-          <ArtefactBg isAncient={isAncient}>
+          <ArtefactBg isAncient={!isTwoHanded && isAncient}>
             <Picture
               background={artefact}
               isActive={isActive}
+              twoHanded={isTwoHanded}
               onClick={() => {
                 handleArtefactSelect(place);
               }}
             />
           </ArtefactBg>
-          <ArtefactButton
-            absolute={true}
-            top={0}
-            left={0}
-            value={isAncient}
-            image={ancientIcon}
-            handleClick={() => {
-              handleArtefactChange(place, { ancient: ancientValue });
-            }}
-          />
-          <ArtefactButton
-            absolute={true}
-            top={0}
-            right="-24%"
-            value={isPerfect}
-            image={perfectIcon}
-            handleClick={() => {
-              handleArtefactChange(place, { perfect: !isPerfect });
-            }}
-          />
-          <IconWrap
-            onClick={() => {
-              handleArtefactDelete(place);
-            }}
-          >
-            <SvgIcon svgName="icon-x-close" size="20px" />
-          </IconWrap>
-          {isRunes ? (
+          {!isTwoHanded ? (
+            <>
+              <ArtefactButton
+                absolute={true}
+                top={0}
+                left={0}
+                value={isAncient}
+                image={ancientIcon}
+                handleClick={() => {
+                  handleArtefactChange(place, { ancient: ancientValue });
+                }}
+              />
+              <ArtefactButton
+                absolute={true}
+                top={0}
+                right="-24%"
+                value={isPerfect}
+                image={perfectIcon}
+                handleClick={() => {
+                  handleArtefactChange(place, { perfect: !isPerfect });
+                }}
+              />
+              <IconWrap
+                onClick={() => {
+                  handleArtefactDelete(place);
+                }}
+              >
+                <SvgIcon svgName="icon-x-close" size="20px" />
+              </IconWrap>
+            </>
+          ) : null}
+          {isRunes && !isTwoHanded ? (
             <ImageBox
               picture={runeIcon}
               addStyles={{
@@ -70,7 +76,7 @@ const ArtefactPicture = ({ place }) => {
               }}
             />
           ) : null}
-          {isSharpening ? (
+          {isSharpening && !isTwoHanded ? (
             <ImageBox
               picture={sharpeningIcon}
               addStyles={{

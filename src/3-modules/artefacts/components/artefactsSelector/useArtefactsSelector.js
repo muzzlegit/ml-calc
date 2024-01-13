@@ -43,9 +43,15 @@ const useArtefactsSelector = () => {
     }
     applyKitsBuffs("delete");
     removeArtefacts();
-    getKitArtefacts(kitTitle, kitAncient, kitPerfect).forEach((artefact) =>
-      asignArtefact(artefact)
-    );
+    getKitArtefacts(kitTitle, kitAncient, kitPerfect).forEach((artefact) => {
+      asignArtefact(artefact);
+      if (artefact?.twoHanded)
+        asignArtefact({
+          ...artefact,
+          place: "leftHand",
+          buffs: { common: [], perfect: [] },
+        });
+    });
     applyKitsBuffs("add");
     setKit(kitTitle);
   };

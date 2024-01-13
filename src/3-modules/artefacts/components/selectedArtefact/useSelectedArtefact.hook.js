@@ -44,6 +44,7 @@ const useSelectedArtefact = () => {
   const handleAssignSelectedArtefact = () => {
     applyArtefactBuffs();
     setArtefact(player, selectedArtefact);
+    checkForTwoHandedArtefact(selectedArtefact);
     setIsBtnActive(true);
   };
 
@@ -53,9 +54,33 @@ const useSelectedArtefact = () => {
 
   function applyArtefactBuffs() {
     const currentArtefact = getArtefact(player, selectedArtefact?.place);
-    if (currentArtefact)
+    if (currentArtefact) {
+      //---runes
+      buffsProvider(currentArtefact.runes, "delete");
+      //---sharpening
+      buffsProvider(currentArtefact.sharpening, "delete");
+      //---artefact
       buffsProvider(getArtefcactBuffs(currentArtefact), "delete");
+    }
+    //---runes
+    buffsProvider(selectedArtefact.runes, "add");
+    //---sharpening
+    buffsProvider(selectedArtefact.sharpening, "add");
+    //---artefact
     buffsProvider(getArtefcactBuffs(selectedArtefact), "add");
+  }
+
+  function checkForTwoHandedArtefact(artefact) {
+    if (!artefact) return;
+    const { place, twoHanded } = artefact;
+    if (place === "rightHand" && twoHanded) {
+      const leftHandArtefact = {
+        ...artefact,
+        place: "leftHand",
+        buffs: { common: [], perfect: [] },
+      };
+      setArtefact(player, leftHandArtefact);
+    }
   }
 
   return {

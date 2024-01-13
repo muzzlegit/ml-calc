@@ -1,0 +1,47 @@
+{
+  "Фео": {
+    "coordinate": "-1px -1px",
+    "width": "36px",
+    "height": "52px"
+  },
+  "Ур": {
+    "coordinate": "-38px -1px",
+    "width": "36px",
+    "height": "52px"
+  },
+  "Торн": {
+    "coordinate": "-75px -1px",
+    "width": "36px",
+    "height": "52px"
+  },
+  "Ио": {
+    "coordinate": "-112px -1px",
+    "width": "36px",
+    "height": "52px"
+  },
+  "Рад": {
+    "coordinate": "-149px -1px",
+    "width": "36px",
+    "height": "52px"
+  },
+  "Тир": {
+    "coordinate": "-186px -1px",
+    "width": "36px",
+    "height": "52px"
+  },
+  "Гифу": {
+    "coordinate": "-223px -1px",
+    "width": "36px",
+    "height": "52px"
+  },
+  "Йар": {
+    "coordinate": "-260px -1px",
+    "width": "36px",
+    "height": "52px"
+  },
+  "Хегль": {
+    "coordinate": "-297px -1px",
+    "width": "36px",
+    "height": "52px"
+  }
+}

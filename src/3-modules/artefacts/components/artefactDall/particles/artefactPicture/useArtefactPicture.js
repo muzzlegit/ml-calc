@@ -24,6 +24,7 @@ const useArtefactPicture = (place) => {
   const isRunes = artefact?.runes?.length;
   const isSharpening = artefact?.sharpening?.length;
   const isActive = artefact?.battle;
+  const isTwoHanded = place === "leftHand" && artefact?.twoHanded;
 
   const graphics = {
     frame: getArtefactIcon("artCell"),
@@ -36,6 +37,10 @@ const useArtefactPicture = (place) => {
 
   const handleArtefactDelete = (place) => {
     asignArtefactBuffs(place, "delete");
+    asignRunesSharpeningsBuffs(place, "delete");
+    if (place === "rightHand" && getArtefact(player, place)?.twoHanded) {
+      deleteArtefact("leftHand");
+    }
     deleteArtefact(place);
   };
 
@@ -47,6 +52,7 @@ const useArtefactPicture = (place) => {
 
   const handleArtefactSelect = (place) => {
     const artefact = getArtefact(player, place);
+    if (!canHandleSelect(place)) return;
     setSelectedArtefact(player, artefact);
     setSelectedPlace(player, place);
   };
@@ -55,6 +61,25 @@ const useArtefactPicture = (place) => {
     const currentArtefact = getArtefact(player, place);
     if (currentArtefact) buffsProvider(getArtefcactBuffs(currentArtefact), key);
   }
+
+  function asignRunesSharpeningsBuffs(place, key) {
+    const currentArtefact = getArtefact(player, place);
+    if (currentArtefact?.runes.length) {
+      buffsProvider(currentArtefact.runes, key);
+    }
+    if (currentArtefact?.sharpening.length) {
+      buffsProvider(currentArtefact.sharpening, key);
+    }
+  }
+
+  function canHandleSelect(place) {
+    if (place === "leftHand") {
+      const rightHandArtefact = getArtefact(player, "rightHand");
+      if (!rightHandArtefact || rightHandArtefact?.twoHanded) return false;
+    }
+    return true;
+  }
+
   return {
     isArtefact,
     isAncient,
@@ -63,6 +88,7 @@ const useArtefactPicture = (place) => {
     isRunes,
     isSharpening,
     isActive,
+    isTwoHanded,
     graphics,
     handleArtefactDelete,
     handleArtefactChange,

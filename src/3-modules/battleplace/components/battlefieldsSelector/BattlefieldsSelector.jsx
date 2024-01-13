@@ -10,6 +10,7 @@ const BattlefieldsSelector = () => {
       value={field}
       options={options}
       handleSelector={handleBattlefield}
+      width="180px"
     />
   );
 };

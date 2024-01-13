@@ -1,0 +1,1 @@
+export { SpellsList } from "./components";

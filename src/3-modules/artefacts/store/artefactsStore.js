@@ -63,6 +63,9 @@ const useArtefactsStore = create(
         getArtefact: (player, place) => {
           return get()[player].artefacts[place];
         },
+        getSelectedArtefact: (player) => {
+          return get()[player].selectedArtefact;
+        },
         getKit: (player) => {
           return get()[player].kit;
         },

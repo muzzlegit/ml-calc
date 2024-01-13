@@ -8,14 +8,15 @@ export const Btn = styled.button(
     border: "none",
     borderRadius: "4px",
     transition: "color 300ms ease-in-out",
+    backgroundColor: "transparent",
   },
   (props) => ({
     ":hover": {
-      cursor: props.isActive ? "pointer" : "default",
-      color: props.theme.colors[props.isActive ? "orange" : "text"],
+      cursor: "pointer",
+      color: props.theme.colors.orange,
     },
-    backgroundColor: props.theme.colors.textAcent,
-    color: props.theme.colors[props.isActive ? "secondary" : "text"],
+    color: props.theme.colors.textAcent,
+    border: `1px solid ${props.theme.colors.textAcent}`,
     ...props.addStyles,
   })
 );

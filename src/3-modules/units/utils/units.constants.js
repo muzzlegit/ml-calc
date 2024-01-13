@@ -45,6 +45,7 @@ export const ADDITION_UNIT_PROPERTIES = {
   },
   mage: {
     attackRate: 0,
+    roundAttackRate: 0,
     suppression: 0,
     towersSuppressionRate: 0,
   },

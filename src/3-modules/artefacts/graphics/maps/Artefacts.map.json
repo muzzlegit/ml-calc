@@ -203,5 +203,295 @@
     "coordinate": "-931px -931px",
     "width": "61px",
     "height": "61px"
+  },
+  "Накидка эльфийского рейнджера": {
+    "coordinate": "-1055px -1055px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Лесная кольчуга": {
+    "coordinate": "-1055px -993px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Деревянный кастет": {
+    "coordinate": "-1055px -1117px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Капюшон лесных богов": {
+    "coordinate": "-1055px -807px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Священный клевер": {
+    "coordinate": "-1055px -869px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Эльфийский лук": {
+    "coordinate": "-1055px -1241px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Лесные скороходы": {
+    "coordinate": "-1055px -1427px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Счастье лесоруба": {
+    "coordinate": "-1055px -745px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Штаны эльфийской защиты": {
+    "coordinate": "-1055px -1303px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс рейнджера": {
+    "coordinate": "-1055px -1179px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Браслеты эльфийского рейнджера": {
+    "coordinate": "-1055px -931px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Плащ укрепления зданий": {
+    "coordinate": "-869px -1055px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Броня строителя": {
+    "coordinate": "-869px -993px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо затруднения строителя": {
+    "coordinate": "-869px -1117px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Барбют строителя": {
+    "coordinate": "-869px -807px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Волшебная пила строителя": {
+    "coordinate": "-869px -869px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Алебарда строителя": {
+    "coordinate": "-869px -1241px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кожаные сапоги замедления": {
+    "coordinate": "-869px -1427px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Талисман ограничения строителя": {
+    "coordinate": "-869px -745px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Щит строителя": {
+    "coordinate": "-869px -1365px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Поножи строителя": {
+    "coordinate": "-869px -1303px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс строителя": {
+    "coordinate": "-869px -1179px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручни перестройки": {
+    "coordinate": "-869px -931px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Накидка зыбучих песков": {
+    "coordinate": "-807px -1055px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Рубашка исследователя": {
+    "coordinate": "-807px -993px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Подавляющее кольцо исследователя": {
+    "coordinate": "-807px -1117px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шляпа исследователя": {
+    "coordinate": "-807px -807px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Великий сборник карт": {
+    "coordinate": "-807px -869px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Походный кинджал исследователя": {
+    "coordinate": "-807px -1241px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сапоги исследователя": {
+    "coordinate": "-807px -1427px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Оберег исследователя": {
+    "coordinate": "-807px -745px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Походный щит исследователя": {
+    "coordinate": "-807px -1365px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Штаны исследователя": {
+    "coordinate": "-807px -1303px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс исследователя": {
+    "coordinate": "-807px -1179px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручни пустынного странника": {
+    "coordinate": "-807px -931px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Накидка преследования": {
+    "coordinate": "-683px -1055px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пустынный жилет": {
+    "coordinate": "-683px -993px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо торговли": {
+    "coordinate": "-683px -1117px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Чалма Маны": {
+    "coordinate": "-683px -807px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Дух пустыни": {
+    "coordinate": "-683px -869px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Ятаган": {
+    "coordinate": "-683px -1241px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сапоги пустыни": {
+    "coordinate": "-683px -1427px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Апотропей пустыни": {
+    "coordinate": "-683px -745px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Щит пустыни": {
+    "coordinate": "-683px -1365px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Штаны пустынного зноя": {
+    "coordinate": "-683px -1303px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс пустынь": {
+    "coordinate": "-683px -1179px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручни песчаной бури": {
+    "coordinate": "-683px -931px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Плащ удешевления": {
+    "coordinate": "-63px -1055px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Юшман снайпера": {
+    "coordinate": "-63px -993px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо слабости стрелков": {
+    "coordinate": "-63px -1117px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем стрелка": {
+    "coordinate": "-63px -807px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Колчан стрелка": {
+    "coordinate": "-63px -869px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Титановый лук снайпера": {
+    "coordinate": "-63px -1241px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сапоги снайпера": {
+    "coordinate": "-63px -1427px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Талисман подавления стрелков": {
+    "coordinate": "-63px -745px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Штаны снайпера": {
+    "coordinate": "-63px -1303px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс снайпера": {
+    "coordinate": "-63px -1179px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Браслет снайпера": {
+    "coordinate": "-63px -931px",
+    "width": "61px",
+    "height": "61px"
   }
 }

@@ -1,3 +1,4 @@
+import { StandardsList } from "modules/battleplace";
 import { HeroUnit } from "modules/hero";
 import {
   ApostateChecker,
@@ -7,7 +8,11 @@ import {
 import { Modal, useModal } from "modules/UI";
 import { Squad } from "modules/units";
 import PlayerContext from "utils/context/PlayerContext";
-import { FlexCenter, FlexStart } from "utils/styles/flexKit.styled";
+import {
+  FlexCenter,
+  FlexColCenter,
+  FlexStart,
+} from "utils/styles/flexKit.styled";
 import { playerTypes } from "utils/types/types";
 import WatchDog from "utils/watchDog/WatchDog";
 import { Workbench } from "..";
@@ -26,7 +31,10 @@ const Player = ({ playerName }) => {
             <ApostateChecker />
           </FlexCenter>
           <FlexStart gap="8px">
-            <HeroUnit handleHeroClick={toggleModal} />
+            <FlexColCenter gap="8px">
+              <HeroUnit handleHeroClick={toggleModal} />
+              <StandardsList />
+            </FlexColCenter>
             <Squad />
           </FlexStart>
           <WatchDog />

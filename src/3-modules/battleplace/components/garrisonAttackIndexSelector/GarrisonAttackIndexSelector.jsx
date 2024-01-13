@@ -1,17 +1,22 @@
 import { Selector } from "modules/UI";
+import { Container } from "./GarrisonAttackIndexSelector.styled";
 import useGarrisonAttackIndexSelector from "./useGarrisonAttackIndexSelector.hook";
 
 const GarrisonAttackIndexSelector = () => {
-  const { index, options, handleAttackIndex } =
+  const { index, options, isCastle, handleAttackIndex } =
     useGarrisonAttackIndexSelector();
 
   return (
-    <Selector
-      title="Атака гарнизона:"
-      value={index}
-      options={options}
-      handleSelector={handleAttackIndex}
-    />
+    <Container isActive={isCastle}>
+      <Selector
+        title="Атака гарнизона:"
+        value={index}
+        options={options}
+        handleSelector={handleAttackIndex}
+        width="80px"
+        isActive={isCastle}
+      />
+    </Container>
   );
 };
 

@@ -1,0 +1,652 @@
+{
+  "Сила войск": {
+    "coordinate": "-1px -1px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Сила союзнику": {
+    "coordinate": "-1px -42px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Защита": {
+    "coordinate": "-41px -1px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Защита союзнику": {
+    "coordinate": "-41px -42px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ярость гор": {
+    "coordinate": "-81px -1px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ярость леса": {
+    "coordinate": "-121px -1px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ярость пустыни": {
+    "coordinate": "-161px -1px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ярость степи": {
+    "coordinate": "-201px -1px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Горный камуфляж": {
+    "coordinate": "-81px -42px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Лесной камуфляж": {
+    "coordinate": "-121px -42px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Пустынный камуфляж": {
+    "coordinate": "-161px -42px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Степной камуфляж": {
+    "coordinate": "-201px -42px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Дух преследования земли демонов": {
+    "coordinate": "-241px -1px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Дух преследования земли темных эльфов": {
+    "coordinate": "-281px -1px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Дух преследования земли эльфов": {
+    "coordinate": "-321px -1px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Дух преследования земли рыцарей": {
+    "coordinate": "-361px -1px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Дух защиты земли демонов": {
+    "coordinate": "-241px -42px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Дух защиты земли темных эльфов": {
+    "coordinate": "-281px -42px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Дух защиты земли эльфов": {
+    "coordinate": "-321px -42px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Дух защиты земли рыцарей": {
+    "coordinate": "-361px -42px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ярость Магов": {
+    "coordinate": "-41px -83px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ярость всех Воинов": {
+    "coordinate": "-81px -83px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ярость всех Всадников": {
+    "coordinate": "-121px -83px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ярость всех Летающих": {
+    "coordinate": "-161px -83px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ярость всех Стрелков": {
+    "coordinate": "-201px -83px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Воины-преследователи": {
+    "coordinate": "-241px -83px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Всадники-преследователи": {
+    "coordinate": "-281px -83px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Летающие-преследователи": {
+    "coordinate": "-321px -83px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Стрелки-преследователи": {
+    "coordinate": "-361px -83px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Выносливость армии": {
+    "coordinate": "-1px -124px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Выносливость Носильщиков": {
+    "coordinate": "-41px -124px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Устойчивость Носильщиков": {
+    "coordinate": "-81px -124px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Устойчивость Воинов": {
+    "coordinate": "-121px -124px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Устойчивость Всадников": {
+    "coordinate": "-161px -124px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Устойчивость Летающих": {
+    "coordinate": "-201px -124px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Устойчивость Стрелков": {
+    "coordinate": "-241px -124px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Устойчивость Целителей": {
+    "coordinate": "-281px -124px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Устойчивость Магов": {
+    "coordinate": "-321px -124px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Выносливость Магов": {
+    "coordinate": "-321px -124px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Выносливость союзников": {
+    "coordinate": "-361px -124px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Устойчивость союзников": {
+    "coordinate": "-361px -124px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ярость Воинов демонов": {
+    "coordinate": "-1px -165px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ярость Воинов темных эльфов": {
+    "coordinate": "-41px -165px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ярость Воинов нежити": {
+    "coordinate": "-81px -165px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ярость Воинов эльфов": {
+    "coordinate": "-121px -165px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ярость Воинов рыцарей": {
+    "coordinate": "-161px -165px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ярость Всадников демонов": {
+    "coordinate": "-1px -206px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ярость Всадников темных эльфов": {
+    "coordinate": "-41px -206px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ярость Всадников эльфов": {
+    "coordinate": "-81px -206px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ярость Всадников рыцарей": {
+    "coordinate": "-121px -206px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ярость Всадников нежити": {
+    "coordinate": "-161px -206px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ярость Летающих демонов": {
+    "coordinate": "-201px -161px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ярость Летающих темных эльфов": {
+    "coordinate": "-241px -161px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ярость Летающих эльфов": {
+    "coordinate": "-281px -161px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ярость Летающих рыцарей": {
+    "coordinate": "-321px -161px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ярость Летающих нежити": {
+    "coordinate": "-361px -161px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ярость Стрелков демонов": {
+    "coordinate": "-201px -206px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ярость Стрелков темных эльфов": {
+    "coordinate": "-241px -206px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ярость Стрелков эльфов": {
+    "coordinate": "-281px -206px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ярость Стрелков рыцарей": {
+    "coordinate": "-321px -206px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ярость Стрелков нежити": {
+    "coordinate": "-361px -206px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Бесстрашие": {
+    "coordinate": "-1px -83px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Подавление целителей": {
+    "coordinate": "-241px -247px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Улучшение целителей": {
+    "coordinate": "-1px -247px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Улучшение целителей союзника": {
+    "coordinate": "-41px -247px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Улучшение магов": {
+    "coordinate": "-81px -247px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Воодушевление магов": {
+    "coordinate": "-121px -247px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Защита магов": {
+    "coordinate": "-161px -247px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Маги-защитники": {
+    "coordinate": "-201px -247px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Подавление магов": {
+    "coordinate": "-281px -247px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Слабость всех магов": {
+    "coordinate": "-361px -247px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Слабость магов противника": {
+    "coordinate": "-321px -247px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Улучшение магических башен": {
+    "coordinate": "-1px -288px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Улучшение обычных башен": {
+    "coordinate": "-41px -288px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Модернизация укреплений": {
+    "coordinate": "-81px -288px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Проклятие магических башен": {
+    "coordinate": "-201px -329px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Проклятие башен": {
+    "coordinate": "-41px -329px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Проклятие укреплений": {
+    "coordinate": "-161px -329px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Защита от укреплений": {
+    "coordinate": "-81px -329px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Мастер башен": {
+    "coordinate": "-121px -288px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Подавитель башен": {
+    "coordinate": "-121px -329px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Подавитель магических башен": {
+    "coordinate": "-1px -329px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Тактика укреплений": {
+    "coordinate": "-161px -288px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Знание слабых мест монстров": {
+    "coordinate": "-401px -83px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Знание повадок монстров": {
+    "coordinate": "-401px -42px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Подавление монстров": {
+    "coordinate": "-401px -1px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Слабость противника": {
+    "coordinate": "-401px -165px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Всеобщая слабость": {
+    "coordinate": "-401px -124px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Слабость преследователей": {
+    "coordinate": "-401px -206px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Проклятие слабости": {
+    "coordinate": "-241px -329px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Проклятие уязвимости": {
+    "coordinate": "-281px -329px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Проклятие максимальной защиты": {
+    "coordinate": "-321px -329px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Уязвимость атакующих": {
+    "coordinate": "-361px -329px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Охрана союзника": {
+    "coordinate": "-401px -329px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Всеобщее преследование": {
+    "coordinate": "-401px -288px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Уничтожитель демонов": {
+    "coordinate": "-1px -370px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Уничтожитель темных эльфов": {
+    "coordinate": "-41px -370px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Уничтожитель нежити": {
+    "coordinate": "-81px -370px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Уничтожитель эльфов": {
+    "coordinate": "-121px -370px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Уничтожитель рыцарей": {
+    "coordinate": "-161px -370px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Уничтожитель монстров": {
+    "coordinate": "-201px -370px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Просветление": {
+    "coordinate": "-281px -370px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Просветление союзника": {
+    "coordinate": "-321px -370px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Снижение опыта противнику": {
+    "coordinate": "-241px -370px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ужас": {
+    "coordinate": "-361px -370px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Мастерство обороны": {
+    "coordinate": "-401px -370px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Добивание раненых": {
+    "coordinate": "-401px -247px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Осадная башня": {
+    "coordinate": "-441px -1px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Ловушка": {
+    "coordinate": "-161px -411px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Переносное укрепление": {
+    "coordinate": "-441px -42px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Троянский конь": {
+    "coordinate": "-441px -83px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Требушет": {
+    "coordinate": "-321px -411px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Эйнарм для героя": {
+    "coordinate": "-281px -411px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Баллиста героя": {
+    "coordinate": "-401px -411px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Армагеддон": {
+    "coordinate": "-41px -411px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Вирус": {
+    "coordinate": "-241px -288px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Землетрясение": {
+    "coordinate": "-1px -411px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Катапульта": {
+    "coordinate": "-361px -411px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Кольцо демонов": {
+    "coordinate": "-81px -411px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Оборонительный Бриколь": {
+    "coordinate": "-201px -411px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Смоляные чаны владения": {
+    "coordinate": "-121px -411px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Спрингалд": {
+    "coordinate": "-241px -411px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Великая корона": {
+    "coordinate": "-201px -288px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Адаптация к местности": {
+    "coordinate": "-281px -288px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Преследование ассасина": {
+    "coordinate": "-401px -288px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Каменная броня": {
+    "coordinate": "-41px -1px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Здоровье мамонта": {
+    "coordinate": "-1px -124px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Острый меч": {
+    "coordinate": "-1px -1px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Защита от монстров": {
+    "coordinate": "-401px -42px",
+    "width": "40px",
+    "height": "40px"
+  },
+  "Подавление максимальной защиты": {
+    "coordinate": "-321px -329px",
+    "width": "40px",
+    "height": "40px"
+  }
+}

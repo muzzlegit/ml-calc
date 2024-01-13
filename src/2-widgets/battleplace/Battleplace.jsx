@@ -6,8 +6,10 @@ import {
   BuildingsSelector,
   Garrison,
   GarrisonAttackIndexSelector,
+  Specialization,
 } from "modules/battleplace";
-import { FlexBetween, FlexCol } from "utils/styles/flexKit.styled";
+import PlayerContext from "utils/context/PlayerContext";
+import { Flex, FlexBetween, FlexCol } from "utils/styles/flexKit.styled";
 import { Container, Wrap } from "./Battleplace.styled";
 
 const Battleplace = () => {
@@ -32,13 +34,17 @@ const Battleplace = () => {
               <GarrisonAttackIndexSelector />
             </FlexBetween>
             <Wrap>
-              <div></div>
+              <PlayerContext.Provider value="mainDefender">
+                <Specialization />
+              </PlayerContext.Provider>
               <BuildingsSelector />
               <BuildingsList />
             </Wrap>
           </FlexCol>
         </FlexBetween>
-        <Garrison />
+        <Flex gap="8px">
+          <Garrison />
+        </Flex>
       </FlexCol>
     </Container>
   );

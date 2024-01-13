@@ -1,0 +1,174 @@
+[
+  {
+    "id": "INKodq38EoMzHb80",
+    "title": "Штандарт: Атака войск",
+    "type": "standard",
+    "sortIndex": "player",
+    "player": null,
+    "quantity": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "attackRate",
+        "description": ["Атака всех войск"],
+        "singleValue": 0.03,
+        "value": [0.03],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "D0HHRAg4Bla3DzQ6",
+    "title": "Штандарт: Подавление атаки войск",
+    "type": "standard",
+    "sortIndex": "player",
+    "player": null,
+    "quantity": 0,
+    "buffs": [
+      {
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "attackRate",
+        "description": ["Атака всех войск"],
+        "singleValue": -0.03,
+        "value": [-0.03],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "zKxh7HqHsQAgT-sl",
+    "title": "Штандарт: Атака магических башен",
+    "type": "standard",
+    "sortIndex": "town",
+    "player": null,
+    "quantity": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "magicTower",
+        "units": null,
+        "property": "damageRate",
+        "description": ["Атака магических башен"],
+        "singleValue": 0.05,
+        "value": [0.05],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "sLdA2cPBzd3cPuUd",
+    "title": "Штандарт: Атака башен",
+    "type": "standard",
+    "sortIndex": "town",
+    "player": null,
+    "quantity": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "tower",
+        "units": null,
+        "property": "damageRate",
+        "description": ["Атака башен"],
+        "singleValue": 0.25,
+        "value": [0.25],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "_Wkjumqdo7KnU95A",
+    "title": "Штандарт: Эффективность укреплений",
+    "type": "standard",
+    "sortIndex": "town",
+    "player": null,
+    "quantity": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "fortification",
+        "units": null,
+        "property": "damageRate",
+        "description": ["Эффективность уничтожения войск на укреплениях "],
+        "singleValue": 1,
+        "value": [1],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "jsWkmNwnxveyw3rj",
+    "title": "Штандарт: Здоровье войск",
+    "type": "standard",
+    "sortIndex": "player",
+    "player": null,
+    "quantity": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "monsters",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "property": "healthRate",
+        "description": ["Здоровье всех войск в бою против рассы монстры"],
+        "singleValue": 0.1,
+        "value": [0.1],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "ZTEkvgi-hrDdsvbo",
+    "title": "Штандарт: Атака магов",
+    "type": "standard",
+    "sortIndex": "player",
+    "player": null,
+    "quantity": 0,
+    "buffs": [
+      {
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": ["mage"],
+        "property": "attackRate",
+        "description": ["Атака Магов"],
+        "singleValue": 0.5,
+        "value": [0.5],
+        "battle": true
+      }
+    ]
+  }
+]
