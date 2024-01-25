@@ -3,6 +3,7 @@ import { defineConfig } from "vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/ml-calc/",
   plugins: [react()],
   resolve: {
     alias: {
