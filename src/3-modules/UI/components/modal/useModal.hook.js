@@ -1,29 +1,33 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from "react";
+
+const body = document.querySelector("body");
 
 export const useModal = () => {
   const [isModal, setIsModal] = useState(false);
 
-  const onBackdropClick = id => {
-    if (id === 'backdrop') setIsModal(false);
+  const onBackdropClick = (id) => {
+    if (id === "backdrop") setIsModal(false);
   };
 
-  const onEscKeydown = e => {
-    if (e.code === 'Escape') {
+  const onEscKeydown = useCallback((e) => {
+    if (e.code === "Escape") {
       setIsModal(false);
+      body.style.overflow = "auto";
     }
-  };
+  }, []);
 
   const toggleModal = () => {
-    setIsModal(prev => !prev);
+    setIsModal((prev) => !prev);
+    body.style.overflow = isModal ? "auto" : "hidden";
   };
 
   useEffect(() => {
-    window.addEventListener('keydown', onEscKeydown);
+    window.addEventListener("keydown", onEscKeydown);
 
     return () => {
-      window.removeEventListener('keydown', onEscKeydown);
+      window.removeEventListener("keydown", onEscKeydown);
     };
-  }, []);
+  }, [onEscKeydown]);
 
   return {
     isModal,

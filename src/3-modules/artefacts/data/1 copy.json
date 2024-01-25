@@ -1,0 +1,627 @@
+[
+  {
+    "id": "0695262f6cd140c38865eae5c79e6c3d",
+    "level": 3,
+    "setTitle": "Защитник союзника",
+    "buffs": [
+      {
+        "id": "0695262f6cd140c38865eae5c79e6c3d_0",
+        "owner": "0695262f6cd140c38865eae5c79e6c3d",
+        "ownerDescription": "Комплект Защитник союзника",
+        "type": "artefactKit",
+        "player": null,
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "player",
+        "units": null,
+        "title": "Защитник союзника",
+        "property": "experience",
+        "valueIndex": 0,
+        "value": [3],
+        "description": ["Получаемый героем опыт в бою +300%"],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "baff67ae31c94a85ac3623979a7adcbb",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Плащ выживания",
+    "place": "back",
+    "twoHanded": false,
+    "set": "Защитник союзника",
+    "buffs": {
+      "common": [
+        {
+          "id": "baff67ae31c94a85ac3623979a7adcbb_0",
+          "owner": "baff67ae31c94a85ac3623979a7adcbb",
+          "ownerDescription": "Плащ выживания",
+          "type": "artefact",
+          "player": null,
+          "target": "player_ally",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": ["healer"],
+          "title": "Плащ выживания",
+          "property": "resurrectionRate",
+          "valueIndex": 0,
+          "value": [0.2, 0.24],
+          "description": [
+            "Целители воскрешают +20%&Действует на себя, союзника",
+            "Целители воскрешают +24%&Действует на себя, союзника"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "bf113f02745241a680a2ff3fb0457954",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Кольчуга опеки",
+    "place": "armor",
+    "twoHanded": false,
+    "set": "Защитник союзника",
+    "buffs": {
+      "common": [
+        {
+          "id": "bf113f02745241a680a2ff3fb0457954_0",
+          "owner": "bf113f02745241a680a2ff3fb0457954",
+          "ownerDescription": "Кольчуга опеки",
+          "type": "artefact",
+          "player": null,
+          "target": "player_ally",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Кольчуга опеки",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [0.2, 0.24],
+          "description": [
+            "Здоровье всех войск +20%&Действует себя, союзника",
+            "Здоровье всех войск +24%&Действует себя, союзника"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "id": "bf113f02745241a680a2ff3fb0457954_1",
+          "owner": "bf113f02745241a680a2ff3fb0457954",
+          "ownerDescription": "Кольчуга опеки",
+          "title": "Кольчуга опеки",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "fortification",
+          "units": null,
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [1.5],
+          "description": [
+            "Эффективность уничтожения войск на укреплениях +150%"
+          ],
+          "battle": true
+        },
+        {
+          "id": "bf113f02745241a680a2ff3fb0457954_2",
+          "owner": "bf113f02745241a680a2ff3fb0457954",
+          "ownerDescription": "Кольчуга опеки",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Кольчуга опеки",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [0.09],
+          "description": ["Здоровье всех войск +9%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "69c2b5b06352476d83ad914ed2d08d81",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Браслет дипломатии",
+    "place": "ring",
+    "twoHanded": false,
+    "set": "Защитник союзника",
+    "buffs": {
+      "common": [],
+      "perfect": [
+        {
+          "id": "69c2b5b06352476d83ad914ed2d08d81_0",
+          "owner": "69c2b5b06352476d83ad914ed2d08d81",
+          "ownerDescription": "Браслет дипломатии",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "magicTower",
+          "units": null,
+          "title": "Браслет дипломатии",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [0.15],
+          "description": ["Атака магических башен +15%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "a21a9a9f6d9840789976acaedc7766c5",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Шлем устойчивости зданий",
+    "place": "head",
+    "twoHanded": false,
+    "set": "Защитник союзника",
+    "buffs": {
+      "common": [],
+      "perfect": [
+        {
+          "id": "a21a9a9f6d9840789976acaedc7766c5_1",
+          "owner": "a21a9a9f6d9840789976acaedc7766c5",
+          "ownerDescription": "Шлем устойчивости зданий",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "tower",
+          "units": null,
+          "title": "Шлем устойчивости зданий",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [1],
+          "description": ["Атака башен +100%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "011054a4b842409bb19af95227cd93e3",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Рог защитника союзника",
+    "place": "bag",
+    "twoHanded": false,
+    "set": "Защитник союзника",
+    "buffs": {
+      "common": [],
+      "perfect": [
+        {
+          "id": "011054a4b842409bb19af95227cd93e3_0",
+          "owner": "011054a4b842409bb19af95227cd93e3",
+          "ownerDescription": "Рог защитника союзника",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "player",
+          "units": null,
+          "title": "Рог защитника союзника",
+          "property": "experience",
+          "valueIndex": 0,
+          "value": [1.5],
+          "description": ["Получаемый героем опыт в бою +150%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "e0fecc667f8149ee930694827c55bb85",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Шипы заграждений",
+    "place": "rightHand",
+    "twoHanded": false,
+    "set": "Защитник союзника",
+    "buffs": {
+      "common": [
+        {
+          "id": "e0fecc667f8149ee930694827c55bb85_0",
+          "owner": "e0fecc667f8149ee930694827c55bb85",
+          "ownerDescription": "Шипы заграждений",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "fortification",
+          "units": null,
+          "title": "Шипы заграждений",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [3.5, 4.2],
+          "description": [
+            "Эффективность уничтожения войск на укреплениях +350%",
+            "Эффективность уничтожения войск на укреплениях +420%"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "id": "e0fecc667f8149ee930694827c55bb85_1",
+          "owner": "e0fecc667f8149ee930694827c55bb85",
+          "ownerDescription": "Шипы заграждений",
+          "type": "artefact",
+          "player": null,
+          "target": "enemy",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": ["mercenary"],
+          "title": "Шипы заграждений",
+          "property": "attackRate",
+          "valueIndex": 0,
+          "value": [-0.09],
+          "description": ["Атака наемников -9%"],
+          "battle": true
+        },
+        {
+          "id": "e0fecc667f8149ee930694827c55bb85_2",
+          "owner": "e0fecc667f8149ee930694827c55bb85",
+          "ownerDescription": "Шипы заграждений",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Шипы заграждений",
+          "property": "defenseLevel",
+          "valueIndex": 0,
+          "value": [3],
+          "description": ["Предел максимальной защиты +3"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "54767d3d88b1424dbeea64ab36a057d1",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Сапоги подмоги",
+    "place": "boots",
+    "twoHanded": false,
+    "set": "Защитник союзника",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "137d311f759c4b39beea6d2b0d7f74a2",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Амулет союзных действий",
+    "place": "neck",
+    "twoHanded": false,
+    "set": "Защитник союзника",
+    "buffs": {
+      "common": [
+        {
+          "id": "137d311f759c4b39beea6d2b0d7f74a2_0",
+          "owner": "137d311f759c4b39beea6d2b0d7f74a2",
+          "ownerDescription": "Амулет союзных действий",
+          "type": "artefact",
+          "player": null,
+          "target": "player_ally",
+          "appliedOn": "all",
+          "targetType": "player",
+          "units": null,
+          "title": "Амулет союзных действий",
+          "property": "experience",
+          "valueIndex": 0,
+          "value": [1, 1.2],
+          "description": [
+            "Получаемый героем опыт в бою +100%&Действует на себя, союзника",
+            "Получаемый героем опыт в бою +120%&Действует на себя, союзника"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "bed4d5497f7c4081be41e3b79bdf6467",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Щит защитника союзника",
+    "place": "leftHand",
+    "twoHanded": false,
+    "set": "Защитник союзника",
+    "buffs": {
+      "common": [
+        {
+          "id": "bed4d5497f7c4081be41e3b79bdf6467_0",
+          "owner": "bed4d5497f7c4081be41e3b79bdf6467",
+          "ownerDescription": "Щит защитника союзника",
+          "type": "artefact",
+          "player": null,
+          "target": "player_ally",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Щит защитника союзника",
+          "property": "defense",
+          "valueIndex": 0,
+          "value": [20, 24],
+          "description": [
+            "Защита всех войск +20&Действует на себя, союзника",
+            "Защита всех войск +24&Действует на себя, союзника"
+          ],
+          "battle": 0
+        }
+      ],
+      "perfect": [
+        {
+          "id": "bed4d5497f7c4081be41e3b79bdf6467_1",
+          "owner": "bed4d5497f7c4081be41e3b79bdf6467",
+          "ownerDescription": "Щит защитника союзника",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Щит защитника союзника",
+          "property": "attackRate",
+          "valueIndex": 0,
+          "value": [0.09],
+          "description": ["Атака всех войск +9%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "190b956772fe4d318b0f7e4f6cf2d113",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Штаны дружбы",
+    "place": "pants",
+    "twoHanded": false,
+    "set": "Защитник союзника",
+    "buffs": {
+      "common": [
+        {
+          "id": "190b956772fe4d318b0f7e4f6cf2d113_0",
+          "owner": "190b956772fe4d318b0f7e4f6cf2d113",
+          "ownerDescription": "Штаны дружбы",
+          "type": "artefact",
+          "player": null,
+          "target": "player_ally",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Штаны дружбы",
+          "property": "defenseLevel",
+          "valueIndex": 0,
+          "value": [10, 12],
+          "description": [
+            "Предел максимальной защиты +10&Действует на себя, союзника",
+            "Предел максимальной защиты +12&Действует на себя, союзника"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "id": "190b956772fe4d318b0f7e4f6cf2d113_1",
+          "owner": "190b956772fe4d318b0f7e4f6cf2d113",
+          "ownerDescription": "Штаны дружбы",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "unit": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Штаны дружбы",
+          "property": "defense",
+          "valueIndex": 0,
+          "value": [9],
+          "description": ["Защита всех войск +9"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "1879a092e0c74922a3d5743e8069f910",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Пояс защитника",
+    "place": "belt",
+    "twoHanded": false,
+    "set": "Защитник союзника",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "0e55aae0318d4460be269317a69665f8",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Наручи союзника",
+    "place": "bracers",
+    "twoHanded": false,
+    "set": "Защитник союзника",
+    "buffs": {
+      "common": [
+        {
+          "id": "0e55aae0318d4460be269317a69665f8_0",
+          "owner": "0e55aae0318d4460be269317a69665f8",
+          "ownerDescription": "Наручи союзника",
+          "type": "artefact",
+          "player": null,
+          "target": "player_ally",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Наручи союзника",
+          "property": "attackRate",
+          "valueIndex": 0,
+          "value": [0.2, 0.24],
+          "description": [
+            "Атака всех войск +20%&Действует на себя, союзника",
+            "Атака всех войск +24%&Действует на себя, союзника"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "id": "0e55aae0318d4460be269317a69665f8_1",
+          "owner": "0e55aae0318d4460be269317a69665f8",
+          "ownerDescription": "Наручи союзника",
+          "type": "artefact",
+          "player": null,
+          "target": "enemy",
+          "appliedOn": "all",
+          "targetType": "magicTower",
+          "units": null,
+          "title": "Наручи союзника",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [-0.06],
+          "description": ["Атака магических башен -6%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  }
+]

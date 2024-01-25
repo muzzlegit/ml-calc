@@ -10,8 +10,11 @@ function App() {
         <Container>
           <Player playerName="mainAttacker" />
           <Player playerName="attackerAlly" />
+          <Player playerName="attackerSecondAlly" />
           <Battleplace />
           <Player playerName="mainDefender" />
+          <Player playerName="firstDefenderAlly" />
+          <Player playerName="secondDefenderAlly" />
         </Container>
       </ThemeProvider>
     </Main>

@@ -1,5 +1,6 @@
 import useArtefactsStore from "modules/artefacts/store/artefactsStore";
 import {
+  getArtefactDescription,
   getArtefactIcon,
   getArtefactImg,
   getArtefcactBuffs,
@@ -27,6 +28,7 @@ const useSelectedArtefact = () => {
   const isPerfect = selectedArtefact?.perfect;
   const isRunes = selectedArtefact?.runes?.length;
   const isSharpening = selectedArtefact?.sharpening?.length;
+  const description = getArtefactDescription(selectedArtefact);
 
   const graphics = {
     runeIcon: getArtefactIcon("runeIcon"),
@@ -49,7 +51,7 @@ const useSelectedArtefact = () => {
   };
 
   useEffect(() => {
-    setIsBtnActive(false);
+    setIsBtnActive(selectedArtefact ? false : true);
   }, [selectedArtefact]);
 
   function applyArtefactBuffs() {
@@ -91,6 +93,7 @@ const useSelectedArtefact = () => {
     isRunes,
     isSharpening,
     isBtnActive,
+    description,
     graphics,
     handleSelectedArtefactProperty,
     handleAssignSelectedArtefact,

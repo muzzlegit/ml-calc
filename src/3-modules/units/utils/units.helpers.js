@@ -20,7 +20,12 @@ export function getUnitData({ race, unit, level, attackIndex, initial }) {
   let unitData = {};
   for (const key in fullUnit) {
     if (key === "attackMax" || key === "attackMin") continue;
-    unitData = { ...unitData, level, [key]: fullUnit[key][level - 1] };
+    unitData = {
+      ...unitData,
+      title: unit,
+      level,
+      [key]: fullUnit[key][level - 1],
+    };
   }
 
   if (unit !== "porter") {

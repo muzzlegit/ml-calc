@@ -30,9 +30,9 @@ export const ARTEFACTS_PLACES = [
 
 export const LEVEL_FILTER = [
   { name: "Все", level: 0 },
-  { name: "Уровень 1", level: 1 },
-  { name: "Уровень 2", level: 2 },
-  { name: "Уровень 3", level: 3 },
-  { name: "Уровень 4", level: 4 },
-  { name: "Уровень 5", level: 5 },
+  { name: "1 ур", level: 1 },
+  { name: "2 ур", level: 2 },
+  { name: "3 ур", level: 3 },
+  { name: "4 ур", level: 4 },
+  { name: "5 ур", level: 5 },
 ];

@@ -1,9 +1,11 @@
 import { StandardsList } from "modules/battleplace";
 import { HeroUnit } from "modules/hero";
 import {
+  AllyButton,
   ApostateChecker,
   AttackIndexSelector,
   RaceSelector,
+  usePlayerStore,
 } from "modules/players";
 import { Modal, useModal } from "modules/UI";
 import { Squad } from "modules/units";
@@ -20,7 +22,10 @@ import { Container } from "./Player.styled";
 
 const Player = ({ playerName }) => {
   const { isModal, toggleModal, onBackdropClick } = useModal();
-  console.log("player");
+  const participant = usePlayerStore((state) => state[playerName].participant);
+
+  if (!participant) return <></>;
+
   return (
     <>
       <PlayerContext.Provider value={playerName}>
@@ -33,6 +38,7 @@ const Player = ({ playerName }) => {
           <FlexStart gap="8px">
             <FlexColCenter gap="8px">
               <HeroUnit handleHeroClick={toggleModal} />
+              <AllyButton />
               <StandardsList />
             </FlexColCenter>
             <Squad />
@@ -41,7 +47,7 @@ const Player = ({ playerName }) => {
         </Container>
         {isModal ? (
           <Modal onBackdropClick={onBackdropClick}>
-            <Workbench />
+            <Workbench toggleModal={toggleModal} />
           </Modal>
         ) : null}
       </PlayerContext.Provider>

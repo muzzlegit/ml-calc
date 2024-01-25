@@ -1,11 +1,12 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div({
+  padding: "8px",
   width: "100%",
   height: "100%",
   boxSizing: "border-box",
   display: "flex",
-  alignItems: "center",
+  alignItems: "start",
   justifyContent: "center",
   gap: "8px",
   borderRadius: "16px",
@@ -21,6 +22,5 @@ export const Wrap = styled.div({
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "start",
-
-  gap: "20px",
+  gap: "8px",
 });

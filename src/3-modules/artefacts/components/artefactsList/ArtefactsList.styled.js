@@ -2,15 +2,14 @@ import styled from "@emotion/styled";
 
 export const List = styled.div({
   padding: "8px",
-  width: "100px",
-  height: "353px",
+  width: "301px",
+  maxHeight: "284px",
   display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
+  flexWrap: "wrap",
+  alignItems: "start",
   justifyContent: "start",
   gap: "8px",
-  scrollbarGutter: "auto",
-  overflow: "auto",
+  overflowY: "auto",
 });
 
 export const Artefact = styled.div(

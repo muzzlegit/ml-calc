@@ -6,55 +6,46 @@ const useWatchDogStore = create(
   devtools(
     immer((set, get) => ({
       mainAttacker: {
-        battlefieldBuffs: [],
+        buffs: [],
       },
       attackerAlly: {
-        battlefieldBuffs: [],
+        buffs: [],
       },
       attackerSecondAlly: {
-        battlefieldBuffs: [],
+        buffs: [],
       },
       mainDefender: {
-        battlefieldBuffs: [],
+        buffs: [],
       },
       firstDefenderAlly: {
-        battlefieldBuffs: [],
+        buffs: [],
       },
       secondDefenderAlly: {
-        battlefieldBuffs: [],
+        buffs: [],
       },
       methods: {
         getBuffs: (player) => {
-          return get()[player].battlefieldBuffs;
+          return get()[player].buffs;
         },
-        addBattlefieldBuff: (player, buff) => {
+        addBuff: (player, buff) => {
           set((state) => {
-            if (state[player].battlefieldBuffs.find(({ id }) => id === buff.id))
-              return;
-            state[player].battlefieldBuffs = [
-              ...state[player].battlefieldBuffs,
-              buff,
+            if (state[player].buffs.find(({ id }) => id === buff.id)) return;
+            state[player].buffs = [...state[player].buffs, buff];
+          });
+        },
+        removeBuff: (player, buffId) => {
+          set((state) => {
+            if (!state[player].buffs.find(({ id }) => id === buffId)) return;
+            state[player].buffs = [
+              ...state[player].buffs.filter(({ id }) => id !== buffId),
             ];
           });
         },
-        removeBattlefieldBuff: (player, buffId) => {
+        replaceBuff: (player, values) => {
           set((state) => {
-            if (!state[player].battlefieldBuffs.find(({ id }) => id === buffId))
-              return;
-            state[player].battlefieldBuffs = [
-              ...state[player].battlefieldBuffs.filter(
-                ({ id }) => id !== buffId
-              ),
-            ];
-          });
-        },
-        replaceBattlefieldBuff: (player, values) => {
-          set((state) => {
-            state[player].battlefieldBuffs = state[player].battlefieldBuffs.map(
-              (buff) => {
-                return values.id === buff.id ? { ...buff, ...values } : buff;
-              }
-            );
+            state[player].buffs = state[player].buffs.map((buff) => {
+              return values.id === buff.id ? { ...buff, ...values } : buff;
+            });
           });
         },
       },

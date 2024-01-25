@@ -28,7 +28,7 @@ export const getKitsList = () => {
   artefacts.reduce((acc, artefact) => {
     if (artefact?.setTitle && !acc.includes(artefact?.setTitle)) {
       acc = [...acc, artefact?.setTitle];
-      list[artefact.setTitle] = artefact.setTitle;
+      list[artefact.setTitle] = artefact.setTitle + ` [${artefact.level} ур]`;
     }
     return acc;
   }, []);
@@ -68,4 +68,22 @@ export const getArtefcactBuffs = (artefact) => {
     description: [buff.description[index]],
   }));
   return isPerfect ? [...commonBuffs, ...perfect] : commonBuffs;
+};
+
+export const getArtefactDescription = (artefact) => {
+  if (!artefact) return "Выбирите артефакт";
+  const { title, ancient, perfect, buffs } = artefact;
+  let artefactDescription = title + "\n";
+  if (buffs?.common?.length) {
+    artefact?.buffs.common.forEach(({ description }) => {
+      artefactDescription =
+        artefactDescription + description[ancient ? 1 : 0] + "\n";
+    });
+  }
+  if (perfect && buffs?.perfect?.length) {
+    artefact?.buffs.perfect.forEach(({ description }) => {
+      artefactDescription = artefactDescription + description[0] + "\n";
+    });
+  }
+  return artefactDescription.replaceAll("&", "\n");
 };

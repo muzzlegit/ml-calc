@@ -1,6 +1,7 @@
 import { useArtefact } from "modules/artefacts/hooks";
 import useArtefactsStore from "modules/artefacts/store/artefactsStore";
 import {
+  getArtefactDescription,
   getArtefactIcon,
   getArtefactImg,
   getArtefcactBuffs,
@@ -34,6 +35,8 @@ const useArtefactPicture = (place) => {
     perfectIcon: getArtefactIcon("perfectIcon"),
     artefact: getArtefactImg(artefact?.title),
   };
+
+  const description = getArtefactDescription(getArtefact(player, place));
 
   const handleArtefactDelete = (place) => {
     asignArtefactBuffs(place, "delete");
@@ -75,12 +78,13 @@ const useArtefactPicture = (place) => {
   function canHandleSelect(place) {
     if (place === "leftHand") {
       const rightHandArtefact = getArtefact(player, "rightHand");
-      if (!rightHandArtefact || rightHandArtefact?.twoHanded) return false;
+      if (rightHandArtefact?.twoHanded) return false;
     }
     return true;
   }
 
   return {
+    description,
     isArtefact,
     isAncient,
     ancientValue,

@@ -6,6 +6,7 @@ import useArtefactPicture from "./useArtefactPicture";
 
 const ArtefactPicture = ({ place }) => {
   const {
+    description,
     isPerfect,
     isArtefact,
     isAncient,
@@ -26,6 +27,7 @@ const ArtefactPicture = ({ place }) => {
         <>
           <ArtefactBg isAncient={!isTwoHanded && isAncient}>
             <Picture
+              title={description}
               background={artefact}
               isActive={isActive}
               twoHanded={isTwoHanded}
@@ -90,6 +92,7 @@ const ArtefactPicture = ({ place }) => {
         </>
       ) : (
         <Place
+          title={description}
           onClick={() => {
             handleArtefactSelect(place);
           }}

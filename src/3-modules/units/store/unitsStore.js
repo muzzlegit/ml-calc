@@ -55,6 +55,11 @@ const useUnitsStore = create(
               state[player][unit][property] - value;
           });
         },
+        setUnitProperties: (player, unit, properties) => {
+          set((state) => {
+            state[player][unit] = { ...state[player][unit], ...properties };
+          });
+        },
       },
     })),
 

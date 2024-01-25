@@ -1,4 +1,5 @@
 import { Button, ImageBox } from "modules/UI";
+import { theme } from "utils/styles/theme";
 import ArtefactButton from "../artefactButton/ArtefactButton";
 import {
   ArtefactBg,
@@ -16,16 +17,18 @@ const SelectedArtefact = () => {
     isPerfect,
     isRunes,
     isSharpening,
+    isBtnActive,
+    description,
     graphics: { ancientIcon, perfectIcon, artefact, runeIcon, sharpeningIcon },
     handleSelectedArtefactProperty,
     handleAssignSelectedArtefact,
   } = useSelectedArtefact();
   return (
     <Container>
-      <ArtefactWrap isActive={isArtefact}>
+      <ArtefactWrap isActive={isArtefact && !isBtnActive}>
         {isArtefact ? (
           <ArtefactBg isAncient={isAncient}>
-            <Picture background={artefact} />
+            <Picture title={description} background={artefact} />
           </ArtefactBg>
         ) : null}
         <ArtefactButton
@@ -78,6 +81,13 @@ const SelectedArtefact = () => {
       <Button
         handleClick={() => {
           handleAssignSelectedArtefact();
+        }}
+        addStyles={{
+          color: isBtnActive ? theme.colors.text : theme.colors.orange,
+          borderColor: isBtnActive ? theme.colors.text : theme.colors.orange,
+          "&:hover": {
+            color: isBtnActive ? theme.colors.text : theme.colors.orange,
+          },
         }}
       >
         Применить

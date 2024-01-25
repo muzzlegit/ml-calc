@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div({
-  padding: "16px",
+  padding: "8px",
   textAlign: "center",
   // outline: "1px solid black",
 });
@@ -33,7 +33,7 @@ export const ArtefactBg = styled.div(
   (props) => ({
     backgroundImage:
       props.isAncient &&
-      `radial-gradient(circle, ${props.theme.colors.orange} 20%, transparent 70%);`,
+      `radial-gradient(circle, ${props.theme.colors.orange} 20%, transparent 90%);`,
   })
 );
 

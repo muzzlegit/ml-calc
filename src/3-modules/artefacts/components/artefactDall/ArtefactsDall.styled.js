@@ -4,7 +4,6 @@ export const Container = styled.div({
   position: "relative",
   width: "298px",
   height: "515px",
-  outline: "1px solid white",
 });
 
 export const Cell = styled.div(

@@ -7,8 +7,9 @@ const initialRace = "undead";
 
 const usePlayerStore = create(
   devtools(
-    immer((set) => ({
+    immer((set, get) => ({
       mainAttacker: {
+        participant: true,
         apostate: false,
         race: initialRace,
         fraction: getFraction(initialRace),
@@ -21,6 +22,7 @@ const usePlayerStore = create(
         towersLevelReduce: false,
       },
       attackerAlly: {
+        participant: false,
         apostate: false,
         race: initialRace,
         fraction: getFraction(initialRace),
@@ -33,6 +35,7 @@ const usePlayerStore = create(
         towersLevelReduce: false,
       },
       attackerSecondAlly: {
+        participant: false,
         apostate: false,
         race: initialRace,
         fraction: getFraction(initialRace),
@@ -45,6 +48,7 @@ const usePlayerStore = create(
         towersLevelReduce: false,
       },
       mainDefender: {
+        participant: true,
         apostate: false,
         race: initialRace,
         fraction: getFraction(initialRace),
@@ -57,6 +61,7 @@ const usePlayerStore = create(
         towersLevelReduce: false,
       },
       firstDefenderAlly: {
+        participant: false,
         apostate: false,
         race: initialRace,
         fraction: getFraction(initialRace),
@@ -69,6 +74,7 @@ const usePlayerStore = create(
         towersLevelReduce: false,
       },
       secondDefenderAlly: {
+        participant: false,
         apostate: false,
         race: initialRace,
         fraction: getFraction(initialRace),
@@ -81,6 +87,23 @@ const usePlayerStore = create(
         towersLevelReduce: false,
       },
       methods: {
+        getParticipantFlag: (player) => {
+          return get()[player].participant;
+        },
+        getRace: (player) => {
+          return get()[player].race;
+        },
+        getFraction: (player) => {
+          return get()[player].fraction;
+        },
+        getHomeland: (player) => {
+          return get()[player].homeLand;
+        },
+        setParticipantFlag: (player, flag) => {
+          set((state) => {
+            state[player].participant = flag;
+          });
+        },
         setApostate: (player, apostate) => {
           set((state) => {
             state[player].apostate = apostate;

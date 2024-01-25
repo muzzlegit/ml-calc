@@ -6,7 +6,7 @@ export const Container = styled.div({
 
 export const Title = styled.p(
   {
-    marginBottom: "4px",
+    // marginBottom: "8px",
     fontSize: "14px",
   },
   (props) => ({
@@ -16,13 +16,12 @@ export const Title = styled.p(
 
 export const List = styled.div({
   position: "relative",
-  width: "105px",
-  height: "142px",
+  width: "106px",
+  // height: "142px",
   display: "flex",
   flexWrap: "wrap",
   justifyContent: "start",
-  // alignItems: "start",
-  gap: "6px",
+  gap: "4px",
 });
 
 export const Cell = styled.div(
@@ -30,6 +29,7 @@ export const Cell = styled.div(
     position: "relative",
     width: "31px",
     height: "31px",
+    marginTop: "12px",
     cursor: "pointer",
     "&:hover": {
       filter: "brightness(150%)",

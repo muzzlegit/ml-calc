@@ -58,8 +58,9 @@ const UnitProperties = ({ unit }) => {
             >
               {attackRate > 0 ? "+" : null}
               {attackRate < attackLimit
-                ? attackLimit * 100 + ` (${attackRate * 100})`
-                : attackRate * 100}
+                ? (attackLimit * 100).toFixed(0) +
+                  ` (${(attackRate * 100).toFixed(0)})`
+                : (attackRate * 100).toFixed(0)}
               %
             </PropertyRate>
           ) : null}

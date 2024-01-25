@@ -493,5 +493,1195 @@
     "coordinate": "-63px -931px",
     "width": "61px",
     "height": "61px"
+  },
+  "Плащ наемников": {
+    "coordinate": "-745px -1055px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Ряса смертника": {
+    "coordinate": "-745px -993px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Браслет смерти провидцев": {
+    "coordinate": "-745px -1117px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Накидка смерти шпионов": {
+    "coordinate": "-745px -807px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Маска смерти наемников": {
+    "coordinate": "-745px -869px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кинжал смертников": {
+    "coordinate": "-745px -1241px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Скороходы шпионов": {
+    "coordinate": "-745px -1427px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Талисман спецтренировки": {
+    "coordinate": "-745px -745px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кортик силы": {
+    "coordinate": "-745px -1365px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Штаны быстрой тренировки": {
+    "coordinate": "-745px -1303px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс смертника": {
+    "coordinate": "-745px -1179px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручи смертника": {
+    "coordinate": "-745px -931px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Накидка мелиорации": {
+    "coordinate": "-621px -1055px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кираса степного воина": {
+    "coordinate": "-621px -993px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо степного воина": {
+    "coordinate": "-621px -1117px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем понижения башен": {
+    "coordinate": "-621px -807px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Посох заклинателя": {
+    "coordinate": "-621px -869px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Палица воина степей": {
+    "coordinate": "-621px -1241px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сапоги степного воина": {
+    "coordinate": "-621px -1427px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Талисман степей": {
+    "coordinate": "-621px -745px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Щит степей": {
+    "coordinate": "-621px -1365px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Штаны степного воина": {
+    "coordinate": "-621px -1303px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс степного воина": {
+    "coordinate": "-621px -1179px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручи варвара": {
+    "coordinate": "-621px -931px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Плащ щедрости монстров": {
+    "coordinate": "-559px -1055px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Броня уничтожителя монстров": {
+    "coordinate": "-559px -993px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо преследователей монстров": {
+    "coordinate": "-559px -1117px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем уничтожителя монстров": {
+    "coordinate": "-559px -807px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Оберег силы летающих": {
+    "coordinate": "-559px -869px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кошмар монстров": {
+    "coordinate": "-559px -1241px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сапоги замедления монстров": {
+    "coordinate": "-559px -1427px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Связка удачи": {
+    "coordinate": "-559px -745px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Щит страха монстров": {
+    "coordinate": "-559px -1365px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Штаны слабости монстров": {
+    "coordinate": "-559px -1303px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сумка уничтожителя монстров": {
+    "coordinate": "-559px -1179px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручи уничтожителя монстров": {
+    "coordinate": "-559px -931px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Плащ демобилизации магов": {
+    "coordinate": "-249px -1055px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольчуга антимага": {
+    "coordinate": "-249px -993px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо защиты от магии": {
+    "coordinate": "-249px -1117px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем уязвимости магов": {
+    "coordinate": "-249px -807px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Монета алхимика": {
+    "coordinate": "-249px -869px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Лезвие смерти магов": {
+    "coordinate": "-249px -1241px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Железные сапоги замедления": {
+    "coordinate": "-249px -1427px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Амулет проклятых магов": {
+    "coordinate": "-249px -745px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Щит антимага": {
+    "coordinate": "-249px -1365px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Штаны слабости магов": {
+    "coordinate": "-249px -1303px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс антимага": {
+    "coordinate": "-249px -1179px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Браслеты антимага": {
+    "coordinate": "-249px -931px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Плащ мобилизации воинов": {
+    "coordinate": "-1px -1055px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Броня воина": {
+    "coordinate": "-1px -993px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо слабости воинов": {
+    "coordinate": "-1px -1117px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем уязвимости воинов": {
+    "coordinate": "-1px -807px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Котелок маны": {
+    "coordinate": "-1px -869px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Меч силы воинов": {
+    "coordinate": "-1px -1241px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сапоги тренера воинов": {
+    "coordinate": "-1px -1427px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Ожерелье силы воинов": {
+    "coordinate": "-1px -745px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Щит воинов": {
+    "coordinate": "1px -1365px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Штаны слабости воинов": {
+    "coordinate": "-1px -1303px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс воина": {
+    "coordinate": "-1px -1179px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручи ярости воинов": {
+    "coordinate": "-1px -931px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Плащ понижения башен": {
+    "coordinate": "-187px -1055px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пластинчатый доспех штурмовика": {
+    "coordinate": "-187px -993px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо снятия защиты": {
+    "coordinate": "-187px -1117px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Топфхельм штурмовика": {
+    "coordinate": "-187px -807px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Лестница преодоления укреплений": {
+    "coordinate": "-187px -869px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Палица разрушения": {
+    "coordinate": "-187px -1241px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сапоги штурмовика": {
+    "coordinate": "-187px -1427px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Крест уязвимости противника": {
+    "coordinate": "-187px -745px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Башенный щит": {
+    "coordinate": "-187px -1365px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Поножи штурмовика": {
+    "coordinate": "-187px -1303px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс штурмовика": {
+    "coordinate": "-187px -1179px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручи штурмовой мощи": {
+    "coordinate": "-187px -931px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Плащ броненосца": {
+    "coordinate": "-435px -1055px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Броня здоровья": {
+    "coordinate": "-435px -993px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо подавления преследователей": {
+    "coordinate": "-435px -1117px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Бронированный шлем": {
+    "coordinate": "-435px -807px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Бутылек маны": {
+    "coordinate": "-435px -869px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Секира укреплений": {
+    "coordinate": "-435px -1241px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сапоги броненосца": {
+    "coordinate": "-435px -1427px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Амулет слабости противника": {
+    "coordinate": "-435px -745px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Бронированный щит": {
+    "coordinate": "-435px -1365px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Поножи стойкости": {
+    "coordinate": "-435px -1303px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Бронированная сумка": {
+    "coordinate": "-435px -1179px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручи угнетения": {
+    "coordinate": "-435px -931px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Плащ расхищения": {
+    "coordinate": "-497px -1055px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Жилет шахтера": {
+    "coordinate": "-497px -993px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо добычи дерева": {
+    "coordinate": "-497px -1117px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем шахтера": {
+    "coordinate": "-497px -807px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наковальня": {
+    "coordinate": "-497px -869px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Башенная Секира": {
+    "coordinate": "-497px -1241px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сапоги уничтожения камня": {
+    "coordinate": "-497px -1427px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Амулет ржавения": {
+    "coordinate": "-497px -745px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Гарнизонный щит": {
+    "coordinate": "-497px -1365px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Штаны шахтера": {
+    "coordinate": "-497px -1303px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс шахтера": {
+    "coordinate": "-497px -1179px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручи короеда": {
+    "coordinate": "-497px -931px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Плащ подмоги": {
+    "coordinate": "-125px -1055px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Озерные Доспехи": {
+    "coordinate": "-125px -993px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Озерный браслет подчинения": {
+    "coordinate": "-125px -1117px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Оборонительный озерный шлем": {
+    "coordinate": "-125px -807px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сеть защиты озера": {
+    "coordinate": "-125px -869px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Озерный трезубец атаки": {
+    "coordinate": "-125px -1241px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Озерные сапоги замедления": {
+    "coordinate": "-125px -1427px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Озерный талисман удачи": {
+    "coordinate": "-125px -745px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Штаны властелина озер": {
+    "coordinate": "-125px -1303px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Озерный пояс": {
+    "coordinate": "-125px -1179px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручи властелина озер": {
+    "coordinate": "-125px -931px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Плащ скорости": {
+    "coordinate": "-373px -1055px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Панцирь подземелий": {
+    "coordinate": "-373px -993px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо обороны подземелий": {
+    "coordinate": "-373px -1117px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Подземная Маска страха": {
+    "coordinate": "-373px -807px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Подземное всевидящее око": {
+    "coordinate": "-373px -869px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Подземный Меч ярости": {
+    "coordinate": "-373px -1241px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сапоги подземелий": {
+    "coordinate": "-373px -1427px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Подземный талисман удачи": {
+    "coordinate": "-373px -745px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Подземный щит": {
+    "coordinate": "-373px -1365px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Штаны подземелья": {
+    "coordinate": "-373px -1303px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс подземелий": {
+    "coordinate": "-373px -1179px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручи подземелья": {
+    "coordinate": "-373px -931px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Плащ союзников": {
+    "coordinate": "-311px -1055px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Броня дружбы": {
+    "coordinate": "-311px -993px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо дружбы": {
+    "coordinate": "-311px -1117px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем дружбы": {
+    "coordinate": "-311px -807px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Труба провидения": {
+    "coordinate": "-311px -869px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сабля преследования": {
+    "coordinate": "-311px -1241px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Бронзовые сапоги замедления": {
+    "coordinate": "-311px -1427px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Оберег дружбы": {
+    "coordinate": "-311px -745px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Щит дружбы": {
+    "coordinate": "-311px -1365px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Штаны выносливости носильщиков": {
+    "coordinate": "-311px -1303px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс покровителя": {
+    "coordinate": "-311px -1179px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручи союзников": {
+    "coordinate": "-311px -931px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Плащ Хранителя замка": {
+    "coordinate": "-1303px -1055px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Корслет колосса": {
+    "coordinate": "-1303px -993px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Дворцовая печать": {
+    "coordinate": "-1303px -1117px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Закрытая герса": {
+    "coordinate": "-1303px -807px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Заздравный кубок": {
+    "coordinate": "-1303px -869px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сагарис городового": {
+    "coordinate": "-1303px -1241px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Опора дворцового стражника": {
+    "coordinate": "-1303px -1427px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Эликсир познания": {
+    "coordinate": "-1303px -745px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Последний оплот": {
+    "coordinate": "-1303px -1365px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Штаны клановой удачи": {
+    "coordinate": "-1303px -1303px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Перевьяз горгульи": {
+    "coordinate": "-1303px -1179px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручи Хранителя замка": {
+    "coordinate": "-1303px -931px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Плащ Заморозки": {
+    "coordinate": "-1241px -1055px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кираса подавления магов": {
+    "coordinate": "-1241px -993px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо антимага": {
+    "coordinate": "-1241px -1117px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Маска ужаса": {
+    "coordinate": "-1241px -807px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кристаллы сглаза магов": {
+    "coordinate": "-1241px -869px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кистень разрушений": {
+    "coordinate": "-1241px -1241px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Митриловые Сапоги препятствий": {
+    "coordinate": "-1241px -1427px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Ожерелье подавителя магов": {
+    "coordinate": "-1241px -745px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Башенный щит антимага": {
+    "coordinate": "-1241px -1365px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Штаны хрупкости": {
+    "coordinate": "-1241px -1303px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс подавителя магов": {
+    "coordinate": "-1241px -1179px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Браслеты слабости магов": {
+    "coordinate": "-1241px -931px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Плащ Архитектора": {
+    "coordinate": "-1179px -1055px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Нагрудник архитектора": {
+    "coordinate": "-1179px -993px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Браслет больного реставратора": {
+    "coordinate": "-1179px -1117px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Морион восстановления сил": {
+    "coordinate": "-1179px -807px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Лампа маны": {
+    "coordinate": "-1179px -869px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Боевая алебарда архитектора": {
+    "coordinate": "-1179px -1241px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сапоги управления миссиями": {
+    "coordinate": "-1179px -1427px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Диверсионный крест": {
+    "coordinate": "-1179px -745px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Полуночный щит архитектора": {
+    "coordinate": "-1179px -1365px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Штаны Архитектора": {
+    "coordinate": "-1179px -1303px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс архитектора": {
+    "coordinate": "-1179px -1179px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручни магических башен": {
+    "coordinate": "-1179px -931px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Плащ всадника": {
+    "coordinate": "-1055px -311px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Броня кавалериста": {
+    "coordinate": "-1055px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо преводсходства силы": {
+    "coordinate": "-1055px -373px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем превосходства всадников": {
+    "coordinate": "-1055px -63px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Подкова удачи": {
+    "coordinate": "-1055px -125px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Молот всадника": {
+    "coordinate": "-1055px -497px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Ботфорты тренировки": {
+    "coordinate": "-1055px -683px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Амулет преследования": {
+    "coordinate": "-1055px -1px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Щит зари": {
+    "coordinate": "-1055px -621px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Штаны Кавалериста": {
+    "coordinate": "-1055px -559px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Седельная сумка": {
+    "coordinate": "-1055px -435px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручи Кавалериста": {
+    "coordinate": "-1055px -187px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Накидка святых": {
+    "coordinate": "-1117px -1055px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Доспехи великого храмовника": {
+    "coordinate": "-1117px -993px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо страха лекарей": {
+    "coordinate": "-1117px -1117px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем великого храмовника": {
+    "coordinate": "-1117px -807px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Священный цветок": {
+    "coordinate": "-1117px -869px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Меч жизни лекарей": {
+    "coordinate": "-1117px -1241px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сапоги храмовника": {
+    "coordinate": "-1117px -1427px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Оберег великого храмовника": {
+    "coordinate": "-1117px -745px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Щит защиты лекарей": {
+    "coordinate": "-1117px -1365px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Штаны Храмовника": {
+    "coordinate": "-1117px -1303px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сумка храмовника": {
+    "coordinate": "-1117px -1179px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Браслеты отречения": {
+    "coordinate": "-1117px -931px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Плащ подкупа": {
+    "coordinate": "-1241px -311px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Иссеченная бригантина": {
+    "coordinate": "-1241px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Перстень мстителя": {
+    "coordinate": "-1241px -373px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Личина кровника": {
+    "coordinate": "-1241px -63px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Латница дуэлянта": {
+    "coordinate": "-1241px -125px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Гвизарма мстителя": {
+    "coordinate": "-1241px -497px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сабатоны отмщения": {
+    "coordinate": "-1241px -683px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кровавая метка": {
+    "coordinate": "-1241px -1px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Штаны Мстителя": {
+    "coordinate": "-1241px -559px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Ремень бретера": {
+    "coordinate": "-1241px -435px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручи кровавой мести": {
+    "coordinate": "-1241px -187px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Накидка изобилия": {
+    "coordinate": "-1303px -311px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Купеческий доспех": {
+    "coordinate": "-1303px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо монополиста": {
+    "coordinate": "-1303px -373px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем великого правителя": {
+    "coordinate": "-1303px -63px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Золотая держава": {
+    "coordinate": "-1303px -125px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Меч великого правителя": {
+    "coordinate": "-1303px -497px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сапоги купцов": {
+    "coordinate": "-1303px -683px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Талисман приисков": {
+    "coordinate": "-1303px -1px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Щит великого правителя": {
+    "coordinate": "-1303px -621px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Штаны дальней торговли": {
+    "coordinate": "-1303px -559px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сумка великого правителя": {
+    "coordinate": "-1303px -435px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручи инспектора": {
+    "coordinate": "-1303px -187px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Плащ царицы полей": {
+    "coordinate": "-1179px -311px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Нагрудник легионера": {
+    "coordinate": "-1179px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Печатка императора": {
+    "coordinate": "-1179px -373px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем опытного гладиатора": {
+    "coordinate": "-1179px -63px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Факел легионера": {
+    "coordinate": "-1179px -125px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Гладиус легионера": {
+    "coordinate": "-1179px -497px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Походные сандалии легионера": {
+    "coordinate": "-1179px -683px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Талисман легионера": {
+    "coordinate": "-1179px -1px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Щит легионера": {
+    "coordinate": "-1179px -621px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Штаны Легионера": {
+    "coordinate": "-1179px -559px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс легионера": {
+    "coordinate": "-1179px -435px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручи Легионера": {
+    "coordinate": "-1179px -187px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Плащ выживания": {
+    "coordinate": "-1365px -311px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольчуга опеки": {
+    "coordinate": "-1365px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Браслет дипломатии": {
+    "coordinate": "-1365px -373px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем устойчивости зданий": {
+    "coordinate": "-1365px -63px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Рог защитника союзника": {
+    "coordinate": "-1365px -125px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шипы заграждений": {
+    "coordinate": "-1365px -497px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сапоги подмоги": {
+    "coordinate": "-1365px -683px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Амулет союзных действий": {
+    "coordinate": "-1365px -1px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Щит защитника союзника": {
+    "coordinate": "-1365px -621px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Штаны дружбы": {
+    "coordinate": "-1365px -559px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс защитника": {
+    "coordinate": "-1365px -435px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручи союзника": {
+    "coordinate": "-1365px -187px",
+    "width": "61px",
+    "height": "61px"
   }
 }

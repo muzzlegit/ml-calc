@@ -18,7 +18,7 @@ export const ADDITION_UNIT_PROPERTIES = {
     healthRate: 0,
   },
   porter: {
-    capacityRate: 0,
+    ctcapacityRate: 0,
   },
   swordsman: {
     attackRate: 0,

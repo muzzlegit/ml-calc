@@ -5,8 +5,9 @@ import { getBuffPlayers } from "./watchDog.helpers";
 
 const useBuffsProvider = () => {
   const player = usePlayerContext();
-  const { addBattlefieldBuff, removeBattlefieldBuff, replaceBattlefieldBuff } =
-    useWatchDogStore((state) => state.methods);
+  const { addBuff, removeBuff, replaceBuff } = useWatchDogStore(
+    (state) => state.methods
+  );
 
   const buffsProvider = useCallback(
     (buffs, key) => {
@@ -16,13 +17,13 @@ const useBuffsProvider = () => {
           getBuffPlayers(player, buff.target).forEach((player) => {
             switch (key) {
               case "add":
-                addBattlefieldBuff(player, buff);
+                addBuff(player, buff);
                 break;
               case "delete":
-                removeBattlefieldBuff(player, buff.id);
+                removeBuff(player, buff.id);
                 break;
               case "replace":
-                replaceBattlefieldBuff(player, buff);
+                replaceBuff(player, buff);
                 break;
               default:
                 break;
@@ -31,7 +32,7 @@ const useBuffsProvider = () => {
         });
     },
 
-    [addBattlefieldBuff, player, removeBattlefieldBuff, replaceBattlefieldBuff]
+    [addBuff, player, removeBuff, replaceBuff]
   );
 
   return { buffsProvider };

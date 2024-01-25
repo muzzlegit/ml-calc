@@ -1,6 +1,6 @@
 import { getSpellDescription } from "modules/spells/utils/spell.helpers";
 import { ImageBox } from "modules/UI";
-import { Level, List, Spell } from "./SpellsList.styled";
+import { Level, List, Spell, Title } from "./SpellsList.styled";
 import useSpellsList from "./useSpellsList.hook";
 
 const SpellsList = () => {
@@ -13,7 +13,7 @@ const SpellsList = () => {
   } = useSpellsList();
   return (
     <div>
-      <span>Свитки</span>
+      <Title>Свитки</Title>
       <List>
         {onHeroSpells.map(
           ({ id, title, level, singleLevel, buffs, valueIndex, picture }) => {
@@ -37,7 +37,7 @@ const SpellsList = () => {
           }
         )}
       </List>
-      <span>Заклинания героев</span>
+      <Title>Заклинания героев</Title>
       <List>
         {heroSpells.map(
           ({ id, title, level, singleLevel, buffs, valueIndex, picture }) => {
@@ -63,7 +63,7 @@ const SpellsList = () => {
       </List>
       {isDefender ? (
         <>
-          <span>Заклинания на город</span>
+          <Title>Заклинания на город</Title>
           <List>
             {onTownSpells.map(
               ({

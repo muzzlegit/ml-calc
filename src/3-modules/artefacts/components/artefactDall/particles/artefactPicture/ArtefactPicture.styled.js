@@ -26,8 +26,7 @@ export const Picture = styled.div(
     width: props.background.width,
     height: props.background.height,
     ":hover": {
-      opacity: 0.8,
-      filter: ` drop-shadow(0px 0px 3px ${props.theme.colors.text})`,
+      filter: `brightness(130%) drop-shadow(0px 0px 2px ${props.theme.colors.text})`,
     },
   })
 );

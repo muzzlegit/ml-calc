@@ -26,7 +26,7 @@ export function getEnemy(player) {
   if (
     player === "mainAttacker" ||
     player === "attackerAlly" ||
-    player === "attackerSeconAlly"
+    player === "attackerSecondAlly"
   )
     return "mainDefender";
 
@@ -138,8 +138,8 @@ export const getInitialBuff = (player, buff, index) => {
   return {
     ...buff,
     player,
-    value: buff.value[index ?? buff.valueIndex],
-    description: buff.description[index ?? buff.valueIndex],
+    value: [buff.value[index ?? buff.valueIndex]],
+    description: [buff.description[index ?? buff.valueIndex]],
   };
 };
 getInitialBuff.propTypes = {
@@ -148,8 +148,7 @@ getInitialBuff.propTypes = {
 };
 
 export const applyBuffToUnit = (buff, applyFnc) => {
-  const { player, appliedOn, target, targetType, property, value, units } =
-    buff;
+  const { player, appliedOn, target, property, value, units } = buff;
   switch (appliedOn) {
     case "homeland":
       units.forEach((unit) => {

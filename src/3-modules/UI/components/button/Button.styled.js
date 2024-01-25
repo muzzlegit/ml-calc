@@ -7,7 +7,7 @@ export const Btn = styled.button(
     textAlign: "center",
     border: "none",
     borderRadius: "4px",
-    transition: "color 300ms ease-in-out",
+    transition: "color 300ms ease-in-out, border-color 300ms ease-in-out",
     backgroundColor: "transparent",
   },
   (props) => ({

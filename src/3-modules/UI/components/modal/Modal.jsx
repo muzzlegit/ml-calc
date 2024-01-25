@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { createPortal } from "react-dom";
 
-import { Backdrop } from "./modal.styled";
+import { Backdrop, Content } from "./modal.styled";
 
 const modalRoot = document.querySelector("#modal-root");
 
@@ -13,7 +13,7 @@ const Modal = ({ children, onBackdropClick }) => {
         onBackdropClick(e.target.id);
       }}
     >
-      {children}
+      <Content>{children}</Content>
     </Backdrop>,
     modalRoot
   );

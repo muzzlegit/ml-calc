@@ -32,7 +32,7 @@ export const BATTLEFIELD_ATTACK_BUFF = {
   type: "battlefield",
   player: null,
   target: "player",
-  appliedOn: "homeland",
+  appliedOn: "battlefieldAttack",
   targetType: "unit",
   units: ["swordsman", "cavalier", "flying", "archer", "mercenary"],
   title: "Атака на террайне",
