@@ -1,7 +1,11 @@
 import { create } from "zustand";
 import { devtools } from "zustand/middleware";
 import { immer } from "zustand/middleware/immer";
-import { getFraction, getHomeland } from "../utils/player.helpers";
+import {
+  getFraction,
+  getHomeland,
+  getStandards,
+} from "../utils/player.helpers";
 
 const initialRace = "undead";
 
@@ -15,6 +19,8 @@ const usePlayerStore = create(
         fraction: getFraction(initialRace),
         attackIndex: "max",
         homeLand: getHomeland(initialRace),
+        standards: [...getStandards("mainAttacker")],
+        buffs: [],
         fearlessness: false,
         unitsDamage: 0,
         roundDamage: 0,
@@ -28,6 +34,8 @@ const usePlayerStore = create(
         fraction: getFraction(initialRace),
         attackIndex: "max",
         homeLand: getHomeland(initialRace),
+        standards: [...getStandards("attackerAlly")],
+        buffs: [],
         fearlessness: false,
         unitsDamage: 0,
         roundDamage: 0,
@@ -41,6 +49,8 @@ const usePlayerStore = create(
         fraction: getFraction(initialRace),
         attackIndex: "max",
         homeLand: getHomeland(initialRace),
+        standards: [...getStandards("attackerSecondAlly")],
+        buffs: [],
         fearlessness: false,
         unitsDamage: 0,
         roundDamage: 0,
@@ -54,6 +64,8 @@ const usePlayerStore = create(
         fraction: getFraction(initialRace),
         attackIndex: "max",
         homeLand: getHomeland(initialRace),
+        standards: [...getStandards("mainDefender")],
+        buffs: [],
         fearlessness: false,
         unitsDamage: 0,
         roundDamage: 0,
@@ -67,6 +79,8 @@ const usePlayerStore = create(
         fraction: getFraction(initialRace),
         attackIndex: "max",
         homeLand: getHomeland(initialRace),
+        standards: [...getStandards("firstDefenderAlly")],
+        buffs: [],
         fearlessness: false,
         unitsDamage: 0,
         roundDamage: 0,
@@ -80,6 +94,8 @@ const usePlayerStore = create(
         fraction: getFraction(initialRace),
         attackIndex: "max",
         homeLand: getHomeland(initialRace),
+        standards: [...getStandards("secondDefenderAlly")],
+        buffs: [],
         fearlessness: false,
         unitsDamage: 0,
         roundDamage: 0,
@@ -98,6 +114,12 @@ const usePlayerStore = create(
         },
         getHomeland: (player) => {
           return get()[player].homeLand;
+        },
+        getStandard: (player, id) => {
+          return get()[player].standards.find((standard) => standard.id === id);
+        },
+        getPlayerBuffs: (player) => {
+          return get()[player].buffs;
         },
         setParticipantFlag: (player, flag) => {
           set((state) => {
@@ -119,6 +141,37 @@ const usePlayerStore = create(
         setAttackIndex: (player, index) => {
           set((state) => {
             state[player].attackIndex = index;
+          });
+        },
+        setStandard: (player, newStandard) => {
+          set((state) => {
+            state[player].standards = state[player].standards.map(
+              (standard) => {
+                if (standard.id !== newStandard.id) return standard;
+                return newStandard;
+              }
+            );
+          });
+        },
+        addBuff: (player, buff) => {
+          set((state) => {
+            if (state[player].buffs.find(({ id }) => id === buff.id)) return;
+            state[player].buffs = [...state[player].buffs, buff];
+          });
+        },
+        removeBuff: (player, buffId) => {
+          set((state) => {
+            state[player].buffs = [
+              ...state[player].buffs.filter(({ id }) => id !== buffId),
+            ];
+          });
+        },
+        replaceBuff: (player, buff) => {
+          set((state) => {
+            state[player].buffs = [
+              ...state[player].buffs.filter(({ id }) => id !== buff.id),
+              buff,
+            ];
           });
         },
       },

@@ -9302,7 +9302,7 @@
           "ownerDescription": "Бронированный шлем",
           "type": "artefact",
           "player": null,
-          "target": "enemy",
+          "target": "player",
           "appliedOn": "all",
           "targetType": "unit",
           "units": ["swordsman", "cavalier", "flying", "archer"],
@@ -10776,7 +10776,8 @@
           "appliedOn": "puddle",
           "targetType": "unit",
           "units": ["swordsman", "cavalier", "flying", "archer"],
-          "title": "persecutionRate",
+          "title": "Наручи властелина озер",
+          "property": "persecutionRate",
           "valueIndex": 0,
           "value": [0.3, 0.36],
           "description": [
@@ -10912,8 +10913,8 @@
           "valueIndex": 0,
           "value": [0.3, 0.36],
           "description": [
-            "Здоровье всех войск +30%",
-            "Здоровье всех войск +36%"
+            "Здоровье всех войск +30%&На земле Подземелье",
+            "Здоровье всех войск +36%&На земле Подземелье"
           ],
           "battle": true
         }
@@ -11425,7 +11426,7 @@
           "title": "Наручи подземелья",
           "property": "attackRate",
           "valueIndex": 0,
-          "value": [-0.1, -0.12],
+          "value": [-0.2, -0.24],
           "description": [
             "Атака всех войск -20%&Действует на противника",
             "Атака всех войск -24%&Действует на противника"
@@ -17119,7 +17120,7 @@
             "Защита всех войск +20&Действует на себя, союзника",
             "Защита всех войск +24&Действует на себя, союзника"
           ],
-          "battle": 0
+          "battle": true
         }
       ],
       "perfect": [

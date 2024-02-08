@@ -41,7 +41,7 @@ const UnitProperties = ({ unit }) => {
           </PropertyRate>
         ) : null}
       </Flex>
-      {attack ? (
+      {attack || attack === 0 ? (
         <Flex gap="8px" title="Атака">
           <UnitIcon iconName="attack" />
           <Property>{attack}</Property>
@@ -95,8 +95,9 @@ const UnitProperties = ({ unit }) => {
             >
               {healthRate > 0 ? "+" : null}
               {healthRate < attackLimit
-                ? healthLimit * 100 + ` (${healthRate * 100})`
-                : healthRate * 100}
+                ? (healthLimit * 100).toFixed(0) +
+                  ` (${(healthRate * 100).toFixed(0)})`
+                : (healthRate * 100).toFixed(0)}
               %
             </PropertyRate>
           ) : null}

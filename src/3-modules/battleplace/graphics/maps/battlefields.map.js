@@ -27,6 +27,7 @@ const battlefieldsPositios = {
   },
   castle: { coordinate: "-327px -286px", width: "80px", height: "80px" },
   puddle: { coordinate: "-408px -286px", width: "80px", height: "80px" },
+  grail: { coordinate: "-405px -437px", width: "84px", height: "57px" },
   tower: {
     undead: { coordinate: "-490px -83px", width: "34px", height: "41px" },
     demon: { coordinate: "-525px -83px", width: "34px", height: "41px" },

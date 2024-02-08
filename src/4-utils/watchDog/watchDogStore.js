@@ -48,6 +48,11 @@ const useWatchDogStore = create(
             });
           });
         },
+        updateBuffs: (player) => {
+          set((state) => {
+            state[player].buffs = [...state[player].buffs];
+          });
+        },
       },
     })),
     { name: "WatchDog" }

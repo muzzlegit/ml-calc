@@ -1,0 +1,42 @@
+{
+  "background": {
+    "coordinate": "1px -1px",
+    "width": "106px",
+    "height": "162px"
+  },
+  "Штандарт: Атака войск": {
+    "coordinate": "-107px -1px",
+    "width": "31px",
+    "height": "31px"
+  },
+  "Штандарт: Подавление атаки войск": {
+    "coordinate": "-107px -32px",
+    "width": "31px",
+    "height": "31px"
+  },
+  "Штандарт: Здоровье войск": {
+    "coordinate": "-107px -65px",
+    "width": "31px",
+    "height": "31px"
+  },
+  "Штандарт: Атака магов": {
+    "coordinate": "-107px -97px",
+    "width": "31px",
+    "height": "31px"
+  },
+  "Штандарт: Атака магических башен": {
+    "coordinate": "-139px -1px",
+    "width": "31px",
+    "height": "31px"
+  },
+  "Штандарт: Атака башен": {
+    "coordinate": "-139px -32px",
+    "width": "31px",
+    "height": "31px"
+  },
+  "Штандарт: Эффективность укреплений": {
+    "coordinate": "-139px -65px",
+    "width": "31px",
+    "height": "31px"
+  }
+}

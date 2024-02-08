@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div({
+  marginTop: "16px",
   textAlign: "center",
 });
 
@@ -16,12 +17,16 @@ export const Title = styled.p(
 
 export const List = styled.div({
   position: "relative",
+  padding: "0 4px",
   width: "106px",
-  // height: "142px",
-  display: "flex",
-  flexWrap: "wrap",
+  height: "130px",
+  display: "grid",
+  gridTemplateColumns: "repeat(3,31px)",
+  gridTemplateRows: "repeat(3,31px)",
+  columnGap: "3px",
+  rowGap: "12px",
+  alignContent: "start",
   justifyContent: "start",
-  gap: "4px",
 });
 
 export const Cell = styled.div(
@@ -29,7 +34,6 @@ export const Cell = styled.div(
     position: "relative",
     width: "31px",
     height: "31px",
-    marginTop: "12px",
     cursor: "pointer",
     "&:hover": {
       filter: "brightness(150%)",

@@ -21,7 +21,9 @@ const useBattleplaceStore = create(
         getGarrison: () => get().garrison,
         getAttackIndex: () => get().getAttackIndex,
         getTowers: () => get().towers,
-        getFortifications: () => get().fortifications,
+        getFortifications: () => {
+          return get().fortifications;
+        },
         getGate: () => get().gate,
         getState: () => get(),
         //--- setters
@@ -106,6 +108,11 @@ const useBattleplaceStore = create(
             state.fortifications = [
               ...state.fortifications.filter((item) => item.id !== id),
             ];
+          });
+        },
+        updateFortifications: (fortifications) => {
+          set((state) => {
+            state.fortifications = [...fortifications];
           });
         },
         deleteFortifications: () => {

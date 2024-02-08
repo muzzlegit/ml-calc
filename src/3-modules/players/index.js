@@ -5,5 +5,6 @@ export {
   ApostateChecker,
   AttackIndexSelector,
   RaceSelector,
+  StandardsList,
 } from "./components";
 export { usePlayerStore };

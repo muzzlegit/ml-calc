@@ -1,3 +1,4 @@
+import { Button } from "modules/UI";
 import {
   ArtefactsDall,
   ArtefactsList,
@@ -7,8 +8,7 @@ import {
 import { Hero } from "modules/hero";
 import { RunesList } from "modules/runes";
 import { SharpeningsSelector } from "modules/sharpenings";
-import { SpellsList } from "modules/spells";
-import { Button } from "modules/UI";
+import { AdditionBuffs, SpellsList } from "modules/spells";
 import { Flex } from "utils/styles/flexKit.styled";
 import { Container, Wrap } from "./Workbench.styled";
 
@@ -18,6 +18,7 @@ const Workbench = ({ toggleModal }) => {
       <Wrap>
         <RunesList />
         <SharpeningsSelector />
+        <AdditionBuffs />
       </Wrap>
       <div>
         <Flex gap="16px" additionStyles={{ alignItems: "start" }}>

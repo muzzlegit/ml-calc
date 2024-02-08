@@ -106,9 +106,9 @@ export const getBuffPlayers = (player, target) => {
         case "mainDefender":
           return ["mainAttacker", "attackerAlly", "attackerSecondAlly"];
         case "firstDefenderAlly":
-          return ["secondDefenderAlly", "firstDefenderAlly", "mainDefender"];
+          return ["mainAttacker", "attackerAlly", "attackerSecondAlly"];
         case "secondDefenderAlly":
-          return ["secondDefenderAlly", "firstDefenderAlly", "mainDefender"];
+          return ["mainAttacker", "attackerAlly", "attackerSecondAlly"];
         default:
           return [];
       }
@@ -156,10 +156,24 @@ export const applyBuffToUnit = (buff, applyFnc) => {
           applyFnc(player, unit, property, value);
         });
       });
-
       break;
-
     default:
       break;
   }
 };
+
+export function shouldApplyToBuilding(buff) {
+  if (!buff) return false;
+  const { value, valueIndex, player } = buff;
+  if (
+    (player === "mainAttacker" ||
+      player === "attackerAlly" ||
+      player === "attackerSecondAlly") &&
+    value[valueIndex] > 0
+  )
+    return false;
+  if (player === "firstDefenderAlly" || player === "secondDefenderAlly")
+    return false;
+
+  return true;
+}

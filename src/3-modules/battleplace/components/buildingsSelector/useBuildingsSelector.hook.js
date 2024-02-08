@@ -7,6 +7,7 @@ import useUnitsStore from "modules/units/store/unitsStore";
 import { UNITS } from "modules/units/utils/units.constants";
 import { nanoid } from "nanoid";
 import { useEffect, useState } from "react";
+import useBuffsProvider from "utils/watchDog/useBuffsProvider.hook";
 
 const useBuildingsSelector = () => {
   const battleplace = useBattleplaceStore((state) => state.battleplace);
@@ -18,6 +19,8 @@ const useBuildingsSelector = () => {
   const { increaseUnitProperty, decreaseUnitProperty } = useUnitsStore(
     (state) => state.methods
   );
+  const { buffsTrigger } = useBuffsProvider();
+
   const {
     addTower,
     deleteTower,
@@ -122,6 +125,7 @@ const useBuildingsSelector = () => {
       default:
         break;
     }
+    buffsTrigger("mainDefender");
   };
 
   useEffect(() => {

@@ -1,6 +1,10 @@
+import { useArtefact } from "modules/artefacts/hooks";
+import { useHeroStore } from "modules/hero";
 import usePlayerStore from "modules/players/store/playerStore";
+import { useSpell } from "modules/spells";
 import { useEffect, useState } from "react";
 import usePlayerContext from "utils/context/usePlayerContext.hook";
+import useBuffsProvider from "utils/watchDog/useBuffsProvider.hook";
 
 const useAllyButton = () => {
   const player = usePlayerContext();
@@ -19,7 +23,16 @@ const useAllyButton = () => {
   const secondDefenderAllyParticipantFlag = usePlayerStore(
     (state) => state["secondDefenderAlly"].participant
   );
+  const { getPlayerBuffs } = usePlayerStore((state) => state.methods);
+  const { buffsProvider } = useBuffsProvider();
+  const { setHero } = useHeroStore((state) => state.methods);
+  const { deleteAllSpells } = useSpell();
+  const { deleteAllArtefacts } = useArtefact();
+
   const [sign, setSign] = useState("Добавить союзника");
+  const [areBuffsOn, setAreBuffsOn] = useState(true);
+
+  const buffsButtonSign = areBuffsOn ? "Отключить героя" : "Активировать героя";
 
   const handleButtonClick = () => {
     if (player === "mainAttacker" && !getParticipantFlag("attackerAlly")) {
@@ -51,7 +64,31 @@ const useAllyButton = () => {
       player === "secondDefenderAlly"
     ) {
       setParticipantFlag(player, false);
+      deleteAllArtefacts();
+      deleteAllSpells();
+      // buffsProvider(getPlayerBuffs(player), "delete");
+      // setHero(player, null);
     }
+    if (
+      player === "mainAttacker" &&
+      firstAttackerAllyParticipantFlag &&
+      secondAttackerAllyParticipantFlag
+    ) {
+      setParticipantFlag("attackerAlly", false);
+      setParticipantFlag("attackerSecondAlly", false);
+      buffsProvider(getPlayerBuffs("attackerAlly"), "delete");
+      buffsProvider(getPlayerBuffs("attackerSecondAlly"), "delete");
+      setHero("attackerAlly", null);
+      setHero("attackerSecondAlly", null);
+    }
+  };
+
+  const handlePlayerBuffsOff = () => {
+    buffsProvider(
+      getPlayerBuffs(player).map((buff) => ({ ...buff, battle: !areBuffsOn })),
+      "replace"
+    );
+    setAreBuffsOn((prev) => !prev);
   };
 
   useEffect(() => {
@@ -84,7 +121,7 @@ const useAllyButton = () => {
     secondDefenderAllyParticipantFlag,
   ]);
 
-  return { sign, handleButtonClick };
+  return { sign, buffsButtonSign, handleButtonClick, handlePlayerBuffsOff };
 };
 
 export default useAllyButton;

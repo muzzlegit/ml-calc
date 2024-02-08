@@ -1,3 +1,4 @@
+import AdditionBuffs from "./additionBuffs/AdditionBuffs";
 import SpellsList from "./spellsList/SpellsList";
 
-export { SpellsList };
+export { AdditionBuffs, SpellsList };

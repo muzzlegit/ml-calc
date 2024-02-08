@@ -130,7 +130,7 @@
     "buffs": [
       {
         "target": "player",
-        "appliedOn": "monsters",
+        "appliedOn": "monsters_enemy",
         "targetType": "unit",
         "units": [
           "porter",

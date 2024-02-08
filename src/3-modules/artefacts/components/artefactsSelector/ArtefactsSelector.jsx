@@ -5,7 +5,7 @@ import useArtefactsSelector from "./useArtefactsSelector";
 
 const ArtefactsSelector = () => {
   const {
-    kit,
+    kitTitle,
     kitAncient,
     kitPerfect,
     handleKits,
@@ -18,7 +18,7 @@ const ArtefactsSelector = () => {
   return (
     <Container>
       <Selector
-        value={kit}
+        value={kitTitle}
         options={kitsList}
         handleSelector={handleKits}
         width="180px"

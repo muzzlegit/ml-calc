@@ -2,23 +2,28 @@ import { useArtefact } from "modules/artefacts/hooks";
 import useArtefactsStore from "modules/artefacts/store/artefactsStore";
 import { ARTEFACTS_PLACES } from "modules/artefacts/utils/artefact.constants";
 import {
+  getArtefactBuffs,
   getArtefactIcon,
-  getArtefcactBuffs,
   getKitArtefacts,
   getKitsList,
+  setIdToArtefact,
 } from "modules/artefacts/utils/artefact.helpers";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import usePlayerContext from "utils/context/usePlayerContext.hook";
 import useBuffsProvider from "utils/watchDog/useBuffsProvider.hook";
 
+const defaultSelectorValue = "Выбрать комплект";
+
 const useArtefactsSelector = () => {
   const player = usePlayerContext();
-  const [kit, setKit] = useState("Выбрать комплект");
+  const currentKit = useArtefactsStore((state) => state[player].kit);
+  const { getArtefact } = useArtefactsStore((state) => state.methods);
+
+  const [kitTitle, setKitTitle] = useState(defaultSelectorValue);
   const [kitAncient, setKitAncient] = useState(false);
   const [kitPerfect, setKitPerfect] = useState(false);
-  const { getArtefact } = useArtefactsStore((state) => state.methods);
   const { buffsProvider } = useBuffsProvider();
-  const { asignArtefact, removeArtefacts } = useArtefact();
+  const { asignArtefact, deleteAllArtefacts } = useArtefact();
 
   const kitsList = getKitsList();
 
@@ -33,37 +38,44 @@ const useArtefactsSelector = () => {
   const handlePerfect = (value) => {
     setKitPerfect(value);
   };
+
   const handleKits = (kitTitle) => {
     if (kitTitle === "Выбрать комплект") {
-      applyKitsBuffs("delete");
-      removeArtefacts();
+      setKitTitle("Выбрать комплект");
+      deleteAllArtefacts();
+      return;
     }
     if (kitTitle === "Королевский") {
       setKitAncient(false);
     }
-    applyKitsBuffs("delete");
-    removeArtefacts();
+    deleteAllArtefacts();
     getKitArtefacts(kitTitle, kitAncient, kitPerfect).forEach((artefact) => {
-      asignArtefact(artefact);
-      if (artefact?.twoHanded)
+      const formattedArtefact = setIdToArtefact(artefact);
+      asignArtefact(formattedArtefact);
+      if (formattedArtefact?.twoHanded)
         asignArtefact({
-          ...artefact,
+          ...formattedArtefact,
           place: "leftHand",
           buffs: { common: [], perfect: [] },
         });
     });
     applyKitsBuffs("add");
-    setKit(kitTitle);
+    setKitTitle(kitTitle);
   };
 
+  useEffect(() => {
+    if (!currentKit) setKitTitle(defaultSelectorValue);
+  }, [currentKit]);
+
+  //-- helpers
   function applyKitsBuffs(key) {
     ARTEFACTS_PLACES.forEach((place) => {
-      buffsProvider(getArtefcactBuffs(getArtefact(player, place)), key);
+      buffsProvider(getArtefactBuffs(getArtefact(player, place)), key);
     });
   }
 
   return {
-    kit,
+    kitTitle,
     kitAncient,
     kitPerfect,
     graphics,

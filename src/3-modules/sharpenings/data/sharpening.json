@@ -24,7 +24,8 @@
     "description": ["Увеличивает параметр Сила войск"],
     "maxValueDescription": "25%",
     "valueIndex": 0,
-    "value": 0
+    "value": 0,
+    "battle": true
   },
   {
     "id": "DNVFxXD7ik-VpYEOXuC4JQ",
@@ -52,7 +53,8 @@
     "description": ["Увеличивает параметр Защита"],
     "maxValueDescription": "25",
     "valueIndex": 0,
-    "value": 0
+    "value": 0,
+    "battle": true
   },
   {
     "id": "Z66SjnK8mk6FJRyhZNQl7A",
@@ -80,7 +82,8 @@
     "description": ["Увеличивает параметр Устойчивость войск"],
     "maxValueDescription": "25%",
     "valueIndex": 0,
-    "value": 0
+    "value": 0,
+    "battle": true
   },
   {
     "id": "xKNvTcQ3LEuX4VBqSbc7cg",
@@ -107,7 +110,8 @@
     "description": ["Уменьшает параметр Сила войск противника"],
     "maxValueDescription": "15%",
     "valueIndex": 0,
-    "value": 0
+    "value": 0,
+    "battle": true
   },
   {
     "id": "JQ_96mI6-kGhsvMYTT4DcQ",
@@ -135,7 +139,8 @@
     "description": ["Уменьшает параметр Защита противника"],
     "maxValueDescription": "25",
     "valueIndex": 0,
-    "value": 0
+    "value": 0,
+    "battle": true
   },
   {
     "id": "O6iSwpI9jkmaABDKHBTCSw",
@@ -163,7 +168,8 @@
     "description": ["Уменьшает параметр Устойчивость войск противника"],
     "maxValueDescription": "15%",
     "valueIndex": 0,
-    "value": 0
+    "value": 0,
+    "battle": true
   },
   {
     "id": "93iGoYwTVkCMKjUEkvV8hA",
@@ -186,12 +192,13 @@
     ],
     "title": "Заточка Ужас",
     "property": "amountRate",
-    "maxValue": 10,
+    "maxValue": -10,
     "measure": "%",
     "description": ["Увеличивает параметр Ужас"],
     "maxValueDescription": "10%",
     "valueIndex": 0,
-    "value": 0
+    "value": 0,
+    "battle": true
   },
   {
     "id": "4EotDdamREGicYCIGOZS6A",
@@ -210,7 +217,8 @@
     "description": ["Увеличивает параметр Опыт героев"],
     "maxValueDescription": "100%",
     "valueIndex": 0,
-    "value": 0
+    "value": 0,
+    "battle": true
   },
   {
     "id": "RRP-yzMc7E-9NzvVhGOCNw",
@@ -238,7 +246,8 @@
     "description": ["Увеличивает параметр Предел максимальной защиты"],
     "maxValueDescription": "10",
     "valueIndex": 0,
-    "value": 0
+    "value": 0,
+    "battle": true
   },
   {
     "id": "1lpf_jpPZUqOcQKmuQdWcg",
@@ -268,7 +277,8 @@
     ],
     "maxValueDescription": "7",
     "valueIndex": 0,
-    "value": 0
+    "value": 0,
+    "battle": true
   },
   {
     "id": "tzVBSmUbxESkOLbg7-goEA",
@@ -295,7 +305,8 @@
     "description": ["Увеличивает параметр Сила войск для себя и союзников"],
     "maxValueDescription": "15%",
     "valueIndex": 0,
-    "value": 0
+    "value": 0,
+    "battle": true
   },
   {
     "id": "LU5WmFekn0208LvxNgNdjA",
@@ -323,7 +334,8 @@
     "description": ["Увеличивает параметр Защита для себя и союзников"],
     "maxValueDescription": "15",
     "valueIndex": 0,
-    "value": 0
+    "value": 0,
+    "battle": true
   },
   {
     "id": "qI1pjYDqEU-3mplN4-dE_A",
@@ -353,7 +365,8 @@
     ],
     "maxValueDescription": "15%",
     "valueIndex": 0,
-    "value": 0
+    "value": 0,
+    "battle": true
   },
   {
     "id": "d7GWLwmEdkaXAgXb59QeAw",
@@ -381,6 +394,7 @@
     "description": ["Уменьшает параметр Предел максимальной защиты противника"],
     "maxValueDescription": "10",
     "valueIndex": 0,
-    "value": 0
+    "value": 0,
+    "battle": true
   }
 ]

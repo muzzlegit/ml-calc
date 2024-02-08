@@ -28,13 +28,13 @@ export function getUnitData({ race, unit, level, attackIndex, initial }) {
     };
   }
 
-  if (unit !== "porter") {
-    unitData = {
-      ...unitData,
-      attack:
-        fullUnit[attackIndex === "min" ? "attackMin" : "attackMax"][level - 1],
-    };
-  }
+  unitData = {
+    ...unitData,
+    attack:
+      fullUnit[attackIndex === "min" ? "attackMin" : "attackMax"][level - 1],
+  };
+  // if (unit !== "porter") {
+  // }
 
   if (initial) {
     unitData = {

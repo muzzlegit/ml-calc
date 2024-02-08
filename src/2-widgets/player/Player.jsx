@@ -1,13 +1,13 @@
-import { StandardsList } from "modules/battleplace";
+import { Modal, useModal } from "modules/UI";
 import { HeroUnit } from "modules/hero";
 import {
   AllyButton,
   ApostateChecker,
   AttackIndexSelector,
   RaceSelector,
+  StandardsList,
   usePlayerStore,
 } from "modules/players";
-import { Modal, useModal } from "modules/UI";
 import { Squad } from "modules/units";
 import PlayerContext from "utils/context/PlayerContext";
 import {

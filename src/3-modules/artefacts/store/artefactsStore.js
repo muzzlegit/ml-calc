@@ -57,8 +57,8 @@ const useArtefactsStore = create(
         selectedPlace: null,
       },
       methods: {
-        getAllArtefactsArray: (player) => {
-          return [...get()[player].artefacts];
+        getAllArtefacts: (player) => {
+          return get()[player].artefacts;
         },
         getArtefact: (player, place) => {
           return get()[player].artefacts[place];

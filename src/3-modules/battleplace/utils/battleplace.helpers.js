@@ -1,8 +1,6 @@
 import buildingsData from "../data/towers.json";
 import canvas from "../graphics/images/battlefields.webp";
-import standardsCanvas from "../graphics/images/standards.png";
 import canvasMap from "../graphics/maps/battlefields.map.js";
-import standardsCanvasMap from "../graphics/maps/standards.map.json";
 
 export function getBattleplacePicture(name, race) {
   const image = `url(${canvas}) ${
@@ -62,16 +60,18 @@ export const getSpeciaalizationDescription = (buffs, index) => {
     .replaceAll(",", "\n");
 };
 
-export function getStandardsPicture(name) {
-  const image = `url(${standardsCanvas}) ${standardsCanvasMap[name].coordinate}`;
-  const width = standardsCanvasMap[name].width;
-  const height = standardsCanvasMap[name].height;
-
-  return { image, width, height };
+export function getValueSign(value) {
+  return value > 0 ? "+" : "";
 }
 
-export const getStandartDescription = (standard) => {
-  return (
-    standard.buffs[0].description[0] + ` ${standard.buffs[0].value[0] * 100}%`
-  );
-};
+export function getFortificationDescription(fortification) {
+  const { damageRate, attack, defense } = fortification;
+  return `Уничтожает ${(attack + attack * damageRate).toFixed(
+    0
+  )} юнитов\nЗащита войскам +${defense}`;
+}
+export function getFortificationInitialProperty(level, isMonsters) {
+  return buildingsData[isMonsters ? "monsters_fortification" : "fortification"][
+    `level${level}`
+  ];
+}

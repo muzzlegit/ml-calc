@@ -4,6 +4,7 @@ import iconsCanvas from "../graphics/images/ArtefactsAssets.webp";
 import artefactsCanvasMap from "../graphics/maps/Artefacts.map.json";
 import iconsCanvasMap from "../graphics/maps/ArtefactsAssets.map.json";
 
+import { nanoid } from "nanoid";
 import artefacts from "../data/artefacts.json";
 
 export const getArtefactIcon = (iconName) => {
@@ -35,8 +36,12 @@ export const getKitsList = () => {
   return list;
 };
 
-export const getKitData = (kitTitle) => {
-  return artefacts.find((artefact) => artefact?.setTitle === kitTitle);
+export const getKitData = (player, kitTitle) => {
+  const kit = artefacts.find((artefact) => artefact?.setTitle === kitTitle);
+  return {
+    ...kit,
+    buffs: kit.buffs.map((buff) => ({ ...buff, id: buff.id + "_" + player })),
+  };
 };
 
 export const getKitArtefacts = (kitTitle, isAncient, isPerfect) => {
@@ -54,7 +59,7 @@ export const getArtefactsByPlace = (place) => {
   return artefacts.filter((artefact) => artefact.place === place);
 };
 
-export const getArtefcactBuffs = (artefact) => {
+export const getArtefactBuffs = (artefact) => {
   if (!artefact) return [];
   const {
     ancient: isAncient,
@@ -87,3 +92,18 @@ export const getArtefactDescription = (artefact) => {
   }
   return artefactDescription.replaceAll("&", "\n");
 };
+
+export function setIdToArtefact(artefact) {
+  const {
+    buffs: { common, perfect },
+  } = artefact;
+  const newId = nanoid();
+  return {
+    ...artefact,
+    id: newId,
+    buffs: {
+      common: common.map((buff) => ({ ...buff, id: nanoid(), owner: newId })),
+      perfect: perfect.map((buff) => ({ ...buff, id: nanoid(), owner: newId })),
+    },
+  };
+}

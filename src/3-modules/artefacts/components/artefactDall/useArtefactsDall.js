@@ -12,30 +12,53 @@ const useArtefactsDall = () => {
   const artefacts = useArtefactsStore((state) => state[player].artefacts);
   const { setKit, getKit } = useArtefactsStore((state) => state.methods);
   const { buffsProvider } = useBuffsProvider();
-  const [isKit, setIsKit] = useState(false);
+  const [isKit, setIsKit] = useState(getKit(player) ? true : false);
 
   useEffect(() => {
-    let kit = {};
-    let checker = false;
-    for (const key in artefacts) {
-      if (artefacts[key]) {
-        const { set } = artefacts[key];
-        kit[set] = kit[set] ? kit[set] + 1 : 1;
-        if (kit[set] + 1 >= 9) {
-          setIsKit(true);
-          deletePreviousBuffs();
-          setKit(player, getKitData(set));
-          buffsProvider(getKitData(set)?.buffs, "add");
-          checker = true;
-        }
-        if (checker && kit[set] < 9) {
-          checker = false;
-          setIsKit(false);
-          deletePreviousBuffs();
-          setKit(player, null);
+    const newKit = getFullKitTitle();
+    const currentKit = getCurrentKitTitle();
+
+    if (newKit) {
+      if (newKit !== currentKit) {
+        setIsKit(true);
+        deletePreviousBuffs();
+        setKit(player, getKitData(player, newKit));
+        buffsProvider(getKitData(player, newKit)?.buffs, "add");
+      }
+    } else {
+      if (currentKit) {
+        setIsKit(false);
+        deletePreviousBuffs();
+        setKit(player, null);
+      }
+    }
+
+    function getCurrentKitTitle() {
+      return getKit(player) ? getKit(player).setTitle : false;
+    }
+
+    function getFullKitTitle() {
+      const artefactsCount = { empty: 0 };
+      for (const key in artefacts) {
+        const artefact = artefacts?.[key];
+        if (artefact) {
+          const set = artefact.set;
+          if (artefactsCount[set]) {
+            artefactsCount[set]++;
+            if (artefactsCount[set] >= 9) {
+              return set;
+            }
+          } else {
+            artefactsCount[set] = 1;
+          }
+        } else {
+          artefactsCount.empty++;
+          if (artefactsCount.empty > 3) {
+            return false;
+          }
         }
       }
-      if (!checker) setIsKit(false);
+      return false;
     }
 
     function deletePreviousBuffs() {

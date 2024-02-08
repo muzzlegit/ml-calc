@@ -56,3 +56,18 @@ export const Quantity = styled.span(
     background: props.background,
   })
 );
+
+export const Rate = styled.div(
+  {
+    marginTop: "14px",
+    fontSize: "8px",
+    rubyAlign: "center",
+  },
+  (props) => ({
+    color: props.isNegative ? props.theme.colors.red : props.theme.colors.green,
+  })
+);
+
+export const Box = styled.div({
+  textAlign: "center",
+});

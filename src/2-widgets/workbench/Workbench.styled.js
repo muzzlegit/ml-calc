@@ -13,7 +13,7 @@ export const Container = styled.div({
   backdropFilter: " blur(2px)",
   outline: "1px solid black",
   backgroundColor: "rgba(41, 75, 119, 0.6)",
-  // backgroundColor: "rgba(17, 23, 40, 0.7)",
+  overflow: "auto",
 });
 
 export const Wrap = styled.div({

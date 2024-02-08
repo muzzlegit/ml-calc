@@ -14,6 +14,7 @@ export const BATTLEPLACES = {
   town: "Город",
   castle: "Клановый замок",
   puddle: "Соленое озеро",
+  grail: "Грааль",
 };
 
 export const ATTACK_INDEX = { min: "min", max: "max" };

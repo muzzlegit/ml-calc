@@ -64,3 +64,9 @@ export const INITIAL_PROPERTIES = {
     towersSuppressionRate: 0,
   },
 };
+
+export const FORTIFICATIONS_INITIAL_PROPERTIES = {
+  attack: 0,
+  defense: 0,
+  damageRate: 0,
+};

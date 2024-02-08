@@ -6,16 +6,14 @@ import BuildingsSelector from "./buildingsSelector/BuildingsSelector";
 import Garrison from "./garrison/Garrison";
 import GarrisonAttackIndexSelector from "./garrisonAttackIndexSelector/GarrisonAttackIndexSelector";
 import Specialization from "./specialization/Specialization";
-import StandardsList from "./standardsList/StandardsList";
 
 export {
-  BattleplacePicture,
-  Garrison,
   BattlefieldsSelector,
+  BattleplacePicture,
   BattleplaceSelector,
-  GarrisonAttackIndexSelector,
   BuildingsList,
   BuildingsSelector,
+  Garrison,
+  GarrisonAttackIndexSelector,
   Specialization,
-  StandardsList,
 };

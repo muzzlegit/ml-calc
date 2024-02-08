@@ -1,6 +1,16 @@
 import { ImageBox } from "modules/UI";
+import {
+  getFortificationDescription,
+  getValueSign,
+} from "modules/battleplace/utils/battleplace.helpers";
 import { Flex, FlexCenter } from "utils/styles/flexKit.styled";
-import { BuildImgBox, LevelLabel, Quantity } from "./BuildingsList.styled";
+import {
+  Box,
+  BuildImgBox,
+  LevelLabel,
+  Quantity,
+  Rate,
+} from "./BuildingsList.styled";
 import useBuildingsList from "./useBuildingsList.hook";
 
 const BuildingsList = () => {
@@ -63,24 +73,32 @@ const BuildingsList = () => {
       ) : null}
       {fortifications.length ? (
         <Flex gap="8px">
-          {fortifications.map(({ id, type, level, quantity }) => {
+          {fortifications.map((fortification) => {
+            const { id, type, level, quantity, damageRate } = fortification;
             return (
-              <BuildImgBox
-                key={id}
-                id={id}
-                onClick={() => {
-                  handleDeleteBuilding(type, id);
-                }}
-              >
-                <ImageBox
-                  picture={fortificationImg}
-                  addStyles={{ borderRadius: "4px" }}
-                />
-                <LevelLabel border={level}>
-                  {level === 8 ? <ImageBox picture={perfectIcon} /> : level}
-                </LevelLabel>
-                <Quantity>x{quantity}</Quantity>
-              </BuildImgBox>
+              <Box key={id}>
+                <BuildImgBox
+                  id={id}
+                  title={getFortificationDescription(fortification)}
+                  onClick={() => {
+                    handleDeleteBuilding(type, id);
+                  }}
+                >
+                  <ImageBox
+                    picture={fortificationImg}
+                    addStyles={{ borderRadius: "4px" }}
+                  />
+                  <LevelLabel border={level}>
+                    {level === 8 ? <ImageBox picture={perfectIcon} /> : level}
+                  </LevelLabel>
+                  <Quantity>x{quantity}</Quantity>
+                </BuildImgBox>
+                {damageRate ? (
+                  <Rate isNegative={damageRate < 0}>{`${getValueSign(
+                    damageRate
+                  )}${(damageRate * 100).toFixed(0)} %`}</Rate>
+                ) : null}
+              </Box>
             );
           })}
         </Flex>
