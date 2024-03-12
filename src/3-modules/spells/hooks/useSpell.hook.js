@@ -21,15 +21,17 @@ const useSpell = () => {
     }
   };
 
-  const deleteAllSpells = () => {
-    const activeSpells = getSpells(player).filter(({ level }) => level);
+  const deleteAllSpells = (specificPlayer) => {
+    const activeSpells = getSpells(specificPlayer ?? player).filter(
+      ({ level }) => level
+    );
     activeSpells.forEach((spell) => {
       buffsProvider(
         spell.buffs.map((buff) => ({ ...buff, valueIndex: spell.level - 1 })),
         "delete"
       );
     });
-    resetAllSpells(player);
+    resetAllSpells(specificPlayer ?? player);
   };
 
   return { deleteAllSpells, handleSpellLevel };

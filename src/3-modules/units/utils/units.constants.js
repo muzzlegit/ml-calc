@@ -80,3 +80,5 @@ export const UNITS_LANDS = {
     alienLand: "mine",
   },
 };
+
+export const UNIT_LEVELS = [1, 2, 3, 4];

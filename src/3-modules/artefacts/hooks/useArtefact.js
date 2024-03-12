@@ -37,12 +37,12 @@ const useArtefact = () => {
     handleArtefactBuffs(getArtefact(player, place), "add");
   };
 
-  const deleteAllArtefacts = () => {
-    const artefacts = getAllArtefacts(player);
+  const deleteAllArtefacts = (specificPlayer) => {
+    const artefacts = getAllArtefacts(specificPlayer ?? player);
     for (const key in artefacts) {
       if (artefacts[key]) handleArtefactBuffs(artefacts[key], "delete");
     }
-    removeAllArtefacts(player);
+    removeAllArtefacts(specificPlayer ?? player);
   };
 
   //-- helpers

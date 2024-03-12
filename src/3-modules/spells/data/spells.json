@@ -2941,23 +2941,23 @@
         "battle": true
       },
       {
-        "target": "player",
+        "target": "enemy",
         "appliedOn": "all",
         "targetType": "magicTower",
         "units": null,
         "property": "damageRate",
         "description": ["Атака магических башен -50%"],
-        "value": [0.5],
+        "value": [-0.5],
         "battle": true
       },
       {
-        "target": "player",
+        "target": "enemy",
         "appliedOn": "all",
         "targetType": "tower",
         "units": null,
         "property": "damageRate",
         "description": ["Атака башен -50%"],
-        "value": [0.5],
+        "value": [-0.5],
         "battle": true
       }
     ]

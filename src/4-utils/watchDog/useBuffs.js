@@ -8,13 +8,15 @@ import usePlayerContext from "utils/context/usePlayerContext.hook";
 import {
   FORTIFICATIONS_INITIAL_PROPERTIES,
   INITIAL_PROPERTIES,
+  MAGIC_TOWERS_INITIAL_PROPERTIES,
 } from "./watchDog.constants";
-import { getEnemy, shouldApplyToBuilding } from "./watchDog.helpers";
+import { getEnemy } from "./watchDog.helpers";
 import useWatchDogStore from "./watchDogStore";
 
 const useBuffs = () => {
   const player = usePlayerContext();
   const buffs = useWatchDogStore((state) => state[player].buffs);
+  const { getBuffs } = useWatchDogStore((state) => state.methods);
   const { race, fraction } = usePlayerStore((state) => state[player]);
   const { race: enemyRace, fraction: enemyFraction } = usePlayerStore(
     (state) => state[getEnemy(player)]
@@ -22,14 +24,24 @@ const useBuffs = () => {
   const {
     battlefield,
     battleplace,
-    methods: { getFortifications, updateFortifications },
+    methods: {
+      getTowers,
+      replaceTower,
+      getFortifications,
+      updateFortifications,
+    },
   } = useBattleplaceStore((state) => state);
   const { setUnitProperties } = useUnitsStore((state) => state.methods);
+
+  const isCastle = battleplace === "castle";
 
   useEffect(() => {
     let formattedBuffs = {};
     let unitsPropertyBuffs = { ...INITIAL_PROPERTIES };
     let fortificationsPropertyBuffs = { ...FORTIFICATIONS_INITIAL_PROPERTIES };
+    let magicTowersBuffs = { ...MAGIC_TOWERS_INITIAL_PROPERTIES };
+    let towersBuffs = { ...MAGIC_TOWERS_INITIAL_PROPERTIES };
+
     buffs.forEach((buff) => {
       if (buff.battle) {
         const { appliedOn, targetType } = buff;
@@ -44,14 +56,19 @@ const useBuffs = () => {
     });
     for (const key in formattedBuffs) {
       const appliedOn = formattedBuffs[key];
+      if (appliedOn?.magicTower && player === "mainDefender") {
+        applyBuffsToMagicTowers(appliedOn.magicTower);
+      }
+      if (appliedOn?.tower && player === "mainDefender") {
+        applyBuffsToTowers(appliedOn.tower);
+      }
       switch (key) {
         case "all":
-          if (appliedOn?.tower) console.log("tower");
-          if (appliedOn?.magicTower) console.log("magicTower");
-          if (appliedOn?.fortification) {
+          if (appliedOn?.tower && player === "mainDefender") {
+            applyBuffsToTowers(appliedOn.tower);
+          }
+          if (appliedOn?.fortification && player === "mainDefender") {
             applyBuffsToFortifications(appliedOn.fortification);
-            console.log("d", formattedBuffs);
-            console.log("werwerw", fortificationsPropertyBuffs);
           }
           if (appliedOn?.gate) console.log("gate");
           if (appliedOn?.player) console.log("player");
@@ -146,6 +163,20 @@ const useBuffs = () => {
             }
           }
           break;
+        case "castle":
+          if (
+            battleplace === "castle" &&
+            [
+              "mainDefender",
+              "firstDefenderAlly",
+              "secondDefenderAlly",
+            ].includes(player)
+          ) {
+            if (appliedOn?.unit) {
+              applyBuffsToUnits(appliedOn.unit);
+            }
+          }
+          break;
         default:
           break;
       }
@@ -155,30 +186,50 @@ const useBuffs = () => {
       setUnitProperties(player, key, unitsPropertyBuffs[key]);
     }
     //-- set up fortification properties
-    for (const key in fortificationsPropertyBuffs) {
-      console.log(fortificationsPropertyBuffs);
-      const updatedFortifications = getFortifications().map((fortification) => {
-        switch (key) {
-          case "damageRate":
-            return {
-              ...fortification,
-              [key]: fortificationsPropertyBuffs[key],
-            };
-          default:
-            return {
-              ...fortification,
-              [key]:
-                fortificationsPropertyBuffs[key] +
-                getFortificationInitialProperty(
-                  fortification.level,
-                  battleplace === "castle"
-                )[key],
-            };
-        }
-      });
-      updateFortifications(updatedFortifications);
+    if (player === "mainDefender") {
+      for (const key in fortificationsPropertyBuffs) {
+        const updatedFortifications = getFortifications().map(
+          (fortification) => {
+            switch (key) {
+              case "damageRate":
+                return {
+                  ...fortification,
+                  [key]: fortificationsPropertyBuffs[key],
+                };
+              default:
+                return {
+                  ...fortification,
+                  [key]:
+                    fortificationsPropertyBuffs[key] +
+                    getFortificationInitialProperty(
+                      fortification.level,
+                      battleplace === "castle"
+                    )[key],
+                };
+            }
+          }
+        );
+        updateFortifications(updatedFortifications);
+      }
+      //-- set up magicTower properties
+      for (const key in magicTowersBuffs) {
+        const magicTowers = getTowers(player).filter(
+          ({ type }) => type === "magicTower"
+        );
+        if (!magicTowers.length) return;
+        magicTowers.forEach((magicTower) => {
+          replaceTower({ ...magicTower, [key]: magicTowersBuffs[key] });
+        });
+      }
+      //-- set up tower properties
+      for (const key in towersBuffs) {
+        const towers = getTowers(player).filter(({ type }) => type === "tower");
+        if (!towers.length) return;
+        towers.forEach((tower) => {
+          replaceTower({ ...tower, [key]: towersBuffs[key] });
+        });
+      }
     }
-
     //-- helpers
     function applyBuffsToUnits(buffs) {
       buffs.forEach((buff) => {
@@ -221,12 +272,43 @@ const useBuffs = () => {
 
     function applyBuffsToFortifications(buffs) {
       buffs.forEach((buff) => {
-        const { property, value, valueIndex } = buff;
-        if (shouldApplyToBuilding(buff)) {
+        const { property, value, valueIndex, appliedOn, target } = buff;
+        if (
+          (isCastle && (appliedOn === "castle" || target === "enemy")) ||
+          (!isCastle && appliedOn !== "castle")
+        ) {
           fortificationsPropertyBuffs[property] = Number(
             (
               (fortificationsPropertyBuffs[property] ?? 0) + value[valueIndex]
             ).toFixed(2)
+          );
+        }
+      });
+    }
+
+    function applyBuffsToMagicTowers(buffs) {
+      buffs.forEach((buff) => {
+        const { property, value, valueIndex, appliedOn, target } = buff;
+        if (
+          (isCastle && (appliedOn === "castle" || target === "enemy")) ||
+          (!isCastle && appliedOn !== "castle")
+        ) {
+          magicTowersBuffs[property] = Number(
+            ((magicTowersBuffs[property] ?? 0) + value[valueIndex]).toFixed(2)
+          );
+        }
+      });
+    }
+
+    function applyBuffsToTowers(buffs) {
+      buffs.forEach((buff) => {
+        const { property, value, valueIndex, appliedOn, target } = buff;
+        if (
+          (isCastle && (appliedOn === "castle" || target === "enemy")) ||
+          (!isCastle && appliedOn !== "castle")
+        ) {
+          towersBuffs[property] = Number(
+            ((towersBuffs[property] ?? 0) + value[valueIndex]).toFixed(2)
           );
         }
       });
@@ -239,8 +321,11 @@ const useBuffs = () => {
     enemyRace,
     fraction,
     getFortifications,
+    getTowers,
+    isCastle,
     player,
     race,
+    replaceTower,
     setUnitProperties,
     updateFortifications,
   ]);

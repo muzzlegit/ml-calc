@@ -1,26 +1,4 @@
 {
-  "attacker": { "coordinate": "-84px -1px", "width": "82px", "height": "99px" },
-  "attackerAlly": {
-    "coordinate": "-1px -1px",
-    "width": "82px",
-    "height": "99px"
-  },
-  "defender": {
-    "coordinate": "-84px -101px",
-    "width": "82px",
-    "height": "99px"
-  },
-  "defenderAlly": {
-    "coordinate": "-1px -101px",
-    "width": "82px",
-    "height": "99px"
-  },
-  "monster": { "coordinate": "-1px -201px", "width": "82px", "height": "99px" },
-  "monsterAlly": {
-    "coordinate": "-84px -201px",
-    "width": "82px",
-    "height": "99px"
-  },
   "heroFrame": {
     "coordinate": "-1px -301px",
     "width": "96px",

@@ -17,7 +17,6 @@ const useBuffsProvider = () => {
 
   const buffsProvider = useCallback(
     (buffs, key) => {
-      console.log(buffs);
       buffs
         .map((buff) => ({ ...buff, player }))
         .forEach((buff) => {

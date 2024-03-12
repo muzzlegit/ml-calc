@@ -31,6 +31,7 @@ export const SkillBox = styled.div(
     background: props.background,
     width: props.width,
     height: props.height,
+    filter: !props.isActive && "grayscale(50)",
   })
 );
 

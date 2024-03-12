@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 export const Container = styled.div(
   {
     margin: "16px 0 0 5px",
-    opacity: 0.2,
+    opacity: 0.6,
     transition: "opacity 500ms ease-in-out",
   },
   (props) => ({

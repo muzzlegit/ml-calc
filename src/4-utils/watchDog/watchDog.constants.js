@@ -70,3 +70,7 @@ export const FORTIFICATIONS_INITIAL_PROPERTIES = {
   defense: 0,
   damageRate: 0,
 };
+
+export const MAGIC_TOWERS_INITIAL_PROPERTIES = {
+  damageRate: 0,
+};

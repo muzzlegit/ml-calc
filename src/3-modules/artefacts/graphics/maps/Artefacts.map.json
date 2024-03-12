@@ -79,11 +79,6 @@
     "width": "61px",
     "height": "61px"
   },
-  "Броня стрелков": {
-    "coordinate": "-931px -249px",
-    "width": "61px",
-    "height": "61px"
-  },
   "Плащ бескрайних степей": {
     "coordinate": "-993px -1055px",
     "width": "61px",
@@ -1681,6 +1676,301 @@
   },
   "Наручи союзника": {
     "coordinate": "-1365px -187px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Плащ Солдата удачи": {
+    "coordinate": "-1427px -311px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Броня носильщиков": {
+    "coordinate": "-1427px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо случая": {
+    "coordinate": "-1427px -373px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем везения": {
+    "coordinate": "-1427px -63px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кости удачи": {
+    "coordinate": "-1427px -125px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пернач разрушений": {
+    "coordinate": "-1427px -497px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сапоги удачи исследователей": {
+    "coordinate": "-1427px -683px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Амулет забирания удачи": {
+    "coordinate": "-1427px -1px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Щит солдата удачи": {
+    "coordinate": "-1427px -621px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Штаны стойкого Носильщика": {
+    "coordinate": "-1427px -559px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс солдата удачи": {
+    "coordinate": "-1427px -435px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручи отдыха": {
+    "coordinate": "-1427px -187px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Плащ ветра": {
+    "coordinate": "-993px -311px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Воздушная кольчуга": {
+    "coordinate": "-993px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо воздушного воина": {
+    "coordinate": "-993px -373px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем воздушного воина": {
+    "coordinate": "-993px -63px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Ключ от копей": {
+    "coordinate": "-993px -125px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Меч воздушного воина": {
+    "coordinate": "-993px -497px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сапоги воздуха": {
+    "coordinate": "-993px -683px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Амулет воздушного воина": {
+    "coordinate": "-993px -1px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Щит воздушного воина": {
+    "coordinate": "-993px -621px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Штаны Воздушного воина": {
+    "coordinate": "-993px -559px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сумка летающего": {
+    "coordinate": "-993px -435px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручи воздушной стихии": {
+    "coordinate": "-993px -187px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Плащ арестанта": {
+    "coordinate": "-1117px -311px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Броня миротворца": {
+    "coordinate": "-1117px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо мира": {
+    "coordinate": "-1117px -373px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем укрепления зданий": {
+    "coordinate": "-1117px -63px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Платок умиротворения преследователей": {
+    "coordinate": "-1117px -125px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кинжал демобилизации": {
+    "coordinate": "-1117px -497px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Золотые Сапоги замедления": {
+    "coordinate": "-1117px -683px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Амулет неповиновения войск": {
+    "coordinate": "-1117px -1px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Щит миротворца": {
+    "coordinate": "-1117px -621px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Поножи медлительности": {
+    "coordinate": "-1117px -559px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс миротворца": {
+    "coordinate": "-1117px -435px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручи умиротворения": {
+    "coordinate": "-1117px -187px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Мантия неуязвимости стрелков": {
+    "coordinate": "-931px -311px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Броня стрелков": {
+    "coordinate": "-931px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо защиты стрелков": {
+    "coordinate": "-931px -373px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем диверсии исследователей": {
+    "coordinate": "-931px -63px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Компас исследователя": {
+    "coordinate": "-931px -125px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Арбалет ярости стрелков": {
+    "coordinate": "-931px -497px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Скороходы исследователя": {
+    "coordinate": "-931px -683px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Талисман исследователя": {
+    "coordinate": "-931px -1px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Доспех слабости стрелков": {
+    "coordinate": "-931px -559px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сумка исследователя": {
+    "coordinate": "-931px -435px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручи преследователей стрелков": {
+    "coordinate": "-931px -187px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Накидка диверсии исследователей": {
+    "coordinate": "-683px -311px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Доспех диверсии купцов": {
+    "coordinate": "-683px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо уничтожения провидцев": {
+    "coordinate": "-683px -373px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем шпиона": {
+    "coordinate": "-683px -63px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Перо шпиона": {
+    "coordinate": "-683px -125px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Лапа диверсии антишпионов": {
+    "coordinate": "-683px -497px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Армейские скороходы": {
+    "coordinate": "-683px -683px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Амулет диверсии шпионов": {
+    "coordinate": "-683px -1px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Щит диверсии зеркал": {
+    "coordinate": "-683px -621px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Поножи диверсии тренировок": {
+    "coordinate": "-683px -559px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс шпиона": {
+    "coordinate": "-683px -435px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Браслет диверсии строительства": {
+    "coordinate": "-683px -187px",
     "width": "61px",
     "height": "61px"
   }

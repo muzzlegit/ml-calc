@@ -1,8 +1,10 @@
 import heroes from "../data//heroes.json";
 import canvas from "../graphics/images/heroAssets.webp";
+import heroesCanvas from "../graphics/images/heroes.webp";
 import canvasMap from "../graphics/maps/heroAssets.map.json";
+import heroesCanvasMap from "../graphics/maps/heroes.map.json";
 
-export const getHeroPicture = (name, race) => {
+export const getHeroAssetsIcon = (name, race) => {
   const image = `url(${canvas}) ${
     race ? canvasMap[name][race].coordinate : canvasMap[name].coordinate
   }`;
@@ -10,6 +12,21 @@ export const getHeroPicture = (name, race) => {
   const height = race ? canvasMap[name][race].height : canvasMap[name].height;
 
   return { image, width, height };
+};
+
+export const getHeroPicture = (name, race) => {
+  console.log(name);
+  if (!name)
+    return {
+      image: `url(${canvas}) ${canvasMap?.backgrounds[race]?.coordinate}`,
+      width: canvasMap?.backgrounds?.[race]?.width,
+      height: canvasMap?.backgrounds?.[race]?.height,
+    };
+  return {
+    image: `url(${heroesCanvas})${heroesCanvasMap?.[name]?.coordinate}`,
+    width: heroesCanvasMap?.[name]?.width,
+    height: heroesCanvasMap?.[name]?.height,
+  };
 };
 
 export const getHeroSkillPicture = (name) => {

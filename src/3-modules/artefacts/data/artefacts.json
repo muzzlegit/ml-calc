@@ -1028,89 +1028,6 @@
     "sharpening": [],
     "battle": true
   },
-
-  {
-    "id": "jk9c7fx1c0mqIWBERQ4Erg",
-    "level": 4,
-    "ancient": false,
-    "perfect": false,
-    "title": "Броня стрелков",
-    "place": "armor",
-    "twoHanded": false,
-    "set": "Мастер-исследователь",
-    "buffs": {
-      "common": [
-        {
-          "id": "pzBJVmwVb0eH-1Z5-Qdbew",
-          "owner": "jk9c7fx1c0mqIWBERQ4Erg",
-          "ownerDescription": "Броня стрелков",
-          "type": "artefact",
-          "player": null,
-          "target": "player",
-          "appliedOn": "all",
-          "targetType": "unit",
-          "units": ["archer"],
-          "title": "Броня стрелков",
-          "property": "healthRate",
-          "valueIndex": 0,
-          "value": [0.45, 0.54],
-          "description": ["Здоровье Стрелков +45%", "Здоровье Стрелков +54%"],
-          "battle": true
-        }
-      ],
-      "perfect": [
-        {
-          "id": "KWVazODtPECzuThy-0RKnw",
-          "owner": "jk9c7fx1c0mqIWBERQ4Erg",
-          "ownerDescription": "Броня стрелков",
-          "type": "artefact",
-          "player": null,
-          "target": "player",
-          "appliedOn": "all",
-          "targetType": "fortification",
-          "units": null,
-          "title": "Броня стрелков",
-          "property": "damageRate",
-          "valueIndex": 0,
-          "value": [2],
-          "description": [
-            "Эффективность уничтожения войск на укреплениях +200%"
-          ],
-          "battle": true
-        },
-        {
-          "id": "g82edQ3OR0q4ZvWwypfRvA",
-          "owner": "jk9c7fx1c0mqIWBERQ4Erg",
-          "ownerDescription": "Броня стрелков",
-          "title": "Броня стрелков",
-          "type": "artefact",
-          "player": null,
-          "target": "player",
-          "appliedOn": "all",
-          "targetType": "unit",
-          "units": [
-            "porter",
-            "swordsman",
-            "cavalier",
-            "flying",
-            "archer",
-            "healer",
-            "mercenary",
-            "mage"
-          ],
-          "property": "healthRate",
-          "valueIndex": 0,
-          "value": [0.12],
-          "description": ["Здоровье всех войск +12%"],
-          "battle": true
-        }
-      ]
-    },
-    "runes": [],
-    "sharpening": [],
-    "battle": true
-  },
-
   {
     "id": "a397eBeH3kW7bmvzxmgYUg",
     "level": 1,
@@ -17302,6 +17219,2493 @@
           "valueIndex": 0,
           "value": [-0.06],
           "description": ["Атака магических башен -6%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "f3abf51cfafe4346916ab900b134d7da",
+    "level": 3,
+    "setTitle": "Солдат удачи",
+    "buffs": [
+      {
+        "ownerDescription": "Комплект Солдат удачи",
+        "type": "artefactKit",
+        "player": null,
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "player",
+        "units": null,
+        "title": "Солдат удачи",
+        "property": "experience",
+        "valueIndex": 0,
+        "value": [3],
+        "description": ["Получаемый героем опыт в бою +300%"],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "cf7c1afb2dd04d1a98bd6f69f247cdc3",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Плащ Солдата удачи",
+    "place": "back",
+    "twoHanded": false,
+    "set": "Солдат удачи",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "8c7ca0d91a6f4ae19b121507adf25bad",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Броня носильщиков",
+    "place": "armor",
+    "twoHanded": false,
+    "set": "Солдат удачи",
+    "buffs": {
+      "common": [
+        {
+          "ownerDescription": "Броня носильщиков",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": ["porter"],
+          "title": "Броня носильщиков",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [0.35, 0.42],
+          "description": [
+            "Здоровье Носильщиков +35%",
+            "Здоровье Носильщиков +42%"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "ownerDescription": "Броня носильщиков",
+          "title": "Броня носильщиков",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "fortification",
+          "units": null,
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [1.5],
+          "description": [
+            "Эффективность уничтожения войск на укреплениях +150%"
+          ],
+          "battle": true
+        },
+        {
+          "ownerDescription": "Броня носильщиков",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Броня носильщиков",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [0.09],
+          "description": ["Здоровье всех войск +9%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "f0f5075e9ae7446fac2d2693b591460f",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Кольцо случая",
+    "place": "ring",
+    "twoHanded": false,
+    "set": "Солдат удачи",
+    "buffs": {
+      "common": [],
+      "perfect": [
+        {
+          "ownerDescription": "Кольцо случая",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "magicTower",
+          "units": null,
+          "title": "Кольцо случая",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [0.15],
+          "description": ["Атака магических башен +15%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "84bc33e081374767a8ded34fae37559c",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Шлем везения",
+    "place": "head",
+    "twoHanded": false,
+    "set": "Солдат удачи",
+    "buffs": {
+      "common": [],
+      "perfect": [
+        {
+          "ownerDescription": "Шлем везения",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "tower",
+          "units": null,
+          "title": "Шлем везения",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [1],
+          "description": ["Атака башен +100%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "d710f7cdf0df458cb10790f492759ba2",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Кости удачи",
+    "place": "bag",
+    "twoHanded": false,
+    "set": "Солдат удачи",
+    "buffs": {
+      "common": [],
+      "perfect": [
+        {
+          "ownerDescription": "Кости удачи",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "player",
+          "units": null,
+          "title": "Кости удачи",
+          "property": "experience",
+          "valueIndex": 0,
+          "value": [1.5],
+          "description": ["Получаемый героем опыт в бою +150%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "c6b9530b404d408dbf1206f24fe32b4c",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Пернач разрушений",
+    "place": "rightHand",
+    "twoHanded": false,
+    "set": "Солдат удачи",
+    "buffs": {
+      "common": [],
+      "perfect": [
+        {
+          "ownerDescription": "Пернач разрушений",
+          "type": "artefact",
+          "player": null,
+          "target": "enemy",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": ["mercenary"],
+          "title": "Пернач разрушений",
+          "property": "attackRate",
+          "valueIndex": 0,
+          "value": [-0.09],
+          "description": ["Атака наемников -9%"],
+          "battle": true
+        },
+        {
+          "ownerDescription": "Пернач разрушений",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Пернач разрушений",
+          "property": "defenseLevel",
+          "valueIndex": 0,
+          "value": [3],
+          "description": ["Предел максимальной защиты +3"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "b8201a35348d43f4bd3c3243434ee505",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Сапоги удачи исследователей",
+    "place": "boots",
+    "twoHanded": false,
+    "set": "Солдат удачи",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "1bd18361203f4ff280bf2a249d9e159a",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Амулет забирания удачи",
+    "place": "neck",
+    "twoHanded": false,
+    "set": "Солдат удачи",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "0c18c18465394ac4ac0bca3e49b57e40",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Щит солдата удачи",
+    "place": "leftHand",
+    "twoHanded": false,
+    "set": "Солдат удачи",
+    "buffs": {
+      "common": [
+        {
+          "ownerDescription": "Щит солдата удачи",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Щит солдата удачи",
+          "property": "defense",
+          "valueIndex": 0,
+          "value": [30, 36],
+          "description": ["Защита всех войск +30", "Защита всех войск +36"],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "ownerDescription": "Щит солдата удачи",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Щит солдата удачи",
+          "property": "attackRate",
+          "valueIndex": 0,
+          "value": [0.09],
+          "description": ["Атака всех войск +9%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "77904b94922349f6b33bf9af744d7c94",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Штаны стойкого Носильщика",
+    "place": "pants",
+    "twoHanded": false,
+    "set": "Солдат удачи",
+    "buffs": {
+      "common": [
+        {
+          "ownerDescription": "Штаны стойкого Носильщика",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": ["porter"],
+          "title": "Штаны стойкого Носильщика",
+          "property": "defense",
+          "valueIndex": 0,
+          "value": [35, 42],
+          "description": ["Защита Носильщиков +35", "Защита Носильщиков +42"],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "ownerDescription": "Штаны стойкого Носильщика",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "unit": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Штаны стойкого Носильщика",
+          "property": "defense",
+          "valueIndex": 0,
+          "value": [9],
+          "description": ["Защита всех войск +9"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "bc2197813dee4384a2e2229ae0856f22",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Пояс солдата удачи",
+    "place": "belt",
+    "twoHanded": false,
+    "set": "Солдат удачи",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "4a7f08988de448e88c510723178d8f32",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Наручи отдыха",
+    "place": "bracers",
+    "twoHanded": false,
+    "set": "Солдат удачи",
+    "buffs": {
+      "common": [],
+      "perfect": [
+        {
+          "ownerDescription": "Наручи отдыха",
+          "type": "artefact",
+          "player": null,
+          "target": "enemy",
+          "appliedOn": "all",
+          "targetType": "magicTower",
+          "units": null,
+          "title": "Наручи отдыха",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [-0.06],
+          "description": ["Атака магических башен -6%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "b720704497f3416bb74a33760b686bb1",
+    "level": 3,
+    "setTitle": "Воздушный воин",
+    "buffs": [
+      {
+        "ownerDescription": "Комплект Воздушный воин",
+        "type": "artefactKit",
+        "player": null,
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "player",
+        "units": null,
+        "title": "Воздушный воин",
+        "property": "experience",
+        "valueIndex": 0,
+        "value": [3],
+        "description": ["Получаемый героем опыт в бою +300%"],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "9a4ee385cd9841bfac21a47d89ebdc46",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Плащ ветра",
+    "place": "back",
+    "twoHanded": false,
+    "set": "Воздушный воин",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "a53e3da9d3b7489cb6d4fa77aa39f04f",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Воздушная кольчуга",
+    "place": "armor",
+    "twoHanded": false,
+    "set": "Воздушный воин",
+    "buffs": {
+      "common": [
+        {
+          "ownerDescription": "Воздушная кольчуга",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": ["flying"],
+          "title": "Воздушная кольчуга",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [0.35, 0.42],
+          "description": ["Здоровье Летающих +35%", "Здоровье Летающих +42%"],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "ownerDescription": "Воздушная кольчуга",
+          "title": "Воздушная кольчуга",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "fortification",
+          "units": null,
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [1.5],
+          "description": [
+            "Эффективность уничтожения войск на укреплениях +150%"
+          ],
+          "battle": true
+        },
+        {
+          "ownerDescription": "Воздушная кольчуга",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Воздушная кольчуга",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [0.09],
+          "description": ["Здоровье всех войск +9%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "daaa0609de4f4e668390df96916597df",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Кольцо воздушного воина",
+    "place": "ring",
+    "twoHanded": false,
+    "set": "Воздушный воин",
+    "buffs": {
+      "common": [
+        {
+          "ownerDescription": "Кольцо воздушного воина",
+          "type": "artefact",
+          "player": null,
+          "target": "enemy",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": ["flying"],
+          "title": "Кольцо воздушного воина",
+          "property": "attackRate",
+          "valueIndex": 0,
+          "value": [-0.35, -0.42],
+          "description": [
+            "Атака Летающих -35%&Действует на противника",
+            "Атака Летающих -42%&Действует на противника"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "ownerDescription": "Кольцо воздушного воина",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "magicTower",
+          "units": null,
+          "title": "Кольцо воздушного воина",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [0.15],
+          "description": ["Атака магических башен +15%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "ad2ebbdca7ee42e1bf64f519f4b9a091",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Шлем воздушного воина",
+    "place": "head",
+    "twoHanded": false,
+    "set": "Воздушный воин",
+    "buffs": {
+      "common": [
+        {
+          "ownerDescription": "Шлем воздушного воина",
+          "type": "artefact",
+          "player": null,
+          "target": "enemy",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": ["flying"],
+          "title": "Шлем воздушного воина",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [-0.35, -0.42],
+          "description": [
+            "Здоровье Летающих -35%&Действует на противника",
+            "Здоровье Летающих -42%&Действует на противника"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "ownerDescription": "Шлем воздушного воина",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "tower",
+          "units": null,
+          "title": "Шлем воздушного воина",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [1],
+          "description": ["Атака башен +100%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "9be6ef066db449c6a71ecff97f219b1d",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Ключ от копей",
+    "place": "bag",
+    "twoHanded": false,
+    "set": "Воздушный воин",
+    "buffs": {
+      "common": [],
+      "perfect": [
+        {
+          "ownerDescription": "Ключ от копей",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "player",
+          "units": null,
+          "title": "Ключ от копей",
+          "property": "experience",
+          "valueIndex": 0,
+          "value": [1.5],
+          "description": ["Получаемый героем опыт в бою +150%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "af8a0d99823a4ad48fdf57621001e61d",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Меч воздушного воина",
+    "place": "rightHand",
+    "twoHanded": false,
+    "set": "Воздушный воин",
+    "buffs": {
+      "common": [
+        {
+          "ownerDescription": "Меч воздушного воина",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": ["flying"],
+          "title": "Меч воздушного воина",
+          "property": "attackRate",
+          "valueIndex": 0,
+          "value": [0.35, 0.42],
+          "description": ["Атака Летающих +35%", "Атака Летающих +42%"],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "ownerDescription": "Меч воздушного воина",
+          "type": "artefact",
+          "player": null,
+          "target": "enemy",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": ["mercenary"],
+          "title": "Меч воздушного воина",
+          "property": "attackRate",
+          "valueIndex": 0,
+          "value": [-0.09],
+          "description": ["Атака наемников -9%"],
+          "battle": true
+        },
+        {
+          "ownerDescription": "Меч воздушного воина",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Меч воздушного воина",
+          "property": "defenseLevel",
+          "valueIndex": 0,
+          "value": [3],
+          "description": ["Предел максимальной защиты +3"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "1e659d0d1d854de8aa767eeda340d3b4",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Сапоги воздуха",
+    "place": "boots",
+    "twoHanded": false,
+    "set": "Воздушный воин",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "615b71226ce747dd915a32182abb6c0d",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Амулет воздушного воина",
+    "place": "neck",
+    "twoHanded": false,
+    "set": "Воздушный воин",
+    "buffs": {
+      "common": [
+        {
+          "ownerDescription": "Амулет воздушного воина",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": ["flying"],
+          "title": "Амулет воздушного воина",
+          "property": "persecutionRate",
+          "valueIndex": 0,
+          "value": [0.35, 0.42],
+          "description": [
+            "Атака перследователей +35% для Летающих",
+            "Атака перследователей +42% для Летающих"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "54310d73b3bd43e3b39b91195cec7c10",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Щит воздушного воина",
+    "place": "leftHand",
+    "twoHanded": false,
+    "set": "Воздушный воин",
+    "buffs": {
+      "common": [
+        {
+          "ownerDescription": "Щит воздушного воина",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": ["flying"],
+          "title": "Щит воздушного воина",
+          "property": "defense",
+          "valueIndex": 0,
+          "value": [35, 42],
+          "description": ["Защита Летающих +35", "Защита Летающих +42"],
+          "battle": 0
+        }
+      ],
+      "perfect": [
+        {
+          "ownerDescription": "Щит воздушного воина",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Щит воздушного воина",
+          "property": "attackRate",
+          "valueIndex": 0,
+          "value": [0.09],
+          "description": ["Атака всех войск +9%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "f7a117fee1ed40ee821014d5cc226ea2",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Штаны Воздушного воина",
+    "place": "pants",
+    "twoHanded": false,
+    "set": "Воздушный воин",
+    "buffs": {
+      "common": [],
+      "perfect": [
+        {
+          "ownerDescription": "Штаны Воздушного воина",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Штаны Воздушного воина",
+          "property": "defense",
+          "valueIndex": 0,
+          "value": [9],
+          "description": ["Защита всех войск +9"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "6826e78274c9440b9b0c4e438466299f",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Сумка летающего",
+    "place": "belt",
+    "twoHanded": false,
+    "set": "Воздушный воин",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "9ed8dcb5f94d46cf8d0fe89f8d0d7233",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Наручи воздушной стихии",
+    "place": "bracers",
+    "twoHanded": false,
+    "set": "Воздушный воин",
+    "buffs": {
+      "common": [
+        {
+          "ownerDescription": "Наручи воздушной стихии",
+          "type": "artefact",
+          "player": null,
+          "target": "player_ally",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": ["flying"],
+          "title": "Наручи воздушной стихии",
+          "property": "attackRate",
+          "valueIndex": 0,
+          "value": [0.25, 0.3],
+          "description": [
+            "Атака Летающих +25%&GДействует на себя, союзника",
+            "Атака Летающих +30%&Действует на себя, союзника"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "ownerDescription": "Наручи воздушной стихии",
+          "type": "artefact",
+          "player": null,
+          "target": "enemy",
+          "appliedOn": "all",
+          "targetType": "magicTower",
+          "units": null,
+          "title": "Наручи воздушной стихии",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [-0.06],
+          "description": ["Атака магических башен -6%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "0d3c7d25e77848238fc3df501b26ec52",
+    "level": 3,
+    "setTitle": "Легендарный миротворец",
+    "buffs": [
+      {
+        "ownerDescription": "Комплект Легендарный миротворец",
+        "type": "artefactKit",
+        "player": null,
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "player",
+        "units": null,
+        "title": "Легендарный миротворец",
+        "property": "experience",
+        "valueIndex": 0,
+        "value": [3],
+        "description": ["Получаемый героем опыт в бою +300%"],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "ba6e389cc6784f43bf0ff5bccdea90bd",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Плащ арестанта",
+    "place": "back",
+    "twoHanded": false,
+    "set": "Легендарный миротворец",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "464dd6dc036d4269b3ffdba20589d557",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Броня миротворца",
+    "place": "armor",
+    "twoHanded": false,
+    "set": "Легендарный миротворец",
+    "buffs": {
+      "common": [
+        {
+          "ownerDescription": "Броня миротворца",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Броня миротворца",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [0.3, 0.36],
+          "description": [
+            "Здоровье всех войск +30%",
+            "Здоровье всех войск +36%"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "ownerDescription": "Броня миротворца",
+          "title": "Броня миротворца",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "fortification",
+          "units": null,
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [1.5],
+          "description": [
+            "Эффективность уничтожения войск на укреплениях +150%"
+          ],
+          "battle": true
+        },
+        {
+          "ownerDescription": "Броня миротворца",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Броня миротворца",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [0.09],
+          "description": ["Здоровье всех войск +9%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "43c09703b4084a0a9a324e9683222bec",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Кольцо мира",
+    "place": "ring",
+    "twoHanded": false,
+    "set": "Легендарный миротворец",
+    "buffs": {
+      "common": [
+        {
+          "ownerDescription": "Кольцо мира",
+          "type": "artefact",
+          "player": null,
+          "target": "enemy",
+          "appliedOn": "all",
+          "targetType": "player",
+          "units": null,
+          "title": "Кольцо мира",
+          "property": "experience",
+          "valueIndex": 0,
+          "value": [-1, -1.2],
+          "description": [
+            "Получаемый героем опыт в бою -100%&Действует на противника",
+            "Получаемый героем опыт в бою -120%&Действует на противника"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "ownerDescription": "Кольцо мира",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "magicTower",
+          "units": null,
+          "title": "Кольцо мира",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [0.15],
+          "description": ["Атака магических башен +15%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "240233d586de48b4a2d8a7132b367697",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Шлем укрепления зданий",
+    "place": "head",
+    "twoHanded": false,
+    "set": "Легендарный миротворец",
+    "buffs": {
+      "common": [],
+      "perfect": [
+        {
+          "ownerDescription": "Шлем укрепления зданий",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "tower",
+          "units": null,
+          "title": "Шлем укрепления зданий",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [1],
+          "description": ["Атака башен +100%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "9dc17076c92c4597b4d27e6c9f4c83d0",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Платок умиротворения преследователей",
+    "place": "bag",
+    "twoHanded": false,
+    "set": "Легендарный миротворец",
+    "buffs": {
+      "common": [
+        {
+          "ownerDescription": "Платок умиротворения преследователей",
+          "type": "artefact",
+          "player": null,
+          "target": "all",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": ["swordsman", "cavalier", "flying", "archer"],
+          "title": "Платок умиротворения преследователей",
+          "property": "persecutionRate",
+          "valueIndex": 0,
+          "value": [-1, 1.2],
+          "description": [
+            "Атака всех перследователей -100%&Действует на себя, союзника, противника",
+            "Атака всех перследователей -120%&Действует на себя, союзника, противника"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "ownerDescription": "Платок умиротворения преследователей",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "player",
+          "units": null,
+          "title": "Платок умиротворения преследователей",
+          "property": "experience",
+          "valueIndex": 0,
+          "value": [1.5],
+          "description": ["Получаемый героем опыт в бою +150%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "76333a35aec34307a4d5847b3a1f797f",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Кинжал демобилизации",
+    "place": "rightHand",
+    "twoHanded": false,
+    "set": "Легендарный миротворец",
+    "buffs": {
+      "common": [],
+      "perfect": [
+        {
+          "ownerDescription": "Кинжал демобилизации",
+          "type": "artefact",
+          "player": null,
+          "target": "enemy",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": ["mercenary"],
+          "title": "Кинжал демобилизации",
+          "property": "attackRate",
+          "valueIndex": 0,
+          "value": [-0.09],
+          "description": ["Атака наемников -9%"],
+          "battle": true
+        },
+        {
+          "ownerDescription": "Кинжал демобилизации",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Кинжал демобилизации",
+          "property": "defenseLevel",
+          "valueIndex": 0,
+          "value": [3],
+          "description": ["Предел максимальной защиты +3"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "6abe8acc0d9b4a46967f618acda7b215",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Золотые Сапоги замедления",
+    "place": "boots",
+    "twoHanded": false,
+    "set": "Легендарный миротворец",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "bb7c8572b0f0465f80dc792751e536ee",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Амулет неповиновения войск",
+    "place": "neck",
+    "twoHanded": false,
+    "set": "Легендарный миротворец",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "b23ca86299444fec81acd27ea2b261b7",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Щит миротворца",
+    "place": "leftHand",
+    "twoHanded": false,
+    "set": "Легендарный миротворец",
+    "buffs": {
+      "common": [
+        {
+          "ownerDescription": "Щит миротворца",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Щит миротворца",
+          "property": "defense",
+          "valueIndex": 0,
+          "value": [30, 36],
+          "description": ["Защита всех войск +30", "Защита всех войск +36"],
+          "battle": 0
+        }
+      ],
+      "perfect": [
+        {
+          "ownerDescription": "Щит миротворца",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Щит миротворца",
+          "property": "attackRate",
+          "valueIndex": 0,
+          "value": [0.09],
+          "description": ["Атака всех войск +9%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "b25b09c581124f4aa7b283302d7545c7",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Поножи медлительности",
+    "place": "pants",
+    "twoHanded": false,
+    "set": "Легендарный миротворец",
+    "buffs": {
+      "common": [],
+      "perfect": [
+        {
+          "ownerDescription": "Поножи медлительности",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Поножи медлительности",
+          "property": "defense",
+          "valueIndex": 0,
+          "value": [9],
+          "description": ["Защита всех войск +9"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "2eda9fc5407948778d494df89451e641",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Пояс миротворца",
+    "place": "belt",
+    "twoHanded": false,
+    "set": "Легендарный миротворец",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "477219fb929c48548a75fbcb5771863f",
+    "level": 3,
+    "ancient": false,
+    "perfect": false,
+    "title": "Наручи умиротворения",
+    "place": "bracers",
+    "twoHanded": false,
+    "set": "Легендарный миротворец",
+    "buffs": {
+      "common": [
+        {
+          "ownerDescription": "Наручи умиротворения",
+          "type": "artefact",
+          "player": null,
+          "target": "all",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Наручи умиротворения",
+          "property": "attackRate",
+          "valueIndex": 0,
+          "value": [-0.25, -0.3],
+          "description": [
+            "Атака всех войск -25%&Действует на себя, союзника, противника",
+            "Атака всех войск -30%&Действует на себя, союзника, противника"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "ownerDescription": "Наручи умиротворения",
+          "type": "artefact",
+          "player": null,
+          "target": "enemy",
+          "appliedOn": "all",
+          "targetType": "magicTower",
+          "units": null,
+          "title": "Наручи умиротворения",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [-0.06],
+          "description": ["Атака магических башен -6%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "62fb4d46c076409293361e99e7d093aa",
+    "level": 4,
+    "setTitle": "Мастер-исследователь",
+    "buffs": [
+      {
+        "ownerDescription": "Комплект Мастер-исследователь",
+        "type": "artefactKit",
+        "player": null,
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "player",
+        "units": null,
+        "title": "Мастер-исследователь",
+        "property": "experience",
+        "valueIndex": 0,
+        "value": [4],
+        "description": ["Получаемый героем опыт в бою +400%"],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "0c9e2aee7d2541c3a4ed0d65446a5966",
+    "level": 4,
+    "ancient": false,
+    "perfect": false,
+    "title": "Мантия неуязвимости стрелков",
+    "place": "back",
+    "twoHanded": false,
+    "set": "Мастер-исследователь",
+    "buffs": {
+      "common": [
+        {
+          "ownerDescription": "Мантия неуязвимости стрелков",
+          "type": "artefact",
+          "player": null,
+          "target": "enemy",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": ["swordsman"],
+          "title": "Мантия неуязвимости стрелков",
+          "property": "persecutionRate",
+          "valueIndex": 0,
+          "value": [-0.45, -0.54],
+          "description": [
+            "Атака перследователей -45% для Воинов&Действует на противника",
+            "Атака перследователей -54% для Воинов&Действует на противника"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "7348bca8eedb4a8a9f543867b0d15b5b",
+    "level": 4,
+    "ancient": false,
+    "perfect": false,
+    "title": "Броня стрелков",
+    "place": "armor",
+    "twoHanded": false,
+    "set": "Мастер-исследователь",
+    "buffs": {
+      "common": [
+        {
+          "ownerDescription": "Броня стрелков",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": ["archer"],
+          "title": "Броня стрелков",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [0.45, 0.54],
+          "description": ["Здоровье Стрелков +45%", "Здоровье Стрелков +54%"],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "ownerDescription": "Броня стрелков",
+          "title": "Броня стрелков",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "fortification",
+          "units": null,
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [2],
+          "description": [
+            "Эффективность уничтожения войск на укреплениях +200%"
+          ],
+          "battle": true
+        },
+        {
+          "ownerDescription": "Броня стрелков",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Броня стрелков",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [0.12],
+          "description": ["Здоровье всех войск +12%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "0c5c60a0c6d949489d643d9a37aeaa8f",
+    "level": 4,
+    "ancient": false,
+    "perfect": false,
+    "title": "Кольцо защиты стрелков",
+    "place": "ring",
+    "twoHanded": false,
+    "set": "Мастер-исследователь",
+    "buffs": {
+      "common": [
+        {
+          "ownerDescription": "Кольцо защиты стрелков",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": ["archer"],
+          "title": "Кольцо защиты стрелков",
+          "property": "defense",
+          "valueIndex": 0,
+          "value": [45, 54],
+          "description": ["Защита Стрелков +45", "Защита Стрелков +54"],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "ownerDescription": "Кольцо защиты стрелков",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "magicTower",
+          "units": null,
+          "title": "Кольцо защиты стрелков",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [0.2],
+          "description": ["Атака магических башен +20%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "e78fdaead88d449d97253d0988f409af",
+    "level": 4,
+    "ancient": false,
+    "perfect": false,
+    "title": "Шлем диверсии исследователей",
+    "place": "head",
+    "twoHanded": false,
+    "set": "Мастер-исследователь",
+    "buffs": {
+      "common": [],
+      "perfect": [
+        {
+          "ownerDescription": "Шлем диверсии исследователей",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "tower",
+          "units": null,
+          "title": "Шлем диверсии исследователей",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [1.5],
+          "description": ["Атака башен +150%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "26bf61494f704fa6a48d443f10ac4df8",
+    "level": 4,
+    "ancient": false,
+    "perfect": false,
+    "title": "Компас исследователя",
+    "place": "bag",
+    "twoHanded": false,
+    "set": "Мастер-исследователь",
+    "buffs": {
+      "common": [],
+      "perfect": [
+        {
+          "ownerDescription": "Компас исследователя",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "player",
+          "units": null,
+          "title": "Компас исследователя",
+          "property": "experience",
+          "valueIndex": 0,
+          "value": [2],
+          "description": ["Получаемый героем опыт в бою +200%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "7ac26032e70a418e872001049eb4f32a",
+    "level": 4,
+    "ancient": false,
+    "perfect": false,
+    "title": "Арбалет ярости стрелков",
+    "place": "rightHand",
+    "twoHanded": true,
+    "set": "Мастер-исследователь",
+    "buffs": {
+      "common": [
+        {
+          "ownerDescription": "Арбалет ярости стрелков",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": ["archer"],
+          "title": "Арбалет ярости стрелков",
+          "property": "attackRate",
+          "valueIndex": 0,
+          "value": [0.45, 0, 54],
+          "description": ["Атака Стрелков +45%", "Атака Стрелков +54%"],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "ownerDescription": "Арбалет ярости стрелков",
+          "type": "artefact",
+          "player": null,
+          "target": "enemy",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": ["mercenary"],
+          "title": "Арбалет ярости стрелков",
+          "property": "attackRate",
+          "valueIndex": 0,
+          "value": [-0.12],
+          "description": ["Атака наемников -12%"],
+          "battle": true
+        },
+        {
+          "ownerDescription": "Арбалет ярости стрелков",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Арбалет ярости стрелков",
+          "property": "defenseLevel",
+          "valueIndex": 0,
+          "value": [4],
+          "description": ["Предел максимальной защиты +4"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "b9368342056d4c74bd05766e275fb0b5",
+    "level": 4,
+    "ancient": false,
+    "perfect": false,
+    "title": "Скороходы исследователя",
+    "place": "boots",
+    "twoHanded": false,
+    "set": "Мастер-исследователь",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "bc419c65f7f844c1893f97d3479bdcf6",
+    "level": 4,
+    "ancient": false,
+    "perfect": false,
+    "title": "Талисман исследователя",
+    "place": "neck",
+    "twoHanded": false,
+    "set": "Мастер-исследователь",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "a5ab0555aaf641ee9f4aa78e0eaf72ee",
+    "level": 4,
+    "ancient": false,
+    "perfect": false,
+    "title": "Доспех слабости стрелков",
+    "place": "pants",
+    "twoHanded": false,
+    "set": "Мастер-исследователь",
+    "buffs": {
+      "common": [
+        {
+          "ownerDescription": "Доспех слабости стрелков",
+          "type": "artefact",
+          "player": null,
+          "target": "enemy",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": ["archer"],
+          "title": "Доспех слабости стрелков",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [-0.25, -0.3],
+          "description": ["Здоровье Стрелков -25%", "Здоровье Стрелков -30%"],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "ownerDescription": "Доспех слабости стрелков",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Доспех слабости стрелков",
+          "property": "defense",
+          "valueIndex": 0,
+          "value": [12],
+          "description": ["Защита всех войск +12"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "49119e36ee08434c959c9fd72144874a",
+    "level": 4,
+    "ancient": false,
+    "perfect": false,
+    "title": "Сумка исследователя",
+    "place": "belt",
+    "twoHanded": false,
+    "set": "Мастер-исследователь",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "1592b6907c1b4f38a7d8680391c8025f",
+    "level": 4,
+    "ancient": false,
+    "perfect": false,
+    "title": "Наручи преследователей стрелков",
+    "place": "bracers",
+    "twoHanded": false,
+    "set": "Мастер-исследователь",
+    "buffs": {
+      "common": [
+        {
+          "ownerDescription": "Наручи преследователей стрелков",
+          "type": "artefact",
+          "player": null,
+          "target": "all",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": ["archer"],
+          "title": "Наручи преследователей стрелков",
+          "property": "persecutionRate",
+          "valueIndex": 0,
+          "value": [0.45, 0.54],
+          "description": [
+            "Атака преследователей +45% для Стрелков",
+            "Атака преследователей +54% для Стрелков"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "ownerDescription": "Наручи преследователей стрелков",
+          "type": "artefact",
+          "player": null,
+          "target": "enemy",
+          "appliedOn": "all",
+          "targetType": "magicTower",
+          "units": null,
+          "title": "Наручи преследователей стрелков",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [-0.12],
+          "description": ["Атака магических башен -12%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "645fe0a5789e414cb9cff614f39c0ea7",
+    "level": 4,
+    "setTitle": "Шпион-диверсант",
+    "buffs": [
+      {
+        "ownerDescription": "Комплект Шпион-диверсант",
+        "type": "artefactKit",
+        "player": null,
+        "target": "player",
+        "appliedOn": "all",
+        "targetType": "player",
+        "units": null,
+        "title": "Шпион-диверсант",
+        "property": "experience",
+        "valueIndex": 0,
+        "value": [4],
+        "description": ["Получаемый героем опыт в бою +400%"],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "257075dcab3042c2aa6f8a00b4a3f912",
+    "level": 4,
+    "ancient": false,
+    "perfect": false,
+    "title": "Накидка диверсии исследователей",
+    "place": "back",
+    "twoHanded": false,
+    "set": "Шпион-диверсант",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "6dd56025727545d7be200a36fab3a1ca",
+    "level": 4,
+    "ancient": false,
+    "perfect": false,
+    "title": "Доспех диверсии купцов",
+    "place": "armor",
+    "twoHanded": false,
+    "set": "Шпион-диверсант",
+    "buffs": {
+      "common": [],
+      "perfect": [
+        {
+          "ownerDescription": "Доспех диверсии купцов",
+          "title": "Доспех диверсии купцов",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "fortification",
+          "units": null,
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [2],
+          "description": [
+            "Эффективность уничтожения войск на укреплениях +200%"
+          ],
+          "battle": true
+        },
+        {
+          "ownerDescription": "Доспех диверсии купцов",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Доспех диверсии купцов",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [0.12],
+          "description": ["Здоровье всех войск +12%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "4dc28bd8bda6420c8b808b81ce8213a3",
+    "level": 4,
+    "ancient": false,
+    "perfect": false,
+    "title": "Кольцо уничтожения провидцев",
+    "place": "ring",
+    "twoHanded": false,
+    "set": "Шпион-диверсант",
+    "buffs": {
+      "common": [],
+      "perfect": [
+        {
+          "ownerDescription": "Кольцо уничтожения провидцев",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "magicTower",
+          "units": null,
+          "title": "Кольцо уничтожения провидцев",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [0.2],
+          "description": ["Атака магических башен +20%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "920104e5399048bbac216276083137b0",
+    "level": 4,
+    "ancient": false,
+    "perfect": false,
+    "title": "Шлем шпиона",
+    "place": "head",
+    "twoHanded": false,
+    "set": "Шпион-диверсант",
+    "buffs": {
+      "common": [],
+      "perfect": [
+        {
+          "ownerDescription": "Шлем шпиона",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "tower",
+          "units": null,
+          "title": "Шлем шпиона",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [1.5],
+          "description": ["Атака башен +150%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "e0dec57439c142cd921ab70d7b16aa04",
+    "level": 4,
+    "ancient": false,
+    "perfect": false,
+    "title": "Перо шпиона",
+    "place": "bag",
+    "twoHanded": false,
+    "set": "Шпион-диверсант",
+    "buffs": {
+      "common": [
+        {
+          "ownerDescription": "Перо шпиона",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "player",
+          "units": null,
+          "title": "Перо шпиона",
+          "property": "experience",
+          "valueIndex": 0,
+          "value": [2, 2.4],
+          "description": [
+            "Получаемый героем опыт в бою +200%",
+            "Получаемый героем опыт в бою +240%"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "ownerDescription": "Перо шпиона",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "player",
+          "units": null,
+          "title": "Перо шпиона",
+          "property": "experience",
+          "valueIndex": 0,
+          "value": [2],
+          "description": ["Получаемый героем опыт в бою +200%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "954c09d7c41d41b4bc8987317cd29f5d",
+    "level": 4,
+    "ancient": false,
+    "perfect": false,
+    "title": "Лапа диверсии антишпионов",
+    "place": "rightHand",
+    "twoHanded": true,
+    "set": "Шпион-диверсант",
+    "buffs": {
+      "common": [],
+      "perfect": [
+        {
+          "ownerDescription": "Лапа диверсии антишпионов",
+          "type": "artefact",
+          "player": null,
+          "target": "enemy",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": ["mercenary"],
+          "title": "Лапа диверсии антишпионов",
+          "property": "attackRate",
+          "valueIndex": 0,
+          "value": [-0.12],
+          "description": ["Атака наемников -12%"],
+          "battle": true
+        },
+        {
+          "ownerDescription": "Лапа диверсии антишпионов",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Лапа диверсии антишпионов",
+          "property": "defenseLevel",
+          "valueIndex": 0,
+          "value": [4],
+          "description": ["Предел максимальной защиты +4"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "7bfa2977512a46969cd96d79cfaf5409",
+    "level": 4,
+    "ancient": false,
+    "perfect": false,
+    "title": "Армейские скороходы",
+    "place": "boots",
+    "twoHanded": false,
+    "set": "Шпион-диверсант",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "641fbc96c96f433687458d40969eaabf",
+    "level": 4,
+    "ancient": false,
+    "perfect": false,
+    "title": "Амулет диверсии шпионов",
+    "place": "neck",
+    "twoHanded": false,
+    "set": "Шпион-диверсант",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "798bd6f3e0784e76ba8e20905b40b7a5",
+    "level": 4,
+    "ancient": false,
+    "perfect": false,
+    "title": "Щит диверсии зеркал",
+    "place": "leftHand",
+    "twoHanded": false,
+    "set": "Шпион-диверсант",
+    "buffs": {
+      "common": [],
+      "perfect": [
+        {
+          "ownerDescription": "Щит диверсии зеркал",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Щит диверсии зеркал",
+          "property": "attackRate",
+          "valueIndex": 0,
+          "value": [0.12],
+          "description": ["Атака всех войск +12%"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "daad3551d893473b939e665c39d1e316",
+    "level": 4,
+    "ancient": false,
+    "perfect": false,
+    "title": "Поножи диверсии тренировок",
+    "place": "pants",
+    "twoHanded": false,
+    "set": "Шпион-диверсант",
+    "buffs": {
+      "common": [],
+      "perfect": [
+        {
+          "ownerDescription": "Поножи диверсии тренировок",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Поножи диверсии тренировок",
+          "property": "defense",
+          "valueIndex": 0,
+          "value": [12],
+          "description": ["Защита всех войск +12"],
+          "battle": true
+        }
+      ]
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "8cf8097764714debb9b5b3a7abeea3ce",
+    "level": 4,
+    "ancient": false,
+    "perfect": false,
+    "title": "Пояс шпиона",
+    "place": "belt",
+    "twoHanded": false,
+    "set": "Шпион-диверсант",
+    "buffs": {
+      "common": [],
+      "perfect": []
+    },
+    "runes": [],
+    "sharpening": [],
+    "battle": true
+  },
+  {
+    "id": "9ff7f93188044e49933e8f2981d5789e",
+    "level": 4,
+    "ancient": false,
+    "perfect": false,
+    "title": "Браслет диверсии строительства",
+    "place": "bracers",
+    "twoHanded": false,
+    "set": "Шпион-диверсант",
+    "buffs": {
+      "common": [],
+      "perfect": [
+        {
+          "ownerDescription": "Браслет диверсии строительства",
+          "type": "artefact",
+          "player": null,
+          "target": "enemy",
+          "appliedOn": "all",
+          "targetType": "magicTower",
+          "units": null,
+          "title": "Браслет диверсии строительства",
+          "property": "damageRate",
+          "valueIndex": 0,
+          "value": [-0.12],
+          "description": ["Атака магических башен -12%"],
           "battle": true
         }
       ]

@@ -1,37 +1,35 @@
 [
   {
-    "id": "6b58aacf08d34c459747b5c4e5d5babd",
-    "level": 3,
-    "setTitle": "Храмовник",
+    "id": "645fe0a5789e414cb9cff614f39c0ea7",
+    "level": 4,
+    "setTitle": "Шпион-диверсант",
     "buffs": [
       {
-        "id": "6b58aacf08d34c459747b5c4e5d5babd_0",
-        "owner": "6b58aacf08d34c459747b5c4e5d5babd",
-        "ownerDescription": "Комплект Храмовник",
+        "ownerDescription": "Комплект Шпион-диверсант",
         "type": "artefactKit",
         "player": null,
         "target": "player",
         "appliedOn": "all",
         "targetType": "player",
         "units": null,
-        "title": "Храмовник",
+        "title": "Шпион-диверсант",
         "property": "experience",
         "valueIndex": 0,
-        "value": [3],
-        "description": ["Получаемый героем опыт в бою +300%"],
+        "value": [4],
+        "description": ["Получаемый героем опыт в бою +400%"],
         "battle": true
       }
     ]
   },
   {
-    "id": "111e00e8799346019bb89a0abb64adfa",
-    "level": 3,
+    "id": "257075dcab3042c2aa6f8a00b4a3f912",
+    "level": 4,
     "ancient": false,
     "perfect": false,
-    "title": "Накидка святых",
+    "title": "Накидка диверсии исследователей",
     "place": "back",
     "twoHanded": false,
-    "set": "Храмовник",
+    "set": "Шпион-диверсант",
     "buffs": {
       "common": [],
       "perfect": []
@@ -41,40 +39,20 @@
     "battle": true
   },
   {
-    "id": "e321e97b52424853a1fb6cb512e22faf",
-    "level": 3,
+    "id": "6dd56025727545d7be200a36fab3a1ca",
+    "level": 4,
     "ancient": false,
     "perfect": false,
-    "title": "Доспехи великого храмовника",
+    "title": "Доспех диверсии купцов",
     "place": "armor",
     "twoHanded": false,
-    "set": "Храмовник",
+    "set": "Шпион-диверсант",
     "buffs": {
-      "common": [
-        {
-          "id": "e321e97b52424853a1fb6cb512e22faf_0",
-          "owner": "e321e97b52424853a1fb6cb512e22faf",
-          "ownerDescription": "Доспехи великого храмовника",
-          "type": "artefact",
-          "player": null,
-          "target": "player",
-          "appliedOn": "all",
-          "targetType": "unit",
-          "units": ["healer"],
-          "title": "Доспехи великого храмовника",
-          "property": "healthRate",
-          "valueIndex": 0,
-          "value": [0.35, 0.42],
-          "description": ["Здоровье Целителей +35%", "Здоровье Целителей +42%"],
-          "battle": true
-        }
-      ],
+      "common": [],
       "perfect": [
         {
-          "id": "e321e97b52424853a1fb6cb512e22faf_1",
-          "owner": "e321e97b52424853a1fb6cb512e22faf",
-          "ownerDescription": "Доспехи великого храмовника",
-          "title": "Доспехи великого храмовника",
+          "ownerDescription": "Доспех диверсии купцов",
+          "title": "Доспех диверсии купцов",
           "type": "artefact",
           "player": null,
           "target": "player",
@@ -83,16 +61,14 @@
           "units": null,
           "property": "damageRate",
           "valueIndex": 0,
-          "value": [1.5],
+          "value": [2],
           "description": [
-            "Эффективность уничтожения войск на укреплениях +150%"
+            "Эффективность уничтожения войск на укреплениях +200%"
           ],
           "battle": true
         },
         {
-          "id": "e321e97b52424853a1fb6cb512e22faf_2",
-          "owner": "e321e97b52424853a1fb6cb512e22faf",
-          "ownerDescription": "Доспехи великого храмовника",
+          "ownerDescription": "Доспех диверсии купцов",
           "type": "artefact",
           "player": null,
           "target": "player",
@@ -108,11 +84,11 @@
             "mercenary",
             "mage"
           ],
-          "title": "Доспехи великого храмовника",
+          "title": "Доспех диверсии купцов",
           "property": "healthRate",
           "valueIndex": 0,
-          "value": [0.09],
-          "description": ["Здоровье всех войск +9%"],
+          "value": [0.12],
+          "description": ["Здоровье всех войск +12%"],
           "battle": true
         }
       ]
@@ -122,53 +98,30 @@
     "battle": true
   },
   {
-    "id": "dd7d367b68964c47ab2ea1001fc4a820",
-    "level": 3,
+    "id": "4dc28bd8bda6420c8b808b81ce8213a3",
+    "level": 4,
     "ancient": false,
     "perfect": false,
-    "title": "Кольцо страха лекарей",
+    "title": "Кольцо уничтожения провидцев",
     "place": "ring",
     "twoHanded": false,
-    "set": "Храмовник",
+    "set": "Шпион-диверсант",
     "buffs": {
-      "common": [
-        {
-          "id": "dd7d367b68964c47ab2ea1001fc4a820_0",
-          "owner": "dd7d367b68964c47ab2ea1001fc4a820",
-          "ownerDescription": "Кольцо страха лекарей",
-          "type": "artefact",
-          "player": null,
-          "target": "enemy",
-          "appliedOn": "all",
-          "targetType": "unit",
-          "units": ["healer"],
-          "title": "Кольцо страха лекарей",
-          "property": "resurrectionRate",
-          "valueIndex": 0,
-          "value": [-0.35, -0.42],
-          "description": [
-            "Целители воскрешают -35%&Действует на противника",
-            "Целители воскрешают -42%&Действует на противника"
-          ],
-          "battle": true
-        }
-      ],
+      "common": [],
       "perfect": [
         {
-          "id": "dd7d367b68964c47ab2ea1001fc4a820_1",
-          "owner": "dd7d367b68964c47ab2ea1001fc4a820",
-          "ownerDescription": "Кольцо страха лекарей",
+          "ownerDescription": "Кольцо уничтожения провидцев",
           "type": "artefact",
           "player": null,
           "target": "player",
           "appliedOn": "all",
           "targetType": "magicTower",
           "units": null,
-          "title": "Кольцо страха лекарей",
+          "title": "Кольцо уничтожения провидцев",
           "property": "damageRate",
           "valueIndex": 0,
-          "value": [0.15],
-          "description": ["Атака магических башен +15%"],
+          "value": [0.2],
+          "description": ["Атака магических башен +20%"],
           "battle": true
         }
       ]
@@ -178,32 +131,30 @@
     "battle": true
   },
   {
-    "id": "44b3ecf9a2044cca91ccc6277fa683ab",
-    "level": 3,
+    "id": "920104e5399048bbac216276083137b0",
+    "level": 4,
     "ancient": false,
     "perfect": false,
-    "title": "Шлем великого храмовника",
+    "title": "Шлем шпиона",
     "place": "head",
     "twoHanded": false,
-    "set": "Храмовник",
+    "set": "Шпион-диверсант",
     "buffs": {
       "common": [],
       "perfect": [
         {
-          "id": "44b3ecf9a2044cca91ccc6277fa683ab_1",
-          "owner": "44b3ecf9a2044cca91ccc6277fa683ab",
-          "ownerDescription": "Шлем великого храмовника",
+          "ownerDescription": "Шлем шпиона",
           "type": "artefact",
           "player": null,
           "target": "player",
           "appliedOn": "all",
           "targetType": "tower",
           "units": null,
-          "title": "Шлем великого храмовника",
+          "title": "Шлем шпиона",
           "property": "damageRate",
           "valueIndex": 0,
-          "value": [1],
-          "description": ["Атака башен +100%"],
+          "value": [1.5],
+          "description": ["Атака башен +150%"],
           "battle": true
         }
       ]
@@ -213,32 +164,49 @@
     "battle": true
   },
   {
-    "id": "101bd307a2ee4067a5e955bd9e7cbc2b",
-    "level": 3,
+    "id": "e0dec57439c142cd921ab70d7b16aa04",
+    "level": 4,
     "ancient": false,
     "perfect": false,
-    "title": "Священный цветок",
+    "title": "Перо шпиона",
     "place": "bag",
     "twoHanded": false,
-    "set": "Храмовник",
+    "set": "Шпион-диверсант",
     "buffs": {
-      "common": [],
-      "perfect": [
+      "common": [
         {
-          "id": "101bd307a2ee4067a5e955bd9e7cbc2b_0",
-          "owner": "101bd307a2ee4067a5e955bd9e7cbc2b",
-          "ownerDescription": "Священный цветок",
+          "ownerDescription": "Перо шпиона",
           "type": "artefact",
           "player": null,
           "target": "player",
           "appliedOn": "all",
           "targetType": "player",
           "units": null,
-          "title": "Священный цветок",
+          "title": "Перо шпиона",
           "property": "experience",
           "valueIndex": 0,
-          "value": [1.5],
-          "description": ["Получаемый героем опыт в бою +150%"],
+          "value": [2, 2.4],
+          "description": [
+            "Получаемый героем опыт в бою +200%",
+            "Получаемый героем опыт в бою +240%"
+          ],
+          "battle": true
+        }
+      ],
+      "perfect": [
+        {
+          "ownerDescription": "Перо шпиона",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "all",
+          "targetType": "player",
+          "units": null,
+          "title": "Перо шпиона",
+          "property": "experience",
+          "valueIndex": 0,
+          "value": [2],
+          "description": ["Получаемый героем опыт в бою +200%"],
           "battle": true
         }
       ]
@@ -248,59 +216,34 @@
     "battle": true
   },
   {
-    "id": "f27203a1d7924e3b93146777cfcf8a10",
-    "level": 3,
+    "id": "954c09d7c41d41b4bc8987317cd29f5d",
+    "level": 4,
     "ancient": false,
     "perfect": false,
-    "title": "Меч жизни лекарей",
+    "title": "Лапа диверсии антишпионов",
     "place": "rightHand",
-    "twoHanded": false,
-    "set": "Храмовник",
+    "twoHanded": true,
+    "set": "Шпион-диверсант",
     "buffs": {
-      "common": [
-        {
-          "id": "f27203a1d7924e3b93146777cfcf8a10_0",
-          "owner": "f27203a1d7924e3b93146777cfcf8a10",
-          "ownerDescription": "Меч жизни лекарей",
-          "type": "artefact",
-          "player": null,
-          "target": "player",
-          "appliedOn": "all",
-          "targetType": "unit",
-          "units": ["healer"],
-          "title": "Меч жизни лекарей",
-          "property": "healthRate",
-          "valueIndex": 0,
-          "value": [-0.35, -0.42],
-          "description": [
-            "Здоровье Целителей -35%&Действует на противника",
-            "Здоровье Целителей -42%&Действует на противника"
-          ],
-          "battle": true
-        }
-      ],
+      "common": [],
       "perfect": [
         {
-          "id": "f27203a1d7924e3b93146777cfcf8a10_1",
-          "owner": "f27203a1d7924e3b93146777cfcf8a10",
-          "ownerDescription": "Меч жизни лекарей",
+          "ownerDescription": "Лапа диверсии антишпионов",
           "type": "artefact",
           "player": null,
           "target": "enemy",
           "appliedOn": "all",
           "targetType": "unit",
           "units": ["mercenary"],
-          "title": "Меч жизни лекарей",
+          "title": "Лапа диверсии антишпионов",
           "property": "attackRate",
           "valueIndex": 0,
-          "value": [-0.09],
-          "description": ["Атака наемников -9%"],
+          "value": [-0.12],
+          "description": ["Атака наемников -12%"],
           "battle": true
         },
         {
-          "id": "f27203a1d7924e3b93146777cfcf8a10_2",
-          "owner": "f27203a1d7924e3b93146777cfcf8a10",
-          "ownerDescription": "Меч жизни лекарей",
+          "ownerDescription": "Лапа диверсии антишпионов",
           "type": "artefact",
           "player": null,
           "target": "player",
@@ -316,11 +259,11 @@
             "mercenary",
             "mage"
           ],
-          "title": "Меч жизни лекарей",
+          "title": "Лапа диверсии антишпионов",
           "property": "defenseLevel",
           "valueIndex": 0,
-          "value": [3],
-          "description": ["Предел максимальной защиты +3"],
+          "value": [4],
+          "description": ["Предел максимальной защиты +4"],
           "battle": true
         }
       ]
@@ -330,14 +273,14 @@
     "battle": true
   },
   {
-    "id": "62f3b1bc2dd7443db6b22f9542eddeb2",
-    "level": 3,
+    "id": "7bfa2977512a46969cd96d79cfaf5409",
+    "level": 4,
     "ancient": false,
     "perfect": false,
-    "title": "Сапоги храмовника",
+    "title": "Армейские скороходы",
     "place": "boots",
     "twoHanded": false,
-    "set": "Храмовник",
+    "set": "Шпион-диверсант",
     "buffs": {
       "common": [],
       "perfect": []
@@ -347,37 +290,16 @@
     "battle": true
   },
   {
-    "id": "117c1c21db1e44919088eb7a179f826c",
-    "level": 3,
+    "id": "641fbc96c96f433687458d40969eaabf",
+    "level": 4,
     "ancient": false,
     "perfect": false,
-    "title": "Оберег великого храмовника",
+    "title": "Амулет диверсии шпионов",
     "place": "neck",
     "twoHanded": false,
-    "set": "Храмовник",
+    "set": "Шпион-диверсант",
     "buffs": {
-      "common": [
-        {
-          "id": "117c1c21db1e44919088eb7a179f826c_0",
-          "owner": "117c1c21db1e44919088eb7a179f826c",
-          "ownerDescription": "Оберег великого храмовника",
-          "type": "artefact",
-          "player": null,
-          "target": "player",
-          "appliedOn": "all",
-          "targetType": "unit",
-          "units": ["healer"],
-          "title": "Оберег великого храмовника",
-          "property": "resurrectionRate",
-          "valueIndex": 0,
-          "value": [0.3, 0.36],
-          "description": [
-            "Целители воскрешают +30%",
-            "Целители воскрешают +36%"
-          ],
-          "battle": true
-        }
-      ],
+      "common": [],
       "perfect": []
     },
     "runes": [],
@@ -385,39 +307,19 @@
     "battle": true
   },
   {
-    "id": "9c534966e4f94abf81313f09c5da6451",
-    "level": 3,
+    "id": "798bd6f3e0784e76ba8e20905b40b7a5",
+    "level": 4,
     "ancient": false,
     "perfect": false,
-    "title": "Щит защиты лекарей",
+    "title": "Щит диверсии зеркал",
     "place": "leftHand",
     "twoHanded": false,
-    "set": "Храмовник",
+    "set": "Шпион-диверсант",
     "buffs": {
-      "common": [
-        {
-          "id": "9c534966e4f94abf81313f09c5da6451_0",
-          "owner": "9c534966e4f94abf81313f09c5da6451",
-          "ownerDescription": "Щит защиты лекарей",
-          "type": "artefact",
-          "player": null,
-          "target": "player",
-          "appliedOn": "all",
-          "targetType": "unit",
-          "units": ["healer"],
-          "title": "Щит защиты лекарей",
-          "property": "defense",
-          "valueIndex": 0,
-          "value": [35, 42],
-          "description": ["Защита Целителей +35", "Защита Целителей +42"],
-          "battle": 0
-        }
-      ],
+      "common": [],
       "perfect": [
         {
-          "id": "9c534966e4f94abf81313f09c5da6451_1",
-          "owner": "9c534966e4f94abf81313f09c5da6451",
-          "ownerDescription": "Щит защиты лекарей",
+          "ownerDescription": "Щит диверсии зеркал",
           "type": "artefact",
           "player": null,
           "target": "player",
@@ -432,11 +334,11 @@
             "mercenary",
             "mage"
           ],
-          "title": "Щит защиты лекарей",
+          "title": "Щит диверсии зеркал",
           "property": "attackRate",
           "valueIndex": 0,
-          "value": [0.09],
-          "description": ["Атака всех войск +9%"],
+          "value": [0.12],
+          "description": ["Атака всех войск +12%"],
           "battle": true
         }
       ]
@@ -446,48 +348,25 @@
     "battle": true
   },
   {
-    "id": "4fbac8373f634d2ea39f92ab39662e1e",
-    "level": 3,
+    "id": "daad3551d893473b939e665c39d1e316",
+    "level": 4,
     "ancient": false,
     "perfect": false,
-    "title": "Штаны Храмовника",
+    "title": "Поножи диверсии тренировок",
     "place": "pants",
     "twoHanded": false,
-    "set": "Храмовник",
+    "set": "Шпион-диверсант",
     "buffs": {
-      "common": [
-        {
-          "id": "4fbac8373f634d2ea39f92ab39662e1e_0",
-          "owner": "4fbac8373f634d2ea39f92ab39662e1e",
-          "ownerDescription": "Штаны Храмовника",
-          "type": "artefact",
-          "player": null,
-          "target": "enemy",
-          "appliedOn": "all",
-          "targetType": "unit",
-          "units": ["healer"],
-          "title": "Штаны Храмовника",
-          "property": "defense",
-          "valueIndex": 0,
-          "value": [-45, -54],
-          "description": [
-            "Защита Целителей -45&Действует на противника",
-            "Защита Целителей -54&Действует на противника"
-          ],
-          "battle": true
-        }
-      ],
+      "common": [],
       "perfect": [
         {
-          "id": "4fbac8373f634d2ea39f92ab39662e1e_1",
-          "owner": "4fbac8373f634d2ea39f92ab39662e1e",
-          "ownerDescription": "Штаны Храмовника",
+          "ownerDescription": "Поножи диверсии тренировок",
           "type": "artefact",
           "player": null,
           "target": "player",
           "appliedOn": "all",
           "targetType": "unit",
-          "unit": [
+          "units": [
             "porter",
             "swordsman",
             "cavalier",
@@ -497,11 +376,11 @@
             "mercenary",
             "mage"
           ],
-          "title": "Штаны Храмовника",
+          "title": "Поножи диверсии тренировок",
           "property": "defense",
           "valueIndex": 0,
-          "value": [9],
-          "description": ["Защита всех войск +9"],
+          "value": [12],
+          "description": ["Защита всех войск +12"],
           "battle": true
         }
       ]
@@ -511,14 +390,14 @@
     "battle": true
   },
   {
-    "id": "625da666eae24ad58e026b28f106751e",
-    "level": 3,
+    "id": "8cf8097764714debb9b5b3a7abeea3ce",
+    "level": 4,
     "ancient": false,
     "perfect": false,
-    "title": "Сумка храмовника",
+    "title": "Пояс шпиона",
     "place": "belt",
     "twoHanded": false,
-    "set": "Храмовник",
+    "set": "Шпион-диверсант",
     "buffs": {
       "common": [],
       "perfect": []
@@ -528,32 +407,30 @@
     "battle": true
   },
   {
-    "id": "34f5f15a78d14bc99ead75c78b969d47",
-    "level": 3,
+    "id": "9ff7f93188044e49933e8f2981d5789e",
+    "level": 4,
     "ancient": false,
     "perfect": false,
-    "title": "Браслеты отречения",
+    "title": "Браслет диверсии строительства",
     "place": "bracers",
     "twoHanded": false,
-    "set": "Храмовник",
+    "set": "Шпион-диверсант",
     "buffs": {
       "common": [],
       "perfect": [
         {
-          "id": "34f5f15a78d14bc99ead75c78b969d47_0",
-          "owner": "34f5f15a78d14bc99ead75c78b969d47",
-          "ownerDescription": "Браслеты отречения",
+          "ownerDescription": "Браслет диверсии строительства",
           "type": "artefact",
           "player": null,
           "target": "enemy",
           "appliedOn": "all",
           "targetType": "magicTower",
           "units": null,
-          "title": "Браслеты отречения",
+          "title": "Браслет диверсии строительства",
           "property": "damageRate",
           "valueIndex": 0,
-          "value": [-0.06],
-          "description": ["Атака магических башен -6%"],
+          "value": [-0.12],
+          "description": ["Атака магических башен -12%"],
           "battle": true
         }
       ]

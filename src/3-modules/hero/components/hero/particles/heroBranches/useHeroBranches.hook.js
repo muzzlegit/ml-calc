@@ -1,7 +1,7 @@
 import { useHero } from "modules/hero/hooks";
 import useHeroStore from "modules/hero/store/heroStore";
 import {
-  getHeroPicture,
+  getHeroAssetsIcon,
   getHeroSkillPicture,
 } from "modules/hero/utils/hero.helpers";
 import { useEffect, useState } from "react";
@@ -15,7 +15,7 @@ const useHeroBranches = () => {
   const [secondBranch, setSecondBranch] = useState(hero?.secondBranch ?? null);
   const [thirdBranch, setThirdBranch] = useState(hero?.thirdBranch ?? null);
   const [graphics, setGraphics] = useState({
-    skillFrame: getHeroPicture("heroSkillFrame"),
+    skillFrame: getHeroAssetsIcon("heroSkillFrame"),
   });
   const { replaceHeroSkill } = useHero();
   const { buffsProvider } = useBuffsProvider();
@@ -24,13 +24,17 @@ const useHeroBranches = () => {
     const { level, id, target } = values;
     const isLevelLimit = level + 1 > 5;
     const newValues = {
-      level: isLevelLimit ? 1 : level + 1,
-      valueIndex: isLevelLimit ? 0 : level,
+      level: isLevelLimit ? 0 : level + 1,
+      valueIndex: isLevelLimit ? 0 : level + 1,
       id,
       target,
     };
     replaceHeroSkill(branchName, newValues);
-    buffsProvider([newValues], "replace");
+    const key = () => {
+      if (level === 5) return "delete";
+      return level === 0 ? "add" : "replace";
+    };
+    buffsProvider([newValues], key());
   };
 
   useEffect(() => {
@@ -43,7 +47,6 @@ const useHeroBranches = () => {
     setGraphics((prev) => ({ ...prev, ...createGraphicsObject() }));
     function createGraphicsObject() {
       const graphics = {};
-
       [
         ...(firstBranch ?? []),
         ...(secondBranch ?? []),

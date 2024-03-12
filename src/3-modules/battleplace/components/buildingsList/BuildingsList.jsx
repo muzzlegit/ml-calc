@@ -32,27 +32,33 @@ const BuildingsList = () => {
     <Flex gap="8px">
       {towers.length ? (
         <FlexCenter gap="8px">
-          {towers.map(({ id, type, level }) => {
+          {towers.map(({ id, type, level, damageRate }) => {
             const isTower = type === "tower";
             return (
-              <BuildImgBox
-                key={id}
-                id={id}
-                onClick={() => {
-                  handleDeleteBuilding(type, id);
-                }}
-              >
-                <ImageBox
-                  picture={isTower ? towerImg : magicTowerImg}
-                  addStyles={{ borderRadius: "4px" }}
-                />
-                <LevelLabel
-                  border={level}
-                  background={level === 8 ? perfectIcon.image : null}
+              <Box key={id}>
+                <BuildImgBox
+                  id={id}
+                  onClick={() => {
+                    handleDeleteBuilding(type, id);
+                  }}
                 >
-                  {level}
-                </LevelLabel>
-              </BuildImgBox>
+                  <ImageBox
+                    picture={isTower ? towerImg : magicTowerImg}
+                    addStyles={{ borderRadius: "4px" }}
+                  />
+                  <LevelLabel
+                    border={level}
+                    background={level === 8 ? perfectIcon.image : null}
+                  >
+                    {level}
+                  </LevelLabel>{" "}
+                </BuildImgBox>
+                {damageRate ? (
+                  <Rate isNegative={damageRate < 0}>{`${getValueSign(
+                    damageRate
+                  )}${(damageRate * 100).toFixed(0)} %`}</Rate>
+                ) : null}
+              </Box>
             );
           })}
         </FlexCenter>

@@ -16,6 +16,7 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "immer": "^10.0.3",
+    "lodash.debounce": "^4.0.8",
     "nanoid": "^5.0.3",
     "overlayscrollbars": "^2.4.6",
     "overlayscrollbars-react": "^0.5.3",

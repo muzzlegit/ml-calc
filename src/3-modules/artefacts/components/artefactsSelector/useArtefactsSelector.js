@@ -64,7 +64,11 @@ const useArtefactsSelector = () => {
   };
 
   useEffect(() => {
-    if (!currentKit) setKitTitle(defaultSelectorValue);
+    if (!currentKit) {
+      setKitTitle(defaultSelectorValue);
+    } else {
+      setKitTitle(currentKit?.setTitle);
+    }
   }, [currentKit]);
 
   //-- helpers

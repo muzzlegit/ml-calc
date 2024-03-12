@@ -20,6 +20,7 @@ const usePlayerStore = create(
         attackIndex: "max",
         homeLand: getHomeland(initialRace),
         standards: [...getStandards("mainAttacker")],
+        fallback: 0.5,
         buffs: [],
         fearlessness: false,
         unitsDamage: 0,
@@ -35,6 +36,7 @@ const usePlayerStore = create(
         attackIndex: "max",
         homeLand: getHomeland(initialRace),
         standards: [...getStandards("attackerAlly")],
+        fallback: 0.5,
         buffs: [],
         fearlessness: false,
         unitsDamage: 0,
@@ -50,6 +52,7 @@ const usePlayerStore = create(
         attackIndex: "max",
         homeLand: getHomeland(initialRace),
         standards: [...getStandards("attackerSecondAlly")],
+        fallback: 0.5,
         buffs: [],
         fearlessness: false,
         unitsDamage: 0,
@@ -59,12 +62,13 @@ const usePlayerStore = create(
       },
       mainDefender: {
         participant: true,
-        apostate: false,
+        apostate: true,
         race: initialRace,
         fraction: getFraction(initialRace),
         attackIndex: "max",
         homeLand: getHomeland(initialRace),
         standards: [...getStandards("mainDefender")],
+        fallback: 0.5,
         buffs: [],
         fearlessness: false,
         unitsDamage: 0,
@@ -80,6 +84,7 @@ const usePlayerStore = create(
         attackIndex: "max",
         homeLand: getHomeland(initialRace),
         standards: [...getStandards("firstDefenderAlly")],
+        fallback: 0.5,
         buffs: [],
         fearlessness: false,
         unitsDamage: 0,
@@ -95,6 +100,7 @@ const usePlayerStore = create(
         attackIndex: "max",
         homeLand: getHomeland(initialRace),
         standards: [...getStandards("secondDefenderAlly")],
+        fallback: 0.5,
         buffs: [],
         fearlessness: false,
         unitsDamage: 0,
@@ -120,6 +126,11 @@ const usePlayerStore = create(
         },
         getPlayerBuffs: (player) => {
           return get()[player].buffs;
+        },
+        setFallback: (player, value) => {
+          set((state) => {
+            state[player].fallback = value;
+          });
         },
         setParticipantFlag: (player, flag) => {
           set((state) => {

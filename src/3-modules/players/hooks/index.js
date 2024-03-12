@@ -1,3 +1,4 @@
 import useApostate from "./useApostate";
+import usePlayer from "./usePlayer";
 
-export { useApostate };
+export { useApostate, usePlayer };

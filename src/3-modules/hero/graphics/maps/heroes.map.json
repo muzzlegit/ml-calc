@@ -1,0 +1,57 @@
+{
+  "Воитель": {
+    "coordinate": "-1px -1px",
+    "width": "82px",
+    "height": "99px"
+  },
+  "Миротворец": {
+    "coordinate": "-1px -101px",
+    "width": "82px",
+    "height": "99px"
+  },
+  "Паладин": {
+    "coordinate": "-1px -201px",
+    "width": "82px",
+    "height": "99px"
+  },
+  "Гладиатор": {
+    "coordinate": "-1px -301px",
+    "width": "82px",
+    "height": "99px"
+  },
+  "Некромант": {
+    "coordinate": "-84px -301px",
+    "width": "82px",
+    "height": "99px"
+  },
+  "Целитель": {
+    "coordinate": "-84px -101px",
+    "width": "82px",
+    "height": "99px"
+  },
+  "Иллюзионист": {
+    "coordinate": "-84px -1px",
+    "width": "82px",
+    "height": "99px"
+  },
+  "Рассеиватель": {
+    "coordinate": "-84px -201px",
+    "width": "82px",
+    "height": "99px"
+  },
+  "Защитник": {
+    "coordinate": "-84px -401px",
+    "width": "82px",
+    "height": "99px"
+  },
+  "Строитель": {
+    "coordinate": "-1px -401px",
+    "width": "82px",
+    "height": "99px"
+  },
+  "Монстры": {
+    "coordinate": "-167px -1px",
+    "width": "82px",
+    "height": "99px"
+  }
+}

@@ -23,7 +23,8 @@ const HeroBranches = () => {
           return (
             <SkillBox
               key={title}
-              title={description[level - 1]}
+              title={description[level]}
+              isActive={level}
               background={graphics.skillFrame.image}
               width={graphics.skillFrame.width}
               height={graphics.skillFrame.height}
@@ -46,7 +47,8 @@ const HeroBranches = () => {
           return (
             <SkillBox
               key={title}
-              title={description[level - 1]}
+              title={description[level]}
+              isActive={level}
               background={graphics.skillFrame.image}
               width={graphics.skillFrame.width}
               height={graphics.skillFrame.height}
@@ -69,7 +71,8 @@ const HeroBranches = () => {
           return (
             <SkillBox
               key={title}
-              title={description[level - 1]}
+              title={description[level]}
+              isActive={level}
               background={graphics.skillFrame.image}
               width={graphics.skillFrame.width}
               height={graphics.skillFrame.height}

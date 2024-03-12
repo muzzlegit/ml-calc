@@ -20,7 +20,9 @@ const useBattleplaceStore = create(
         getBattleplace: () => get().battleplace,
         getGarrison: () => get().garrison,
         getAttackIndex: () => get().getAttackIndex,
-        getTowers: () => get().towers,
+        getTowers: () => {
+          return get().towers;
+        },
         getFortifications: () => {
           return get().fortifications;
         },

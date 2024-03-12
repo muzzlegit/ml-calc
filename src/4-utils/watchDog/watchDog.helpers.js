@@ -164,16 +164,16 @@ export const applyBuffToUnit = (buff, applyFnc) => {
 
 export function shouldApplyToBuilding(buff) {
   if (!buff) return false;
-  const { value, valueIndex, player } = buff;
-  if (
-    (player === "mainAttacker" ||
-      player === "attackerAlly" ||
-      player === "attackerSecondAlly") &&
-    value[valueIndex] > 0
-  )
-    return false;
-  if (player === "firstDefenderAlly" || player === "secondDefenderAlly")
-    return false;
+  const { player, target } = buff;
+  const isAttacker =
+    player === "mainAttacker" ||
+    player === "attackerAlly" ||
+    player === "attackerSecondAlly";
+  const isMainDefender = player === "mainDefender";
+  const isBuffForEnemy = target === "enemy";
 
-  return true;
+  if ((isAttacker && isBuffForEnemy) || (isMainDefender && !isBuffForEnemy))
+    return true;
+
+  return false;
 }

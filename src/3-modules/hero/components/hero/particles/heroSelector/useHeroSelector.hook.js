@@ -35,7 +35,7 @@ const useHeroSelector = () => {
 
   const handleHeroClass = (newHeroClass) => {
     ///---buffs
-    applyHeroBuffs("delete");
+    // applyHeroBuffs("delete");
     //---selector
     setHeroClass(newHeroClass);
     clearAllBranches();
@@ -46,7 +46,7 @@ const useHeroSelector = () => {
 
   const handleDeleteHeroClass = () => {
     //---buffs
-    applyHeroBuffs("delete");
+    // applyHeroBuffs("delete");
     //---selector
     setHeroClass(null);
     clearAllBranches();
@@ -61,12 +61,12 @@ const useHeroSelector = () => {
     //---hero
     assignHeroBranch(branchName, newHeroBranch, heroClass);
     // //---buffs
-    applyHeroBranchBuffs(branchName, "add");
+    // applyHeroBranchBuffs(branchName, "add");
   };
 
   const handleDeleteBranch = (branchName) => {
     // //---buffs
-    applyHeroBranchBuffs(branchName, "delete");
+    // applyHeroBranchBuffs(branchName, "delete");
     //---selector
     setBranch(branchName, null);
     //---hero

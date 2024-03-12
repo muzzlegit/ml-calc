@@ -1,34 +1,34 @@
 import useSpellsStore from "modules/spells/store/spellsStore";
-import { useMemo } from "react";
 import usePlayerContext from "utils/context/usePlayerContext.hook";
 
 const useSpellsList = () => {
   const player = usePlayerContext();
   const spellsArray = useSpellsStore((state) => state[player].spells);
 
-  const isDefender = player === "mainDefender";
-
-  const onHeroSpells = useMemo(() => {
-    return spellsArray.filter(
-      ({ sortIndex }) => sortIndex === "spell" || sortIndex === "spell_hero"
-    );
-  }, [spellsArray]);
-
-  const heroSpells = useMemo(() => {
-    return spellsArray.filter(
-      ({ sortIndex }) => sortIndex === "hero" || sortIndex === "spell_hero"
-    );
-  }, [spellsArray]);
-
-  const onTownSpells = useMemo(() => {
-    return spellsArray.filter(({ sortIndex }) => sortIndex === "town");
-  }, [spellsArray]);
+  const spells = [
+    {
+      title: "Свитки",
+      spells: spellsArray.filter(
+        ({ sortIndex }) => sortIndex === "spell" || sortIndex === "spell_hero"
+      ),
+    },
+    {
+      title: "Заклинания героев",
+      spells: spellsArray.filter(
+        ({ sortIndex }) => sortIndex === "hero" || sortIndex === "spell_hero"
+      ),
+    },
+    {
+      title: "Заклинания на город",
+      spells:
+        player === "mainDefender"
+          ? spellsArray.filter(({ sortIndex }) => sortIndex === "town")
+          : [],
+    },
+  ];
 
   return {
-    onHeroSpells,
-    heroSpells,
-    onTownSpells,
-    isDefender,
+    spells,
   };
 };
 

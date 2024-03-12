@@ -1,2 +1,2 @@
 export { AdditionBuffs, SpellsList } from "./components";
-export { useSpell } from "./hooks";
+export { useAdditionBuff, useSpell } from "./hooks";

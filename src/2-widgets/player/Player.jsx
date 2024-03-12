@@ -4,11 +4,12 @@ import {
   AllyButton,
   ApostateChecker,
   AttackIndexSelector,
+  FallbackInput,
   RaceSelector,
   StandardsList,
   usePlayerStore,
 } from "modules/players";
-import { Squad } from "modules/units";
+import { Squad, UnitsLevelSelect } from "modules/units";
 import PlayerContext from "utils/context/PlayerContext";
 import {
   FlexCenter,
@@ -34,6 +35,8 @@ const Player = ({ playerName }) => {
             <RaceSelector />
             <AttackIndexSelector />
             <ApostateChecker />
+            <FallbackInput />
+            <UnitsLevelSelect />
           </FlexCenter>
           <FlexStart gap="8px">
             <FlexColCenter gap="8px">

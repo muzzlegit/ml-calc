@@ -41,6 +41,9 @@ const useSpellsStore = create(
         getBuff: (player, id) => {
           return get()[player].buffs.find((buff) => buff.id === id);
         },
+        getActiveBuffs: (player) => {
+          return get()[player].buffs.filter((buff) => buff.value);
+        },
         setSpellLevel: (player, newSpell) => {
           set((state) => {
             state[player].spells = state[player].spells.map((spell) => {
@@ -67,7 +70,7 @@ const useSpellsStore = create(
         },
         resetAllBuffs: (player) => {
           set((state) => {
-            state[player].buffs = [];
+            state[player].buffs = [...getAdditionBuffs(player)];
           });
         },
       },

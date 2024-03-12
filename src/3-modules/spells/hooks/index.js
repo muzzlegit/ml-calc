@@ -1,3 +1,4 @@
+import useAdditionBuff from "./useAdditionBuff.hook";
 import useSpell from "./useSpell.hook";
 
-export { useSpell };
+export { useAdditionBuff, useSpell };

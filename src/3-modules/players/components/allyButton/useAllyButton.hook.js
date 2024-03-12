@@ -1,127 +1,85 @@
-import { useArtefact } from "modules/artefacts/hooks";
-import { useHeroStore } from "modules/hero";
+import { usePlayer } from "modules/players/hooks";
 import usePlayerStore from "modules/players/store/playerStore";
-import { useSpell } from "modules/spells";
 import { useEffect, useState } from "react";
 import usePlayerContext from "utils/context/usePlayerContext.hook";
-import useBuffsProvider from "utils/watchDog/useBuffsProvider.hook";
 
 const useAllyButton = () => {
   const player = usePlayerContext();
-  const firstAttackerAllyParticipantFlag = usePlayerStore(
-    (state) => state["attackerAlly"].participant
+  const { firstAllyFlag, secondAllyFlag } = usePlayerStore((state) => ({
+    firstAllyFlag:
+      player === "mainAttacker"
+        ? state.attackerAlly?.participant
+        : state.firstDefenderAlly?.participant,
+    secondAllyFlag:
+      player === "mainAttacker"
+        ? state.attackerSecondAlly?.participant
+        : state.secondDefenderAlly?.participant,
+  }));
+  const { setParticipantFlag } = usePlayerStore((state) => state.methods);
+  const { clearPlayer } = usePlayer();
+  const [sign, setSign] = useState(
+    player === "mainAttacker" || player === "mainDefender"
+      ? "Добавить союзника"
+      : "Удалить игрока"
   );
-  const secondAttackerAllyParticipantFlag = usePlayerStore(
-    (state) => state["attackerSecondAlly"].participant
-  );
-  const { getParticipantFlag, setParticipantFlag } = usePlayerStore(
-    (state) => state.methods
-  );
-  const firstDefenderAllyParticipantFlag = usePlayerStore(
-    (state) => state["firstDefenderAlly"].participant
-  );
-  const secondDefenderAllyParticipantFlag = usePlayerStore(
-    (state) => state["secondDefenderAlly"].participant
-  );
-  const { getPlayerBuffs } = usePlayerStore((state) => state.methods);
-  const { buffsProvider } = useBuffsProvider();
-  const { setHero } = useHeroStore((state) => state.methods);
-  const { deleteAllSpells } = useSpell();
-  const { deleteAllArtefacts } = useArtefact();
-
-  const [sign, setSign] = useState("Добавить союзника");
   const [areBuffsOn, setAreBuffsOn] = useState(true);
 
   const buffsButtonSign = areBuffsOn ? "Отключить героя" : "Активировать героя";
-
+  const clearButtonSign = "Очистить игрока";
   const handleButtonClick = () => {
-    if (player === "mainAttacker" && !getParticipantFlag("attackerAlly")) {
-      setParticipantFlag("attackerAlly", true);
+    if (player === "mainAttacker" || player === "mainDefender") {
+      const firstAlly =
+        player === "mainAttacker" ? "attackerAlly" : "firstDefenderAlly";
+      const secondAlly =
+        player === "mainAttacker" ? "attackerSecondAlly" : "secondDefenderAlly";
+
+      if (firstAllyFlag && secondAllyFlag) {
+        setParticipantFlag(firstAlly, false);
+        setParticipantFlag(secondAlly, false);
+        clearPlayer(firstAlly);
+        clearPlayer(secondAlly);
+        return;
+      }
+      setParticipantFlag(firstAllyFlag ? secondAlly : firstAlly, true);
       return;
     }
-    if (
-      player === "mainAttacker" &&
-      getParticipantFlag("attackerAlly") &&
-      !getParticipantFlag("attackerSecondAlly")
-    ) {
-      setParticipantFlag("attackerSecondAlly", true);
-    }
-    if (player === "mainDefender" && !getParticipantFlag("firstDefenderAlly")) {
-      setParticipantFlag("firstDefenderAlly", true);
-      return;
-    }
-    if (
-      player === "mainDefender" &&
-      getParticipantFlag("firstDefenderAlly") &&
-      !getParticipantFlag("secondDefenderAlly")
-    ) {
-      setParticipantFlag("secondDefenderAlly", true);
-    }
-    if (
-      player === "attackerAlly" ||
-      player === "attackerSecondAlly" ||
-      player === "firstDefenderAlly" ||
-      player === "secondDefenderAlly"
-    ) {
-      setParticipantFlag(player, false);
-      deleteAllArtefacts();
-      deleteAllSpells();
-      // buffsProvider(getPlayerBuffs(player), "delete");
-      // setHero(player, null);
-    }
-    if (
-      player === "mainAttacker" &&
-      firstAttackerAllyParticipantFlag &&
-      secondAttackerAllyParticipantFlag
-    ) {
-      setParticipantFlag("attackerAlly", false);
-      setParticipantFlag("attackerSecondAlly", false);
-      buffsProvider(getPlayerBuffs("attackerAlly"), "delete");
-      buffsProvider(getPlayerBuffs("attackerSecondAlly"), "delete");
-      setHero("attackerAlly", null);
-      setHero("attackerSecondAlly", null);
-    }
+    setParticipantFlag(player, false);
+    clearPlayer(player);
   };
 
   const handlePlayerBuffsOff = () => {
-    buffsProvider(
-      getPlayerBuffs(player).map((buff) => ({ ...buff, battle: !areBuffsOn })),
-      "replace"
-    );
-    setAreBuffsOn((prev) => !prev);
+    // buffsProvider(
+    //   getPlayerBuffs(player).map((buff) => {
+    //     if (buff.type === "standard") return buff;
+    //     return { ...buff, battle: !areBuffsOn };
+    //   }),
+    //   "replace"
+    // );
+    // setAreBuffsOn((prev) => !prev);
+  };
+
+  const handlePlayerClear = () => {
+    clearPlayer(player);
   };
 
   useEffect(() => {
-    const isMainAttacker = player === "mainAttacker";
-    const isMainDefender = player === "mainDefender";
-    const isAllAttackerAlly =
-      !firstAttackerAllyParticipantFlag || !secondAttackerAllyParticipantFlag;
-    const isAllDefenderAlly =
-      !firstDefenderAllyParticipantFlag || !secondDefenderAllyParticipantFlag;
+    if (player === "mainAttacker" || player === "mainDefender") {
+      setSign(
+        firstAllyFlag && secondAllyFlag
+          ? "Удалить всех союзников"
+          : "Добавить союзника"
+      );
+    }
+  }, [firstAllyFlag, player, secondAllyFlag]);
 
-    if (
-      (isMainAttacker && isAllAttackerAlly) ||
-      (isMainDefender && isAllDefenderAlly)
-    ) {
-      setSign("Добавить союзника");
-    } else setSign("Удалить всех союзников");
-
-    if (
-      player === "attackerAlly" ||
-      player === "attackerSecondAlly" ||
-      player === "firstDefenderAlly" ||
-      player === "secondDefenderAlly"
-    )
-      setSign("Удалить игрока");
-  }, [
-    firstAttackerAllyParticipantFlag,
-    firstDefenderAllyParticipantFlag,
-    player,
-    secondAttackerAllyParticipantFlag,
-    secondDefenderAllyParticipantFlag,
-  ]);
-
-  return { sign, buffsButtonSign, handleButtonClick, handlePlayerBuffsOff };
+  return {
+    sign,
+    buffsButtonSign,
+    clearButtonSign,
+    handleButtonClick,
+    handlePlayerBuffsOff,
+    handlePlayerClear,
+  };
 };
 
 export default useAllyButton;
