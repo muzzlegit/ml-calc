@@ -6,7 +6,6 @@ import {
   getArtefactIcon,
   getKitArtefacts,
   getKitsList,
-  setIdToArtefact,
 } from "modules/artefacts/utils/artefact.helpers";
 import { useEffect, useState } from "react";
 import usePlayerContext from "utils/context/usePlayerContext.hook";
@@ -50,11 +49,10 @@ const useArtefactsSelector = () => {
     }
     deleteAllArtefacts();
     getKitArtefacts(kitTitle, kitAncient, kitPerfect).forEach((artefact) => {
-      const formattedArtefact = setIdToArtefact(artefact);
-      asignArtefact(formattedArtefact);
-      if (formattedArtefact?.twoHanded)
+      asignArtefact(artefact);
+      if (artefact?.twoHanded)
         asignArtefact({
-          ...formattedArtefact,
+          ...artefact,
           place: "leftHand",
           buffs: { common: [], perfect: [] },
         });

@@ -1,7 +1,10 @@
 import usePlayerContext from "utils/context/usePlayerContext.hook";
 import useBuffsProvider from "utils/watchDog/useBuffsProvider.hook";
 import useArtefactsStore from "../store/artefactsStore";
-import { getArtefactBuffs } from "../utils/artefact.helpers";
+import {
+  getArtefactBuffs,
+  setIdToArtefactBuffs,
+} from "../utils/artefact.helpers";
 
 const useArtefact = () => {
   const player = usePlayerContext();
@@ -18,9 +21,10 @@ const useArtefact = () => {
   const asignArtefact = (artefact) => {
     if (!artefact) return;
     deletePreviosArtefactBuffs(artefact.place);
-    handleArtefactBuffs(artefact, "add");
-    setArtefact(player, artefact);
-    if (artefact?.twoHanded) setTwoHandedArtefact(artefact);
+    const formattedArtefact = setIdToArtefactBuffs(player, artefact);
+    handleArtefactBuffs(formattedArtefact, "add");
+    setArtefact(player, formattedArtefact);
+    if (artefact?.twoHanded) setTwoHandedArtefact(formattedArtefact);
   };
 
   const deleteArtefact = (place) => {

@@ -22,8 +22,8 @@ const useArtefactsDall = () => {
       if (newKit !== currentKit) {
         setIsKit(true);
         deletePreviousBuffs();
-        setKit(player, getKitData(player, newKit));
-        buffsProvider(getKitData(player, newKit)?.buffs, "add");
+        setKit(player, getKitData(newKit));
+        buffsProvider(getKitData(newKit)?.buffs, "add");
       }
     } else {
       if (currentKit) {

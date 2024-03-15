@@ -2,7 +2,6 @@ import useArtefactsStore from "modules/artefacts/store/artefactsStore";
 import {
   getArtefactImg,
   getArtefactsByPlace,
-  setIdToArtefact,
 } from "modules/artefacts/utils/artefact.helpers";
 import { useState } from "react";
 import usePlayerContext from "utils/context/usePlayerContext.hook";
@@ -19,7 +18,7 @@ const useArtefactsList = () => {
   const [filterLevel, setFilterLevel] = useState(0);
 
   const artefactsList = getArtefactsByPlace(selectedPlace)
-    .filter(({ id }) => id !== selectedArtefact?.id)
+    .filter(({ title }) => title !== selectedArtefact?.title)
     .filter((artefact) => {
       if (!filterLevel) {
         return artefact;
@@ -33,7 +32,7 @@ const useArtefactsList = () => {
     }));
 
   const handleArtefactSelect = (artefact) => {
-    setSelectedArtefact(player, setIdToArtefact(artefact));
+    setSelectedArtefact(player, artefact);
   };
 
   const handleFilterLevel = (level) => {

@@ -1,18 +1,44 @@
 [
   {
-    "id": "645fe0a5789e414cb9cff614f39c0ea7",
+    "id": "689be1d9fc08490aaca5da69f485f811",
     "level": 4,
-    "setTitle": "Шпион-диверсант",
+    "setTitle": "Властелин монстров",
     "buffs": [
       {
-        "ownerDescription": "Комплект Шпион-диверсант",
+        "ownerDescription": "Комплект Властелин монстров",
+        "type": "artefact",
+        "player": null,
+        "target": "enemy",
+        "appliedOn": "monsters",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "title": "Властелин монстров",
+        "property": "amountRate",
+        "valueIndex": 0,
+        "value": [-0.6],
+        "description": [
+          "60% войск не участвует в бою&Действует на противника&В бою против расы Монстры"
+        ],
+        "battle": true
+      },
+      {
+        "ownerDescription": "Комплект Властелин монстров",
         "type": "artefactKit",
         "player": null,
         "target": "player",
         "appliedOn": "all",
         "targetType": "player",
         "units": null,
-        "title": "Шпион-диверсант",
+        "title": "Властелин монстров",
         "property": "experience",
         "valueIndex": 0,
         "value": [4],
@@ -22,14 +48,14 @@
     ]
   },
   {
-    "id": "257075dcab3042c2aa6f8a00b4a3f912",
+    "id": "2c6f91cfb26d4ac197ba2a0709857f45",
     "level": 4,
     "ancient": false,
     "perfect": false,
-    "title": "Накидка диверсии исследователей",
+    "title": "Плащ охотника на монстров",
     "place": "back",
     "twoHanded": false,
-    "set": "Шпион-диверсант",
+    "set": "Властелин монстров",
     "buffs": {
       "common": [],
       "perfect": []
@@ -39,20 +65,48 @@
     "battle": true
   },
   {
-    "id": "6dd56025727545d7be200a36fab3a1ca",
+    "id": "b6bda4be929f4603a59be6bae3ef5cf3",
     "level": 4,
     "ancient": false,
     "perfect": false,
-    "title": "Доспех диверсии купцов",
+    "title": "Броня из панцирей монстров",
     "place": "armor",
     "twoHanded": false,
-    "set": "Шпион-диверсант",
+    "set": "Властелин монстров",
     "buffs": {
-      "common": [],
+      "common": [
+        {
+          "ownerDescription": "Броня из панцирей монстров",
+          "type": "artefact",
+          "player": null,
+          "target": "player",
+          "appliedOn": "monsters",
+          "targetType": "unit",
+          "units": [
+            "porter",
+            "swordsman",
+            "cavalier",
+            "flying",
+            "archer",
+            "healer",
+            "mercenary",
+            "mage"
+          ],
+          "title": "Броня из панцирей монстров",
+          "property": "healthRate",
+          "valueIndex": 0,
+          "value": [0.45, 0.54],
+          "description": [
+            "Здоровье всех войск +45%&В бою против расы Монстры",
+            "Здоровье всех войск +54%&В бою против расы Монстры"
+          ],
+          "battle": true
+        }
+      ],
       "perfect": [
         {
-          "ownerDescription": "Доспех диверсии купцов",
-          "title": "Доспех диверсии купцов",
+          "ownerDescription": "Броня из панцирей монстров",
+          "title": "Броня из панцирей монстров",
           "type": "artefact",
           "player": null,
           "target": "player",
@@ -68,7 +122,7 @@
           "battle": true
         },
         {
-          "ownerDescription": "Доспех диверсии купцов",
+          "ownerDescription": "Броня из панцирей монстров",
           "type": "artefact",
           "player": null,
           "target": "player",
@@ -84,7 +138,7 @@
             "mercenary",
             "mage"
           ],
-          "title": "Доспех диверсии купцов",
+          "title": "Броня из панцирей монстров",
           "property": "healthRate",
           "valueIndex": 0,
           "value": [0.12],
@@ -98,26 +152,26 @@
     "battle": true
   },
   {
-    "id": "4dc28bd8bda6420c8b808b81ce8213a3",
+    "id": "caf01db3dec14d0aa7413a507db50f49",
     "level": 4,
     "ancient": false,
     "perfect": false,
-    "title": "Кольцо уничтожения провидцев",
+    "title": "Браслет неприкосновенности",
     "place": "ring",
     "twoHanded": false,
-    "set": "Шпион-диверсант",
+    "set": "Властелин монстров",
     "buffs": {
       "common": [],
       "perfect": [
         {
-          "ownerDescription": "Кольцо уничтожения провидцев",
+          "ownerDescription": "Браслет неприкосновенности",
           "type": "artefact",
           "player": null,
           "target": "player",
           "appliedOn": "all",
           "targetType": "magicTower",
           "units": null,
-          "title": "Кольцо уничтожения провидцев",
+          "title": "Браслет неприкосновенности",
           "property": "damageRate",
           "valueIndex": 0,
           "value": [0.2],
@@ -131,26 +185,26 @@
     "battle": true
   },
   {
-    "id": "920104e5399048bbac216276083137b0",
+    "id": "",
     "level": 4,
     "ancient": false,
     "perfect": false,
-    "title": "Шлем шпиона",
+    "title": "Шлем Уничтожителя монстров",
     "place": "head",
     "twoHanded": false,
-    "set": "Шпион-диверсант",
+    "set": "Властелин монстров",
     "buffs": {
       "common": [],
       "perfect": [
         {
-          "ownerDescription": "Шлем шпиона",
+          "ownerDescription": "Шлем Уничтожителя монстров",
           "type": "artefact",
           "player": null,
           "target": "player",
           "appliedOn": "all",
           "targetType": "tower",
           "units": null,
-          "title": "Шлем шпиона",
+          "title": "Шлем Уничтожителя монстров",
           "property": "damageRate",
           "valueIndex": 0,
           "value": [1.5],
@@ -171,7 +225,7 @@
     "title": "Перо шпиона",
     "place": "bag",
     "twoHanded": false,
-    "set": "Шпион-диверсант",
+    "set": "Властелин монстров",
     "buffs": {
       "common": [
         {
@@ -223,7 +277,7 @@
     "title": "Лапа диверсии антишпионов",
     "place": "rightHand",
     "twoHanded": true,
-    "set": "Шпион-диверсант",
+    "set": "Властелин монстров",
     "buffs": {
       "common": [],
       "perfect": [
@@ -280,7 +334,7 @@
     "title": "Армейские скороходы",
     "place": "boots",
     "twoHanded": false,
-    "set": "Шпион-диверсант",
+    "set": "Властелин монстров",
     "buffs": {
       "common": [],
       "perfect": []
@@ -297,7 +351,7 @@
     "title": "Амулет диверсии шпионов",
     "place": "neck",
     "twoHanded": false,
-    "set": "Шпион-диверсант",
+    "set": "Властелин монстров",
     "buffs": {
       "common": [],
       "perfect": []
@@ -314,7 +368,7 @@
     "title": "Щит диверсии зеркал",
     "place": "leftHand",
     "twoHanded": false,
-    "set": "Шпион-диверсант",
+    "set": "Властелин монстров",
     "buffs": {
       "common": [],
       "perfect": [
@@ -355,7 +409,7 @@
     "title": "Поножи диверсии тренировок",
     "place": "pants",
     "twoHanded": false,
-    "set": "Шпион-диверсант",
+    "set": "Властелин монстров",
     "buffs": {
       "common": [],
       "perfect": [
@@ -397,7 +451,7 @@
     "title": "Пояс шпиона",
     "place": "belt",
     "twoHanded": false,
-    "set": "Шпион-диверсант",
+    "set": "Властелин монстров",
     "buffs": {
       "common": [],
       "perfect": []
@@ -414,7 +468,7 @@
     "title": "Браслет диверсии строительства",
     "place": "bracers",
     "twoHanded": false,
-    "set": "Шпион-диверсант",
+    "set": "Властелин монстров",
     "buffs": {
       "common": [],
       "perfect": [

@@ -1973,5 +1973,65 @@
     "coordinate": "-683px -187px",
     "width": "61px",
     "height": "61px"
+  },
+  "Плащ охотника на монстров": {
+    "coordinate": "-869px -311px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Броня из панцирей монстров": {
+    "coordinate": "-869px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Браслет неприкосновенности": {
+    "coordinate": "-869px -373px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем Уничтожителя монстров": {
+    "coordinate": "-869px -63px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Перо шпиона": {
+    "coordinate": "-869px -125px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Лапа диверсии антишпионов": {
+    "coordinate": "-869px -497px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Армейские скороходы": {
+    "coordinate": "-869px -683px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Амулет диверсии шпионов": {
+    "coordinate": "-869px -1px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Щит диверсии зеркал": {
+    "coordinate": "-869px -621px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Поножи диверсии тренировок": {
+    "coordinate": "-869px -559px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс шпиона": {
+    "coordinate": "-869px -435px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Браслет диверсии строительства": {
+    "coordinate": "-869px -187px",
+    "width": "61px",
+    "height": "61px"
   }
 }
