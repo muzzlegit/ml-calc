@@ -6,6 +6,49 @@ import iconsCanvasMap from "../graphics/maps/ArtefactsAssets.map.json";
 
 import { nanoid } from "nanoid";
 import artefacts from "../data";
+import a from "../data/artefacts.json";
+
+console.log(a);
+
+function d(level) {
+  let sas = {};
+  let tit = [];
+  a.filter((art) => art.level === level).forEach((art) => {
+    if (art?.setTitle) {
+      if (!sas[art.setTitle]) {
+        sas[art.setTitle] = {};
+      }
+      const buffs = art.buffs.map((buff) => {
+        const { id, owner, ownerDescription, title, ...rest } = buff;
+        return { ...rest, type: "artefactKit", title: "Комплект " + title };
+      });
+      const { id, setTitle, ...rest } = art;
+      sas[art.setTitle].kit = { setTitle, ...rest, buffs };
+      tit = [...tit, `Комплект ${setTitle}`];
+    } else {
+      const title = art.set;
+      const place = art.place;
+      const buffs = {
+        common: art.buffs.common.map((buff) => {
+          const { id, owner, ownerDescription, ...rest } = buff;
+          return rest;
+        }),
+        perfect: art.buffs.perfect.map((buff) => {
+          const { id, owner, ownerDescription, ...rest } = buff;
+          return rest;
+        }),
+      };
+      if (!sas[title]) {
+        sas[title] = {};
+      }
+      const { id, ...rest } = art;
+      sas[title][place] = { ...rest, buffs };
+    }
+  });
+  console.log("fff", sas);
+  console.log(tit);
+}
+d(4);
 
 export const getArtefactIcon = (iconName) => {
   const image = `url(${iconsCanvas}) ${iconsCanvasMap?.[iconName].coordinate}`;

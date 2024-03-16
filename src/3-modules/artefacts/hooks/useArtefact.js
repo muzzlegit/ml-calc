@@ -20,6 +20,8 @@ const useArtefact = () => {
 
   const asignArtefact = (artefact) => {
     if (!artefact) return;
+    if (getArtefact(player, artefact.place)?.twoHanded)
+      removeArtefact(player, "leftHand");
     deletePreviosArtefactBuffs(artefact.place);
     const formattedArtefact = setIdToArtefactBuffs(player, artefact);
     handleArtefactBuffs(formattedArtefact, "add");

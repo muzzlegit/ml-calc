@@ -39,6 +39,7 @@ export const ADDITION_UNIT_PROPERTIES = {
   healer: {
     attackRate: 0,
     resurrectionRate: 0,
+    resurrectionLimit: 0,
   },
   mercenary: {
     attackRate: 0,

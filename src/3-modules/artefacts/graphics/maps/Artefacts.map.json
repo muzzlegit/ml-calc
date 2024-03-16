@@ -1994,43 +1994,278 @@
     "width": "61px",
     "height": "61px"
   },
-  "Перо шпиона": {
+  "Кубок удачи": {
     "coordinate": "-869px -125px",
     "width": "61px",
     "height": "61px"
   },
-  "Лапа диверсии антишпионов": {
+  "Копье властелина монстров": {
     "coordinate": "-869px -497px",
     "width": "61px",
     "height": "61px"
   },
-  "Армейские скороходы": {
+  "Сапоги охотника за артефактами": {
     "coordinate": "-869px -683px",
     "width": "61px",
     "height": "61px"
   },
-  "Амулет диверсии шпионов": {
+  "Амулет завещаний монстров": {
     "coordinate": "-869px -1px",
     "width": "61px",
     "height": "61px"
   },
-  "Щит диверсии зеркал": {
+  "Щит повелителя монстров": {
     "coordinate": "-869px -621px",
     "width": "61px",
     "height": "61px"
   },
-  "Поножи диверсии тренировок": {
+  "Доспех слабости монстров": {
     "coordinate": "-869px -559px",
     "width": "61px",
     "height": "61px"
   },
-  "Пояс шпиона": {
+  "Пояс из кожи монстров": {
     "coordinate": "-869px -435px",
     "width": "61px",
     "height": "61px"
   },
-  "Браслет диверсии строительства": {
+  "Наручи подавления монстров": {
     "coordinate": "-869px -187px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Манто торговца": {
+    "coordinate": "-807px -311px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Мантия великого торговца": {
+    "coordinate": "-807px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Браслет вольного купца": {
+    "coordinate": "-807px -373px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем глобальной застройки": {
+    "coordinate": "-807px -63px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Перчатка истребителя воров": {
+    "coordinate": "-807px -125px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Меч подавления конкурентов": {
+    "coordinate": "-807px -497px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Скороходы торговца": {
+    "coordinate": "-807px -683px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Воротник торговца": {
+    "coordinate": "-807px -1px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Щит подкупа наемников": {
+    "coordinate": "-807px -621px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Штаны быстрой торговли": {
+    "coordinate": "-807px -559px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс торговца": {
+    "coordinate": "-807px -435px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручи оберега купцов": {
+    "coordinate": "-807px -187px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Плащ инквизитора": {
+    "coordinate": "-621px -311px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольчуга боли": {
+    "coordinate": "-621px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо отречения": {
+    "coordinate": "-621px -373px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем индульгенции": {
+    "coordinate": "-621px -63px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Целебная игла заживления": {
+    "coordinate": "-621px -125px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кистень увечий": {
+    "coordinate": "-621px -497px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шипастые сапоги": {
+    "coordinate": "-621px -683px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кровавая роза страданий": {
+    "coordinate": "-621px -1px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Щит покаяния": {
+    "coordinate": "-621px -621px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Латный доспех разрушения": {
+    "coordinate": "-621px -559px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс инквизитора": {
+    "coordinate": "-621px -435px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Браслет неудачи": {
+    "coordinate": "-621px -187px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Мантия смерти": {
+    "coordinate": "-497px -311px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Броня некроманта": {
+    "coordinate": "-497px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо защиты от Магии": {
+    "coordinate": "-497px -373px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Череп Чумы": {
+    "coordinate": "-497px -63px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шар мародера": {
+    "coordinate": "-497px -125px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Посох некроманта": {
+    "coordinate": "-497px -497px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сапоги некроманта": {
+    "coordinate": "-497px -683px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Амулет некроманта": {
+    "coordinate": "-497px -1px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Щит блокировки монстров": {
+    "coordinate": "-497px -621px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Штаны заражения": {
+    "coordinate": "-497px -559px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс некроманта": {
+    "coordinate": "-497px -435px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручи ярости Наемников": {
+    "coordinate": "-497px -187px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Накидка тренировки магов": {
+    "coordinate": "-435px -311px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Магическая роба": {
+    "coordinate": "-435px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо магической слабости": {
+    "coordinate": "-435px -373px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем магов-защитников": {
+    "coordinate": "-435px -63px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шар магической силы": {
+    "coordinate": "-435px -125px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Посох силы магов": {
+    "coordinate": "-435px -497px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сапоги мастера магии": {
+    "coordinate": "-435px -683px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Талисман мастера магии": {
+    "coordinate": "-435px -1px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Магические штаны защиты": {
+    "coordinate": "-435px -559px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс мастера магии": {
+    "coordinate": "-435px -435px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Магический браслет подавления": {
+    "coordinate": "-435px -187px",
     "width": "61px",
     "height": "61px"
   }
