@@ -234,19 +234,36 @@ const useBuffs = () => {
     function applyBuffsToUnits(buffs) {
       buffs.forEach((buff) => {
         const { units, property, value, valueIndex } = buff;
-        units.forEach((unit) => {
-          unitsPropertyBuffs[unit] = {
-            ...unitsPropertyBuffs[unit],
-            [property]: Number(
-              (
-                value[valueIndex] +
-                (unitsPropertyBuffs?.[unit]?.[property] ?? 0)
-              ).toFixed(2)
-            ),
-          };
-        });
+        switch (property) {
+          case "amountRate":
+            units.forEach((unit) => {
+              unitsPropertyBuffs[unit] = {
+                ...unitsPropertyBuffs[unit],
+                [property]:
+                  value[valueIndex] <
+                  (unitsPropertyBuffs?.[unit]?.[property] ?? 0)
+                    ? value[valueIndex]
+                    : unitsPropertyBuffs?.[unit]?.[property],
+              };
+            });
+            break;
+          default:
+            units.forEach((unit) => {
+              unitsPropertyBuffs[unit] = {
+                ...unitsPropertyBuffs[unit],
+                [property]: Number(
+                  (
+                    value[valueIndex] +
+                    (unitsPropertyBuffs?.[unit]?.[property] ?? 0)
+                  ).toFixed(2)
+                ),
+              };
+            });
+            break;
+        }
       });
     }
+
     function applyBattlefieldAttackBuffsToUnits(buffs) {
       buffs.forEach((buff) => {
         const { units, property, value } = buff;
