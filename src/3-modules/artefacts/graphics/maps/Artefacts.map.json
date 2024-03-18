@@ -2268,5 +2268,125 @@
     "coordinate": "-435px -187px",
     "width": "61px",
     "height": "61px"
+  },
+  "Плащ порабощения": {
+    "coordinate": "-559px -311px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Доспех рабовладельца": {
+    "coordinate": "-559px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Браслет рабовладельца": {
+    "coordinate": "-559px -373px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем подавления рабов": {
+    "coordinate": "-559px -63px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кандалы превращения в рабов": {
+    "coordinate": "-559px -125px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Меч кары рабов": {
+    "coordinate": "-559px -497px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Титановые сапоги замедления": {
+    "coordinate": "-559px -683px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Талисман повиновения": {
+    "coordinate": "-559px -1px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Щит рабовладельца": {
+    "coordinate": "-559px -621px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Поножи слабости противника": {
+    "coordinate": "-559px -559px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс рабовладельца": {
+    "coordinate": "-559px -435px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручи подавления магических башен": {
+    "coordinate": "-559px -187px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Плащ клановой защиты": {
+    "coordinate": "-745px -311px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Броня полководца": {
+    "coordinate": "-745px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо великой дипломатии": {
+    "coordinate": "-745px -373px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем двойной мудрости": {
+    "coordinate": "-745px -63px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Победоносный горн удачи": {
+    "coordinate": "-745px -125px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Меч совместной атаки": {
+    "coordinate": "-745px -497px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сапоги быстрой подмоги": {
+    "coordinate": "-745px -683px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Талисман великого дозорного": {
+    "coordinate": "-745px -1px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Щит двойной защиты": {
+    "coordinate": "-745px -621px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Латный доспех полководца": {
+    "coordinate": "-745px -559px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс полководца": {
+    "coordinate": "-745px -435px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручи совместной атаки": {
+    "coordinate": "-745px -187px",
+    "width": "61px",
+    "height": "61px"
   }
 }
