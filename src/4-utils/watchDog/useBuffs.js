@@ -232,6 +232,7 @@ const useBuffs = () => {
     }
     //-- helpers
     function applyBuffsToUnits(buffs) {
+      console.log(buffs);
       buffs.forEach((buff) => {
         const { units, property, value, valueIndex } = buff;
         switch (property) {

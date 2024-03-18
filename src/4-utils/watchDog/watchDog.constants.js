@@ -44,7 +44,10 @@ export const INITIAL_PROPERTIES = {
     defenseLevel: 50,
     healthRate: 0,
     attackRate: 0,
+    perfectResurrection: 0,
     resurrectionRate: 0,
+    additionalResurrection: 0,
+    resurrectionLimit: 0,
   },
   mercenary: {
     amountRate: 0,

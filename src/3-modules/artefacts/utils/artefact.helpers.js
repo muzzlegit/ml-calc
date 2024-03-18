@@ -48,7 +48,7 @@ function d(level) {
   console.log("fff", sas);
   console.log(tit);
 }
-d(4);
+d(5);
 
 export const getArtefactIcon = (iconName) => {
   const image = `url(${iconsCanvas}) ${iconsCanvasMap?.[iconName].coordinate}`;
@@ -79,7 +79,11 @@ export const getKitsList = () => {
 };
 
 export const getKitData = (kitTitle) => {
-  return artefacts.find((artefact) => artefact?.setTitle === kitTitle);
+  const currentKit = artefacts.find(
+    (artefact) => artefact?.setTitle === kitTitle
+  );
+  const buffs = currentKit?.buffs.map((buff) => ({ ...buff, id: nanoid() }));
+  return { ...currentKit, buffs };
 };
 
 export const getKitArtefacts = (kitTitle, isAncient, isPerfect) => {

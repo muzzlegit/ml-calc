@@ -38,6 +38,8 @@ export const ADDITION_UNIT_PROPERTIES = {
   },
   healer: {
     attackRate: 0,
+    perfectResurrection: 0,
+    additionalResurrection: 0,
     resurrectionRate: 0,
     resurrectionLimit: 0,
   },

@@ -1,84 +1,4 @@
 {
-  "Накидка жертвоприношения": {
-    "coordinate": "-187px -311px",
-    "width": "61px",
-    "height": "61px"
-  },
-  "Кольцо банды головорезов": {
-    "coordinate": "-187px -373px",
-    "width": "61px",
-    "height": "61px"
-  },
-  "Шлем дезинформации": {
-    "coordinate": "-187px -63px",
-    "width": "61px",
-    "height": "61px"
-  },
-  "Лампа великого шпионажа": {
-    "coordinate": "-187px -125px",
-    "width": "61px",
-    "height": "61px"
-  },
-  "Топор Головореза": {
-    "coordinate": "-187px -497px",
-    "width": "61px",
-    "height": "61px"
-  },
-  "Наручни испепеления": {
-    "coordinate": "-187px -187px",
-    "width": "61px",
-    "height": "61px"
-  },
-  "Кольчуга Головореза": {
-    "coordinate": "-187px -249px",
-    "width": "61px",
-    "height": "61px"
-  },
-  "Пояс Головореза": {
-    "coordinate": "-187px -435px",
-    "width": "61px",
-    "height": "61px"
-  },
-  "Сапоги экспансии": {
-    "coordinate": "-187px -683px",
-    "width": "61px",
-    "height": "61px"
-  },
-  "Магический скорпион": {
-    "coordinate": "-187px -1px",
-    "width": "61px",
-    "height": "61px"
-  },
-  "Щит Головореза": {
-    "coordinate": "-187px -621px",
-    "width": "61px",
-    "height": "61px"
-  },
-  "Кольчужные штаны Головореза": {
-    "coordinate": "-187px -559px",
-    "width": "61px",
-    "height": "61px"
-  },
-  "Броня Властелина мира": {
-    "coordinate": "-1px -249px",
-    "width": "61px",
-    "height": "61px"
-  },
-  "Броня королевской стойкости": {
-    "coordinate": "-249px -249px",
-    "width": "61px",
-    "height": "61px"
-  },
-  "Кольчуга магического здоровья": {
-    "coordinate": "-125px -249px",
-    "width": "61px",
-    "height": "61px"
-  },
-  "Кольчуга Бога": {
-    "coordinate": "-63px -249px",
-    "width": "61px",
-    "height": "61px"
-  },
   "Плащ бескрайних степей": {
     "coordinate": "-993px -1055px",
     "width": "61px",
@@ -2386,6 +2306,361 @@
   },
   "Наручи совместной атаки": {
     "coordinate": "-745px -187px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Накидка жертвоприношения": {
+    "coordinate": "-187px -311px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо банды головорезов": {
+    "coordinate": "-187px -373px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем дезинформации": {
+    "coordinate": "-187px -63px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Лампа великого шпионажа": {
+    "coordinate": "-187px -125px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Топор Головореза": {
+    "coordinate": "-187px -497px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручни испепеления": {
+    "coordinate": "-187px -187px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольчуга Головореза": {
+    "coordinate": "-187px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс Головореза": {
+    "coordinate": "-187px -435px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сапоги экспансии": {
+    "coordinate": "-187px -683px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Магический скорпион": {
+    "coordinate": "-187px -1px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Щит Головореза": {
+    "coordinate": "-187px -621px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольчужные штаны Головореза": {
+    "coordinate": "-187px -559px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Мантия божественной благодати": {
+    "coordinate": "-63px -311px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольчуга Бога": {
+    "coordinate": "-63px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Браслет Бога": {
+    "coordinate": "-63px -373px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем Божественной мудрости": {
+    "coordinate": "-63px -63px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Божественный инструмент умиротворения": {
+    "coordinate": "-63px -125px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Лук Бога": {
+    "coordinate": "-63px -497px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сапоги Бога": {
+    "coordinate": "-63px -683px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Амулет Божественного зрения": {
+    "coordinate": "-63px -1px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Щит Бога": {
+    "coordinate": "-63px -621px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Оберег Стрелков": {
+    "coordinate": "-63px -559px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс Бога": {
+    "coordinate": "-63px -435px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручи Бога": {
+    "coordinate": "-63px -187px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Накидка Архимага": {
+    "coordinate": "-125px -311px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольчуга магического здоровья": {
+    "coordinate": "-125px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Браслет Архимага": {
+    "coordinate": "-125px -373px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем Архимага": {
+    "coordinate": "-125px -63px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Жезл ужаса": {
+    "coordinate": "-125px -125px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Скипетр Архимага": {
+    "coordinate": "-125px -497px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сапоги Архимага": {
+    "coordinate": "-125px -683px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Амулет Магической силы": {
+    "coordinate": "-125px -1px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Щит Архимага": {
+    "coordinate": "-125px -621px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Магические штаны подавления": {
+    "coordinate": "-125px -559px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс Архимага": {
+    "coordinate": "-125px -435px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Браслет магического воодушевления": {
+    "coordinate": "-125px -187px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Накидка фортуны": {
+    "coordinate": "-1px -311px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Броня Властелина мира": {
+    "coordinate": "-1px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Легендарный Браслет экономии": {
+    "coordinate": "-1px -373px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем Властелина Мира": {
+    "coordinate": "-1px -63px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Великий скарабей удачи": {
+    "coordinate": "-1px -125px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Мифическая Аркбаллиста": {
+    "coordinate": "-1px -497px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Скороходы Властелина мира": {
+    "coordinate": "-1px -683px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Древний Амулет скорпиона": {
+    "coordinate": "-1px -1px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Доспех Властелина мира": {
+    "coordinate": "-1px -559px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс Властелина мира": {
+    "coordinate": "-1px -435px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Наручи Властелина мира": {
+    "coordinate": "-1px -187px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Плащ дракона": {
+    "coordinate": "-373px -311px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Броня дракона": {
+    "coordinate": "-373px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо дракона": {
+    "coordinate": "-373px -373px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем дракона": {
+    "coordinate": "-373px -63px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Мать драконов": {
+    "coordinate": "-373px -125px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Меч дракона": {
+    "coordinate": "-373px -497px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сапоги дракона": {
+    "coordinate": "-373px -683px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сердце дракона": {
+    "coordinate": "-373px -1px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Щит дракона": {
+    "coordinate": "-373px -621px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Поножи дракона": {
+    "coordinate": "-373px -559px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс дракона": {
+    "coordinate": "-373px -435px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Когти дракона": {
+    "coordinate": "-373px -187px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Плащ невидимки": {
+    "coordinate": "-311px -311px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольчуга бессмертия": {
+    "coordinate": "-311px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо подавления": {
+    "coordinate": "-311px -373px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем эльфийского мудреца": {
+    "coordinate": "-311px -63px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Эликсир жизни": {
+    "coordinate": "-311px -125px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Клинок Света": {
+    "coordinate": "-311px -497px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Сапоги Верховного эльфа": {
+    "coordinate": "-311px -683px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кулон слабости": {
+    "coordinate": "-311px -1px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Щит Хранителя эльфов": {
+    "coordinate": "-311px -621px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Штаны адаптации": {
+    "coordinate": "-311px -559px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс Верховного эльфа": {
+    "coordinate": "-311px -435px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Браслет лесного духа": {
+    "coordinate": "-311px -187px",
     "width": "61px",
     "height": "61px"
   }

@@ -8,7 +8,7 @@ const mainDefenderRace = "human";
 
 const useUnitsStore = create(
   devtools(
-    immer((set) => ({
+    immer((set, get) => ({
       mainAttacker: {
         ...getInitialUnitsData(mainAttackerRace, 4),
       },
@@ -28,6 +28,9 @@ const useUnitsStore = create(
         ...getInitialUnitsData(mainDefenderRace, 4),
       },
       methods: {
+        getUnit: (player, unit) => {
+          return get()[player][unit];
+        },
         setUnit: (player, unitName, unit) => {
           set((state) => {
             state[player][unitName] = { ...state[player][unitName], ...unit };

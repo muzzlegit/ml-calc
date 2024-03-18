@@ -18,6 +18,7 @@ const UnitProperties = ({ unit }) => {
     capacityRate,
     persecutionRate,
     resurrection,
+    additionalResurrection,
     resurrectionRate,
     suppression,
     towersSuppression,
@@ -152,7 +153,7 @@ const UnitProperties = ({ unit }) => {
       {resurrection ? (
         <Flex gap="8px" title="Количество воскрешаемых юнитов 1 целителем">
           <UnitIcon iconName="resurrection" />
-          <Property>{resurrection}</Property>
+          <Property>{resurrection + additionalResurrection}</Property>
           {resurrectionRate ? (
             <PropertyRate
               title="Эффекты воскрешения"
