@@ -38,7 +38,7 @@ const kit = {
           targetType: "unit",
           units: ["porter"],
           title: "Манто торговца",
-          property: "capacity",
+          property: "capacityRate",
           valueIndex: 0,
           value: [4, 4.8],
           description: [

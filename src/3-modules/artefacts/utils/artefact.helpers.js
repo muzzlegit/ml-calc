@@ -124,7 +124,9 @@ export const getArtefactDescription = (artefact) => {
   if (buffs?.common?.length) {
     artefact?.buffs.common.forEach(({ description }) => {
       artefactDescription =
-        artefactDescription + description[ancient ? 1 : 0] + "\n";
+        artefactDescription +
+        description[!ancient || ancient === "none" ? 0 : 1] +
+        "\n";
     });
   }
   if (perfect && buffs?.perfect?.length) {

@@ -1,3 +1,5 @@
 import useResetUnitsAmount from "./useResetUnitsAmount";
 import useUnit from "./useUnit";
-export { useResetUnitsAmount, useUnit };
+import useUnitAmount from "./useUnitAmount";
+
+export { useResetUnitsAmount, useUnit, useUnitAmount };

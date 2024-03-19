@@ -1,6 +1,7 @@
 import { LIMITS } from "modules/units/utils/units.constants";
 import { UnitIcon } from "..";
 //
+import { useUnitAmount } from "modules/units/hooks";
 import { Flex } from "utils/styles/flexKit.styled";
 import { Container, Property, PropertyRate } from "./UnitProperties.styled";
 
@@ -26,16 +27,13 @@ const UnitProperties = ({ unit }) => {
   } = unit;
   const { attackLimit, healthLimit, defenseLevelLimit, persecutionLimit } =
     LIMITS;
+  const getUnitAmount = useUnitAmount();
 
   return (
     <Container>
       <Flex gap="8px" title="Количество войск вступившик в бой">
         <UnitIcon iconName="amount" />
-        <Property>
-          {new Intl.NumberFormat("ru-RU").format(
-            Math.abs(Math.floor(amount) * (1 + amountRate))
-          )}
-        </Property>
+        <Property>{getUnitAmount(amount, amountRate)}</Property>
         {amountRate ? (
           <PropertyRate title="Эффект ужаса" color="red">
             {amountRate * 100}%
@@ -123,7 +121,7 @@ const UnitProperties = ({ unit }) => {
               title="Эффекты вместимости носильщиков"
               color={capacityRate > 0 ? "green" : "red"}
             >
-              {capacityRate * 100}%
+              +{capacityRate * 100}%
             </PropertyRate>
           ) : null}
         </Flex>

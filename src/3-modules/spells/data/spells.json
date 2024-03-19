@@ -1820,13 +1820,13 @@
       {
         "target": "player",
         "appliedOn": "all",
-        "targetType": "unit",
+        "targetType": "player",
         "units": null,
         "property": "fearlessness",
         "description": [
           "Войска не отступают в бою, игнорируя настройки отступления при потерях и действия ужаса"
         ],
-        "value": [false, true],
+        "value": [true],
         "battle": true
       }
     ]

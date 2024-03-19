@@ -2663,5 +2663,65 @@
     "coordinate": "-311px -187px",
     "width": "61px",
     "height": "61px"
+  },
+  "Плащ Королевской лицензии": {
+    "coordinate": "-249px -311px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Броня королевской стойкости": {
+    "coordinate": "-249px -249px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Кольцо королевской власти": {
+    "coordinate": "-249px -373px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Шлем королевского просвещения": {
+    "coordinate": "-249px -63px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Перчатка преданности королю": {
+    "coordinate": "-249px -125px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Королевский меч возмездия": {
+    "coordinate": "-249px -497px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Королевские сапоги скорости": {
+    "coordinate": "-249px -683px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Амулет королевской щедрости": {
+    "coordinate": "-249px -1px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Королевский щит неприступности": {
+    "coordinate": "-249px -621px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Королевские поножи стойкости": {
+    "coordinate": "-249px -559px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Пояс королевского благородства": {
+    "coordinate": "-249px -435px",
+    "width": "61px",
+    "height": "61px"
+  },
+  "Королевские наручи власти": {
+    "coordinate": "-249px -187px",
+    "width": "61px",
+    "height": "61px"
   }
 }

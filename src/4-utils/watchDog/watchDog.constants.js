@@ -77,3 +77,12 @@ export const FORTIFICATIONS_INITIAL_PROPERTIES = {
 export const MAGIC_TOWERS_INITIAL_PROPERTIES = {
   damageRate: 0,
 };
+
+export const PLAYER_INITIAL_PROPERTIES = {
+  fearlessness: false,
+  recoil: 0,
+  unitsDamage: 0,
+  roundDamage: 0,
+  attackBoost: 0,
+  towersLevelReduce: false,
+};

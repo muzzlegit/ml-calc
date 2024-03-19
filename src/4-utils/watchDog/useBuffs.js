@@ -9,6 +9,7 @@ import {
   FORTIFICATIONS_INITIAL_PROPERTIES,
   INITIAL_PROPERTIES,
   MAGIC_TOWERS_INITIAL_PROPERTIES,
+  PLAYER_INITIAL_PROPERTIES,
 } from "./watchDog.constants";
 import { getEnemy } from "./watchDog.helpers";
 import useWatchDogStore from "./watchDogStore";
@@ -16,7 +17,7 @@ import useWatchDogStore from "./watchDogStore";
 const useBuffs = () => {
   const player = usePlayerContext();
   const buffs = useWatchDogStore((state) => state[player].buffs);
-  const { getBuffs } = useWatchDogStore((state) => state.methods);
+  const { setProperty } = usePlayerStore((state) => state.methods);
   const { race, fraction } = usePlayerStore((state) => state[player]);
   const { race: enemyRace, fraction: enemyFraction } = usePlayerStore(
     (state) => state[getEnemy(player)]
@@ -41,6 +42,7 @@ const useBuffs = () => {
     let fortificationsPropertyBuffs = { ...FORTIFICATIONS_INITIAL_PROPERTIES };
     let magicTowersBuffs = { ...MAGIC_TOWERS_INITIAL_PROPERTIES };
     let towersBuffs = { ...MAGIC_TOWERS_INITIAL_PROPERTIES };
+    let playerBuffs = { ...PLAYER_INITIAL_PROPERTIES };
 
     buffs.forEach((buff) => {
       if (buff.battle) {
@@ -71,7 +73,7 @@ const useBuffs = () => {
             applyBuffsToFortifications(appliedOn.fortification);
           }
           if (appliedOn?.gate) console.log("gate");
-          if (appliedOn?.player) console.log("player");
+          if (appliedOn?.player) applyBuffsToPlayer(appliedOn.player);
           if (appliedOn?.unit) {
             applyBuffsToUnits(appliedOn.unit);
           }
@@ -185,6 +187,10 @@ const useBuffs = () => {
     for (const key in unitsPropertyBuffs) {
       setUnitProperties(player, key, unitsPropertyBuffs[key]);
     }
+    //-- set up player properties
+    for (const key in playerBuffs) {
+      setProperty(player, key, playerBuffs[key]);
+    }
     //-- set up fortification properties
     if (player === "mainDefender") {
       for (const key in fortificationsPropertyBuffs) {
@@ -232,7 +238,6 @@ const useBuffs = () => {
     }
     //-- helpers
     function applyBuffsToUnits(buffs) {
-      console.log(buffs);
       buffs.forEach((buff) => {
         const { units, property, value, valueIndex } = buff;
         switch (property) {
@@ -260,6 +265,27 @@ const useBuffs = () => {
                 ),
               };
             });
+            break;
+        }
+      });
+    }
+
+    function applyBuffsToPlayer(buffs) {
+      buffs.forEach((buff) => {
+        const { property, value, valueIndex } = buff;
+        switch (property) {
+          case "fearlessness":
+            playerBuffs[property] = value[valueIndex];
+            break;
+          case "recoil":
+            playerBuffs[property] = value[valueIndex];
+            break;
+          case "towersLevelReduce":
+            playerBuffs[property] = value[valueIndex];
+            break;
+          default:
+            playerBuffs[property] =
+              (playerBuffs?.[property] ?? 0) + value[valueIndex];
             break;
         }
       });

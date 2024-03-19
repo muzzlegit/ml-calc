@@ -23,6 +23,7 @@ const usePlayerStore = create(
         fallback: 0.5,
         buffs: [],
         fearlessness: false,
+        recoil: 0,
         unitsDamage: 0,
         roundDamage: 0,
         attackBoost: 0,
@@ -39,6 +40,7 @@ const usePlayerStore = create(
         fallback: 0.5,
         buffs: [],
         fearlessness: false,
+        recoil: 0,
         unitsDamage: 0,
         roundDamage: 0,
         attackBoost: 0,
@@ -55,6 +57,7 @@ const usePlayerStore = create(
         fallback: 0.5,
         buffs: [],
         fearlessness: false,
+        recoil: 0,
         unitsDamage: 0,
         roundDamage: 0,
         attackBoost: 0,
@@ -71,6 +74,7 @@ const usePlayerStore = create(
         fallback: 0.5,
         buffs: [],
         fearlessness: false,
+        recoil: 0,
         unitsDamage: 0,
         roundDamage: 0,
         attackBoost: 0,
@@ -87,6 +91,7 @@ const usePlayerStore = create(
         fallback: 0.5,
         buffs: [],
         fearlessness: false,
+        recoil: 0,
         unitsDamage: 0,
         roundDamage: 0,
         attackBoost: 0,
@@ -103,6 +108,7 @@ const usePlayerStore = create(
         fallback: 0.5,
         buffs: [],
         fearlessness: false,
+        recoil: 0,
         unitsDamage: 0,
         roundDamage: 0,
         attackBoost: 0,
@@ -162,6 +168,11 @@ const usePlayerStore = create(
                 return newStandard;
               }
             );
+          });
+        },
+        setProperty: (player, property, value) => {
+          set((state) => {
+            state[player][property] = value;
           });
         },
         addBuff: (player, buff) => {
