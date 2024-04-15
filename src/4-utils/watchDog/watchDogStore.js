@@ -23,6 +23,9 @@ const useWatchDogStore = create(
       secondDefenderAlly: {
         buffs: [],
       },
+      garrison: {
+        buffs: [],
+      },
       methods: {
         getBuffs: (player) => {
           return get()[player].buffs;

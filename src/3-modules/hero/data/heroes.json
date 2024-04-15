@@ -681,7 +681,7 @@
         "targetType": "player",
         "units": null,
         "title": "Переносное укрепление",
-        "property": "fortification",
+        "property": "unitsDamage",
         "level": 0,
         "valueIndex": 0,
         "value": [0, 500, 1000, 1500, 2000, 2500],

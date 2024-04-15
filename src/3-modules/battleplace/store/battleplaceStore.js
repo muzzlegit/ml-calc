@@ -17,6 +17,7 @@ const useBattleplaceStore = create(
       methods: {
         //--- getters
         getBattlefield: () => get().battlefield,
+        getGarrsison: () => get().garrison,
         getBattleplace: () => get().battleplace,
         getGarrison: () => get().garrison,
         getAttackIndex: () => get().getAttackIndex,
@@ -66,7 +67,11 @@ const useBattleplaceStore = create(
               state.garrison[unit][property] - value;
           });
         },
-
+        setGarrisonUnitProperties: (unit, properties) => {
+          set((state) => {
+            state.garrison[unit] = { ...state.garrison[unit], ...properties };
+          });
+        },
         addTower: (tower) => {
           set((state) => {
             state.towers = [...state.towers, tower];

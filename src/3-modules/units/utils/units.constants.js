@@ -84,4 +84,22 @@ export const UNITS_LANDS = {
   },
 };
 
+export const UNITS_PERSECUTION = {
+  swordsman: {
+    persecutor: "archer",
+    pursued: "cavalier",
+  },
+  cavalier: {
+    persecutor: "swordsman",
+    pursued: "flying",
+  },
+  flying: {
+    persecutor: "cavalier",
+    pursued: "archer",
+  },
+  archer: {
+    persecutor: "flying",
+    pursued: "swordsman",
+  },
+};
 export const UNIT_LEVELS = [1, 2, 3, 4];

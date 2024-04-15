@@ -6,5 +6,6 @@
   "demon": "-150px 0px",
   "drow": "-225px 0px",
   "human": "-300px 0px",
-  "elf": "-375px 0px"
+  "elf": "-375px 0px",
+  "wizard": "-450px 0px"
 }

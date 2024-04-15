@@ -10,6 +10,7 @@ import {
 } from "modules/battleplace";
 import PlayerContext from "utils/context/PlayerContext";
 import { Flex, FlexBetween, FlexCol } from "utils/styles/flexKit.styled";
+import WatchDog from "utils/watchDog/WatchDog";
 import { Container, Wrap } from "./Battleplace.styled";
 
 const Battleplace = () => {
@@ -43,7 +44,10 @@ const Battleplace = () => {
           </FlexCol>
         </FlexBetween>
         <Flex gap="8px">
-          <Garrison />
+          <PlayerContext.Provider value="garrison">
+            <Garrison />
+            <WatchDog />
+          </PlayerContext.Provider>
         </Flex>
       </FlexCol>
     </Container>

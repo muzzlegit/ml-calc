@@ -3,7 +3,9 @@ import usePlayerContext from "utils/context/usePlayerContext.hook";
 
 const useUnitAmount = () => {
   const player = usePlayerContext();
-  const { fearlessness, recoil } = usePlayerStore((state) => state[player]);
+  const { fearlessness, recoil } = usePlayerStore((state) =>
+    player === "garrison" ? {} : state[player]
+  );
 
   const getUnitAmount = (amount, amountRate) => {
     if (fearlessness) {

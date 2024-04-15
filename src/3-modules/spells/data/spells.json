@@ -3006,7 +3006,7 @@
     "valueIndex": 0,
     "buffs": [
       {
-        "target": "enemy",
+        "target": "player",
         "appliedOn": "all",
         "targetType": "player",
         "units": null,
@@ -3062,7 +3062,7 @@
     "valueIndex": 0,
     "buffs": [
       {
-        "target": "enemy",
+        "target": "player",
         "appliedOn": "all",
         "targetType": "player",
         "units": null,

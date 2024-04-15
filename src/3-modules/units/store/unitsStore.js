@@ -31,6 +31,14 @@ const useUnitsStore = create(
         getUnit: (player, unit) => {
           return get()[player][unit];
         },
+        getAllPlayersUnits: () => ({
+          mainAttacker: get().mainAttacker,
+          attackerAlly: get().attackerAlly,
+          attackerSecondAlly: get().attackerSecondAlly,
+          mainDefender: get().mainDefender,
+          firstDefenderAlly: get().firstDefenderAlly,
+          secondDefenderAlly: get().secondDefenderAlly,
+        }),
         setUnit: (player, unitName, unit) => {
           set((state) => {
             state[player][unitName] = { ...state[player][unitName], ...unit };

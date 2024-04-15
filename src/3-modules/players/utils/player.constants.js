@@ -6,5 +6,6 @@ export const RACE = {
   human: "Рыцари",
   drow: "Темные Эльфы",
   elf: "Светлые Эльфы",
+  wizard: "Волшебник",
   monsters: "Монстры",
 };

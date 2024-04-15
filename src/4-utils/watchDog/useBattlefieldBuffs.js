@@ -18,14 +18,8 @@ import useWatchDogStore from "./watchDogStore";
 const useBattlefieldBuffs = () => {
   const player = usePlayerContext();
   const battlefield = useBattleplaceStore((state) => state.battlefield);
-
   const race = usePlayerStore((state) => state[player].race);
   const enemyRace = usePlayerStore((state) => state[getEnemy(player)].race);
-
-  const fraction = usePlayerStore((state) => state[player].fraction);
-  const enemyFraction = usePlayerStore(
-    (state) => state[getEnemy(player)].fraction
-  );
 
   const apostate = usePlayerStore((state) => state[player].apostate);
   const enemyApostate = usePlayerStore(

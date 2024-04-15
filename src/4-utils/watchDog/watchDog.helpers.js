@@ -33,7 +33,8 @@ export function getEnemy(player) {
   if (
     player === "mainDefender" ||
     player === "firstDefenderAlly" ||
-    player === "secondDefenderAlly"
+    player === "secondDefenderAlly" ||
+    player === "garrison"
   )
     return "mainAttacker";
 }
@@ -47,11 +48,11 @@ export function getAllyes(player) {
     case "attackerSecondAlly":
       return ["attackerAlly", "attackerAlly"];
     case "mainDefender":
-      return ["firstDefenderAlly", "secondDefenderAlly"];
+      return ["firstDefenderAlly", "secondDefenderAlly", "garrison"];
     case "firstDefenderAlly":
-      return ["secondDefenderAlly", "mainDefender"];
+      return ["secondDefenderAlly", "mainDefender", "garrison"];
     case "secondDefenderAlly":
-      return ["firstDefenderAlly", "mainDefender"];
+      return ["firstDefenderAlly", "mainDefender", "garrison"];
     default:
       return [];
   }
@@ -70,11 +71,11 @@ export const getBuffPlayers = (player, target) => {
         case "attackerSecondAlly":
           return ["attackerAlly", "mainAttacker"];
         case "mainDefender":
-          return ["firstDefenderAlly", "secondDefenderAlly"];
+          return ["firstDefenderAlly", "secondDefenderAlly", "garrison"];
         case "firstDefenderAlly":
-          return ["mainDefender", "secondDefenderAlly"];
+          return ["mainDefender", "secondDefenderAlly", "garrison"];
         case "secondDefenderAlly":
-          return ["firstDefenderAlly", "mainDefender"];
+          return ["firstDefenderAlly", "mainDefender", "garrison"];
         default:
           return [];
       }
@@ -87,22 +88,52 @@ export const getBuffPlayers = (player, target) => {
         case "attackerSecondAlly":
           return ["attackerSecondAlly", "attackerAlly", "mainAttacker"];
         case "mainDefender":
-          return ["mainDefender", "firstDefenderAlly", "secondDefenderAlly"];
+          return [
+            "mainDefender",
+            "firstDefenderAlly",
+            "secondDefenderAlly",
+            "garrison",
+          ];
         case "firstDefenderAlly":
-          return ["firstDefenderAlly", "mainDefender", "secondDefenderAlly"];
+          return [
+            "firstDefenderAlly",
+            "mainDefender",
+            "secondDefenderAlly",
+            "garrison",
+          ];
         case "secondDefenderAlly":
-          return ["secondDefenderAlly", "firstDefenderAlly", "mainDefender"];
+          return [
+            "secondDefenderAlly",
+            "firstDefenderAlly",
+            "mainDefender",
+            "garrison",
+          ];
         default:
           return [];
       }
     case "enemy":
       switch (player) {
         case "mainAttacker":
-          return ["mainDefender", "firstDefenderAlly", "secondDefenderAlly"];
+          return [
+            "mainDefender",
+            "firstDefenderAlly",
+            "secondDefenderAlly",
+            "garrison",
+          ];
         case "attackerAlly":
-          return ["mainDefender", "firstDefenderAlly", "secondDefenderAlly"];
+          return [
+            "mainDefender",
+            "firstDefenderAlly",
+            "secondDefenderAlly",
+            "garrison",
+          ];
         case "attackerSecondAlly":
-          return ["mainDefender", "firstDefenderAlly", "secondDefenderAlly"];
+          return [
+            "mainDefender",
+            "firstDefenderAlly",
+            "secondDefenderAlly",
+            "garrison",
+          ];
         case "mainDefender":
           return ["mainAttacker", "attackerAlly", "attackerSecondAlly"];
         case "firstDefenderAlly":
@@ -120,6 +151,7 @@ export const getBuffPlayers = (player, target) => {
         "attackerSecondAlly",
         "firstDefenderAlly",
         "secondDefenderAlly",
+        "garrison",
       ];
     default:
       return [];

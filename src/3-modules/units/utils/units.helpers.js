@@ -7,6 +7,7 @@ import elfCards from "../graphics/images/ElfCards.webp";
 import humanCards from "../graphics/images/HumanCards.webp";
 import monsterCard from "../graphics/images/MonsterCards.webp";
 import undeadCards from "../graphics/images/UndeadCards.webp";
+import wizardCards from "../graphics/images/WizardCards.webp";
 import unitFrames from "../graphics/images/unitsFrames.webp";
 import icons from "../graphics/images/unitsIcons.webp";
 //--- maps
@@ -95,6 +96,9 @@ export function getUnitPicture(unit, level, race) {
     case "elf":
       card = elfCards;
       break;
+    case "wizard":
+      card = wizardCards;
+      break;
     case "monsters":
       card = monsterCard;
       break;
@@ -131,6 +135,8 @@ export function getRaceName(race) {
       return "Рыцари";
     case "elf":
       return "Светлые Эльфы";
+    case "wizard":
+      return "Волшебник";
     case "monsters":
       return "Монстры";
     case "Нежить":
@@ -143,6 +149,8 @@ export function getRaceName(race) {
       return "human";
     case "Светлые Эльфы":
       return "elf";
+    case "Волшебник":
+      return "wizard";
     case "Монстры":
       return "monsters";
     default:

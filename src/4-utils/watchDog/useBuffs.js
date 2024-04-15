@@ -19,22 +19,26 @@ const useBuffs = () => {
   const buffs = useWatchDogStore((state) => state[player].buffs);
   const { setProperty } = usePlayerStore((state) => state.methods);
   const { race, fraction } = usePlayerStore((state) => state[player]);
-  const { race: enemyRace, fraction: enemyFraction } = usePlayerStore(
+  const { race: mainDefenderRace, fraction: enemyFraction } = usePlayerStore(
     (state) => state[getEnemy(player)]
   );
   const {
     battlefield,
     battleplace,
+    towers,
     methods: {
       getTowers,
       replaceTower,
       getFortifications,
       updateFortifications,
+      setGarrisonUnitProperties,
     },
   } = useBattleplaceStore((state) => state);
   const { setUnitProperties } = useUnitsStore((state) => state.methods);
 
   const isCastle = battleplace === "castle";
+
+  const enemyRace = isCastle ? "monsters" : mainDefenderRace;
 
   useEffect(() => {
     let formattedBuffs = {};
@@ -100,7 +104,7 @@ const useBuffs = () => {
           }
           break;
         case "fractionAttack":
-          if (fraction === enemyFraction) {
+          if (fraction === enemyFraction && !isCastle) {
             if (appliedOn?.unit) {
               applyBuffsToUnits(appliedOn.unit);
             }
@@ -112,7 +116,7 @@ const useBuffs = () => {
           }
           break;
         case "fraction":
-          if (fraction !== enemyFraction) {
+          if (fraction !== enemyFraction && !isCastle) {
             if (appliedOn?.unit) {
               applyBuffsToUnits(appliedOn.unit);
             }
@@ -185,7 +189,11 @@ const useBuffs = () => {
     }
     //-- set up unit properties
     for (const key in unitsPropertyBuffs) {
-      setUnitProperties(player, key, unitsPropertyBuffs[key]);
+      if (player === "garrison") {
+        setGarrisonUnitProperties(key, unitsPropertyBuffs[key]);
+      } else {
+        setUnitProperties(player, key, unitsPropertyBuffs[key]);
+      }
     }
     //-- set up player properties
     for (const key in playerBuffs) {
@@ -370,6 +378,8 @@ const useBuffs = () => {
     player,
     race,
     replaceTower,
+    setGarrisonUnitProperties,
+    setProperty,
     setUnitProperties,
     updateFortifications,
   ]);

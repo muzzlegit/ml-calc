@@ -114,6 +114,7 @@ const usePlayerStore = create(
         attackBoost: 0,
         towersLevelReduce: false,
       },
+      garrison: { race: "monsters", fraction: "monsters", apostate: false },
       methods: {
         getParticipantFlag: (player) => {
           return get()[player].participant;
@@ -133,6 +134,42 @@ const usePlayerStore = create(
         getPlayerBuffs: (player) => {
           return get()[player].buffs;
         },
+        getUnitsDamage: () => ({
+          mainAttacker: get().mainAttacker.unitsDamage,
+          attackerAlly: get().attackerAlly.unitsDamage,
+          attackerSecondAlly: get().attackerSecondAlly.unitsDamage,
+          mainDefender: get().mainDefender.unitsDamage,
+          firstDefenderAlly: get().firstDefenderAlly.unitsDamage,
+          secondDefenderAlly: get().secondDefenderAlly.unitsDamage,
+          garrison: 0,
+        }),
+        getRecoil: () => ({
+          mainAttacker: get().mainAttacker.recoil,
+          attackerAlly: get().attackerAlly.recoil,
+          attackerSecondAlly: get().attackerSecondAlly.recoil,
+          mainDefender: get().mainDefender.recoil,
+          firstDefenderAlly: get().firstDefenderAlly.recoil,
+          secondDefenderAlly: get().secondDefenderAlly.recoil,
+          garrison: 0,
+        }),
+        getFearlessness: () => ({
+          mainAttacker: get().mainAttacker.fearlessness,
+          attackerAlly: get().attackerAlly.fearlessness,
+          attackerSecondAlly: get().attackerSecondAlly.fearlessness,
+          mainDefender: get().mainDefender.fearlessness,
+          firstDefenderAlly: get().firstDefenderAlly.fearlessness,
+          secondDefenderAlly: get().secondDefenderAlly.fearlessness,
+          garrison: false,
+        }),
+        getFallback: () => ({
+          mainAttacker: get().mainAttacker.fallback,
+          attackerAlly: get().attackerAlly.fallback,
+          attackerSecondAlly: get().attackerSecondAlly.fallback,
+          mainDefender: get().mainDefender.fallback,
+          firstDefenderAlly: get().firstDefenderAlly.fallback,
+          secondDefenderAlly: get().secondDefenderAlly.fallback,
+          garrison: 1,
+        }),
         setFallback: (player, value) => {
           set((state) => {
             state[player].fallback = value;

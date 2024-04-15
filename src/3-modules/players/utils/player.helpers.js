@@ -15,6 +15,8 @@ export function getHomeland(playerRace) {
       return "hollyLand";
     case "elf":
       return "magicForest";
+    case "wizard":
+      return "hollyLand";
     default:
       return "none";
   }
@@ -31,6 +33,8 @@ export function getFraction(playerRace) {
     case "human":
       return "light";
     case "elf":
+      return "light";
+    case "wizard":
       return "light";
     default:
       return "none";
