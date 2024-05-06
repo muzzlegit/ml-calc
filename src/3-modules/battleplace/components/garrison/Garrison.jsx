@@ -1,5 +1,5 @@
+import GarrisonUnitCard from "3-modules/battleplace/components/garrison/particles/garrisonUnitCard/GarrisonUnitCard";
 import { FlexCenter } from "utils/styles/flexKit.styled";
-import GarrisonUnitCard from "./particles/garrisonUnitCard/garrisonUnitCard";
 import useGarrison from "./useGarrison.hook";
 
 const Garrison = () => {
