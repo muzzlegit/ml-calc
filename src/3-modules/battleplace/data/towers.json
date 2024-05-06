@@ -4,48 +4,56 @@
       "level": 1,
       "attackMax": 700,
       "attackMin": 600,
+      "attackAverage": 650,
       "damageRate": 0
     },
     "level2": {
       "level": 2,
       "attackMax": 1200,
       "attackMin": 1100,
+      "attackAverage": 1150,
       "damageRate": 0
     },
     "level3": {
       "level": 3,
       "attackMax": 2500,
       "attackMin": 2000,
+      "attackAverage": 2250,
       "damageRate": 0
     },
     "level4": {
       "level": 4,
       "attackMax": 7000,
       "attackMin": 5000,
+      "attackAverage": 6000,
       "damageRate": 0
     },
     "level5": {
       "level": 5,
       "attackMax": 12000,
       "attackMin": 10000,
+      "attackAverage": 11000,
       "damageRate": 0
     },
     "level6": {
       "level": 6,
       "attackMax": 18000,
       "attackMin": 15000,
+      "attackAverage": 16500,
       "damageRate": 0
     },
     "level7": {
       "level": 7,
       "attackMax": 25000,
       "attackMin": 20000,
+      "attackAverage": 22500,
       "damageRate": 0
     },
     "level8": {
       "level": 8,
       "attackMax": 60000,
       "attackMin": 50000,
+      "attackAverage": 55000,
       "damageRate": 0
     }
   },

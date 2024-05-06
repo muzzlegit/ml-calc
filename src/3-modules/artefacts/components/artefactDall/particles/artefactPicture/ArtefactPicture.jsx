@@ -1,5 +1,5 @@
-import ArtefactButton from "modules/artefacts/components/artefactButton/ArtefactButton";
 import { ImageBox, SvgIcon } from "modules/UI";
+import ArtefactButton from "modules/artefacts/components/artefactButton/ArtefactButton";
 import PropTypes from "prop-types";
 import { ArtefactBg, IconWrap, Picture, Place } from "./ArtefactPicture.styled";
 import useArtefactPicture from "./useArtefactPicture";
@@ -13,6 +13,7 @@ const ArtefactPicture = ({ place }) => {
     ancientValue,
     isRunes,
     isActive,
+    isInWork,
     isSharpening,
     isTwoHanded,
     graphics: { runeIcon, perfectIcon, ancientIcon, sharpeningIcon, artefact },
@@ -30,6 +31,7 @@ const ArtefactPicture = ({ place }) => {
               title={description}
               background={artefact}
               isActive={isActive}
+              inWork={isInWork}
               twoHanded={isTwoHanded}
               onClick={() => {
                 handleArtefactSelect(place);

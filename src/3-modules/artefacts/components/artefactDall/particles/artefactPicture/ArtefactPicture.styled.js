@@ -20,7 +20,8 @@ export const Picture = styled.div(
     cursor: "pointer",
   },
   (props) => ({
-    filter: !props.isActive && "grayscale(80%) brightness(80%)",
+    filter:
+      (!props.isActive || !props.inWork) && "grayscale(80%) brightness(80%)",
     opacity: props.twoHanded && 0.4,
     background: props.background.image,
     width: props.background.width,

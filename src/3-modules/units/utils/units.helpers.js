@@ -17,6 +17,7 @@ import iconsMap from "../graphics/maps/unitsIcons.map.json";
 // ------------ DATA ---------------------------
 export function getUnitData({ race, unit, level, attackIndex, initial }) {
   const fullUnit = units[race][unit];
+  const index = getIndex(attackIndex);
   if (!fullUnit) return null;
   let unitData = {};
   for (const key in fullUnit) {
@@ -31,8 +32,7 @@ export function getUnitData({ race, unit, level, attackIndex, initial }) {
 
   unitData = {
     ...unitData,
-    attack:
-      fullUnit[attackIndex === "min" ? "attackMin" : "attackMax"][level - 1],
+    attack: fullUnit[index][level - 1],
   };
   // if (unit !== "porter") {
   // }
@@ -47,6 +47,19 @@ export function getUnitData({ race, unit, level, attackIndex, initial }) {
   }
 
   return unitData;
+}
+
+function getIndex(attackIndex) {
+  switch (attackIndex) {
+    case "max":
+      return "attackMax";
+    case "min":
+      return "attackMin";
+    case "average":
+      return "attackAverage";
+    default:
+      break;
+  }
 }
 
 //dependencies [getUnitData]

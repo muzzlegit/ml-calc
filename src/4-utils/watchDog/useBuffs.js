@@ -155,6 +155,19 @@ const useBuffs = () => {
             }
           }
           break;
+        case "steppe_all":
+          if (appliedOn?.player[0]) {
+            const buff = appliedOn?.player[0];
+            const { ancient } = buff;
+            if (ancient || battlefield === "steppe") {
+              applyBuffsToPlayer([{ ...buff, value: [true] }]);
+            } else {
+              console.log("buff", buff);
+              applyBuffsToPlayer([buff]);
+            }
+          }
+
+          break;
         case "mine":
           if (battlefield === "mine") {
             if (appliedOn?.unit) {

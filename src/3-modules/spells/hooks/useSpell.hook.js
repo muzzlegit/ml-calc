@@ -13,6 +13,7 @@ const useSpell = () => {
   const handleSpellLevel = (spell) => {
     if (!spell) return;
     const newSpell = getNextLevelSpell(spell);
+    console.log("newSpell", newSpell);
     const currentSpell = getSpell(player, newSpell.id);
     buffsProvider(currentSpell.buffs, "delete");
     setSpellLevel(player, newSpell);

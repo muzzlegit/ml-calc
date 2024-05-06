@@ -44,7 +44,7 @@ const useInitialArmies = (round) => {
     setAttackersArmies(attackers);
     setDefendersArmies(defenders);
   };
-
+  console.log("fdksmfksdfji", handleInitialArmies);
   return { handleInitialArmies };
 };
 

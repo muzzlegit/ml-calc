@@ -22,6 +22,7 @@ const useArtefactPicture = (place) => {
   const isRunes = artefact?.runes?.length;
   const isSharpening = artefact?.sharpening?.length;
   const isActive = artefact?.battle;
+  const isInWork = artefact?.inWork;
   const isTwoHanded = place === "leftHand" && artefact?.twoHanded;
 
   const graphics = {
@@ -70,6 +71,7 @@ const useArtefactPicture = (place) => {
     isRunes,
     isSharpening,
     isActive,
+    isInWork,
     isTwoHanded,
     graphics,
     handleArtefactDelete,

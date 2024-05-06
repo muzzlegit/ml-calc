@@ -16,6 +16,7 @@ const kit = {
         value: [5],
         description: ["Получаемый героем опыт в бою +500%"],
         battle: true,
+        inWork: false,
         title: "Комплект Дракон",
       },
     ],
@@ -55,6 +56,7 @@ const kit = {
             "Защита всех войск +18&Действует на себя, союзника",
           ],
           battle: true,
+          inWork: false,
         },
         {
           type: "artefact",
@@ -81,6 +83,7 @@ const kit = {
             "Защита всех войск -12&Действует на противника",
           ],
           battle: true,
+          inWork: false,
         },
       ],
       perfect: [],
@@ -88,6 +91,7 @@ const kit = {
     runes: [],
     sharpening: [],
     battle: true,
+    inWork: false,
   },
   armor: {
     level: 5,
@@ -121,6 +125,7 @@ const kit = {
           value: [0.4, 0.48],
           description: ["Здоровье всех войск +40%", "Здоровье всех войск +48%"],
           battle: true,
+          inWork: false,
         },
         {
           type: "artefact",
@@ -147,6 +152,7 @@ const kit = {
             "Здоровье всех войск -12%&Действует на противника",
           ],
           battle: true,
+          inWork: false,
         },
         {
           type: "artefact",
@@ -173,6 +179,7 @@ const kit = {
             "Предел максимальной защиты +6",
           ],
           battle: true,
+          inWork: false,
         },
       ],
       perfect: [
@@ -198,12 +205,14 @@ const kit = {
           value: [0.15],
           description: ["Здоровье всех войск +15%"],
           battle: true,
+          inWork: false,
         },
       ],
     },
     runes: [],
     sharpening: [],
     battle: true,
+    inWork: false,
   },
   ring: {
     level: 5,
@@ -240,6 +249,7 @@ const kit = {
             "Предел максимальной защиты -30&Действует на противника",
           ],
           battle: true,
+          inWork: false,
         },
       ],
       perfect: [
@@ -256,12 +266,14 @@ const kit = {
           value: [0.25],
           description: ["Атака магических башен +25%"],
           battle: true,
+          inWork: false,
         },
       ],
     },
     runes: [],
     sharpening: [],
     battle: true,
+    inWork: false,
   },
   head: {
     level: 5,
@@ -294,6 +306,7 @@ const kit = {
           value: [0.1, 0.12],
           description: ["Атака всех войск +10%", "Атака всех войск +12%"],
           battle: true,
+          inWork: false,
         },
         {
           type: "artefact",
@@ -317,6 +330,7 @@ const kit = {
           value: [10, 12],
           description: ["Защита всех войск +10", "Защита всех войск +12"],
           battle: true,
+          inWork: false,
         },
         {
           type: "artefact",
@@ -343,6 +357,7 @@ const kit = {
             "Предел максимальной защиты +6",
           ],
           battle: true,
+          inWork: false,
         },
         {
           type: "artefact",
@@ -369,6 +384,7 @@ const kit = {
             "48% войск не участвует в бою&Действует на противника",
           ],
           battle: true,
+          inWork: false,
         },
       ],
       perfect: [
@@ -385,12 +401,14 @@ const kit = {
           value: [2],
           description: ["Атака башен +200%"],
           battle: true,
+          inWork: false,
         },
       ],
     },
     runes: [],
     sharpening: [],
     battle: true,
+    inWork: false,
   },
   bag: {
     level: 5,
@@ -418,6 +436,7 @@ const kit = {
             "60% войск,возвращенных в бой эффектом Бесстрашия, все равно не участвуют в бою&Действует на противника",
           ],
           battle: true,
+          inWork: false,
         },
         {
           type: "artefact",
@@ -435,6 +454,7 @@ const kit = {
             "Получаемый героем опыт в бою +120%",
           ],
           battle: true,
+          inWork: false,
         },
         {
           type: "artefact",
@@ -449,6 +469,7 @@ const kit = {
           value: [0.5, 0.6],
           description: ["Целители воскрешают +50%", "Целители воскрешают +60%"],
           battle: true,
+          inWork: false,
         },
       ],
       perfect: [
@@ -465,12 +486,14 @@ const kit = {
           value: [2.5],
           description: ["Получаемый героем опыт в бою +250%"],
           battle: true,
+          inWork: false,
         },
       ],
     },
     runes: [],
     sharpening: [],
     battle: true,
+    inWork: false,
   },
   rightHand: {
     level: 5,
@@ -503,6 +526,7 @@ const kit = {
           value: [0.4, 0.48],
           description: ["Атака всех войск +40%", "Атака всех войск +48%"],
           battle: true,
+          inWork: false,
         },
         {
           type: "artefact",
@@ -529,6 +553,7 @@ const kit = {
             "Защита всех войск -12&Действует на противника",
           ],
           battle: true,
+          inWork: false,
         },
         {
           type: "artefact",
@@ -555,6 +580,7 @@ const kit = {
             "Предел максимальной защиты -6&Действует на противника",
           ],
           battle: true,
+          inWork: false,
         },
       ],
       perfect: [
@@ -571,6 +597,7 @@ const kit = {
           value: [-0.15],
           description: ["Атака наемников -15%"],
           battle: true,
+          inWork: false,
         },
         {
           type: "artefact",
@@ -594,12 +621,14 @@ const kit = {
           value: [5],
           description: ["Предел максимальной защиты +5"],
           battle: true,
+          inWork: false,
         },
       ],
     },
     runes: [],
     sharpening: [],
     battle: true,
+    inWork: false,
   },
   boots: {
     level: 5,
@@ -633,6 +662,7 @@ const kit = {
           value: [0.1, 0.12],
           description: ["Здоровье всех войск +10%", "Здоровье всех войск +12%"],
           battle: true,
+          inWork: false,
         },
       ],
       perfect: [],
@@ -640,6 +670,7 @@ const kit = {
     runes: [],
     sharpening: [],
     battle: true,
+    inWork: false,
   },
   neck: {
     level: 5,
@@ -675,6 +706,7 @@ const kit = {
             "Атака всех войск -48%&Действует на противника",
           ],
           battle: true,
+          inWork: false,
         },
       ],
       perfect: [],
@@ -682,6 +714,7 @@ const kit = {
     runes: [],
     sharpening: [],
     battle: true,
+    inWork: false,
   },
   leftHand: {
     level: 5,
@@ -715,6 +748,7 @@ const kit = {
           value: [40, 48],
           description: ["Защита всех войск +40", "Защита всех войск +48"],
           battle: true,
+          inWork: false,
         },
         {
           type: "artefact",
@@ -732,6 +766,7 @@ const kit = {
             "Атака магических башен -12%&Действует на противника",
           ],
           battle: true,
+          inWork: false,
         },
         {
           type: "artefact",
@@ -758,6 +793,7 @@ const kit = {
             "Предел максимальной защиты +6",
           ],
           battle: true,
+          inWork: false,
         },
       ],
       perfect: [
@@ -782,12 +818,14 @@ const kit = {
           value: [0.15],
           description: ["Атака всех войск +15%"],
           battle: true,
+          inWork: false,
         },
       ],
     },
     runes: [],
     sharpening: [],
     battle: true,
+    inWork: false,
   },
   pants: {
     level: 5,
@@ -824,6 +862,7 @@ const kit = {
             "Здоровье всех войск +30%&Действует на себя, союзника",
           ],
           battle: true,
+          inWork: false,
         },
         {
           type: "artefact",
@@ -850,6 +889,7 @@ const kit = {
             "Здоровье всех войск -12%&Действует на противника",
           ],
           battle: true,
+          inWork: false,
         },
       ],
       perfect: [
@@ -875,12 +915,14 @@ const kit = {
           value: [15],
           description: ["Защита всех войск +15"],
           battle: true,
+          inWork: false,
         },
       ],
     },
     runes: [],
     sharpening: [],
     battle: true,
+    inWork: false,
   },
   belt: {
     level: 5,
@@ -908,6 +950,7 @@ const kit = {
             "Получаемый героем опыт в бою +60%",
           ],
           battle: true,
+          inWork: false,
         },
         {
           type: "artefact",
@@ -934,6 +977,7 @@ const kit = {
             "Предел максимальной защиты +6&Действует на себя, союзника",
           ],
           battle: true,
+          inWork: false,
         },
       ],
       perfect: [],
@@ -941,6 +985,7 @@ const kit = {
     runes: [],
     sharpening: [],
     battle: true,
+    inWork: false,
   },
   bracers: {
     level: 5,
@@ -976,6 +1021,7 @@ const kit = {
             "Атака всех войск +30%&Действует на себя, союзника",
           ],
           battle: true,
+          inWork: false,
         },
         {
           type: "artefact",
@@ -1001,6 +1047,7 @@ const kit = {
             "Атака всех войск -6%&Действует на противника",
           ],
           battle: true,
+          inWork: false,
         },
       ],
       perfect: [
@@ -1016,12 +1063,14 @@ const kit = {
           value: [-0.15],
           description: ["Атака магических башен -15%"],
           battle: true,
+          inWork: false,
         },
       ],
     },
     runes: [],
     sharpening: [],
     battle: true,
+    inWork: false,
   },
 };
 

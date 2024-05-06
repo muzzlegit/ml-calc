@@ -25,6 +25,7 @@ const kit = {
         value: [0.25],
         description: ["Атака всех войск +25%"],
         battle: true,
+        inWork: false,
       },
       {
         type: "artefactKit",
@@ -39,6 +40,7 @@ const kit = {
         value: [2],
         description: ["Получаемый героем опыт в бою +200%"],
         battle: true,
+        inWork: false,
       },
     ],
   },
@@ -57,6 +59,7 @@ const kit = {
     runes: [],
     sharpening: [],
     battle: true,
+    inWork: false,
   },
   armor: {
     level: 2,
@@ -93,6 +96,7 @@ const kit = {
             "Здоровье всех войск +30% на земле Степь",
           ],
           battle: true,
+          inWork: false,
         },
       ],
       perfect: [
@@ -109,6 +113,7 @@ const kit = {
           value: [1],
           description: ["Эффективность уничтожения войск на укреплениях +100%"],
           battle: true,
+          inWork: false,
         },
         {
           type: "artefact",
@@ -132,12 +137,14 @@ const kit = {
           value: [0.06],
           description: ["Здоровье всех войск +6%"],
           battle: true,
+          inWork: false,
         },
       ],
     },
     runes: [],
     sharpening: [],
     battle: true,
+    inWork: false,
   },
   ring: {
     level: 2,
@@ -173,6 +180,7 @@ const kit = {
             "Атака всех войск -30% на земле Степь",
           ],
           battle: true,
+          inWork: false,
         },
       ],
       perfect: [
@@ -189,12 +197,14 @@ const kit = {
           value: [0.1],
           description: ["Атака магических башен +10%"],
           battle: true,
+          inWork: false,
         },
       ],
     },
     runes: [],
     sharpening: [],
     battle: true,
+    inWork: false,
   },
   head: {
     level: 2,
@@ -216,7 +226,7 @@ const kit = {
           title: "Шлем понижения башен",
           property: "towersLevelReduce",
           valueIndex: 0,
-          value: [false, true],
+          value: [false],
           description: [
             "Понижение уровня башен перед каждым раундом на земле Степь",
             "Понижение уровня башен перед каждым раундом",
@@ -244,6 +254,7 @@ const kit = {
     runes: [],
     sharpening: [],
     battle: true,
+    inWork: true,
   },
   bag: {
     level: 2,
@@ -269,12 +280,14 @@ const kit = {
           value: [1],
           description: ["Получаемый героем опыт в бою +100%"],
           battle: true,
+          inWork: false,
         },
       ],
     },
     runes: [],
     sharpening: [],
     battle: true,
+    inWork: false,
   },
   rightHand: {
     level: 2,
@@ -310,6 +323,7 @@ const kit = {
             "Атака всех войск +30% на земле Степь",
           ],
           battle: true,
+          inWork: false,
         },
       ],
       perfect: [
@@ -326,6 +340,7 @@ const kit = {
           value: [-0.06],
           description: ["Атака наемников -6%"],
           battle: true,
+          inWork: false,
         },
         {
           type: "artefact",
@@ -349,12 +364,14 @@ const kit = {
           value: [2],
           description: ["Предел максимальной защиты +2"],
           battle: true,
+          inWork: false,
         },
       ],
     },
     runes: [],
     sharpening: [],
     battle: true,
+    inWork: false,
   },
   boots: {
     level: 2,
@@ -371,6 +388,7 @@ const kit = {
     runes: [],
     sharpening: [],
     battle: true,
+    inWork: true,
   },
   neck: {
     level: 2,
@@ -387,6 +405,7 @@ const kit = {
     runes: [],
     sharpening: [],
     battle: true,
+    inWork: true,
   },
   leftHand: {
     level: 2,
@@ -423,6 +442,7 @@ const kit = {
             "Защита всех войск +30 на земле Степь",
           ],
           battle: true,
+          inWork: false,
         },
       ],
       perfect: [
@@ -447,12 +467,14 @@ const kit = {
           value: [0.06],
           description: ["Атака всех войск +6%"],
           battle: true,
+          inWork: false,
         },
       ],
     },
     runes: [],
     sharpening: [],
     battle: true,
+    inWork: false,
   },
   pants: {
     level: 2,
@@ -489,6 +511,7 @@ const kit = {
             "Здоровье всех войск -24% на земле Степь&Действует на противника",
           ],
           battle: true,
+          inWork: false,
         },
       ],
       perfect: [
@@ -514,12 +537,14 @@ const kit = {
           value: [6],
           description: ["Защита всех войск +6"],
           battle: true,
+          inWork: false,
         },
       ],
     },
     runes: [],
     sharpening: [],
     battle: true,
+    inWork: false,
   },
   belt: {
     level: 2,
@@ -536,6 +561,7 @@ const kit = {
     runes: [],
     sharpening: [],
     battle: true,
+    inWork: true,
   },
   bracers: {
     level: 2,
@@ -563,6 +589,7 @@ const kit = {
             "Атака всех преследователей +36% на земле Степь&Действует на противника",
           ],
           battle: true,
+          inWork: false,
         },
       ],
       perfect: [
@@ -579,12 +606,14 @@ const kit = {
           value: [-0.06],
           description: ["Атака магических башен -6%"],
           battle: true,
+          inWork: false,
         },
       ],
     },
     runes: [],
     sharpening: [],
     battle: true,
+    inWork: false,
   },
 };
 

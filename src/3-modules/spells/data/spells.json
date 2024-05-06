@@ -3628,7 +3628,7 @@
         "units": null,
         "property": "towersLevelReduce",
         "description": ["Понижение уровня башен перед каждым раундом"],
-        "value": [false, true],
+        "value": [true],
         "battle": true
       }
     ]

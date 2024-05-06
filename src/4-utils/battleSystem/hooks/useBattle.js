@@ -4,28 +4,27 @@ import { useUnitsStore } from "modules/units";
 import { deepCopy } from "utils/helpers";
 import {
   applyFortificationsDamage,
+  battleRounds,
   getFortificationsAttack,
   getTotalUnitsAmounInArmies,
   handleInitialArmies,
+  resurrection,
   shouldBattleContinue,
 } from "../helpers/battleSystem.helpers";
-import useBattleStore from "../store/battleStore";
 import useFortificationsRound from "./useFortificationsRound";
 
 const useBattle = () => {
-  const {
-    setStartAttackersArmies,
-    setStartDefendersArmies,
-    setAttackersArmies,
-    setDefendersArmies,
-  } = useBattleStore((state) => state.methods);
-
   const { getAllPlayersUnits } = useUnitsStore((state) => state.methods);
-  const { getGarrison, getFortifications } = useBattleplaceStore(
+  const { getGarrison, getFortifications, getTowers } = useBattleplaceStore(
     (state) => state.methods
   );
-  const { getFearlessness, getRecoil, getUnitsDamage, getFallback } =
-    usePlayerStore((state) => state.methods);
+  const {
+    getFearlessness,
+    getRecoil,
+    getFallback,
+    getUnitsDamage,
+    getBattleParam,
+  } = usePlayerStore((state) => state.methods);
 
   const { handleFortificationRound } = useFortificationsRound();
 
@@ -104,52 +103,83 @@ const useBattle = () => {
       { ...battle.start.attackers, ...battle.start.defenders },
       attackers,
       defenders,
-      getFallback()
+      getFallback(),
+      retreated,
+      "fortifications"
     );
-    if (Object.keys(battleResult.retreated).length) {
-      for (const player in battleResult.retreated) {
-        retreated[player] = {
-          army: battleResult.retreated[player],
-          round: "fortifications",
-        };
-      }
-    }
+
     attackers = battleResult.attackersArmies;
     defenders = battleResult.defendersArmies;
-    if (
-      battleResult.shouldAttackersFallback ||
-      battleResult.shouldDefendersFallback
-    ) {
-      if (Object.keys(retreated).length) {
-        for (const player in retreated) {
-          if (attackers[player]) {
-            attackers[player] = retreated[player].army;
-          }
-          if (defenders[player]) {
-            defenders[player] = retreated[player].army;
-          }
-        }
-      }
-      winner = battleResult.winner;
-      shouldContinue = false;
-    }
+    retreated = { ...battleResult.currentRetreated };
+    winner = battleResult.winner;
+    shouldContinue = battleResult.shouldContinue;
+
     battle.fortifications = {
       attackers: deepCopy(attackers),
       defenders: deepCopy(defenders),
     };
+
+    //--- Бойові раунди ===============================================================
+    if (shouldContinue) {
+      let rounds = 20;
+      let round = 1;
+      while (round <= rounds && shouldContinue) {
+        const attackersArmies = battleRounds(
+          defenders,
+          attackers,
+          true,
+          getTowers(),
+          getBattleParam(),
+          round
+        );
+        const defendersArmies = battleRounds(
+          attackers,
+          defenders,
+          false,
+          getTowers(),
+          getBattleParam(),
+          round
+        );
+
+        attackers = attackersArmies;
+        defenders = defendersArmies;
+
+        battle[`Round${round}`] = {
+          attackers: deepCopy(attackers),
+          defenders: deepCopy(defenders),
+        };
+        const battleResult = shouldBattleContinue(
+          {
+            ...battle.start.attackers,
+            ...battle.start.defenders,
+          },
+          attackersArmies,
+          defendersArmies,
+          getFallback(),
+          retreated,
+          round
+        );
+        // console.log(battleResult);
+        shouldContinue = battleResult.shouldContinue;
+        if (shouldContinue) {
+          console.log(shouldContinue);
+          ++round;
+        }
+      }
+    }
+
+    //--- РАУНД  ВОСКРЕСІННЯ ====================================================
+    const resurrectionResult = resurrection(attackers, defenders);
+    battle.resurrection = {
+      attackers: deepCopy(resurrectionResult.attackersArmies),
+      defenders: deepCopy(resurrectionResult.defendersArmies),
+    };
+
     //===============================================
-    console.log(
-      "first",
-      battleResult.attackersArmies,
-      battleResult.defendersArmies,
-      battleResult.shouldAttackersFallback,
-      battleResult.shouldDefendersFallback,
-      "ret",
-      battleResult.retreated
-    );
     console.log("armies", attackers, defenders);
     console.log("battle", battle);
     console.log("retreated", retreated);
+    console.log("continue", shouldContinue);
     console.log("WINNER", winner + "!");
   };
 

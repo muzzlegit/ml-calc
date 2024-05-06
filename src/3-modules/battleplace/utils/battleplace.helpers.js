@@ -25,13 +25,24 @@ export function getBuildingData(
     buildingsData[isMonsters ? `monsters_${type}` : type][
       `level${isMonsters && level === 8 ? 7 : level}`
     ];
-  const { attackMin, attackMax, ...rest } = data;
+  const { attackMin, attackMax, attackAverage, ...rest } = data;
   switch (type) {
     case "tower":
       return {
         id,
         type,
-        attack: attackIndex === "max" ? attackMax : attackMin,
+        index:
+          attackIndex === "max"
+            ? "attackMax"
+            : attackIndex === "min"
+            ? "attackMin"
+            : "attackAverage",
+        attack:
+          attackIndex === "max"
+            ? attackMax
+            : attackIndex === "min"
+            ? attackMin
+            : attackAverage,
         ...rest,
       };
     case "magicTower":

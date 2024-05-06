@@ -3,6 +3,7 @@ import {
   getBattleplacePicture,
   getBuildingData,
 } from "modules/battleplace/utils/battleplace.helpers";
+import { usePlayerStore } from "modules/players";
 import useUnitsStore from "modules/units/store/unitsStore";
 import { UNITS } from "modules/units/utils/units.constants";
 import { nanoid } from "nanoid";
@@ -11,7 +12,10 @@ import useBuffsProvider from "utils/watchDog/useBuffsProvider.hook";
 
 const useBuildingsSelector = () => {
   const battleplace = useBattleplaceStore((state) => state.battleplace);
-  const attackIndex = useBattleplaceStore((state) => state.attackIndex);
+  const castleAttackIndex = useBattleplaceStore((state) => state.attackIndex);
+  const defenderAttackIndex = usePlayerStore(
+    (state) => state.mainDefender.attackIndex
+  );
   const towers = useBattleplaceStore((state) => state.towers);
   const [activeLevel, setActiveLevel] = useState(1);
   const [activeBuilding, setActiveBuilding] = useState("tower");
@@ -36,6 +40,7 @@ const useBuildingsSelector = () => {
     decreaseGarrisonUnitProperty,
   } = useBattleplaceStore((state) => state.methods);
   const isCastle = battleplace === "castle";
+  const attackIndex = isCastle ? castleAttackIndex : defenderAttackIndex;
   const isTowersLimit =
     towers?.length === 2 &&
     (activeBuilding === "tower" || activeBuilding === "magicTower");

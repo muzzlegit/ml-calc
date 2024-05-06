@@ -1,4 +1,4 @@
-export const ATTACK_INDEX = { min: "min", max: "max" };
+export const ATTACK_INDEX = { min: "min", max: "max", average: "average" };
 
 export const RACE = {
   undead: "Нежить",
