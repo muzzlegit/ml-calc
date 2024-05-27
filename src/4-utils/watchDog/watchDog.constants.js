@@ -48,6 +48,7 @@ export const INITIAL_PROPERTIES = {
     resurrectionRate: 0,
     additionalResurrection: 0,
     resurrectionLimit: 0,
+    finishingOff: 0,
   },
   mercenary: {
     amountRate: 0,

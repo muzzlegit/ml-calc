@@ -340,7 +340,6 @@ const kit = {
             "Целители воскрешают +60%&Целители воскрешают персонажей, игнорируя эффекты добивания раненых",
           ],
           battle: true,
-          inWork: false,
         },
       ],
       perfect: [
@@ -357,14 +356,13 @@ const kit = {
           value: [2.5],
           description: ["Получаемый героем опыт в бою +250%"],
           battle: true,
-          inWork: false,
         },
       ],
     },
     runes: [],
     sharpening: [],
     battle: true,
-    inWork: false,
+    inWork: true,
   },
   rightHand: {
     level: 5,

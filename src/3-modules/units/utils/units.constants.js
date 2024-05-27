@@ -42,6 +42,7 @@ export const ADDITION_UNIT_PROPERTIES = {
     additionalResurrection: 0,
     resurrectionRate: 0,
     resurrectionLimit: 0,
+    finishingOff: 0,
   },
   mercenary: {
     attackRate: 0,

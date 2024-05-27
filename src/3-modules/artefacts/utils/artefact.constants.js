@@ -36,3 +36,13 @@ export const LEVEL_FILTER = [
   { name: "4 ур", level: 4 },
   { name: "5 ур", level: 5 },
 ];
+
+export const ARTEFACTS_BASE_EFFECTS = {
+  attack: ["Дубина кочевника", "Клинок ярости горца"],
+  defense: ["Легкий щит кочевника", "Горный щит"],
+  health: [
+    "Кожаный доспех Кочевника",
+    "Рубаха горца",
+    "Штаны стойкости летающих",
+  ],
+};

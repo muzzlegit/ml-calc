@@ -31,12 +31,7 @@ export function getBuildingData(
       return {
         id,
         type,
-        index:
-          attackIndex === "max"
-            ? "attackMax"
-            : attackIndex === "min"
-            ? "attackMin"
-            : "attackAverage",
+        attackIndex,
         attack:
           attackIndex === "max"
             ? attackMax

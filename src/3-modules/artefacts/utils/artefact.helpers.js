@@ -86,6 +86,18 @@ export const getKitData = (kitTitle) => {
   return { ...currentKit, buffs };
 };
 
+export const getKitDescription = (kit) => {
+  if (!kit) return "";
+  const { setTitle, buffs } = kit;
+  let kitDescription = setTitle + ": " + "\n";
+  if (buffs?.length) {
+    buffs.forEach(({ description }) => {
+      kitDescription = kitDescription + description[0] + "\n";
+    });
+  }
+  return kitDescription.replaceAll("&", "\n");
+};
+
 export const getKitArtefacts = (kitTitle, isAncient, isPerfect) => {
   return artefacts
     .filter((artefact) => artefact?.set && artefact?.set === kitTitle)

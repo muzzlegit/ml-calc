@@ -2,6 +2,7 @@ import useArtefactsStore from "modules/artefacts/store/artefactsStore";
 import {
   getArtefactIcon,
   getKitData,
+  getKitDescription,
 } from "modules/artefacts/utils/artefact.helpers";
 import { useEffect, useState } from "react";
 import usePlayerContext from "utils/context/usePlayerContext.hook";
@@ -10,9 +11,15 @@ import useBuffsProvider from "utils/watchDog/useBuffsProvider.hook";
 const useArtefactsDall = () => {
   const player = usePlayerContext();
   const artefacts = useArtefactsStore((state) => state[player].artefacts);
+  const kit = useArtefactsStore((state) => state[player].kit);
   const { setKit, getKit } = useArtefactsStore((state) => state.methods);
   const { buffsProvider } = useBuffsProvider();
   const [isKit, setIsKit] = useState(getKit(player) ? true : false);
+  const [kitDescription, setKitDescription] = useState("");
+
+  useEffect(() => {
+    if (kit) setKitDescription(getKitDescription(kit));
+  }, [kit]);
 
   useEffect(() => {
     const newKit = getFullKitTitle();
@@ -72,9 +79,10 @@ const useArtefactsDall = () => {
 
   const graphics = {
     frame: getArtefactIcon("artCell"),
+    kitIcon: getArtefactIcon("kitIcon"),
   };
 
-  return { isKit, graphics };
+  return { isKit, kitDescription, graphics };
 };
 
 export default useArtefactsDall;

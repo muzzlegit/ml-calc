@@ -5,6 +5,7 @@ import { immer } from "zustand/middleware/immer";
 const useBattleStore = create(
   devtools(
     immer((set, get) => ({
+      towers: {},
       startAttackersArmies: {},
       startDefendersArmies: {},
       attackersArmies: {},
@@ -14,6 +15,9 @@ const useBattleStore = create(
       retreatedRounds: {},
       winner: "defender",
       methods: {
+        getCurrentTowers: (round) => {
+          return get().towers[`round${round}`] ?? [];
+        },
         getAttackersArmies: () => {
           return get().attackersArmies;
         },
@@ -25,6 +29,16 @@ const useBattleStore = create(
         },
         getStartDefendersArmies: () => {
           return get().startDefendersArmies;
+        },
+        setCurrentTowers: (round, towers) => {
+          set((state) => {
+            state.towers = { ...state.towers, [`round${round}`]: towers };
+          });
+        },
+        clearCurrentTowers: () => {
+          set((state) => {
+            state.towers = {};
+          });
         },
         setStartAttackersArmies: (armies) => {
           set((state) => {

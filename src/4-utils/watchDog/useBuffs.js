@@ -1,3 +1,4 @@
+import { useArtefactsStore } from "modules/artefacts";
 import { useBattleplaceStore } from "modules/battleplace";
 import { getFortificationInitialProperty } from "modules/battleplace/utils/battleplace.helpers";
 import { usePlayerStore } from "modules/players";
@@ -17,6 +18,7 @@ import useWatchDogStore from "./watchDogStore";
 const useBuffs = () => {
   const player = usePlayerContext();
   const buffs = useWatchDogStore((state) => state[player].buffs);
+  const { getAllArtefacts } = useArtefactsStore((state) => state.methods);
   const { setProperty } = usePlayerStore((state) => state.methods);
   const { race, fraction } = usePlayerStore((state) => state[player]);
   const { race: mainDefenderRace, fraction: enemyFraction } = usePlayerStore(
@@ -166,7 +168,63 @@ const useBuffs = () => {
               applyBuffsToPlayer([buff]);
             }
           }
-
+          break;
+        case "deadLand_demon":
+          if (battlefield === "deadLand" && race === "demon") {
+            if (appliedOn?.unit) {
+              applyBuffsToUnits(appliedOn.unit);
+            }
+          }
+          break;
+        case "cursedForest_drow":
+          if (battlefield === "cursedForest" && race === "drow") {
+            if (appliedOn?.unit) {
+              applyBuffsToUnits(appliedOn.unit);
+            }
+          }
+          break;
+        case "cursedForest_undead":
+          if (battlefield === "cursedForest" && race === "undead") {
+            if (appliedOn?.unit) {
+              applyBuffsToUnits(appliedOn.unit);
+            }
+          }
+          break;
+        case "magicForest_elf":
+          if (battlefield === "magicForest" && race === "elf") {
+            if (appliedOn?.unit) {
+              applyBuffsToUnits(appliedOn.unit);
+            }
+          }
+          break;
+        case "hollyLand_human":
+          if (battlefield === "hollyLand" && race === "human") {
+            if (appliedOn?.unit) {
+              applyBuffsToUnits(appliedOn.unit);
+            }
+          }
+          break;
+        case "adaptation":
+          if (battlefield === "mountain" && appliedOn?.unit) {
+            appliedOn.unit.forEach((buff) => {
+              applyBuffsToUnits([{ ...buff, units: [buff.units[0]] }]);
+            });
+          }
+          if (battlefield === "steppe" && appliedOn?.unit) {
+            appliedOn.unit.forEach((buff) => {
+              applyBuffsToUnits([{ ...buff, units: [buff.units[3]] }]);
+            });
+          }
+          if (battlefield === "desert" && appliedOn?.unit) {
+            appliedOn.unit.forEach((buff) => {
+              applyBuffsToUnits([{ ...buff, units: [buff.units[2]] }]);
+            });
+          }
+          if (battlefield === "forest" && appliedOn?.unit) {
+            appliedOn.unit.forEach((buff) => {
+              applyBuffsToUnits([{ ...buff, units: [buff.units[1]] }]);
+            });
+          }
           break;
         case "mine":
           if (battlefield === "mine") {
@@ -213,7 +271,9 @@ const useBuffs = () => {
       setProperty(player, key, playerBuffs[key]);
     }
     //-- set up fortification properties
+    console.log("start buffs", player);
     if (player === "mainDefender") {
+      console.log("first", player, towersBuffs);
       for (const key in fortificationsPropertyBuffs) {
         const updatedFortifications = getFortifications().map(
           (fortification) => {
@@ -238,12 +298,13 @@ const useBuffs = () => {
         );
         updateFortifications(updatedFortifications);
       }
+      console.log("dfdf", player);
       //-- set up magicTower properties
       for (const key in magicTowersBuffs) {
         const magicTowers = getTowers(player).filter(
           ({ type }) => type === "magicTower"
         );
-        if (!magicTowers.length) return;
+        if (!magicTowers.length) continue;
         magicTowers.forEach((magicTower) => {
           replaceTower({ ...magicTower, [key]: magicTowersBuffs[key] });
         });

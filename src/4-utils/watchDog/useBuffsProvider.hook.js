@@ -63,6 +63,7 @@ const useBuffsProvider = () => {
   );
 
   const buffsTrigger = (player) => {
+    console.log("buff", player);
     updateBuffs(player);
   };
 

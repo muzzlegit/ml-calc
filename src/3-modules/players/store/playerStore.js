@@ -257,6 +257,7 @@ const usePlayerStore = create(
           });
         },
         removeBuff: (player, buffId) => {
+          console.log("store", player, buffId);
           set((state) => {
             state[player].buffs = [
               ...state[player].buffs.filter(({ id }) => id !== buffId),

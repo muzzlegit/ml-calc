@@ -1,5 +1,5 @@
 import { nanoid } from "nanoid";
-import { useEffect } from "react";
+import { useCallback, useEffect } from "react";
 import useBattleplaceStore from "../store/battleplaceStore";
 import { getBuildData } from "../utils/battleplace.helpers";
 
@@ -12,6 +12,8 @@ const useBuilds = () => {
   const towers = useBattleplaceStore((state) => state.towers);
   const fortifications = useBattleplaceStore((state) => state.fortifications);
   const gate = useBattleplaceStore((state) => state.gate);
+
+  const isCastle = battleplace === "castle";
 
   const handleAddBuild = (build, buildLevel, isCastle) => {
     const buildData = getBuildData(build, buildLevel, isCastle);
@@ -34,10 +36,13 @@ const useBuilds = () => {
       setGate({ id: nanoid(), type: "gate", ...buildData });
     }
   };
-  const handleDeleteBuild = (build, id) => {
-    if (build === "tower" || build === "magicTower") deleteTower(id);
-    if (build === "gate") deleteGate();
-  };
+  const handleDeleteBuild = useCallback(
+    (build, id) => {
+      if (build === "tower" || build === "magicTower") deleteTower(id);
+      if (build === "gate") deleteGate();
+    },
+    [deleteGate, deleteTower]
+  );
 
   const handleDeleteAllBuilds = () => {
     deleteTower(undefined, true);
@@ -65,7 +70,7 @@ const useBuilds = () => {
       if (build === "magicTower")
         addTower({ id: nanoid(), type: "magicTower", ...buildData });
     });
-  }, [battleplace, towers]);
+  }, [addTower, attackIndex, battleplace, isCastle, towers]);
 
   return { handleAddBuild, handleDeleteBuild, handleDeleteAllBuilds };
 };

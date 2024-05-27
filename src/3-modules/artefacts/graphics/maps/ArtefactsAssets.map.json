@@ -16,5 +16,5 @@
     "width": "21px",
     "height": "26px"
   },
-  "deleteIcon": { "coordinate": "-91px -25px", "width": "", "height": "" }
+  "kitIcon": { "coordinate": "-91px 0px", "width": "28px", "height": "39px" }
 }

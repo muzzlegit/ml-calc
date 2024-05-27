@@ -1,0 +1,59 @@
+import { useBattleplaceStore } from "modules/battleplace";
+import { getBuildingData } from "modules/battleplace/utils/battleplace.helpers";
+import useBattleStore from "../store/battleStore";
+
+const useTowersReduce = () => {
+  const getTowers = useBattleplaceStore((state) => state.methods.getTowers);
+  const { getCurrentTowers, setCurrentTowers, clearCurrentTowers } =
+    useBattleStore((state) => state.methods);
+
+  const handleTowersReduce = (
+    towers,
+    isMonsters,
+    army,
+    { mainAttacker, attackerAlly, attackerSecondAlly }
+  ) => {
+    const shouldReduce = mainAttacker || attackerAlly || attackerSecondAlly;
+
+    if (!shouldReduce || !towers.length) return towers;
+    let averageDamage = 0;
+    let maxIndex = 0;
+    let maxAttack = 0;
+    towers.forEach((tower, index) => {
+      const { type, attack, damageRate, multilier } = tower;
+      if (type === "magicTower") {
+        for (const player in army) {
+          for (const unit in army[player]) {
+            const { totalAverageAttack } = army[player][unit];
+            averageDamage += totalAverageAttack;
+          }
+        }
+      }
+      const fullAttack =
+        type === "magicTower"
+          ? (averageDamage + averageDamage * damageRate) * multilier
+          : attack + attack * damageRate;
+      maxAttack = fullAttack > maxAttack ? fullAttack : maxAttack;
+      maxIndex = fullAttack > maxAttack ? index : maxIndex;
+    });
+    const { type, attackIndex, level, id } = towers[maxIndex];
+    const remainingTower = towers.filter((tower) => tower.id !== id);
+    if (level - 1 > 0) {
+      const reducedTower = getBuildingData(
+        type,
+        id,
+        level - 1,
+        attackIndex,
+        1,
+        isMonsters
+      );
+      return [reducedTower, ...remainingTower];
+    } else {
+      return remainingTower ?? [];
+    }
+  };
+
+  return handleTowersReduce;
+};
+
+export default useTowersReduce;

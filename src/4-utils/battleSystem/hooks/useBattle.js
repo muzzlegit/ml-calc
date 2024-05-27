@@ -12,6 +12,7 @@ import {
   shouldBattleContinue,
 } from "../helpers/battleSystem.helpers";
 import useFortificationsRound from "./useFortificationsRound";
+import useTowersReduce from "./useTowersReduce";
 
 const useBattle = () => {
   const { getAllPlayersUnits } = useUnitsStore((state) => state.methods);
@@ -25,6 +26,7 @@ const useBattle = () => {
     getUnitsDamage,
     getBattleParam,
   } = usePlayerStore((state) => state.methods);
+  const handleTowersReduce = useTowersReduce();
 
   const { handleFortificationRound } = useFortificationsRound();
 
@@ -42,6 +44,7 @@ const useBattle = () => {
     const garrison = getGarrison();
 
     let battle = {};
+    let towers = { 0: getTowers() };
     let attackers = { mainAttacker, attackerAlly, attackerSecondAlly };
     let defenders = {
       mainDefender,
@@ -124,11 +127,19 @@ const useBattle = () => {
       let rounds = 20;
       let round = 1;
       while (round <= rounds && shouldContinue) {
+        const reducedTowers = handleTowersReduce(
+          towers[round - 1],
+          false,
+          defenders,
+          getBattleParam().towerLevelReduce
+        );
+        towers[round] = reducedTowers;
+        console.log("returned towers", reducedTowers);
         const attackersArmies = battleRounds(
           defenders,
           attackers,
           true,
-          getTowers(),
+          towers[round],
           getBattleParam(),
           round
         );
@@ -136,7 +147,7 @@ const useBattle = () => {
           attackers,
           defenders,
           false,
-          getTowers(),
+          towers[round],
           getBattleParam(),
           round
         );
@@ -167,7 +178,7 @@ const useBattle = () => {
         }
       }
     }
-
+    console.log("towers", towers);
     //--- РАУНД  ВОСКРЕСІННЯ ====================================================
     const resurrectionResult = resurrection(attackers, defenders);
     battle.resurrection = {

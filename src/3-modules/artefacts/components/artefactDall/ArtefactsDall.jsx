@@ -1,3 +1,4 @@
+import { ImageBox } from "modules/UI";
 import { DALL_CELLS } from "modules/artefacts/utils/artefact.constants";
 import { Cell, Container, Frame } from "./ArtefactsDall.styled";
 import ArtefactPicture from "./particles/artefactPicture/ArtefactPicture";
@@ -6,7 +7,8 @@ import useArtefactsDall from "./useArtefactsDall";
 const ArtefactsDall = () => {
   const {
     isKit,
-    graphics: { frame },
+    kitDescription,
+    graphics: { frame, kitIcon },
   } = useArtefactsDall();
 
   return (
@@ -25,6 +27,11 @@ const ArtefactsDall = () => {
           </Cell>
         );
       })}
+      {isKit ? (
+        <Cell top={40} left={226}>
+          <ImageBox title={kitDescription} picture={kitIcon} />
+        </Cell>
+      ) : null}
     </Container>
   );
 };

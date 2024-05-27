@@ -1,7 +1,7 @@
-import towersData from "modules/battleplace/data/towers.json";
 import { LIMITS, UNITS_PERSECUTION } from "modules/units/utils/units.constants";
 import { deepCopy } from "utils/helpers";
 import { ATTACKERS, DEFENDERS } from "./battleSystem.constants";
+import { getTowersAttack } from "./handleTowers";
 
 //dependent[handleInitialArmies, applyFortificationsDamage,shouldBattleContinue]
 export function recalculateArmy(squad, round, parametrs) {
@@ -21,8 +21,11 @@ export function recalculateArmy(squad, round, parametrs) {
       healthRate,
       persecutionRate,
       resurrection,
+      resurrectionRate,
+      perfectResurrection,
       suppression,
       additionalResurrection,
+      roundAttackRate,
       towersSuppression,
       towersSuppressionRate,
     } = squad[unit];
@@ -47,9 +50,19 @@ export function recalculateArmy(squad, round, parametrs) {
       unitAmount = amount;
     }
     //================================
+    const roundAttack = roundAttackRate
+      ? (attack ?? 0 * Math.max(roundAttackRate ?? 0, LIMITS.attackLimit)) *
+        round
+      : 0;
+    console.log(
+      "rounAttack",
+
+      roundAttack
+    );
     const totalAttack =
       ((attack ?? 0) +
-        (attack ?? 0) * Math.max(attackRate ?? 0, LIMITS.attackLimit)) *
+        (attack ?? 0) * Math.max(attackRate ?? 0, LIMITS.attackLimit) +
+        roundAttack) *
       unitAmount;
     const totalAverageAttack =
       ((attackAverage ?? 0) +
@@ -85,7 +98,11 @@ export function recalculateArmy(squad, round, parametrs) {
         //---//--- Восресіння
         ...(resurrection && {
           totalResurrection:
-            (resurrection + additionalResurrection) * unitAmount,
+            (resurrection +
+              additionalResurrection +
+              (resurrection + additionalResurrection) *
+                (resurrectionRate + perfectResurrection)) *
+            unitAmount,
         }),
         //---///--- Властивості магів
         ...(unit === "mage" && {
@@ -244,6 +261,10 @@ export function handleInitialArmies(
 export function resurrection(attackers, defenders) {
   const army = deepCopy({ ...attackers, ...defenders });
   const resurrectionObj = {};
+  let attackersKilledUnits = 0;
+  let defendersKilledUnits = 0;
+  let attackersFinishingOff = 0;
+  let defendersFinishingOff = 0;
 
   for (const player in army) {
     resurrectionObj[player] = {
@@ -256,28 +277,70 @@ export function resurrection(attackers, defenders) {
     resurrectionObj[player].resurrection =
       army[player].healer.totalResurrection;
     for (const unit in army[player]) {
-      const { totalKilled } = army[player][unit];
+      const { totalKilled, finishingOff, perfectResurrection } =
+        army[player][unit];
       if (totalKilled) {
         resurrectionObj[player].killed += totalKilled;
+        if (ATTACKERS.includes(player)) {
+          attackersKilledUnits += totalKilled;
+          attackersFinishingOff +=
+            perfectResurrection > 0 ? 0 : finishingOff ?? 0;
+        } else {
+          defendersKilledUnits += totalKilled;
+          defendersFinishingOff +=
+            perfectResurrection > 0 ? 0 : finishingOff ?? 0;
+        }
       }
     }
   }
+  let canBeAttackersResurrected = Math.round(
+    attackersKilledUnits * (1 + attackersFinishingOff)
+  );
+  let canBeDefendersResurrected = Math.round(
+    defendersKilledUnits * (1 + defendersFinishingOff)
+  );
 
+  console.log(
+    "atatk",
+    attackersKilledUnits,
+    attackersFinishingOff,
+    canBeAttackersResurrected,
+    "def",
+    defendersKilledUnits,
+    defendersFinishingOff,
+    canBeDefendersResurrected
+  );
   // --- проводимо воскресіння юнітів у кожного гравця
   [...ATTACKERS, ...DEFENDERS].forEach((player) => {
+    let canBeResurrected = ATTACKERS.includes(player)
+      ? canBeAttackersResurrected
+      : canBeDefendersResurrected;
     while (
       resurrectionObj[player].resurrection > 0 &&
-      resurrectionObj[player].killed > 0
+      resurrectionObj[player].killed > 0 &&
+      canBeResurrected > 0
     ) {
       for (const unit in army[player]) {
+        canBeResurrected = ATTACKERS.includes(player)
+          ? canBeAttackersResurrected
+          : canBeDefendersResurrected;
         const { totalKilled } = army[player][unit];
-        if (totalKilled > 0 && resurrectionObj[player].resurrection > 0) {
+        if (
+          totalKilled > 0 &&
+          resurrectionObj[player].resurrection > 0 &&
+          canBeResurrected > 0
+        ) {
           army[player][unit].amount += 1;
           army[player][unit].totalKilled -= 1;
           army[player][unit].resurrected += 1;
           resurrectionObj[player].resurrection -= 1;
           resurrectionObj[player].killed -= 1;
           resurrectionObj[player].resurrected += 1;
+          if (ATTACKERS.includes(player)) {
+            canBeAttackersResurrected -= 1;
+          } else {
+            canBeDefendersResurrected -= 1;
+          }
         }
       }
     }
@@ -286,7 +349,10 @@ export function resurrection(attackers, defenders) {
   ATTACKERS.forEach((player) => {
     if (resurrectionObj[player].resurrection) {
       const allyes = ATTACKERS.filter((player) => player != player);
-      while (resurrectionObj[player].resurrection > 0) {
+      while (
+        resurrectionObj[player].resurrection > 0 &&
+        canBeAttackersResurrected > 0
+      ) {
         let shouldContinue = false;
         allyes.forEach((ally) => {
           for (const unit in army[ally]) {
@@ -297,13 +363,18 @@ export function resurrection(attackers, defenders) {
         allyes.forEach((ally) => {
           for (const unit in army[ally]) {
             const { totalKilled } = army[ally][unit];
-            if (totalKilled > 0 && resurrectionObj[player].resurrection > 0) {
+            if (
+              totalKilled > 0 &&
+              resurrectionObj[player].resurrection > 0 &&
+              canBeAttackersResurrected > 0
+            ) {
               army[ally][unit].amount += 1;
               army[ally][unit].totalKilled -= 1;
               army[ally][unit].resurrected += 1;
               resurrectionObj[player].resurrection -= 1;
               resurrectionObj[player].resurrectedAlly += 1;
               resurrectionObj[ally].resurrectedByAlly += 1;
+              canBeAttackersResurrected -= 1;
             }
           }
         });
@@ -316,7 +387,10 @@ export function resurrection(attackers, defenders) {
   DEFENDERS.forEach((player) => {
     if (resurrectionObj[player].resurrection) {
       const allyes = DEFENDERS.filter((player) => player != player);
-      while (resurrectionObj[player].resurrection > 0) {
+      while (
+        resurrectionObj[player].resurrection > 0 &&
+        canBeDefendersResurrected > 0
+      ) {
         let shouldContinue = false;
         allyes.forEach((ally) => {
           for (const unit in army[ally]) {
@@ -327,13 +401,18 @@ export function resurrection(attackers, defenders) {
         allyes.forEach((ally) => {
           for (const unit in army[ally]) {
             const { totalKilled } = army[ally][unit];
-            if (totalKilled > 0 && resurrectionObj[player].resurrection > 0) {
+            if (
+              totalKilled > 0 &&
+              resurrectionObj[player].resurrection > 0 &&
+              canBeDefendersResurrected > 0
+            ) {
               army[ally][unit].amount += 1;
               army[ally][unit].totalKilled -= 1;
               army[ally][unit].resurrected += 1;
               resurrectionObj[player].resurrection -= 1;
               resurrectionObj[player].resurrectedAlly += 1;
               resurrectionObj[ally].resurrectedByAlly += 1;
+              canBeDefendersResurrected -= 1;
             }
           }
         });
@@ -451,12 +530,9 @@ export function battleRounds(
   //---атака башен
   if (isDefendersRound && towers.length) {
     attackersDamage +=
-      getTowersAttack(towers, averageAttackersDamage, towerLevelReduce, round) -
+      getTowersAttack(towers, averageAttackersDamage) -
       defendersMageTowersSuppression;
-    console.log(
-      "towerAttack",
-      getTowersAttack(towers, averageAttackersDamage, towerLevelReduce, round)
-    );
+    console.log("towerAttack", getTowersAttack(towers, averageAttackersDamage));
   }
 
   //--- Враховуємо поглинання атаки магами
@@ -530,41 +606,6 @@ export function getFortificationsAttack(fortifications) {
   fortifications.forEach((fortification) => {
     const { attack, quantity, damageRate } = fortification;
     totalAttack += (attack + attack * damageRate) * quantity;
-  });
-  return totalAttack;
-}
-
-function getTowersAttack(towers, averageArmyAttack, towerLevelReduce, round) {
-  if (!towers.length) return 0;
-  const isLevelReduce =
-    towerLevelReduce.mainAttacker ||
-    towerLevelReduce.attackerAlly ||
-    towerLevelReduce.attackerSecondAlly;
-  console.log("reduce", isLevelReduce);
-  let totalAttack = 0;
-  towers.forEach((tower) => {
-    const { type, attack, damageRate, multiplier, level, index } = tower;
-    let towerAttack = attack ?? 0;
-    let towerMultiplier = multiplier ?? 0;
-    if (isLevelReduce) {
-      const currentLevel = level - (round - 1);
-      if (currentLevel <= 0) return 0;
-      const currentTower = towersData[type][`level${currentLevel}`];
-      if (type === "tower") {
-        towerAttack = currentTower[index];
-      } else {
-        towerMultiplier = currentTower.multiplier;
-      }
-    }
-    if (type === "tower") {
-      totalAttack += towerAttack + towerAttack * damageRate;
-    }
-    if (type === "magicTower") {
-      if (damageRate > -1)
-        totalAttack +=
-          averageArmyAttack * towerMultiplier +
-          averageArmyAttack * towerMultiplier * damageRate;
-    }
   });
   return totalAttack;
 }

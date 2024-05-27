@@ -26,7 +26,6 @@ const kit = {
         value: [15],
         description: ["Защита всех войск +15"],
         battle: true,
-        inWork: false,
       },
       {
         type: "artefactKit",
@@ -41,7 +40,6 @@ const kit = {
         value: [1],
         description: ["Получаемый героем опыт в бою +100%"],
         battle: true,
-        inWork: false,
       },
     ],
   },
@@ -79,7 +77,6 @@ const kit = {
             "Атака всех войск -12% на земле Горы&Действует на противника",
           ],
           battle: true,
-          inWork: false,
         },
       ],
       perfect: [],
@@ -124,7 +121,6 @@ const kit = {
             "Здоровье всех войск +18% на земле Горы",
           ],
           battle: true,
-          inWork: false,
         },
       ],
       perfect: [
@@ -141,7 +137,6 @@ const kit = {
           value: [0.5],
           description: ["Эффективность уничтожения войск на укреплениях +50%"],
           battle: true,
-          inWork: false,
         },
         {
           type: "artefact",
@@ -165,7 +160,6 @@ const kit = {
           value: [0.03],
           description: ["Здоровье всех войск +3%"],
           battle: true,
-          inWork: false,
         },
       ],
     },
@@ -200,7 +194,6 @@ const kit = {
             "Атака всех преследователей +18% на земле Горы",
           ],
           battle: true,
-          inWork: false,
         },
       ],
       perfect: [
@@ -217,7 +210,6 @@ const kit = {
           value: [0.05],
           description: ["Атака магических башен +5%"],
           battle: true,
-          inWork: false,
         },
       ],
     },
@@ -261,7 +253,6 @@ const kit = {
             "Предел максимальной защиты +12 на земле Горы",
           ],
           battle: true,
-          inWork: false,
         },
       ],
       perfect: [
@@ -278,7 +269,6 @@ const kit = {
           value: [0.25],
           description: ["Атака башен +25%"],
           battle: true,
-          inWork: false,
         },
       ],
     },
@@ -313,7 +303,6 @@ const kit = {
             "Получаемый героем опыт в бою +60%",
           ],
           battle: true,
-          inWork: false,
         },
       ],
       perfect: [
@@ -330,7 +319,6 @@ const kit = {
           value: [0.5],
           description: ["Получаемый героем опыт в бою +50%"],
           battle: true,
-          inWork: false,
         },
       ],
     },
@@ -373,7 +361,6 @@ const kit = {
             "Атака всех войск +18% на земле Горы",
           ],
           battle: true,
-          inWork: false,
         },
       ],
       perfect: [
@@ -390,7 +377,6 @@ const kit = {
           value: [-0.03],
           description: ["Атака наемников -3%"],
           battle: true,
-          inWork: false,
         },
         {
           type: "artefact",
@@ -414,7 +400,6 @@ const kit = {
           value: [1],
           description: ["Предел максимальной защиты +1"],
           battle: true,
-          inWork: false,
         },
       ],
     },
@@ -438,7 +423,7 @@ const kit = {
     runes: [],
     sharpening: [],
     battle: true,
-    inWork: false,
+    inWork: true,
   },
   neck: {
     level: 1,
@@ -455,7 +440,7 @@ const kit = {
     runes: [],
     sharpening: [],
     battle: true,
-    inWork: false,
+    inWork: true,
   },
   leftHand: {
     level: 1,
@@ -492,7 +477,6 @@ const kit = {
             "Защита всех войск +18 на земле горы",
           ],
           battle: true,
-          inWork: false,
         },
       ],
       perfect: [
@@ -517,7 +501,6 @@ const kit = {
           value: [0.03],
           description: ["Атака всех войск +3%"],
           battle: true,
-          inWork: false,
         },
       ],
     },
@@ -549,7 +532,6 @@ const kit = {
           value: [0.15, 0.18],
           description: ["Здоровье Летающих +15%", "Здоровье Летающих +18%"],
           battle: true,
-          inWork: false,
         },
       ],
       perfect: [
