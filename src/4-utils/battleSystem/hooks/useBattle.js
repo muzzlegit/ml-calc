@@ -1,6 +1,7 @@
 import { useBattleplaceStore } from "modules/battleplace";
 import { usePlayerStore } from "modules/players";
 import { useUnitsStore } from "modules/units";
+import { useState } from "react";
 import { deepCopy } from "utils/helpers";
 import {
   applyFortificationsDamage,
@@ -29,6 +30,8 @@ const useBattle = () => {
   const handleTowersReduce = useTowersReduce();
 
   const { handleFortificationRound } = useFortificationsRound();
+
+  const [result, setResult] = useState({});
 
   const handleBattle = () => {
     let shouldContinue = true;
@@ -192,9 +195,9 @@ const useBattle = () => {
     console.log("retreated", retreated);
     console.log("continue", shouldContinue);
     console.log("WINNER", winner + "!");
+    setResult(deepCopy(battle));
   };
-
-  return { handleBattle };
+  return { handleBattle, result };
 };
 
 export default useBattle;

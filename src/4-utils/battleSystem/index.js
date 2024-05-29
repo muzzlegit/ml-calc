@@ -1,3 +1,3 @@
-import BattleButton from "./battleButton/BattleButton";
+import BattleResult from "./compose/battleResult/BattleResult";
 
-export { BattleButton };
+export { BattleResult };

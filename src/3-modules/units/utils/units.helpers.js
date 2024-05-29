@@ -24,6 +24,7 @@ export function getUnitData({ race, unit, level, attackIndex, initial }) {
     if (key === "attackMax" || key === "attackMin") continue;
     unitData = {
       ...unitData,
+      race,
       title: unit,
       level,
       [key]: fullUnit[key][level - 1],

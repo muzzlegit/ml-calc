@@ -1,5 +1,4 @@
 import { ThemeProvider } from "@emotion/react";
-import { BattleButton } from "utils/battleSystem";
 import { theme } from "utils/styles/theme";
 import { Player } from "widgets";
 import { Battleplace } from "widgets/";
@@ -9,7 +8,6 @@ function App() {
     <Main>
       <ThemeProvider theme={theme}>
         <Container>
-          <BattleButton />
           <Player playerName="mainAttacker" />
           <Player playerName="attackerAlly" />
           <Player playerName="attackerSecondAlly" />
