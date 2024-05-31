@@ -626,3 +626,50 @@ export function applyFortificationsDamage(armies, damagePerUnit) {
   }
   return armies;
 }
+
+export function getFormattedBattleResult(result, playersFlags) {
+  let formattedResult = {};
+  const { start, rounds, fortifications, resurrection } = result;
+  for (const army in start) {
+    for (const player in start[army]) {
+      if (playersFlags[player]) {
+        formattedResult[player] = { start: start[army][player] };
+      }
+    }
+  }
+  for (const army in fortifications) {
+    for (const player in fortifications[army]) {
+      if (playersFlags[player]) {
+        formattedResult[player] = {
+          ...formattedResult[player],
+          fortifications: fortifications[army][player],
+        };
+      }
+    }
+  }
+  for (const round in rounds) {
+    for (const army in rounds[round]) {
+      for (const player in rounds[round][army])
+        if (playersFlags[player]) {
+          const playerArmy = rounds[round][army][player];
+          if (!formattedResult[player].rounds)
+            formattedResult[player].rounds = { [round]: {} };
+          formattedResult[player].rounds[round] = {
+            [round]: playerArmy,
+          };
+        }
+    }
+  }
+
+  for (const army in resurrection) {
+    for (const player in resurrection[army]) {
+      if (playersFlags[player]) {
+        formattedResult[player] = {
+          ...formattedResult[player],
+          resurrection: resurrection[army][player],
+        };
+      }
+    }
+  }
+  return formattedResult;
+}

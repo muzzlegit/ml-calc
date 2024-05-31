@@ -22,3 +22,5 @@ export const Wrap = styled.div({
   justifyContent: "start",
   gap: "8px",
 });
+
+export const Images = styled.div({});

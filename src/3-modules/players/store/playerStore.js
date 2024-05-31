@@ -134,6 +134,14 @@ const usePlayerStore = create(
         getPlayerBuffs: (player) => {
           return get()[player].buffs;
         },
+        getAllParticipantsFlags: () => ({
+          mainAttacker: get().mainAttacker.participant,
+          attackerAlly: get().attackerAlly.participant,
+          attackerSecondAlly: get().attackerSecondAlly.participant,
+          mainDefender: get().mainDefender.participant,
+          firstDefenderAlly: get().firstDefenderAlly.participant,
+          secondDefenderAlly: get().secondDefenderAlly.participant,
+        }),
         getBattleParam: () => ({
           roundDamage: {
             mainAttacker: get().mainAttacker.roundDamage,

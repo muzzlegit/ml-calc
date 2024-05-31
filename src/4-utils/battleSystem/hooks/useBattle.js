@@ -6,6 +6,7 @@ import { deepCopy } from "utils/helpers";
 import {
   applyFortificationsDamage,
   battleRounds,
+  getFormattedBattleResult,
   getFortificationsAttack,
   getTotalUnitsAmounInArmies,
   handleInitialArmies,
@@ -16,16 +17,18 @@ import useFortificationsRound from "./useFortificationsRound";
 import useTowersReduce from "./useTowersReduce";
 
 const useBattle = () => {
-  const { getAllPlayersUnits } = useUnitsStore((state) => state.methods);
-  const { getGarrison, getFortifications, getTowers } = useBattleplaceStore(
+  const { getAllPlayersUnits, getPlayerUnits } = useUnitsStore(
     (state) => state.methods
   );
+  const { getGarrison, getFortifications, getTowers, getBattleplace } =
+    useBattleplaceStore((state) => state.methods);
   const {
     getFearlessness,
     getRecoil,
     getFallback,
     getUnitsDamage,
     getBattleParam,
+    getAllParticipantsFlags,
   } = usePlayerStore((state) => state.methods);
   const handleTowersReduce = useTowersReduce();
 
@@ -46,7 +49,7 @@ const useBattle = () => {
     } = getAllPlayersUnits();
     const garrison = getGarrison();
 
-    let battle = {};
+    let battle = { rounds: {} };
     let towers = { 0: getTowers() };
     let attackers = { mainAttacker, attackerAlly, attackerSecondAlly };
     let defenders = {
@@ -55,6 +58,7 @@ const useBattle = () => {
       secondDefenderAlly,
       garrison,
     };
+
     let retreated = {};
     let winner = "defender";
     //--- Ініціалізуємо армію ================================================
@@ -67,7 +71,7 @@ const useBattle = () => {
       attackers: deepCopy(attackers),
       defenders: deepCopy(defenders),
     };
-
+    console.log("stss", battle);
     //--- РАУНД УКРІПЛЕНЬ ====================================================
     let attackersDamage = 0;
     let defendersDamage = 0;
@@ -158,7 +162,7 @@ const useBattle = () => {
         attackers = attackersArmies;
         defenders = defendersArmies;
 
-        battle[`Round${round}`] = {
+        battle.rounds[round] = {
           attackers: deepCopy(attackers),
           defenders: deepCopy(defenders),
         };
@@ -195,6 +199,13 @@ const useBattle = () => {
     console.log("retreated", retreated);
     console.log("continue", shouldContinue);
     console.log("WINNER", winner + "!");
+    console.log(
+      "result",
+      getFormattedBattleResult(deepCopy(battle), {
+        ...getAllParticipantsFlags(),
+        garrison: getBattleplace() === "castle",
+      })
+    );
     setResult(deepCopy(battle));
   };
   return { handleBattle, result };

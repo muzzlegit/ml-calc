@@ -39,6 +39,7 @@ const useUnitsStore = create(
           firstDefenderAlly: get().firstDefenderAlly,
           secondDefenderAlly: get().secondDefenderAlly,
         }),
+        getPlayerUnits: (player) => get()[player],
         setUnit: (player, unitName, unit) => {
           set((state) => {
             state[player][unitName] = { ...state[player][unitName], ...unit };
