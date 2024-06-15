@@ -23,18 +23,22 @@ export const ADDITION_UNIT_PROPERTIES = {
   swordsman: {
     attackRate: 0,
     persecutionRate: 0,
+    terrainModification: 0,
   },
   cavalier: {
     attackRate: 0,
     persecutionRate: 0,
+    terrainModification: 0,
   },
   flying: {
     attackRate: 0,
     persecutionRate: 0,
+    terrainModification: 0,
   },
   archer: {
     attackRate: 0,
     persecutionRate: 0,
+    terrainModification: 0,
   },
   healer: {
     attackRate: 0,

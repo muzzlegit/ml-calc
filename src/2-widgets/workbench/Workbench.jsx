@@ -7,6 +7,7 @@ import {
 } from "modules/artefacts";
 import { Hero } from "modules/hero";
 import { RunesList } from "modules/runes";
+import { ArtefactRunesWords } from "modules/runes/components";
 import { SharpeningsSelector } from "modules/sharpenings";
 import { AdditionBuffs, SpellsList } from "modules/spells";
 import { Flex } from "utils/styles/flexKit.styled";
@@ -17,6 +18,7 @@ const Workbench = ({ toggleModal }) => {
     <Container>
       <Wrap>
         <RunesList />
+        <ArtefactRunesWords />
         <SharpeningsSelector />
         <AdditionBuffs />
       </Wrap>

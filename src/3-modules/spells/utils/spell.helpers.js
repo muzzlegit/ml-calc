@@ -108,7 +108,7 @@ export function getBuffsObjectForUnits(properties, descriptions) {
       units,
       sign,
     });
-    if (propertyName !== "amountRate") {
+    if (propertyName !== "amountRate" && propertyName !== "defenseLevel") {
       units.forEach((unit) => {
         buffs.push({
           title: `${descriptions[propertyName]} ${descriptions[unit]}`,

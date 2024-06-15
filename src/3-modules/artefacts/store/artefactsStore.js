@@ -69,6 +69,7 @@ const useArtefactsStore = create(
         getKit: (player) => {
           return get()[player].kit;
         },
+
         setArtefact: (player, artefact) => {
           set((state) => {
             state[player].artefacts[artefact?.place] = artefact;

@@ -25,7 +25,8 @@ const useSelectedArtefact = () => {
   const ancientValue =
     selectedArtefact?.ancient === "none" ? "none" : !selectedArtefact?.ancient;
   const isPerfect = selectedArtefact?.perfect;
-  const isRunes = selectedArtefact?.runes?.length;
+  const isRunes =
+    selectedArtefact?.runes?.length || selectedArtefact?.runesWords?.length;
   const isSharpening = selectedArtefact?.sharpening?.length;
   const description = getArtefactDescription(selectedArtefact);
 

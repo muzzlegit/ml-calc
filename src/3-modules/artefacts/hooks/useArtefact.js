@@ -54,9 +54,10 @@ const useArtefact = () => {
   //-- helpers
   function handleArtefactBuffs(artefact, key) {
     buffsProvider(getArtefactBuffs(artefact), key);
-    const { runes, sharpening } = artefact;
+    const { runes, sharpening, runesWords } = artefact;
     if (runes.length) buffsProvider(runes, key);
     if (sharpening.length) buffsProvider(sharpening, key);
+    if (runesWords?.length) buffsProvider(runesWords, key);
   }
 
   function deletePreviosArtefactBuffs(place) {

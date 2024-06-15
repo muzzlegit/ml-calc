@@ -4,10 +4,10 @@ import iconsCanvas from "../graphics/images/ArtefactsAssets.webp";
 import artefactsCanvasMap from "../graphics/maps/Artefacts.map.json";
 import iconsCanvasMap from "../graphics/maps/ArtefactsAssets.map.json";
 
+import words from "modules/runes/data/runesWords.json";
 import { nanoid } from "nanoid";
 import artefacts from "../data";
 import a from "../data/artefacts.json";
-
 console.log(a);
 
 function d(level) {
@@ -131,8 +131,44 @@ export const getArtefactBuffs = (artefact) => {
 
 export const getArtefactDescription = (artefact) => {
   if (!artefact) return "Выбирите артефакт";
-  const { title, ancient, perfect, buffs } = artefact;
+  const { title, ancient, perfect, buffs, runes, sharpening, runesWords } =
+    artefact;
   let artefactDescription = title + "\n";
+  let runesDescription = "";
+  let sharpeningsDescription = "";
+  let wordDescription = "";
+  if (runes.length) {
+    runesDescription = "Руны:";
+    runes.forEach(({ title, shortDescription, value, property }) => {
+      if (title === "Йар") return;
+      const formattedValue =
+        property === "defense" ? value[0] : value[0] * 100 + "%";
+      const sign = value[0] > 0 ? "+" : "";
+      runesDescription +=
+        "\n" + title + ": " + sign + formattedValue + " " + shortDescription;
+    });
+  }
+  if (runesWords?.length) {
+    wordDescription = "Рунное слово:";
+    runesWords.forEach(({ title, value, property }) => {
+      const formattedValue =
+        property === "defense" ? value[0] : value[0] * 100 + "%";
+      const sign = value[0] > 0 ? "+" : "";
+      if (value[0]) {
+        wordDescription += "\n" + title + ": " + sign + formattedValue;
+      }
+    });
+  }
+  if (sharpening.length) {
+    sharpeningsDescription = "Заточки:";
+    sharpening.forEach(({ title, shortDescription, value, propertyType }) => {
+      const formattedValue =
+        propertyType === "value" ? value[0] : value[0] * 100 + "%";
+      const sign = value[0] > 0 ? "+" : "";
+      sharpeningsDescription +=
+        "\n" + title + ": " + shortDescription + " " + sign + formattedValue;
+    });
+  }
   if (buffs?.common?.length) {
     artefact?.buffs.common.forEach(({ description }) => {
       artefactDescription =
@@ -146,7 +182,12 @@ export const getArtefactDescription = (artefact) => {
       artefactDescription = artefactDescription + description[0] + "\n";
     });
   }
-  return artefactDescription.replaceAll("&", "\n");
+  return (
+    artefactDescription.replaceAll("&", "\n") +
+    `${runes.length ? "\n" + runesDescription + "\n" : ""}` +
+    `${runesWords?.length ? "\n" + wordDescription + "\n" : "\n"}` +
+    sharpeningsDescription
+  );
 };
 
 export function setIdToArtefactBuffs(player, artefact) {
@@ -163,4 +204,20 @@ export function setIdToArtefactBuffs(player, artefact) {
       perfect: perfect.map((buff) => ({ ...buff, id: nanoid(), owner: newId })),
     },
   };
+}
+
+export function getArtefactWithRunesWords(artefact, player) {
+  if (!artefact) return null;
+  const { id, place, title } = artefact;
+  const runesWords = words
+    .filter((word) => word.place.includes(place))
+    .map((word) => ({
+      ...word,
+      id: nanoid(),
+      player,
+      owner: id,
+      ownerDescription: title,
+      title: [word.description[0].replaceAll("&", ". ")],
+    }));
+  return { ...artefact, runesWords };
 }

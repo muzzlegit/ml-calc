@@ -1,3 +1,4 @@
+import ArtefactRunesWords from "./artefactRunesWords/ArtefactRunesWords";
 import RunesList from "./runesList/RunesList";
 
-export { RunesList };
+export { ArtefactRunesWords, RunesList };

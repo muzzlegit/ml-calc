@@ -75,6 +75,7 @@ export const COMMON_PROPERTIES = {
 export const PROPERTIES = [
   { property: "attackRate", units: attackUnits, target: "player", sign: "%" },
   { property: "defense", units: all, target: "player", sign: "" },
+  { property: "defenseLevel", units: all, target: "player", sign: "" },
   { property: "healthRate", units: all, target: "player", sign: "%" },
   {
     property: "persecutionRate",

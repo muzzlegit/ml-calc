@@ -1,25 +1,31 @@
 import { UnitPicture } from "modules/units";
-import { Flex, FlexCol, FlexColCenter } from "utils/styles/flexKit.styled";
-import { Container, Wrap } from "./ResultWindow.styled";
+import { getPlayerUIName } from "utils/battleSystem/helpers/battleSystem.helpers";
+import { Flex, FlexColCenter } from "utils/styles/flexKit.styled";
+import ArmyRoundProperties from "../armyRoundProperties/ArmyRoundProperties";
+import {
+  Amount,
+  AmountBox,
+  Container,
+  Round,
+  Text,
+} from "./ResultWindow.styled";
 
-const ResultWindow = ({ result, getPlayerFlag }) => {
+const ResultWindow = ({ result, getPlayerFlag, winner }) => {
   const { start, fortifications, resurrection, rounds } = result;
+  console.log("sfsfsfsdfsdsdf", winner);
   return (
     <Container>
-      <Wrap>
-        {Object.entries(rounds).map(([round, { attackers, defenders }]) => {
-          return (
-            <>
-              <div key={round}>Раунд {round}</div>
-              {Object.keys(attackers).map((player) => {
-                return getPlayerFlag(player) ? (
-                  <Flex
-                    gap={8}
-                    key={player}
-                    additionStyles={{ alignItems: "start" }}
-                  >
-                    {player}
-
+      {Object.entries(rounds).map(([round, { attackers, defenders }]) => {
+        return (
+          <Round key={round}>
+            <div>Раунд {round}</div>
+            {Object.keys(attackers).map((player) => {
+              return getPlayerFlag(player) ? (
+                <FlexColCenter gap={8} key={player}>
+                  <Text textColor={winner === "attacker" ? "green" : "red"}>
+                    {getPlayerUIName(player)}
+                  </Text>
+                  <Flex gap={8} additionStyles={{ alignItems: "start" }}>
                     {Object.values(attackers[player]).map(
                       ({
                         title,
@@ -28,42 +34,121 @@ const ResultWindow = ({ result, getPlayerFlag }) => {
                         level,
                         race,
                         killedInRound,
-                        totalAttack,
+                        totalKilled,
                       }) => {
                         const { amount: prevUnitAmount } =
                           round === "1"
                             ? fortifications.attackers[player][title]
                             : rounds[round - 1].attackers[player][title];
                         return (
-                          <Flex key={title + name}>
-                            <FlexColCenter>
-                              <UnitPicture
-                                unit={title}
-                                name={name}
-                                level={level}
-                                race={race}
-                                isActive={true}
-                              />
-                              {amount > 0 ? (
-                                <FlexCol gap={8}>
-                                  <div>{prevUnitAmount}</div>
-
-                                  <div> {-killedInRound}</div>
-                                  <div> {amount}</div>
-                                </FlexCol>
-                              ) : null}
-                            </FlexColCenter>
-                          </Flex>
+                          <FlexColCenter
+                            key={title + name}
+                            additionStyles={{
+                              position: "relative",
+                              filter: `drop-shadow(0px 0px 4px ${
+                                winner === "attacker" ? "green" : "red"
+                              })`,
+                            }}
+                          >
+                            <UnitPicture
+                              unit={title}
+                              name={name}
+                              level={level}
+                              race={race}
+                              isActive={true}
+                            />
+                            {amount > 0 || totalKilled ? (
+                              <AmountBox>
+                                <Amount>{prevUnitAmount}</Amount>
+                                <Amount isDecrement={killedInRound}>
+                                  {-killedInRound}
+                                </Amount>
+                                <Amount> {amount}</Amount>
+                              </AmountBox>
+                            ) : null}
+                          </FlexColCenter>
                         );
                       }
                     )}
                   </Flex>
-                ) : null;
-              })}
-            </>
-          );
-        })}
-      </Wrap>
+                  <ArmyRoundProperties
+                    // key={player}
+                    army={
+                      round === "1"
+                        ? fortifications.attackers[player]
+                        : rounds[round - 1].attackers[player]
+                    }
+                  />
+                </FlexColCenter>
+              ) : null;
+            })}
+            {Object.keys(defenders).map((player) => {
+              return getPlayerFlag(player) ? (
+                <FlexColCenter gap={8} key={player}>
+                  <Text textColor={winner === "defender" ? "green" : "red"}>
+                    {getPlayerUIName(player)}
+                  </Text>
+                  <Flex gap={8} additionStyles={{ alignItems: "start" }}>
+                    {Object.values(defenders[player]).map(
+                      ({
+                        title,
+                        name,
+                        amount,
+                        level,
+                        race,
+                        killedInRound,
+                        totalKilled,
+                      }) => {
+                        const { amount: prevUnitAmount } =
+                          round === "1"
+                            ? fortifications.defenders[player][title]
+                            : rounds[round - 1].defenders[player][title];
+                        return (
+                          <FlexColCenter
+                            key={title + name}
+                            additionStyles={{
+                              position: "relative",
+                              filter: `drop-shadow(0px 0px 4px ${
+                                winner === "defender" ? "green" : "red"
+                              })`,
+                            }}
+                          >
+                            <UnitPicture
+                              unit={title}
+                              name={name}
+                              level={level}
+                              race={race}
+                              isActive={true}
+                            />
+                            {amount > 0 || totalKilled ? (
+                              <AmountBox>
+                                <Amount>{prevUnitAmount}</Amount>
+
+                                <Amount isDecrement={killedInRound}>
+                                  {-killedInRound}
+                                </Amount>
+                                <Amount> {amount}</Amount>
+                              </AmountBox>
+                            ) : null}
+                          </FlexColCenter>
+                        );
+                      }
+                    )}
+                  </Flex>
+                  <ArmyRoundProperties
+                    // key={player}
+                    army={
+                      round === "1"
+                        ? fortifications.defenders[player]
+                        : rounds[round - 1].defenders[player]
+                    }
+                  />
+                </FlexColCenter>
+              ) : null;
+            })}
+          </Round>
+        );
+      })}
     </Container>
   );
 };

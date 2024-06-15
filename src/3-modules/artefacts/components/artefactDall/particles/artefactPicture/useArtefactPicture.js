@@ -19,7 +19,7 @@ const useArtefactPicture = (place) => {
   const ancientValue =
     artefact?.ancient === "none" ? "none" : !artefact?.ancient;
   const isPerfect = artefact?.perfect;
-  const isRunes = artefact?.runes?.length;
+  const isRunes = artefact?.runes?.length || artefact?.runesWords?.length;
   const isSharpening = artefact?.sharpening?.length;
   const isActive = artefact?.battle;
   const isInWork = artefact?.inWork;

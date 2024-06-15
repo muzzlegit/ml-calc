@@ -4,6 +4,7 @@ import {
   getSharpeningImage,
   getSharpeningList,
 } from "modules/sharpenings/utils/sharpening.helpers";
+import { nanoid } from "nanoid";
 import { useMemo, useState } from "react";
 import usePlayerContext from "utils/context/usePlayerContext.hook";
 
@@ -56,6 +57,7 @@ const useSharpeningsSelector = () => {
     const newValue = measure ? value / 100 : value;
     const newSharpening = {
       ...sharpening,
+      id: nanoid(),
       player,
       owner: selectedArtefact.id,
       ownerDescription: selectedArtefact.title,

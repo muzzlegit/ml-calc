@@ -7,7 +7,7 @@ import { Container, Wrap } from "./BattleResult.styled";
 
 const BattleResult = () => {
   const { isModal, toggleModal, onBackdropClick } = useModal();
-  const { result, handleBattle } = useBattle();
+  const { result, handleBattle, winner } = useBattle();
   const { getParticipantFlag } = usePlayerStore((state) => state.methods);
 
   return (
@@ -24,7 +24,11 @@ const BattleResult = () => {
       </Container>
       {isModal ? (
         <Modal onBackdropClick={onBackdropClick}>
-          <ResultWindow result={result} getPlayerFlag={getParticipantFlag} />
+          <ResultWindow
+            result={result}
+            getPlayerFlag={getParticipantFlag}
+            winner={winner}
+          />
         </Modal>
       ) : null}
     </>

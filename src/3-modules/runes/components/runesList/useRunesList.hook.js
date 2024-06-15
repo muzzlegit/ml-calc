@@ -1,6 +1,7 @@
 import { useArtefactsStore } from "modules/artefacts";
 import { RUNES_LIST } from "modules/runes/utils/rune.constants";
 import { getRuneData, getRuneImage } from "modules/runes/utils/rune.helpers";
+import { nanoid } from "nanoid";
 import { useMemo, useState } from "react";
 import usePlayerContext from "utils/context/usePlayerContext.hook";
 
@@ -40,6 +41,7 @@ const useRunesList = () => {
     const runeData = getRuneData(runeName);
     const rune = {
       ...runeData,
+      id: nanoid(),
       owner: selectedArtefact.id,
       ownerDescription: selectedArtefact.title,
       player,

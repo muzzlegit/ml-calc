@@ -391,6 +391,11 @@ const useBuffs = () => {
                 value[index] + (unitsPropertyBuffs?.[unit]?.[property] ?? 0)
               ).toFixed(2)
             ),
+            terrainModification: Number(
+              (
+                value[index] + (unitsPropertyBuffs?.[unit]?.[property] ?? 0)
+              ).toFixed(2)
+            ),
           };
         });
       });

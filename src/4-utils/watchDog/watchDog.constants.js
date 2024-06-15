@@ -13,6 +13,7 @@ export const INITIAL_PROPERTIES = {
     healthRate: 0,
     attackRate: 0,
     persecutionRate: 0,
+    terrainModification: 0,
   },
   cavalier: {
     amountRate: 0,
@@ -21,6 +22,7 @@ export const INITIAL_PROPERTIES = {
     healthRate: 0,
     attackRate: 0,
     persecutionRate: 0,
+    terrainModification: 0,
   },
   flying: {
     amountRate: 0,
@@ -29,6 +31,7 @@ export const INITIAL_PROPERTIES = {
     healthRate: 0,
     attackRate: 0,
     persecutionRate: 0,
+    terrainModification: 0,
   },
   archer: {
     amountRate: 0,
@@ -37,6 +40,7 @@ export const INITIAL_PROPERTIES = {
     healthRate: 0,
     attackRate: 0,
     persecutionRate: 0,
+    terrainModification: 0,
   },
   healer: {
     amountRate: 0,

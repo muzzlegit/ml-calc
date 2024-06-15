@@ -28,6 +28,7 @@ export function recalculateArmy(squad, round, parametrs) {
       roundAttackRate,
       towersSuppression,
       towersSuppressionRate,
+      terrainModification,
     } = squad[unit];
     //--- Визначаємо кількість юнітів
     const additionProperties = round
@@ -66,7 +67,8 @@ export function recalculateArmy(squad, round, parametrs) {
       unitAmount;
     const totalAverageAttack =
       ((attackAverage ?? 0) +
-        (attackAverage ?? 0) * Math.max(attackRate ?? 0, LIMITS.attackLimit)) *
+        (attackAverage ?? 0) * Math.max(attackRate ?? 0, LIMITS.attackLimit) +
+        roundAttack) *
       unitAmount;
     const totalDefense = Math.max(
       Math.min(defense, Math.min(defenseLevel, LIMITS.defenseLevelLimit)),
@@ -82,17 +84,17 @@ export function recalculateArmy(squad, round, parametrs) {
         //---//--- Атака
         totalAttack,
         totalAverageAttack,
-        //---//--- ЗАхист
+        //---//--- ЗАхистG
         totalDefense,
         //---//--- Здоров'я
-        totalHeath:
+        totalHealth:
           (health + health * Math.max(healthRate ?? 0, LIMITS.healthLimit)) *
           unitAmount,
         //---//--- Переслідування
         ...(UNITS_PERSECUTION[unit] && {
           totalPersecution:
-            attack * unitAmount +
-            (attack ?? 0) *
+            (totalAttack ?? 0) +
+            (totalAttack ?? 0) *
               Math.max(persecutionRate ?? 0, LIMITS.persecutionLimit),
         }),
         //---//--- Восресіння
@@ -192,12 +194,11 @@ export function shouldBattleContinue(
       }
     }
   }
-
   const winner =
     shouldAttackersFallback ||
     (shouldAttackersFallback && shouldDefendersFallback)
       ? "defender"
-      : "atacker";
+      : "attacker";
 
   const shouldContinue = !(shouldAttackersFallback || shouldDefendersFallback);
 
@@ -466,13 +467,19 @@ export function battleRounds(
   { roundDamage, attackBoost, towerLevelReduce },
   round
 ) {
-  console.log("round", round, towerLevelReduce);
+  console.log("round", round);
   let attackers = deepCopy(attackersArmies);
   let defenders = deepCopy(defendersArmies);
   let attackersDamage = 0;
   let averageAttackersDamage = 0;
   let defenderUnitsAmount = 0;
   let attakersPersecutionDamage = {
+    swordsman: 0,
+    cavalier: 0,
+    flying: 0,
+    archer: 0,
+  };
+  let defendersPersecutionUnitsAmount = {
     swordsman: 0,
     cavalier: 0,
     flying: 0,
@@ -496,15 +503,24 @@ export function battleRounds(
         const { totalAttack, totalAverageAttack, totalPersecution } =
           attackers[player][unit];
         attackersDamage += totalAttack + totalAttack * attackBoost[player];
-        if (isDefendersRound) averageAttackersDamage += totalAverageAttack;
-        if (UNITS_PERSECUTION[unit])
+        if (isDefendersRound && player === "mainDefender") {
+          averageAttackersDamage += totalAverageAttack;
+        }
+        if (UNITS_PERSECUTION[unit]) {
           attakersPersecutionDamage[unit] += totalPersecution;
+        }
       }
     }
   }
   function recalculateDefendersParametrs(defenders) {
     defenderUnitsAmount = 0;
     defendersMageSuppression = 0;
+    defendersPersecutionUnitsAmount = {
+      swordsman: 0,
+      cavalier: 0,
+      flying: 0,
+      archer: 0,
+    };
     for (const player in defenders) {
       for (const unit in defenders[player]) {
         const { amount, totalSuppression, totalTowersSuppression } =
@@ -513,11 +529,15 @@ export function battleRounds(
         if (unit === "mage") defendersMageSuppression += totalSuppression;
         if (unit === "mage")
           defendersMageTowersSuppression += totalTowersSuppression;
+        if (UNITS_PERSECUTION[unit]) {
+          defendersPersecutionUnitsAmount[unit] += amount;
+        }
       }
     }
   }
   recalculateAttakersParametrs(attackers);
   recalculateDefendersParametrs(defenders);
+  console.log("amount", defendersPersecutionUnitsAmount);
   //--- атака кожного раунду
   const attackersRoundDamage = isDefendersRound
     ? roundDamage.mainDefender +
@@ -532,9 +552,14 @@ export function battleRounds(
     attackersDamage +=
       getTowersAttack(towers, averageAttackersDamage) -
       defendersMageTowersSuppression;
-    console.log("towerAttack", getTowersAttack(towers, averageAttackersDamage));
   }
-
+  console.log(
+    "avaregeDamage",
+    averageAttackersDamage,
+    "towerDamage",
+    getTowersAttack(towers, averageAttackersDamage) / 2,
+    defendersMageTowersSuppression / 2
+  );
   //--- Враховуємо поглинання атаки магами
   if (defendersMageSuppression > 0) attackersDamage -= defendersMageSuppression;
 
@@ -544,43 +569,62 @@ export function battleRounds(
   let checker = false;
 
   let shouldContinue = true;
+  let isFirstRoundIteration = true;
   while (shouldContinue) {
     let residualDamage = 0;
     for (const player in defenders) {
       for (const unit in defenders[player]) {
-        const { amount, totalDefense, totalHeath, health } =
+        const { amount, totalDefense, totalHealth, health, healthRate } =
           defenders[player][unit];
         if (amount) {
+          if (unit === "swordsman") console.log("------", amount);
           const damage = amount * damagePerUnit * (1 - totalDefense / 100);
 
-          const persecuitionDamage = attakersPersecutionDamage[
-            UNITS_PERSECUTION[unit]?.pursued
-          ]
-            ? attakersPersecutionDamage[UNITS_PERSECUTION[unit].pursued] *
-              (1 - totalDefense / 100)
-            : 0;
-
+          const persecuitionDamage =
+            attakersPersecutionDamage[UNITS_PERSECUTION[unit]?.pursued] &&
+            isFirstRoundIteration
+              ? attakersPersecutionDamage[UNITS_PERSECUTION[unit].pursued] *
+                (1 - totalDefense / 100) *
+                1 *
+                (amount / defendersPersecutionUnitsAmount[unit] ?? 1).toFixed(2)
+              : 0;
+          console.log(
+            "pers",
+            unit,
+            (amount / defendersPersecutionUnitsAmount[unit] ?? 1).toFixed(2)
+          );
           const killedUnits = Math.min(
             Math.max(
               amount -
                 Math.ceil(
-                  (totalHeath - (damage + persecuitionDamage)) / health
+                  (totalHealth - (damage + persecuitionDamage)) /
+                    (health + health * healthRate)
                 ),
               0
             ),
             amount
           );
-          console.log("killed", unit, killedUnits, amount - killedUnits);
-          residualDamage += Math.abs(Math.max(damage - totalHeath, 0));
-
+          if (player === "firstDefenderAlly")
+            console.log(
+              "damage&&",
+              unit,
+              damage,
+              persecuitionDamage,
+              "res",
+              residualDamage
+            );
+          residualDamage += Math.abs(Math.max(damage - totalHealth, 0));
           defenders[player][unit].amount = Math.max(amount - killedUnits, 0);
           defenders[player][unit].totalKilled += killedUnits;
           defenders[player][unit].killedInRound = checker
             ? defenders[player][unit].killedInRound + killedUnits
             : killedUnits;
         }
+        if (!amount && defenders[player][unit].killedInRound)
+          defenders[player][unit].killedInRound = 0;
       }
     }
+    isFirstRoundIteration = false;
     if (residualDamage) {
       for (const player in defenders) {
         defenders[player] = recalculateArmy(defenders[player], round);
@@ -672,4 +716,76 @@ export function getFormattedBattleResult(result, playersFlags) {
     }
   }
   return formattedResult;
+}
+
+export function getResultArmyProperty(army) {
+  let armyProperties = { totalAttack: 0, totalHealth: 0, totalAmount: 0 };
+  let unitsProperties = {};
+  for (const unit in army) {
+    const {
+      amount,
+      totalAttack,
+      totalHealth,
+      totalPersecution,
+      totalSuppression,
+      totalTowersSuppression,
+    } = army[unit];
+
+    armyProperties.totalAmount += amount;
+    armyProperties.totalAttack += totalAttack;
+    armyProperties.totalHealth += totalHealth;
+    unitsProperties = {
+      ...unitsProperties,
+      [unit]: {
+        amount,
+        totalAttack,
+        totalHealth,
+        ...(totalPersecution && { totalPersecution }),
+        ...(totalSuppression && { totalSuppression }),
+        ...(totalTowersSuppression && { totalTowersSuppression }),
+      },
+    };
+  }
+  return { armyProperties, unitsProperties };
+}
+
+export function getUnitUIName(unit) {
+  switch (unit) {
+    case "porter":
+      return "Носильщики";
+    case "swordman":
+      return "Воины";
+    case "cavalier":
+      return "Всадники";
+    case "flying":
+      return "Летающие";
+    case "archer":
+      return "Лучники";
+    case "healer":
+      return "Целители";
+    case "mercenary":
+      return "Наемники";
+    case "mage":
+      return "Маги";
+    default:
+      return unit;
+  }
+}
+export function getPlayerUIName(player) {
+  switch (player) {
+    case "mainAttacker":
+      return "Атакующий";
+    case "attackerAlly":
+      return "Союзник атакующего";
+    case "attackerSecondAlly":
+      return "Союзник атакующего";
+    case "mainDefender":
+      return "Защитник";
+    case "firstDefenderAlly":
+      return "Союзник защитника";
+    case "secondDefenderAlly":
+      return "Союзник защитника";
+    default:
+      return [];
+  }
 }

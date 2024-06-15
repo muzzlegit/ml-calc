@@ -35,6 +35,7 @@ const useBattle = () => {
   const { handleFortificationRound } = useFortificationsRound();
 
   const [result, setResult] = useState({});
+  const [winner, setWinner] = useState("defender");
 
   const handleBattle = () => {
     let shouldContinue = true;
@@ -179,13 +180,12 @@ const useBattle = () => {
         );
         // console.log(battleResult);
         shouldContinue = battleResult.shouldContinue;
+        winner = battleResult.winner;
         if (shouldContinue) {
-          console.log(shouldContinue);
           ++round;
         }
       }
     }
-    console.log("towers", towers);
     //--- РАУНД  ВОСКРЕСІННЯ ====================================================
     const resurrectionResult = resurrection(attackers, defenders);
     battle.resurrection = {
@@ -207,8 +207,9 @@ const useBattle = () => {
       })
     );
     setResult(deepCopy(battle));
+    setWinner(winner);
   };
-  return { handleBattle, result };
+  return { handleBattle, result, winner };
 };
 
 export default useBattle;
