@@ -6,7 +6,7 @@
       "widgets/*": ["2-widgets/*"],
       "modules/*": ["3-modules/*"],
       "utils/*": ["4-utils/*"],
-      "services/*": ["5-services/*"]
+      "eventBus/*": ["5-eventBus/*"]
     }
   },
   "include": ["src"]

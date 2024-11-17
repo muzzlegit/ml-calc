@@ -1,5 +1,6 @@
 import { LIMITS, UNITS_PERSECUTION } from "modules/units/utils/units.constants";
 import { deepCopy } from "utils/helpers";
+import { apllyPersecutionDamage } from "./applyPersecutionDamage";
 import { ATTACKERS, DEFENDERS } from "./battleSystem.constants";
 import { getTowersAttack } from "./handleTowers";
 
@@ -55,16 +56,13 @@ export function recalculateArmy(squad, round, parametrs) {
       ? (attack ?? 0 * Math.max(roundAttackRate ?? 0, LIMITS.attackLimit)) *
         round
       : 0;
-    console.log(
-      "rounAttack",
 
-      roundAttack
-    );
     const totalAttack =
       ((attack ?? 0) +
         (attack ?? 0) * Math.max(attackRate ?? 0, LIMITS.attackLimit) +
         roundAttack) *
       unitAmount;
+
     const totalAverageAttack =
       ((attackAverage ?? 0) +
         (attackAverage ?? 0) * Math.max(attackRate ?? 0, LIMITS.attackLimit) +
@@ -500,8 +498,13 @@ export function battleRounds(
     defendersMageTowersSuppression = 0;
     for (const player in attackers) {
       for (const unit in attackers[player]) {
-        const { totalAttack, totalAverageAttack, totalPersecution } =
-          attackers[player][unit];
+        const {
+          totalAttack,
+          totalAverageAttack,
+          totalPersecution,
+          killedInRound,
+          amount,
+        } = attackers[player][unit];
         attackersDamage += totalAttack + totalAttack * attackBoost[player];
         if (isDefendersRound && player === "mainDefender") {
           averageAttackersDamage += totalAverageAttack;
@@ -523,8 +526,12 @@ export function battleRounds(
     };
     for (const player in defenders) {
       for (const unit in defenders[player]) {
-        const { amount, totalSuppression, totalTowersSuppression } =
-          defenders[player][unit];
+        const {
+          amount,
+          totalSuppression,
+          totalTowersSuppression,
+          killedInRound,
+        } = defenders[player][unit];
         defenderUnitsAmount += amount;
         if (unit === "mage") defendersMageSuppression += totalSuppression;
         if (unit === "mage")
@@ -537,7 +544,7 @@ export function battleRounds(
   }
   recalculateAttakersParametrs(attackers);
   recalculateDefendersParametrs(defenders);
-  console.log("amount", defendersPersecutionUnitsAmount);
+  console.log("atack", attackersDamage);
   //--- атака кожного раунду
   const attackersRoundDamage = isDefendersRound
     ? roundDamage.mainDefender +
@@ -549,70 +556,49 @@ export function battleRounds(
   attackersDamage += attackersRoundDamage;
   //---атака башен
   if (isDefendersRound && towers.length) {
-    attackersDamage +=
+    attackersDamage += Math.max(
       getTowersAttack(towers, averageAttackersDamage) -
-      defendersMageTowersSuppression;
+        defendersMageTowersSuppression,
+      0
+    );
   }
-  console.log(
-    "avaregeDamage",
-    averageAttackersDamage,
-    "towerDamage",
-    getTowersAttack(towers, averageAttackersDamage) / 2,
-    defendersMageTowersSuppression / 2
-  );
   //--- Враховуємо поглинання атаки магами
   if (defendersMageSuppression > 0) attackersDamage -= defendersMageSuppression;
 
   // --- Вираховуємо атаку на 1 юніта
-  let damagePerUnit = (attackersDamage / defenderUnitsAmount).toFixed(4);
+  let damagePerUnit = attackersDamage / defenderUnitsAmount;
   // --- Вираховуємо кількість вбитих юнітів в кожній армії
   let checker = false;
-
   let shouldContinue = true;
   let isFirstRoundIteration = true;
   while (shouldContinue) {
     let residualDamage = 0;
     for (const player in defenders) {
       for (const unit in defenders[player]) {
-        const { amount, totalDefense, totalHealth, health, healthRate } =
-          defenders[player][unit];
+        const {
+          amount,
+          totalDefense,
+          totalAttack,
+          totalHealth,
+          health,
+          healthRate,
+        } = defenders[player][unit];
         if (amount) {
-          if (unit === "swordsman") console.log("------", amount);
+          if (player === "mainDefender" || player === "firstDefenderAlly") {
+            console.log(player, unit, "ataci", totalAttack);
+          }
           const damage = amount * damagePerUnit * (1 - totalDefense / 100);
 
-          const persecuitionDamage =
-            attakersPersecutionDamage[UNITS_PERSECUTION[unit]?.pursued] &&
-            isFirstRoundIteration
-              ? attakersPersecutionDamage[UNITS_PERSECUTION[unit].pursued] *
-                (1 - totalDefense / 100) *
-                1 *
-                (amount / defendersPersecutionUnitsAmount[unit] ?? 1).toFixed(2)
-              : 0;
-          console.log(
-            "pers",
-            unit,
-            (amount / defendersPersecutionUnitsAmount[unit] ?? 1).toFixed(2)
-          );
           const killedUnits = Math.min(
             Math.max(
               amount -
                 Math.ceil(
-                  (totalHealth - (damage + persecuitionDamage)) /
-                    (health + health * healthRate)
+                  (totalHealth - damage) / (health + health * healthRate)
                 ),
               0
             ),
             amount
           );
-          if (player === "firstDefenderAlly")
-            console.log(
-              "damage&&",
-              unit,
-              damage,
-              persecuitionDamage,
-              "res",
-              residualDamage
-            );
           residualDamage += Math.abs(Math.max(damage - totalHealth, 0));
           defenders[player][unit].amount = Math.max(amount - killedUnits, 0);
           defenders[player][unit].totalKilled += killedUnits;
@@ -620,8 +606,12 @@ export function battleRounds(
             ? defenders[player][unit].killedInRound + killedUnits
             : killedUnits;
         }
-        if (!amount && defenders[player][unit].killedInRound)
-          defenders[player][unit].killedInRound = 0;
+      }
+    }
+    if (isFirstRoundIteration) {
+      defenders = apllyPersecutionDamage(attakersPersecutionDamage, defenders);
+      for (const player in defenders) {
+        defenders[player] = recalculateArmy(defenders[player], round);
       }
     }
     isFirstRoundIteration = false;

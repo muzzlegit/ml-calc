@@ -19,6 +19,7 @@ export const List = styled.ul(
     transform: "translateX(-50%)",
     zIndex: 6,
     padding: "8px",
+    width: "100%",
     display: "flex",
     flexDirection: "column",
     alignItems: "start",

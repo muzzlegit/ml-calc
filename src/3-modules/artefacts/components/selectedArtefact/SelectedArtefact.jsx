@@ -1,4 +1,4 @@
-import { Button, ImageBox } from "modules/UI";
+import { Button, ImageBox } from "utils/UI";
 import { theme } from "utils/styles/theme";
 import ArtefactButton from "../artefactButton/ArtefactButton";
 import {

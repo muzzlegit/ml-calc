@@ -37,6 +37,7 @@ const useSpell = () => {
     if (newSpell.level) {
       buffsProvider(newSpell.buffs, "add");
     }
+    return newSpell;
   };
 
   const deleteAllSpells = (specificPlayer) => {

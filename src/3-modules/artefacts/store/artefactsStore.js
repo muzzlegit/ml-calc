@@ -57,6 +57,12 @@ const useArtefactsStore = create(
         selectedPlace: null,
       },
       methods: {
+        updateState: (newState) => {
+          set((state) => ({
+            ...newState,
+            methods: state.methods,
+          }));
+        },
         getAllArtefacts: (player) => {
           return get()[player].artefacts;
         },
@@ -69,7 +75,6 @@ const useArtefactsStore = create(
         getKit: (player) => {
           return get()[player].kit;
         },
-
         setArtefact: (player, artefact) => {
           set((state) => {
             state[player].artefacts[artefact?.place] = artefact;

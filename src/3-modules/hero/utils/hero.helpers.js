@@ -15,7 +15,6 @@ export const getHeroAssetsIcon = (name, race) => {
 };
 
 export const getHeroPicture = (name, race) => {
-  console.log(name);
   if (!name)
     return {
       image: `url(${canvas}) ${canvasMap?.backgrounds[race]?.coordinate}`,
@@ -57,10 +56,15 @@ export const getHeroImageName = (player, isMonsters) => {
   }
 };
 
-export const getHeroesClasses = () => {
+export const getHeroesClasses = (isMonsters) => {
+  if (isMonsters) {
+    return {
+      Монстр: "Монстр",
+    };
+  }
   let list = {};
   heroes.reduce((acc, hero) => {
-    if (!acc.includes(hero.class)) {
+    if (!acc.includes(hero.class) && hero.class !== "Монстр") {
       acc = [...acc, hero.class];
       list[hero.class] = hero.class;
     }

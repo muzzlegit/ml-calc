@@ -3,18 +3,18 @@ import usePlayerContext from "utils/context/usePlayerContext.hook";
 
 const useSpellsList = () => {
   const player = usePlayerContext();
-  const spellsArray = useSpellsStore((state) => state[player].spells);
+  const { getSpells } = useSpellsStore((state) => state.methods);
 
   const spells = [
     {
       title: "Свитки",
-      spells: spellsArray.filter(
+      spells: getSpells(player).filter(
         ({ sortIndex }) => sortIndex === "spell" || sortIndex === "spell_hero"
       ),
     },
     {
       title: "Заклинания героев",
-      spells: spellsArray.filter(
+      spells: getSpells(player).filter(
         ({ sortIndex }) => sortIndex === "hero" || sortIndex === "spell_hero"
       ),
     },
@@ -22,7 +22,7 @@ const useSpellsList = () => {
       title: "Заклинания на город",
       spells:
         player === "mainDefender"
-          ? spellsArray.filter(({ sortIndex }) => sortIndex === "town")
+          ? getSpells(player).filter(({ sortIndex }) => sortIndex === "town")
           : [],
     },
   ];

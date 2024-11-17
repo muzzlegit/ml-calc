@@ -1,5 +1,5 @@
-import { ImageBox } from "modules/UI";
 import { getStandartDescription } from "modules/players/utils/player.helpers";
+import { ImageBox } from "utils/UI";
 import { Cell, Container, List, Quantity } from "./StandardsList.styled";
 import useStandardsList from "./useStandardsList.hook";
 

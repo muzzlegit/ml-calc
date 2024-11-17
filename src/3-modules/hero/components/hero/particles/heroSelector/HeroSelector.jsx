@@ -1,4 +1,4 @@
-import { Selector, SvgIcon } from "modules/UI";
+import { Selector, SvgIcon } from "utils/UI";
 import { FlexCenter } from "utils/styles/flexKit.styled";
 import {
   Container,
@@ -10,6 +10,7 @@ import useHeroSelector from "./useHeroSelector.hook";
 
 const HeroSelector = () => {
   const {
+    isMonsters,
     heroClass,
     classesList,
     firstHeroBranch,
@@ -59,7 +60,9 @@ const HeroSelector = () => {
         </FlexCenter>
       </SelectorWrap>
 
-      <SelectorWrap isActive={firstHeroBranch || thirdHeroBranch}>
+      <SelectorWrap
+        isActive={(firstHeroBranch || thirdHeroBranch) && !isMonsters}
+      >
         <Title>--- Вторая ветка ---</Title>
         <FlexCenter gap="4px">
           <Selector

@@ -1,6 +1,6 @@
-import { ImageBox, SvgIcon } from "modules/UI";
 import ArtefactButton from "modules/artefacts/components/artefactButton/ArtefactButton";
 import PropTypes from "prop-types";
+import { ImageBox, SvgIcon } from "utils/UI";
 import { ArtefactBg, IconWrap, Picture, Place } from "./ArtefactPicture.styled";
 import useArtefactPicture from "./useArtefactPicture";
 

@@ -271,9 +271,7 @@ const useBuffs = () => {
       setProperty(player, key, playerBuffs[key]);
     }
     //-- set up fortification properties
-    console.log("start buffs", player);
     if (player === "mainDefender") {
-      console.log("first", player, towersBuffs);
       for (const key in fortificationsPropertyBuffs) {
         const updatedFortifications = getFortifications().map(
           (fortification) => {
@@ -298,7 +296,6 @@ const useBuffs = () => {
         );
         updateFortifications(updatedFortifications);
       }
-      console.log("dfdf", player);
       //-- set up magicTower properties
       for (const key in magicTowersBuffs) {
         const magicTowers = getTowers(player).filter(

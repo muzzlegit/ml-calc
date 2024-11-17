@@ -1,4 +1,4 @@
-import { ImageBox, Selector, SvgIcon } from "modules/UI";
+import { ImageBox, Selector, SvgIcon } from "utils/UI";
 import { Flex } from "utils/styles/flexKit.styled";
 import {
   IconWrap,

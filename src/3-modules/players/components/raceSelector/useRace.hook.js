@@ -1,3 +1,4 @@
+import useEventsStore from "eventBus/eventsStore";
 import { useBattleplaceStore } from "modules/battleplace";
 import usePlayerStore from "modules/players/store/playerStore";
 import { RACE } from "modules/players/utils/player.constants";
@@ -12,7 +13,10 @@ const useRace = () => {
   const [options, setOptions] = useState(RACE);
   const race = RACE[activeRace];
 
+  const emit = useEventsStore((state) => state.emit);
+
   const handleRace = (race) => {
+    emit("raceChange", race);
     setRace(player, race);
   };
 

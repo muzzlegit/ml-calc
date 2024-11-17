@@ -1,4 +1,4 @@
-import AdditionBuffs from "./additionBuffs/AdditionBuffs";
+import AdditionBuffs from "../../customBuffs/components/customBuffsList/CustomBuffsList";
 import SpellsList from "./spellsList/SpellsList";
 
 export { AdditionBuffs, SpellsList };

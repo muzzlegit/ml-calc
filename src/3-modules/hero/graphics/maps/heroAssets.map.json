@@ -1,146 +1,166 @@
 {
   "heroFrame": {
-    "coordinate": "-1px -301px",
+    "coordinate": "-84px -301px",
     "width": "96px",
     "height": "117px"
   },
   "heroSkillFrame": {
-    "coordinate": "-167px -301px",
+    "coordinate": "-1px -401px",
     "width": "82px",
     "height": "64px"
   },
   "skills": {
     "Подавление здоровья войск": {
-      "coordinate": "-333px -313px",
+      "coordinate": "-281px -365px",
       "width": "56px",
       "height": "56px"
     },
     "Подавление защиты": {
-      "coordinate": "-333px -261px",
+      "coordinate": "-224px -417px",
       "width": "56px",
       "height": "56px"
     },
     "Защита от укреплений": {
-      "coordinate": "-333px -105px",
+      "coordinate": "-167px -105px",
       "width": "56px",
       "height": "56px"
     },
     "Защита": {
-      "coordinate": "-333px -157px",
+      "coordinate": "-167px -157px",
       "width": "56px",
       "height": "56px"
     },
     "Охрана союзника": {
-      "coordinate": "-333px -209px",
+      "coordinate": "-167px -209px",
       "width": "56px",
       "height": "56px"
     },
     "Снижение опыта противнику": {
-      "coordinate": "-447px -105px",
+      "coordinate": "-281px -105px",
       "width": "56px",
       "height": "56px"
     },
     "Уничтожитель монстров": {
-      "coordinate": "-447px -105px",
+      "coordinate": "-167px -417px",
       "width": "56px",
       "height": "56px"
     },
     "Сила войск": {
-      "coordinate": "-333px -1px",
+      "coordinate": "-167px -1px",
       "width": "56px",
       "height": "56px"
     },
     "Сила союзнику": {
-      "coordinate": "-333px -53px",
+      "coordinate": "-167px -53px",
       "width": "56px",
       "height": "56px"
     },
     "Индульгенция отступнику": {
-      "coordinate": "-333px -53px",
+      "coordinate": "-110px -417px",
       "width": "56px",
       "height": "56px"
     },
     "Ярость магов": {
-      "coordinate": "-333px  -365px",
+      "coordinate": "-281px  -417px",
       "width": "56px",
       "height": "56px"
     },
     "Выносливость армии": {
-      "coordinate": "-390px -1px",
+      "coordinate": "-224px -1px",
       "width": "56px",
       "height": "56px"
     },
     "Выносливость союзников": {
-      "coordinate": "-390px -53px",
+      "coordinate": "-224px -53px",
       "width": "56px",
       "height": "56px"
     },
     "Улучшение целителей": {
-      "coordinate": "-390px -105px",
+      "coordinate": "-224px -105px",
       "width": "56px",
       "height": "56px"
     },
     "Защита магов": {
-      "coordinate": "-447px -157px",
+      "coordinate": "-281px -157px",
       "width": "56px",
       "height": "56px"
     },
     "Слабость магов противника": {
-      "coordinate": "-390px -261px",
+      "coordinate": "-224px -261px",
       "width": "56px",
       "height": "56px"
     },
     "Подавление целителей": {
-      "coordinate": "-390px -209px",
+      "coordinate": "-224px -209px",
       "width": "56px",
       "height": "56px"
     },
     "Подавление магических башен": {
-      "coordinate": "-390px -157px",
+      "coordinate": "-224px -157px",
       "width": "56px",
       "height": "56px"
     },
     "Мастер башен": {
-      "coordinate": "-390px -365px",
+      "coordinate": "-224px -365px",
       "width": "56px",
       "height": "56px"
     },
     "Переносное укрепление": {
-      "coordinate": "-390px -313px",
+      "coordinate": "-224px -313px",
       "width": "56px",
       "height": "56px"
     },
     "Тактика укреплений": {
-      "coordinate": "-447px -1px",
+      "coordinate": "-281px -1px",
       "width": "56px",
       "height": "56px"
     },
     "Мастерство обороны": {
-      "coordinate": "-447px -53px",
+      "coordinate": "-281px -53px",
+      "width": "56px",
+      "height": "56px"
+    },
+    "Подавление всех войск": {
+      "coordinate": "-281px -209px",
+      "width": "56px",
+      "height": "56px"
+    },
+    "Уязвимость атакующих": {
+      "coordinate": "-281px -261px",
+      "width": "56px",
+      "height": "56px"
+    },
+    "Дикий Ужас": {
+      "coordinate": "-281px -313px",
       "width": "56px",
       "height": "56px"
     }
   },
   "backgrounds": {
     "undead": {
-      "coordinate": "-167px -1px",
+      "coordinate": "-1px -1px",
       "width": "82px",
       "height": "99px"
     },
     "demon": {
-      "coordinate": "-167px -101px",
+      "coordinate": "-1px -101px",
       "width": "82px",
       "height": "99px"
     },
     "drow": {
-      "coordinate": "-167px -201px",
+      "coordinate": "-1px -201px",
       "width": "82px",
       "height": "99px"
     },
-    "human": { "coordinate": "-250px -1px", "width": "82px", "height": "99px" },
-    "elf": { "coordinate": "-250px -101px", "width": "82px", "height": "99px" },
+    "human": { "coordinate": "-84px -1px", "width": "82px", "height": "99px" },
+    "elf": { "coordinate": "-84px -101px", "width": "82px", "height": "99px" },
+    "wizard": {
+      "coordinate": "-1px -301px",
+      "width": "82px",
+      "height": "99px"
+    },
     "monsters": {
-      "coordinate": "-250px -201px",
+      "coordinate": "-84px -201px",
       "width": "82px",
       "height": "99px"
     }

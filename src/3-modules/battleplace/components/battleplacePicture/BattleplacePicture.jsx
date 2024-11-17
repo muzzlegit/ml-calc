@@ -1,4 +1,4 @@
-import { ImageBox } from "modules/UI";
+import { ImageBox } from "utils/UI";
 import useBattleplacePicture from "./useBattleplacePicture.hook";
 //--styles
 import {

@@ -1,5 +1,5 @@
-import { ImageBox } from "modules/UI";
 import PropTypes from "prop-types";
+import { ImageBox } from "utils/UI";
 import { Container, Picture, PictureBox } from "./HeroUnit.styled";
 import useHeroUnit from "./useHeroUnit.hook";
 

@@ -15,6 +15,12 @@ const useBattleplaceStore = create(
       fortifications: [],
       gate: null,
       methods: {
+        updateState: (newState) => {
+          set((state) => ({
+            ...newState,
+            methods: state.methods,
+          }));
+        },
         //--- getters
         getBattlefield: () => get().battlefield,
         getGarrsison: () => get().garrison,

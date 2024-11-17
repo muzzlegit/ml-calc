@@ -27,6 +27,12 @@ const useWatchDogStore = create(
         buffs: [],
       },
       methods: {
+        updateState: (newState) => {
+          set((state) => ({
+            ...newState,
+            methods: state.methods,
+          }));
+        },
         getBuffs: (player) => {
           return get()[player].buffs;
         },

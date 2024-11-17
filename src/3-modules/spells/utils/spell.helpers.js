@@ -2,7 +2,7 @@ import { nanoid } from "nanoid";
 import spells from "../data/spells.json";
 import canvas from "../graphics/images/Skills.png";
 import canvasMap from "../graphics/maps/spells.map.json";
-import { BUFFS, COMMON_PROPERTIES } from "./spell.constants";
+import { RATES } from "./spell.constants";
 
 export function getInitialSpells(player) {
   return spells.map((spell) => {
@@ -33,7 +33,12 @@ export function getNextLevelSpell(spell) {
     valueIndex: nextIndex,
   }));
 
-  return { ...spell, level: nextLevel, buffs: formattedBuffs };
+  return {
+    ...spell,
+    level: nextLevel,
+    valueIndex: nextIndex,
+    buffs: formattedBuffs,
+  };
 }
 
 function getNextLevel(level, singleLevel) {
@@ -55,45 +60,6 @@ export const getSpellDescription = (buffs, valueIndex) => {
     })
     .toString()
     .replaceAll(",", "\n");
-};
-
-export const getAdditionBuffs = (player) => {
-  const playerBuffs = BUFFS.filter((buff) => {
-    const { target, targetType } = buff;
-    if (
-      (player === "mainAttacker" ||
-        player === "attackerAlly" ||
-        player === "attackerSecondAlly" ||
-        player === "firstDefenderAlly" ||
-        player === "secondDefenderAlly") &&
-      target === "player" &&
-      (targetType === "fortification" ||
-        targetType === "magicTower" ||
-        targetType === "tower")
-    )
-      return;
-    if (
-      (player === "firstDefenderAlly" || player === "secondDefenderAlly") &&
-      (targetType === "fortification" ||
-        targetType === "magicTower" ||
-        targetType === "tower")
-    )
-      return;
-    if (
-      player === "mainDefender" &&
-      target === "enemy" &&
-      (targetType === "fortification" ||
-        targetType === "magicTower" ||
-        targetType === "tower")
-    )
-      return;
-    return buff;
-  });
-  return playerBuffs.map((buff) => ({
-    id: nanoid(),
-    ...COMMON_PROPERTIES,
-    ...buff,
-  }));
 };
 
 export function getBuffsObjectForUnits(properties, descriptions) {
@@ -122,4 +88,9 @@ export function getBuffsObjectForUnits(properties, descriptions) {
     }
   });
   return buffs;
+}
+
+export function getPropertySign(property) {
+  if (!property) return null;
+  return RATES.includes(property) ? "%" : null;
 }

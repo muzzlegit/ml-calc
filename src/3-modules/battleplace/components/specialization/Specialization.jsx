@@ -1,4 +1,4 @@
-import { ImageBox } from "modules/UI";
+import { ImageBox } from "utils/UI";
 import { Container, Level, Title, Wrap } from "./Specialization.styled";
 import useSpecialization from "./useSpecialization.hook";
 

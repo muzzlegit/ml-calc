@@ -1,8 +1,8 @@
-import { ImageBox } from "modules/UI";
 import {
   getFortificationDescription,
   getValueSign,
 } from "modules/battleplace/utils/battleplace.helpers";
+import { ImageBox } from "utils/UI";
 import { Flex, FlexCenter } from "utils/styles/flexKit.styled";
 import {
   Box,

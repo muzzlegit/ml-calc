@@ -1,4 +1,4 @@
-import { ImageBox } from "modules/UI";
+import { ImageBox } from "utils/UI";
 import { Container } from "./ArtefactButton.styled";
 
 const ArtefactButton = ({ value, image, handleClick, ...rest }) => {

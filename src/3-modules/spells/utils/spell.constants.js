@@ -111,3 +111,47 @@ export const BUFFS = [
     sign: "%",
   },
 ];
+
+export const BUFFS_LIST = {
+  attackRate: "Атака",
+  healthRate: "Здоровье",
+  amountRate: "Ужас",
+  persecutionRate: "Преследование",
+  defense: "Защита",
+  defenseLevel: "Предел максимальной защиты",
+  resurrectionRate: "воскрешение",
+  suppression: "Поглощение атаки",
+  towersSuppressionRate: "Поглощение урона от башен",
+  damageRate: "Атака башен",
+};
+
+export const BUFF_UNITS = {
+  all: "все юниты",
+  porter: "носильщики",
+  swordsman: "воины",
+  cavalier: "всадники",
+  flying: "летающие",
+  archer: "лучники",
+  healer: "целители",
+  mercenary: "наемники",
+  mage: "маги",
+  tower: "башни",
+  magicTower: "магические башни",
+};
+
+export const BUFF_TARGETS = {
+  player: "на себя",
+  player_ally: "на себя и союзников",
+  ally: "на союзников",
+  enemy: "на врага",
+  all: "на всех",
+};
+
+export const RATES = [
+  "attackRate",
+  "healthRate",
+  "amountRate",
+  "persecutionRate",
+  "towersSuppressionRate",
+  "resurrectionRate",
+];

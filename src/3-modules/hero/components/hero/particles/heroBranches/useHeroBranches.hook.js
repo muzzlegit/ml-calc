@@ -4,6 +4,7 @@ import {
   getHeroAssetsIcon,
   getHeroSkillPicture,
 } from "modules/hero/utils/hero.helpers";
+import { usePlayerStore } from "modules/players";
 import { useEffect, useState } from "react";
 import usePlayerContext from "utils/context/usePlayerContext.hook";
 import useBuffsProvider from "utils/watchDog/useBuffsProvider.hook";
@@ -14,6 +15,7 @@ const useHeroBranches = () => {
   const [firstBranch, setFirstBranch] = useState(hero?.firstBranch ?? null);
   const [secondBranch, setSecondBranch] = useState(hero?.secondBranch ?? null);
   const [thirdBranch, setThirdBranch] = useState(hero?.thirdBranch ?? null);
+  const { getRace } = usePlayerStore((state) => state.methods);
   const [graphics, setGraphics] = useState({
     skillFrame: getHeroAssetsIcon("heroSkillFrame"),
   });
@@ -21,6 +23,7 @@ const useHeroBranches = () => {
   const { buffsProvider } = useBuffsProvider();
 
   const handleHeroSkillLevel = (branchName, values) => {
+    if (getRace(player) === "monsters") return;
     const { level, id, target } = values;
     const isLevelLimit = level + 1 > 5;
     const newValues = {

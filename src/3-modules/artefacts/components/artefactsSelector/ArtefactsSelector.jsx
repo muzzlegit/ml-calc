@@ -1,4 +1,4 @@
-import { Selector } from "modules/UI";
+import { Selector } from "utils/UI";
 import ArtefactButton from "../artefactButton/ArtefactButton";
 import { Container } from "./ArtefactsSelector.styled";
 import useArtefactsSelector from "./useArtefactsSelector";

@@ -28,6 +28,12 @@ const useUnitsStore = create(
         ...getInitialUnitsData(mainDefenderRace, 4),
       },
       methods: {
+        updateState: (newState) => {
+          set((state) => ({
+            ...newState,
+            methods: state.methods,
+          }));
+        },
         getUnit: (player, unit) => {
           return get()[player][unit];
         },

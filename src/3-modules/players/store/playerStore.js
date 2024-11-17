@@ -116,6 +116,12 @@ const usePlayerStore = create(
       },
       garrison: { race: "monsters", fraction: "monsters", apostate: false },
       methods: {
+        updateState: (newState) => {
+          set((state) => ({
+            ...newState,
+            methods: state.methods,
+          }));
+        },
         getParticipantFlag: (player) => {
           return get()[player].participant;
         },
@@ -265,7 +271,6 @@ const usePlayerStore = create(
           });
         },
         removeBuff: (player, buffId) => {
-          console.log("store", player, buffId);
           set((state) => {
             state[player].buffs = [
               ...state[player].buffs.filter(({ id }) => id !== buffId),

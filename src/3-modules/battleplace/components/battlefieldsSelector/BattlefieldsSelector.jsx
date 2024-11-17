@@ -1,4 +1,4 @@
-import { Selector } from "modules/UI";
+import { Selector } from "utils/UI";
 import useBattlefieldsSelector from "./useBattlefieldsSelector.hook";
 
 const BattlefieldsSelector = () => {

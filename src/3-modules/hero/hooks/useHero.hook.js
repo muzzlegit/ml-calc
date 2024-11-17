@@ -1,23 +1,36 @@
+import useEventsStore from "eventBus/eventsStore";
 import useHeroStore from "modules/hero/store/heroStore";
 import { getHeroBranch } from "modules/hero/utils/hero.helpers";
 import { nanoid } from "nanoid";
 import usePlayerContext from "utils/context/usePlayerContext.hook";
 import useBuffsProvider from "utils/watchDog/useBuffsProvider.hook";
+import useHeroHandlers from "./useHeroHandlers.hook";
 
 const useHero = () => {
   const player = usePlayerContext();
   const { setHero, getHero } = useHeroStore((state) => state.methods);
 
   const { buffsProvider } = useBuffsProvider();
+  const { subscribe, unsubscribe } = useEventsStore((state) => ({
+    subscribe: state.subscribe,
+    unsubscribe: state.unsubscribe,
+  }));
+  const { raceChangeHandler } = useHeroHandlers();
 
   const assignHero = (heroClass) => {
     applyHeroBuffs("delete");
     setHero(player, { id: nanoid(), class: heroClass });
+    subscribe({
+      event: "raceChange",
+      id: "1",
+      callback: raceChangeHandler,
+    });
   };
 
   const deleteHero = (specificPlayer) => {
     applyHeroBuffs("delete");
     setHero(specificPlayer ?? player, null);
+    unsubscribe({ event: "raceChange", id: "1" });
   };
 
   const deleteHeroBranch = (branchName) => {
@@ -39,7 +52,7 @@ const useHero = () => {
       [branchName + "Name"]: heroBranch,
       [branchName]: skills,
     });
-    applyHeroBranchBuffs(branchName);
+    applyHeroBranchBuffs(branchName, "add");
   };
 
   const replaceHeroSkill = (branchName, newSkillValues) => {

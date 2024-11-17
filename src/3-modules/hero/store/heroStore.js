@@ -24,6 +24,12 @@ const useHeroStore = create(
         hero: null,
       },
       methods: {
+        updateState: (newState) => {
+          set((state) => ({
+            ...newState,
+            methods: state.methods,
+          }));
+        },
         getHero: (player) => {
           return get()[player].hero;
         },

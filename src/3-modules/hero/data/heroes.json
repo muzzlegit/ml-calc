@@ -479,14 +479,14 @@
         "property": "defense",
         "level": 0,
         "valueIndex": 0,
-        "value": [0, 0.1, 0.2, 0.3, 0.4, 0.5],
+        "value": [0, 10, 20, 30, 40, 50],
         "description": [
           "Защита Магов",
-          "Защита Магов +10%",
-          "Защита Магов +20%",
-          "Защита Магов +30%",
-          "Защита Магов +40%",
-          "Защита Магов +50%"
+          "Защита Магов +10",
+          "Защита Магов +20",
+          "Защита Магов +30",
+          "Защита Магов +40",
+          "Защита Магов +50"
         ],
         "battle": true
       }
@@ -693,6 +693,93 @@
           "Уничтожает до боя 2000 вражеских войск в раунде укреплений",
           "Уничтожает до боя 2500 вражеских войск в раунде укреплений"
         ],
+        "battle": true
+      }
+    ]
+  },
+  {
+    "id": "7_avcr-HBIjFssdsds",
+    "class": "Монстр",
+    "title": "Джаггернаут",
+    "skills": [
+      {
+        "id": "-RH300r-LlfsdfdJMkO",
+        "owner": "7_avcr-HBIjFssdsds",
+        "ownerDescription": "Джаггернаут",
+        "type": "skill",
+        "player": null,
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "title": "Подавление всех войск",
+        "property": "attackRate",
+        "level": 5,
+        "valueIndex": 0,
+        "value": [-0.5],
+        "description": ["Атака всех войск -50%&Действует на противника"],
+        "battle": true
+      },
+      {
+        "id": "-RH300r-LlfsdfdJMbdgkO",
+        "owner": "7_avcr-HBIjFssdsds",
+        "ownerDescription": "Джаггернаут",
+        "type": "skill",
+        "player": null,
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "title": "Уязвимость атакующих",
+        "property": "defense",
+        "level": 5,
+        "valueIndex": 0,
+        "value": [-25],
+        "description": ["Защита всех войск -25&Действует на противника"],
+        "battle": true
+      },
+      {
+        "id": "-RH300r-LlfsdfdJweMbdgkO",
+        "owner": "7_avcr-HBIjFssdsds",
+        "ownerDescription": "Джаггернаут",
+        "type": "skill",
+        "player": null,
+        "target": "enemy",
+        "appliedOn": "all",
+        "targetType": "unit",
+        "units": [
+          "porter",
+          "swordsman",
+          "cavalier",
+          "flying",
+          "archer",
+          "healer",
+          "mercenary",
+          "mage"
+        ],
+        "title": "Дикий Ужас",
+        "property": "amountRate",
+        "level": 5,
+        "valueIndex": 0,
+        "value": [-0.9],
+        "description": ["90% войск не участвует в бою&Действует на противника"],
         "battle": true
       }
     ]

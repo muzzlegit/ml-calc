@@ -1,5 +1,5 @@
-import sprite from "modules/UI/graphics/icons.svg";
 import PropTypes from "prop-types";
+import sprite from "utils/UI/graphics/icons.svg";
 
 import { Svg } from "./SvgIcon.styled";
 

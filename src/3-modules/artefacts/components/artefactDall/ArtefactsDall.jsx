@@ -1,5 +1,5 @@
-import { ImageBox } from "modules/UI";
 import { DALL_CELLS } from "modules/artefacts/utils/artefact.constants";
+import { ImageBox } from "utils/UI";
 import { Cell, Container, Frame } from "./ArtefactsDall.styled";
 import ArtefactPicture from "./particles/artefactPicture/ArtefactPicture";
 import useArtefactsDall from "./useArtefactsDall";

@@ -1,4 +1,4 @@
-import { Selector } from "modules/UI";
+import { Selector } from "utils/UI";
 import { Container } from "./BattleplaceSelector.styled";
 import useBattleplaceSelector from "./useBattleplaceSelector.hook";
 

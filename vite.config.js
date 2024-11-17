@@ -11,7 +11,7 @@ export default defineConfig({
       widgets: "/src/2-widgets/",
       modules: "/src/3-modules/",
       utils: "/src/4-utils/",
-      services: "/src/5-services/",
+      eventBus: "/src/5-eventBus/",
     },
   },
 });

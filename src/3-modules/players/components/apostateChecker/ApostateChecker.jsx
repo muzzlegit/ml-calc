@@ -1,5 +1,5 @@
 import { useApostate } from "modules/players/hooks";
-import { SvgIcon } from "modules/UI";
+import { SvgIcon } from "utils/UI";
 import { Checker, Container, IconBox, Title } from "./ApostateChecker.styled";
 
 const ApostateChecker = () => {

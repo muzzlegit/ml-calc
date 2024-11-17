@@ -1,0 +1,268 @@
+{
+  "buildings": {
+    "Центральное здание": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-730px -183px"
+    },
+    "Шахта": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-730px -274px"
+    },
+    "Копь": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-811px -274px"
+    },
+    "Жилища": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-244px -183px"
+    },
+    "Укрепление": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-487px -183px"
+    },
+    "Башня": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-487px -92px"
+    },
+    "Магическая башня": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-487px -1px"
+    },
+    "Рынок": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-1px -1px"
+    },
+    "Склады": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-163px -1px"
+    },
+    "Дипломатический корпус": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-1px -183px"
+    },
+    "Воскреситель": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-1px -274px"
+    },
+    "Храм": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-1px -92px"
+    },
+    "Сокровищница": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-82px -92px"
+    },
+    "Таверна": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-82px -183px"
+    },
+    "Темница": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-82px -1px"
+    },
+    "Гильдия купцов": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-244px -1px"
+    },
+    "Гильдия шпионов": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-163px -183px"
+    },
+    "Гильдия антишпионов": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-163px -274px"
+    },
+    "Экспедиционный корпус": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-163px -92px"
+    },
+    "Центр колонизации": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-82px -274px"
+    },
+    "Башня провидцев": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-730px -1px"
+    },
+    "Башня зеркал ": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-730px -92px"
+    },
+    "Дом вассалов (Носильщики)": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-325px -1px"
+    },
+    "Казарма (Воины)": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-325px -92px"
+    },
+    "Конюшня (Кони)": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-325px -183px"
+    },
+    "Бастион пегасов (Летающие)": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-325px -274px"
+    },
+    "Стрельбище (Стрелки)": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-406px -1px"
+    },
+    "Монастырь (Лекари)": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-406px -92px"
+    },
+    "Орден наёмников (Наемники)": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-406px -183px"
+    },
+    "Школа магии (Маги)": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-406px -274px"
+    },
+    "Лаборатория алхимиков": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-244px -92px"
+    },
+    "Хижина дровосека": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-568px -92px"
+    },
+    "Каменоломня": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-568px -183px"
+    },
+    "Мельница": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-568px -274px"
+    },
+    "Торговая лавка": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-568px -1px"
+    },
+    "Рудник": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-649px -1px"
+    },
+    "Прииск": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-649px -92px"
+    },
+    "Чаша изобилия": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-244px -274px"
+    },
+    "Склад клана": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-649px -183px"
+    },
+    "Резервация клана": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-649px -274px"
+    },
+    "Терраформер": {
+      "width": "80px",
+      "height": "90px",
+      "coordinate": "-487px -274px"
+    }
+  },
+  "units": {
+    "Носильщик": {
+      "width": "22px",
+      "height": "22px",
+      "coordinate": "-838px -1px"
+    },
+    "Воин": { "width": "22px", "height": "22px", "coordinate": "-838px -24px" },
+    "Всадник": {
+      "width": "22px",
+      "height": "22px",
+      "coordinate": "-838px -47px"
+    },
+    "Летающий": {
+      "width": "22px",
+      "height": "22px",
+      "coordinate": "-838px -70px"
+    },
+    "Лучник": {
+      "width": "22px",
+      "height": "22px",
+      "coordinate": "-861px -1px"
+    },
+    "Лекарь": {
+      "width": "22px",
+      "height": "22px",
+      "coordinate": "-861px -24px"
+    },
+    "Наемник": {
+      "width": "22px",
+      "height": "22px",
+      "coordinate": "-861px -47px"
+    },
+    "Маг": { "width": "22px", "height": "22px", "coordinate": "-861px -70px" }
+  },
+  "icons": {
+    "gold": { "width": "26px", "height": "26px", "coordinate": "-811px -1px" },
+    "wood": { "width": "26px", "height": "26px", "coordinate": "-811px -28px" },
+    "stone": {
+      "width": "26px",
+      "height": "26px",
+      "coordinate": "-811px -55px"
+    },
+    "grain": {
+      "width": "26px",
+      "height": "26px",
+      "coordinate": "-811px -82px"
+    },
+    "iron": {
+      "width": "26px",
+      "height": "26px",
+      "coordinate": "-811px -109px"
+    },
+    "star": { "width": "13px", "height": "13px", "coordinate": "-851px -93px" },
+    "perfect": {
+      "width": "13px",
+      "height": "13px",
+      "coordinate": "-838px -93px"
+    }
+  }
+}

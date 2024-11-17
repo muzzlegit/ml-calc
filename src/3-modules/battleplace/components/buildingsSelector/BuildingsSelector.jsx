@@ -1,4 +1,4 @@
-import { ImageBox } from "modules/UI";
+import { ImageBox } from "utils/UI";
 import { FlexCenter } from "utils/styles/flexKit.styled";
 import { Build, Button, Input, Level } from "./BuildingsSelector.styled";
 import useBuildingsSelector from "./useBuildingsSelector.hook";

@@ -1,9 +1,10 @@
 import { LEVEL_FILTER } from "modules/artefacts/utils/artefact.constants";
-import { Button, ImageBox } from "modules/UI";
+import { Button, ImageBox } from "utils/UI";
 import { Flex, FlexCol } from "utils/styles/flexKit.styled";
 import { Artefact, List } from "./ArtefactsList.styled";
 import useArtefactsList from "./useArtefactsList.hook";
 //---theme
+import { getArtefactDescription } from "modules/artefacts/utils/artefact.helpers";
 import { theme } from "utils/styles/theme";
 
 const colors = {
@@ -47,11 +48,12 @@ const ArtefactsList = () => {
           return (
             <Artefact
               key={title}
+              title={getArtefactDescription(artefact)}
               onClick={() => {
                 handleArtefactSelect({ title, ...rest });
               }}
             >
-              <ImageBox picture={image} title={title} />
+              <ImageBox picture={image} />
             </Artefact>
           );
         })}

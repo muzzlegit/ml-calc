@@ -4,13 +4,15 @@ import {
   getBranchesList,
   getHeroesClasses,
 } from "modules/hero/utils/hero.helpers";
+import { usePlayerStore } from "modules/players";
 import { useState } from "react";
 import usePlayerContext from "utils/context/usePlayerContext.hook";
-import useBuffsProvider from "utils/watchDog/useBuffsProvider.hook";
 
 const useHeroSelector = () => {
   const player = usePlayerContext();
   const { getHero } = useHeroStore((state) => state.methods);
+  const race = usePlayerStore((state) => state[player].race);
+
   const currentHero = getHero(player);
   const [heroClass, setHeroClass] = useState(currentHero?.class ?? null);
   const [firstHeroBranch, setFirstHeroBranch] = useState(
@@ -29,9 +31,9 @@ const useHeroSelector = () => {
   const { assignHero, assignHeroBranch, deleteHero, deleteHeroBranch } =
     useHero();
 
-  const { buffsProvider } = useBuffsProvider();
+  const isMonsters = race === "monsters";
 
-  const classesList = getHeroesClasses();
+  const classesList = getHeroesClasses(isMonsters);
 
   const handleHeroClass = (newHeroClass) => {
     ///---buffs
@@ -106,22 +108,8 @@ const useHeroSelector = () => {
       : setHeroBranchesList({ ...currentList });
   }
 
-  function applyHeroBuffs(key) {
-    const currentHero = getHero(player);
-    const branches = ["firstBranch", "secondBranch", "thirdBranch"];
-    branches.forEach((branch) => {
-      if (currentHero?.[branch]) {
-        buffsProvider(currentHero[branch], key);
-      }
-    });
-  }
-  function applyHeroBranchBuffs(branch, key) {
-    const buffs = getHero(player)[branch];
-    if (!buffs) return;
-    buffsProvider(buffs, key);
-  }
-
   return {
+    isMonsters,
     heroClass,
     firstHeroBranch,
     secondHeroBranch,

@@ -1,4 +1,4 @@
-import { ImageBox, SvgIcon } from "modules/UI";
+import { ImageBox, SvgIcon } from "utils/UI";
 import {
   AmountInput,
   Container,

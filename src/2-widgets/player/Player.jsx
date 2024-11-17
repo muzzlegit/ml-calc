@@ -1,4 +1,3 @@
-import { Modal, useModal } from "modules/UI";
 import { HeroUnit } from "modules/hero";
 import {
   AllyButton,
@@ -10,6 +9,7 @@ import {
   usePlayerStore,
 } from "modules/players";
 import { Squad, UnitsLevelSelect } from "modules/units";
+import { Modal, useModal } from "utils/UI";
 import PlayerContext from "utils/context/PlayerContext";
 import {
   FlexCenter,

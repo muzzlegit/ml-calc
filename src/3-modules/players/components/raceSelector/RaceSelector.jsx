@@ -1,4 +1,4 @@
-import { Selector } from "modules/UI";
+import { Selector } from "utils/UI";
 import useRace from "./useRace.hook";
 
 const RaceSelector = () => {

@@ -1,5 +1,5 @@
-import { Modal, useModal } from "modules/UI";
 import { usePlayerStore } from "modules/players";
+import { Modal, useModal } from "utils/UI";
 import useBattle from "utils/battleSystem/hooks/useBattle";
 import BattleButton from "utils/battleSystem/ui/battleButton/BattleButton";
 import ResultWindow from "utils/battleSystem/ui/resultWindow/ResultWindow";
